@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge #1</title>
+</head>
+<body>
+    <!-- <p>
+        Mark and John are trying to compare their BMI (Body Mass Index),<br />
+        wich is calculated using the formula:<br />
+        BMI = mass / height ** 2 = mass / (height * height).<br />
+        (mass in kg and height in meter)<br /><br />
+
+        1. Store Mark's and John's mass and height in variables<br />
+        2. Calculate both their BMIs using the formula (you can even implement both versions)<br />
+        3. Create a boolean variable 'markHigherBMI' containing information about whether Mark<br />
+        has a higher BMI than John.<br /><br />
+
+        TEST DATA 1: <br />
+        Marks weights 78kg and is 1.69m tall.<br />
+        John weights 92kg and is 1.95m tall<br /><br />
+        TEST DATA 2:<br />
+        Marks weights 95kg and is 1.88m tall<br />
+        John weights 85 kg and is 1.76m tall<br />
+    </p> -->
+
+    <div>
+        <h1>Instrucciones</h1>
+        <h3>BMI = Masa / Altura * Altura</h3>
+        <h3>Pedir al usuario que ingrese su nombre, altura, km y almacenarlo en una variable</h3>
+        <h3>Mostrar en el DOM el resultado</h3>
+    </div>
+
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text" id="inputName" value="Francisco"><br>
+        <label>Peso:</label><br>
+        <input type="text" id="inputPeso" value="65"><br>
+        <label>Altura:</label><br>
+        <input type="text" id="inputAltura" value="1.80"><br><br>
+    </form>
+    <button onClick="calcular()">Calcular</button> 
+
+    <ul id="myAnswer">
+        
+    </ul>
+
+    <script src="./main.js"></script>
+</body>
+</html>
