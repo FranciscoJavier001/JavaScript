@@ -21,9 +21,6 @@ const Resultado2FinalKoalas = parseInt(327)
 const Resultado3FinalDelfines = parseInt(310)
 const Resultado3FinalKoalas = parseInt(311)
 
-const Resultado4FinalDelfines = parseInt(312)
-const Resultado4FinalKoalas = parseInt(312)
-
 const nuevoResultado1Delfines = parseInt(Resultado1FinalDelfines / 3)
 const nuevoResultado2Delfines = parseInt(Resultado2FinalDelfines / 3)
 const nuevoResultado3Delfines = parseInt(Resultado3FinalDelfines / 3)
@@ -34,3 +31,41 @@ const nuevoResultado3Koalas = parseInt(Resultado3FinalKoalas / 3)
 
 console.log(`#=${nuevoResultado1Delfines}, #=${nuevoResultado2Delfines}, #=${nuevoResultado3Delfines}`);
 console.log(`#=${nuevoResultado1Koalas}, #=${nuevoResultado2Koalas}, #=${nuevoResultado3Koalas}`);
+
+// if (nuevoResultado1Delfines > nuevoResultado1Koalas) {
+//     console.log(`El ganador del partido son los Delfines ${nuevoResultado1Delfines}`);
+// } else {
+//     console.log(`El Equipo ganador son los Koalas ${nuevoResultado1Koalas}`);
+// }
+
+// if (nuevoResultado2Delfines > nuevoResultado2Koalas) {
+//     console.log(`El ganador del partido son los Delfines ${nuevoResultado2Delfines}`);
+// } else {
+//     console.log(`El Equipo ganador son los Koalas ${nuevoResultado2Koalas}`);
+// }
+
+// if (nuevoResultado3Delfines > nuevoResultado3Koalas) {
+//     console.log(`El ganador del partido son los Delfines ${nuevoResultado3Delfines}`);
+// } else {
+//     console.log(`El Equipo ganador son los Koalas ${nuevoResultado3Koalas}`);
+// }
+
+const puntosDelfines = prompt(`Ingresa el resultado Delfines`)
+const puntosKoalas = prompt(`Ingresa el resultado Koalas`)
+
+const puntosTotalesDelfines = parseInt(puntosDelfines / 1)
+const puntosTotalesKoalas = parseInt(puntosKoalas / 1)
+
+if (puntosTotalesDelfines <= 99 && puntosTotalesKoalas <= 99) {
+    console.log(`Ningun equipo Gano`); //** 299-299 */
+} else if (puntosTotalesDelfines >= 100 && puntosTotalesKoalas <= 99) {
+    console.log(`Ganaron los delfines, los Koalas no llegaron a la puntacion minima`); //** 300-299 */
+} else if (puntosTotalesKoalas >= 100 && puntosTotalesDelfines <= 99) {
+    console.log(`Ganaron los Delfines, los Koalas no llegaron a la puntacion minima`); //** 300-299 */
+} else if (puntosTotalesDelfines >= 100 > puntosTotalesKoalas >= 100) {
+    console.log(`Ganaron los Delfines`); //** 310-300 */
+} else if (puntosTotalesKoalas >= 100 > puntosTotalesDelfines >= 100) {
+    console.log(`Ganaron los Koalas`);
+} else if (puntosTotalesDelfines == puntosTotalesKoalas) {
+    console.log(`Fue un empate`);
+}
