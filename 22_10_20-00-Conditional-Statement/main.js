@@ -39,3 +39,15 @@ if (day === 'monday') {
 } else {
     console.log(`Not a valid day!`);
 }
+
+const age = 9
+age >= 18 ? console.log(`I like mangoose beer`) : console.log(`You're Underage`);
+
+if (age >= 18) { //** That's the same statement */
+    xD = `Major`;
+} else {
+    xD = `Underage`;
+}
+console.log(xD);
+
+console.log(`I like to drinl ${age >= 18 ? `wine` : `water`}`); //** Interesting way to do */
