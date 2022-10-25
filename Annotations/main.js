@@ -23,22 +23,14 @@
 // console.log(resultadoAmistad);
 
 
-const getUsuarioActivo = (nombre) => ({ //** Funcion, recibe un nombre y nos devuelve esto */
-    uid: 'ABC678',
-    username: nombre
-});
-
-const usuarioActivo = getUsuarioActivo('Francisco');
-console.log(usuarioActivo);
 
 
-//** Wey, no mames, wey lo que pongo que recibe es lo que necesita la funcion!!! xDDD */
-//** Funcion que  */
 
-const amistad = (personas, objetivos) => ({
-    tiempoJuntos: personas,
-    logros: objetivos
+const getMensaje = (aviso, advertencia) => ({
+    mensajeAviso: aviso,
+    mensajeAdvertencia: advertencia
 })
 
-const instruccion = amistad('Francisco y Sergio', 'Integral Suseful')
-console.log(instruccion);
+const mensaje = getMensaje(`Deja de perder el tiempo`, `haz lo que te toca`)
+console.log(mensaje);
+document.getElementById("xD").innerHTML = mensaje
