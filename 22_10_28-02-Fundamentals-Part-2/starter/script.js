@@ -18,7 +18,7 @@ const jugoManzana = procesadorFrutas(5, 0) //** Variable que recibe la funcion d
 console.log(jugoManzana); //** Muestro la variable de arriba */
 //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
-const jugoManzanaNaranja = procesadorFrutas(2,4) //** Creo una variable que recibe la funcion con estos parametros dentro */
+const jugoManzanaNaranja = procesadorFrutas(2, 4) //** Creo una variable que recibe la funcion con estos parametros dentro */
 console.log(jugoManzanaNaranja); //** Muestro la variable en consola */
 //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
