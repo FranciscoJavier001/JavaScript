@@ -53,3 +53,42 @@
 // console.log(`Para terminar el año faltan ${mesOctubre} meses`);
 // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
+// // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+//** Puedo almacenar en una variable el argumento que acabo de recibir */
+//** Declaro funcion que recibe parametros y asigno un procedimiento */
+//** Puedo retornar lo que necesito, yo defino aqui las instrucciones a seguir */
+//** Declaro una variable que llame cualquier funcion con los argumentos que solicita */
+//** Muestro donde quiera la funcion */
+// // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+
+//** Declaro una funcion que recibe un argumento las instruccione son calculos */
+//** Declaro una variable y esta invoca la funcion con el parametro que necesitaba */
+//** Muestro en consola lo que quiero */
+
+//** Declara una funcion que te diga cuantas horas le quedan al dia */
+const horasRestantes = horas => 24 - horas
+const horaActual = horasRestantes(18)
+console.log(`De este dia quedan ${horaActual} horas`);
+// // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+//** Meses para tu cumpleaños */
+//** Crea una variable donde ingreses el mes de tu cumpleaños */
+//** Otra donde tengamos el mes actual */
+//** Si el cumpleaños es mayor a los meses que faltan entonces pon el mes que le falta con una resta */
+//** Pero si el mes es menor  */
+const mesesFaltantes = meses => 12 - meses
+
+const mesActual = mesesFaltantes(11)
+console.log(`Para terminar el año faltan ${mesActual} meses`);
+//** Completar */
+// // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+const yearsUntilRetirement = (birthYeah, firstName) => {
+  const age = 2037 - birthYeah;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
