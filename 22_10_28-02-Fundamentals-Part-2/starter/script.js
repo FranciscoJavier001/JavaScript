@@ -91,4 +91,27 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
   return `${firstName} retires in ${retirement} years`;
 }
 
-console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+console.log(yearsUntilRetirement(1991, 'Jonas')); 
+console.log(yearsUntilRetirement(1980, 'Bob'));
+// // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+//** Vamos a calcular los meses que faltan para tu cumpleaños */
+const mesesFaltantesCumpleaños = (mesCumpleaños, mesActual) => {
+    if(mesCumpleaños < mesActual) {
+        const mesesFaltantes = (13 - mesActual + mesCumpleaños)
+        console.log(`mesCumpleaños < mesActual = Para tu Cumpleaños Faltan ${mesesFaltantes}`)
+    } else if (mesCumpleaños > mesActual) {
+        const mesesFaltantes = (mesCumpleaños - mesActual)
+        console.log(`mesCumpleaños > mesActual = Para tu Cumpleaños Faltan ${mesesFaltantes}`)
+    } else {
+        console.log(`mesCumpleaños = mesActual = Cumples Años este Mes`)
+    }
+}
+//** Pruebas */
+mesesFaltantesCumpleaños(1, 10) //** Cumplo Enero Estamos Octubre = 4 */
+mesesFaltantesCumpleaños(3, 10) //** Cumplo Marzo Estamos Octubre = 6 */
+mesesFaltantesCumpleaños(7, 10) //** Cumplo Julio Estamos Octubre = 10 */
+mesesFaltantesCumpleaños(9, 10) //** Cumplo Septiembre Estamos Octubre = 12 */
+mesesFaltantesCumpleaños(11, 10) //** Cumplo Noviembre Estamos Octubre = 1 */
+mesesFaltantesCumpleaños(12, 10) //** Cumplo Diciembre Estamos Octubre = 2 */
+mesesFaltantesCumpleaños(10, 10) //** Cumplo Octubre Estamos Octubre = 0*/
