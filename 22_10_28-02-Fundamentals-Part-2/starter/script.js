@@ -67,9 +67,9 @@
 //** Muestro en consola lo que quiero */
 
 //** Declara una funcion que te diga cuantas horas le quedan al dia */
-const horasRestantes = horas => 24 - horas
-const horaActual = horasRestantes(18)
-console.log(`De este dia quedan ${horaActual} horas`);
+const horasRestantes = horas => 24 - horas //** Creamos una variable que reciba las horas, donde la instruccion 24-horas recibidas */
+const horaActual = horasRestantes(18) //** Creamos una nueva constante donde se invoque la funcion y mandamos un parametro */
+console.log(`De este dia quedan ${horaActual} horas`); //** Mostramos en consola */
 // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
 //** Meses para tu cumpleaños */
@@ -77,33 +77,33 @@ console.log(`De este dia quedan ${horaActual} horas`);
 //** Otra donde tengamos el mes actual */
 //** Si el cumpleaños es mayor a los meses que faltan entonces pon el mes que le falta con una resta */
 //** Pero si el mes es menor  */
-const mesesFaltantes = meses => 12 - meses
+const mesesFaltantes = meses => 12 - meses //** Variale donde se recibe un parametro y damos instrucciones */
 
-const mesActual = mesesFaltantes(11)
-console.log(`Para terminar el año faltan ${mesActual} meses`);
+const mesActual = mesesFaltantes(11) //** Variable que manda llamar funcion con parametro */
+console.log(`Para terminar el año faltan ${mesActual} meses`); //** Mostramos en consola */
 //** Completar */
 // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
-const yearsUntilRetirement = (birthYeah, firstName) => {
-  const age = 2037 - birthYeah;
-  const retirement = 65 - age;
+const yearsUntilRetirement = (birthYeah, firstName) => { //** Variable que recibe 2 parametros */
+  const age = 2037 - birthYeah; //** Variable que que la definimos y hace una resta de un parametro recibido(Sin/Sentido) */
+  const retirement = 65 - age; //** Variable que definimos una operacion con menos parametro age */
   // return retirement;
-  return `${firstName} retires in ${retirement} years`;
+  return `${firstName} retires in ${retirement} years`; //** Mostramos en consola */
 }
 
-console.log(yearsUntilRetirement(1991, 'Jonas')); 
-console.log(yearsUntilRetirement(1980, 'Bob'));
+console.log(yearsUntilRetirement(1991, 'Jonas'));  //** En consola invocamos la funcion y mandamos parametros */
+console.log(yearsUntilRetirement(1980, 'Bob')); 
 // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
 //** Vamos a calcular los meses que faltan para tu cumpleaños */
-const mesesFaltantesCumpleaños = (mesCumpleaños, mesActual) => {
-    if(mesCumpleaños < mesActual) {
-        const mesesFaltantes = (13 - mesActual + mesCumpleaños)
+const mesesFaltantesCumpleaños = (mesCumpleaños, mesActual) => { //** Variable que recibe 2 parametros */
+    if(mesCumpleaños < mesActual) { //** Condicional */
+        const mesesFaltantes = (13 - mesActual + mesCumpleaños) //** Variable que recibe parametros y tiene instrucciones */
         console.log(`mesCumpleaños < mesActual = Para tu Cumpleaños Faltan ${mesesFaltantes}`)
     } else if (mesCumpleaños > mesActual) {
         const mesesFaltantes = (mesCumpleaños - mesActual)
         console.log(`mesCumpleaños > mesActual = Para tu Cumpleaños Faltan ${mesesFaltantes}`)
-    } else {
+    } else { //** Respuesta cuando ninguna condicion se cumple */
         console.log(`mesCumpleaños = mesActual = Cumples Años este Mes`)
     }
 }
