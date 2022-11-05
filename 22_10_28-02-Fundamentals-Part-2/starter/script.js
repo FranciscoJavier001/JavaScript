@@ -115,3 +115,24 @@
 // mesesFaltantesCumpleaños(11, 10) //** Cumplo Noviembre Estamos Octubre = 1 */
 // mesesFaltantesCumpleaños(12, 10) //** Cumplo Diciembre Estamos Octubre = 2 */
 // mesesFaltantesCumpleaños(10, 10) //** Cumplo Octubre Estamos Octubre = 0*/
+// // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+// Functions Calling Other Functions
+function cutFruitPieces(fruit) { //** Funcion que recibe un parametro */
+    return fruit * 4; //** Retornamos la variable por 4 */
+  }
+  
+  function fruitProcessor(apples, oranges) { //** Funcion que recibe 2 parametros */
+    const applePieces = cutFruitPieces(apples); //** Variable que recibe parametros */
+    const orangePieces = cutFruitPieces(oranges); 
+  
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`; //** Variable String */
+    return juice; //** Regresamos la variable String de arriba */
+  }
+  console.log(fruitProcessor(2, 3)); //** Funcion que manda 2 parametros */
+
+  //** Funcion que recibe un parametro */
+  //** Despues el parametro que recibe lo voy a multiplicar por 4 */
+
+  //** Funcion que recibe 2 parametros */
+  //** Variable que ejecuta la funcion de arriba con parametros, pero aqui agregaos las manzanas, en 2 lineas diferentes */
