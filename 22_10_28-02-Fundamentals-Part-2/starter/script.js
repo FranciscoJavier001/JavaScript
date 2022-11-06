@@ -136,3 +136,5 @@ function cutFruitPieces(fruit) { //** Funcion que recibe un parametro */
 
   //** Funcion que recibe 2 parametros */
   //** Variable que ejecuta la funcion de arriba con parametros, pero aqui agregaos las manzanas, en 2 lineas diferentes */
+
+  //** Crear funcion que lleve acabo algo similar */
