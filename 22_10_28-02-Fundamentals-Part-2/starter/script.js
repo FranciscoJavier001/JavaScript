@@ -118,23 +118,46 @@
 // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
 // Functions Calling Other Functions
-function cutFruitPieces(fruit) { //** Funcion que recibe un parametro */
-    return fruit * 4; //** Retornamos la variable por 4 */
-  }
+// function cutFruitPieces(fruit) { //** Funcion que recibe un parametro */
+//     return fruit * 4; //** Retornamos la variable por 4 */
+//   }
   
-  function fruitProcessor(apples, oranges) { //** Funcion que recibe 2 parametros */
-    const applePieces = cutFruitPieces(apples); //** Variable que recibe parametros */
-    const orangePieces = cutFruitPieces(oranges); 
+//   function fruitProcessor(apples, oranges) { //** Funcion que recibe 2 parametros */
+//     const applePieces = cutFruitPieces(apples); //** Variable que recibe parametros */
+//     const orangePieces = cutFruitPieces(oranges); 
   
-    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`; //** Variable String */
-    return juice; //** Regresamos la variable String de arriba */
-  }
-  console.log(fruitProcessor(2, 3)); //** Funcion que manda 2 parametros */
+//     const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`; //** Variable String */
+//     return juice; //** Regresamos la variable String de arriba */
+//   }
+//   console.log(fruitProcessor(2, 3)); //** Funcion que manda 2 parametros */
+  // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
-  //** Funcion que recibe un parametro */
-  //** Despues el parametro que recibe lo voy a multiplicar por 4 */
+// function pedasosFruta(fruta) { //** Declaramos funcion que recibe un parametro */
+//     return fruta * 4 //** Estas son las instrucciones */
+// }
 
-  //** Funcion que recibe 2 parametros */
-  //** Variable que ejecuta la funcion de arriba con parametros, pero aqui agregaos las manzanas, en 2 lineas diferentes */
+// function procesadorFruta(manzanas, naranjas) { //** Declaramos una nueva funcion que recibe 2 parametros */
+//     const pedazosManzana = pedasosFruta(manzanas) //** Creamos una constante, ejecuta primera funcion, y recibe parametros de la segunda */
+//     const pedazosNaranja = pedasosFruta(naranjas)
 
-  //** Crear funcion que lleve acabo algo similar */
+//     const jugo = `Jugo con ${pedazosManzana}, pedasos de manzana y ${pedazosNaranja} pedasos de naranja` //** Declaramos una variable */
+//     return jugo //** Retornamos la variable creada */
+// }
+
+// console.log(procesadorFruta(3, 4)); //** Llamamos la segunda funcion con los parametros de la segunda */
+// // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+// function pedazosFruta(fruta) {
+//     return fruta*4
+// }
+
+// const procesadorFruta= (manzanas, naranjas) => {
+//     const procesoManzanas = pedazosFruta(manzanas)
+//     const procesoNaranjas = pedazosFruta(naranjas)
+
+//     const jugo = `Pedazos de manzanas ${procesoManzanas} Pedazos de naranjas ${procesoNaranjas}`
+//     return jugo
+// }
+
+// console.log(procesadorFruta(2,3));
+// // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
