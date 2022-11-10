@@ -184,22 +184,36 @@
 // console.log(yearsUntilRetirement(1950, 'Mike'));
 // // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
-const edadActual = (añoNacimiento) => { //** Creo una funcion para saber la edad actual */
-    return 2022 - añoNacimiento
-}
+// const edadActual = (añoNacimiento) => { //** Creo una funcion para saber la edad actual */
+//     return 2022 - añoNacimiento
+// }
 
-const añosParaRetiro = (primerNombre, añoNacimiento) => { //** Creo una funcion que recibe parametros */
-    const edad = edadActual(añoNacimiento) //** Creo una variable e invoco la primera funcion */
-    const edadRetiro = 65 - edad //** Creo otra variable para edad de retiro */
+// const añosParaRetiro = (primerNombre, añoNacimiento) => { //** Creo una funcion que recibe parametros */
+//     const edad = edadActual(añoNacimiento) //** Creo una variable e invoco la primera funcion */
+//     const edadRetiro = 65 - edad //** Creo otra variable para edad de retiro */
 
-    if(edadRetiro > 0) { //** Sentencia condicional */
-        console.log(`${primerNombre}; edad ${edad} años y para 65 faltan ${edadRetiro} años`);
-        return edadRetiro
-    } else {
-        console.log(`${primerNombre}, edad ${edad} años y hace ${edadRetiro} años tenias 65 años`);
-        return edadRetiro
-    }
-}
+//     if(edadRetiro > 0) { //** Sentencia condicional */
+//         console.log(`${primerNombre}; edad ${edad} años y para 65 faltan ${edadRetiro} años`);
+//         return edadRetiro
+//     } else {
+//         console.log(`${primerNombre}, edad ${edad} años y hace ${edadRetiro} años tenias 65 años`);
+//         return edadRetiro
+//     }
+// }
 
-console.log(añosParaRetiro('Francisco', 1987)); //** Invoco la funcion con parametros */
-console.log(añosParaRetiro('Papa', 1950));
+// console.log(añosParaRetiro('Francisco', 1987)); //** Invoco la funcion con parametros */
+// console.log(añosParaRetiro('Papa', 1950));
+
+//** 2 Equipos, los Delfines y los Koalas */
+//** Estos equipos competiran 3 veces y necesitamos sacar el promedio de cada equipo */
+//** El unico equipo que ganara es el que tenga el doble de los puntos que el otro equipo, sino nadie gana */
+
+//** Crear una funcion llamada calcPuntos para sacar el promedio */
+//** Utiliza la funcion en cada uno de los 2 equipos */
+//** Crea una funcion revisarGanador que tenga los puntos de ambos equipos */
+    //** promedioDelfines, promedioKoalas y mostrar en consola (ejemplo delfines 10/ koalas 30 = ganan koalas) */
+//** Usa la funcion revisarGanador para determinar quien es el ganador data1 and data2 */
+//** Ignora el empate */
+
+//** Delfines 44, 23, 71 - Koalas 65, 54, 49 */
+//** Delfines 85, 54, 41 - Koalas 23, 34, 27 */
