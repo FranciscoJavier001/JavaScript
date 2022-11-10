@@ -162,4 +162,44 @@
 // console.log(procesadorFruta(2,3));
 // // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
 
-//** xD */
+// Reviewing Functions
+// const calcAge = function (birthYeah) {
+//     return 2037 - birthYeah;
+// }
+
+// const yearsUntilRetirement = function (birthYeah, firstName) {
+//     const age = calcAge(birthYeah);
+//     const retirement = 65 - age;
+  
+//     if (retirement > 0) {
+//       console.log(`${firstName} retires in ${retirement} years`);
+//       return retirement;
+//     } else {
+//       console.log(`${firstName} has already retired 🎉`);
+//       return -1;
+//     }
+// }
+  
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+// // // // //**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  *///**  */
+
+const edadActual = (añoNacimiento) => { //** Creo una funcion para saber la edad actual */
+    return 2022 - añoNacimiento
+}
+
+const añosParaRetiro = (primerNombre, añoNacimiento) => { //** Creo una funcion que recibe parametros */
+    const edad = edadActual(añoNacimiento) //** Creo una variable e invoco la primera funcion */
+    const edadRetiro = 65 - edad //** Creo otra variable para edad de retiro */
+
+    if(edadRetiro > 0) { //** Sentencia condicional */
+        console.log(`${primerNombre}; edad ${edad} años y para 65 faltan ${edadRetiro} años`);
+        return edadRetiro
+    } else {
+        console.log(`${primerNombre}, edad ${edad} años y hace ${edadRetiro} años tenias 65 años`);
+        return edadRetiro
+    }
+}
+
+console.log(añosParaRetiro('Francisco', 1987)); //** Invoco la funcion con parametros */
+console.log(añosParaRetiro('Papa', 1950));
