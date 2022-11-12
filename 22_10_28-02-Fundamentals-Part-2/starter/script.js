@@ -217,3 +217,13 @@
 
 //** Delfines 44, 23, 71 - Koalas 65, 54, 49 */
 //** Delfines 85, 54, 41 - Koalas 23, 34, 27 */
+
+const promedioPuntos = (partido1, partido2, partido3) => {
+    return ((partido1 + partido2 + partido3) / 3)
+}
+
+console.log(promedioPuntos(44,23,71));
+console.log(promedioPuntos(66,54,49));
+
+console.log(promedioPuntos(85,54,41));
+console.log(promedioPuntos(23,34,27));
