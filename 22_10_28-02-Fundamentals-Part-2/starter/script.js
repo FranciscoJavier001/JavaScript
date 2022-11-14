@@ -1,38 +1,26 @@
-const calcAverage = (p1,p2,p3) => (p1+p2+p3)/3 //** Creo una funcion que sigue instruccuines */
+const friend1 = "Michael" //** Declaramos variables */
+const friend2 = "Steven"
+const friend3 = "Peter"
 
-const checkWinner = (avgd, avgk) => { //** Realizo la funcion para confirmar al ganador */
-    if (avgd >= (avgk * 2)) {
-        console.log(`del wins ${avgd} vs ${avgk} lose koa`);
-    } else if ((avgd * 2) <= avgk) {
-        console.log(`koa win ${avgk} vs ${avgd} lose del`);
-    } else if (avgd == avgk) {
-        console.log(`No win anyone = ${avgk} vs ${avgd}`);
-    } else {
-        console.log(`No minumum points`);
-    }
-}
+const friends = ["Michael", "Steven", "Peter"] //** Voy a crear un nuevo array */
+console.log(friends); //** Mostramos en consola */
 
-//** Creo nuevas variables donde se reciban los argumentos, pero pudiendolas mutar */
-let dg = calcAverage(44,23,71) //** 56 */ 
-let kg = calcAverage(65,54,49) //** 46 */
+const years = new Array(1991, 1984, 2008, 2020) //** Simplemente implementamos otro nuevo Array, diferente manera */
 
-console.log("#1");
-checkWinner(dg, kg) //** Invoco la funcion con parametros establecidos */
+console.log(friends[2]); //** Invocamos una posicion del array friends */
 
-//** Como esta en let, puedo reasignarlas e invoco la funcion */
-dg = calcAverage(85,54,41) //** 60 */
-kg = calcAverage(23,34,27) //** 28 */
-console.log("#2");
-checkWinner(dg, kg)
+console.log(friends.length); //** Asi vemos el tamaño del arreglo */
 
-//** Otra llamada a la funcion */
-dg = calcAverage(85,54,91) //** 76 */
-kg = calcAverage(85,54,91) //** 76 */
-console.log("#3");
-checkWinner(dg, kg)
+console.log(friends[friends.length -1]); //** Asi vemos el ultimo elemento del arreglo */
 
-//** Otra llamada a la funcion */
-dg = calcAverage(1,54,41) //** 20 */
-kg = calcAverage(1,34,27) //** 32 */
-console.log("#4");
-checkWinner(dg, kg)
+friends[2] = 'Jay' //** Reasignamos el elemento de friends en el arreglo 3 */
+
+friends[3] = 'xD' //** Creamos un nuevo elemento */
+
+console.log(friends); 
+
+const firstName = 'Frank' //** Creo solo una nueva variable */
+const jonas = [firstName, 'Duran', 2022 - 1990, 'dev', friends] //** Creo un arreglo con infomacion */
+
+console.log(jonas);
+console.log(jonas.length); //** Para ver el tamaño del arreglo */
