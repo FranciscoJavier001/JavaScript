@@ -12,18 +12,27 @@ const checkWinner = (avgd, avgk) => { //** Realizo la funcion para confirmar al 
     }
 }
 
-//** Creo nuevas variables para confirmar */
-const dg1 = calcAverage(44,23,71) //** 56 */ 
-const kg1 = calcAverage(65,54,49) //** 46 */
-const dg2 = calcAverage(85,54,41) //** 60 */
-const kg2 = calcAverage(23,34,27) //** 28 */
-const dg3 = calcAverage(85,54,91) //** 76 */
-const kg3 = calcAverage(85,54,91) //** 76 */
-const dg4 = calcAverage(1,54,41) //** 20 */
-const kg4 = calcAverage(1,34,27) //** 32 */
+//** Creo nuevas variables donde se reciban los argumentos, pero pudiendolas mutar */
+let dg = calcAverage(44,23,71) //** 56 */ 
+let kg = calcAverage(65,54,49) //** 46 */
 
-//** Invoco la funcion con parametros establecidos */
-checkWinner(dg1, kg1)
-checkWinner(dg2, kg2)
-checkWinner(dg3, kg3)
-checkWinner(dg4, kg4)
+console.log("#1");
+checkWinner(dg, kg) //** Invoco la funcion con parametros establecidos */
+
+//** Como esta en let, puedo reasignarlas e invoco la funcion */
+dg = calcAverage(85,54,41) //** 60 */
+kg = calcAverage(23,34,27) //** 28 */
+console.log("#2");
+checkWinner(dg, kg)
+
+//** Otra llamada a la funcion */
+dg = calcAverage(85,54,91) //** 76 */
+kg = calcAverage(85,54,91) //** 76 */
+console.log("#3");
+checkWinner(dg, kg)
+
+//** Otra llamada a la funcion */
+dg = calcAverage(1,54,41) //** 20 */
+kg = calcAverage(1,34,27) //** 32 */
+console.log("#4");
+checkWinner(dg, kg)
