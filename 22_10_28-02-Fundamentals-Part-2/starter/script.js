@@ -1,26 +1,22 @@
-const friend1 = "Michael" //** Declaramos variables */
-const friend2 = "Steven"
-const friend3 = "Peter"
+//** Excercise */
+//** Quiero crear un array, que a traves de una funcion me diga la edad de cada uno de los elementos */
+const calcAge = (birthYear) => {
+    return 2022 - birthYear
+}
 
-const friends = ["Michael", "Steven", "Peter"] //** Voy a crear un nuevo array */
-console.log(friends); //** Mostramos en consola */
+const years = [1990, 1967, 2002, 2010, 2018]
 
-const years = new Array(1991, 1984, 2008, 2020) //** Simplemente implementamos otro nuevo Array, diferente manera */
+console.log(calcAge(years[0])); //** Muestro en consola el primer elemento del arreglo */
 
-console.log(friends[2]); //** Invocamos una posicion del array friends */
+const age1 = calcAge(years[1]); //** Creo en nuevas variables cada edad */
+const age2 = calcAge(years[2]);
+const age3 = calcAge(years[3]);
+const age4 = calcAge(years[4]);
 
-console.log(friends.length); //** Asi vemos el tamaño del arreglo */
+console.log(age1, age2, age3, age4); //** Muestro en consola las edades */
 
-console.log(friends[friends.length -1]); //** Asi vemos el ultimo elemento del arreglo */
+const ageLast = calcAge(years[years.length -1]) //** Asi podemos ver el ultimo elemento utilizando hack en array */
+console.log(ageLast); //** Ultima edad en consola */
 
-friends[2] = 'Jay' //** Reasignamos el elemento de friends en el arreglo 3 */
-
-friends[3] = 'xD' //** Creamos un nuevo elemento */
-
-console.log(friends); 
-
-const firstName = 'Frank' //** Creo solo una nueva variable */
-const jonas = [firstName, 'Duran', 2022 - 1990, 'dev', friends] //** Creo un arreglo con infomacion */
-
-console.log(jonas);
-console.log(jonas.length); //** Para ver el tamaño del arreglo */
+const ages = [calcAge(years[0]), calcAge(years[years.length -1])] //** SAco primera edad y ultima */
+console.log(ages); //** Muestro en consola las edades */
