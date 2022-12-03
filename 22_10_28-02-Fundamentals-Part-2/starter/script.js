@@ -12,3 +12,4 @@ Recuerda IMC = masa / altura ** 2 = masa / (peso * peso). Usa Km y Mts
 Test Data: Marks weights 78 kg abnd is 1.69 m tall. John weights 92 kg and is 1.95 m tall
 */
 
+//** Friday.. code Review */
