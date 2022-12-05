@@ -1,47 +1,46 @@
-//** Reto de Codigo */
-/*
-Vamos a volver a Mark y John comparando sus IMC.
-Esta vez vamos a usar objetos para implementar el calculo
-Recuerda IMC = masa / altura ** 2 = masa / (peso * peso). Usa Km y Mts
+/* 
+    Declaramos dos objetos con estas caracteristicas
 
-1.Para cada uno de ellos crea un objeto con propiedades como sus nombres completos, masa y altura Mark Miller y John Smith
-2.Crea un metodo de calcIMC en cada uno de los objetos a calcular el IMC, el mismo metodo en ambos objetos y con propiedades y lo retornen del metodo
-3.Muestra en consola quien tiene un mayor IMC junto con su nombre completo y el del otro tambien
+    mark
+    Mark Miller
+    Peso 78 Kg
+    Altra 1.69 m
+    BMI=27.3
 
-Test Data: Marks weights 78 kg abnd is 1.69 m tall. John weights 92 kg and is 1.95 m tall
+    john
+    John Smith
+    Peso 92 Kg
+    Altura 1.95 m
+    BMI=24.2
+
+    Ambos objetos les asignamos el nombre a una funcion luego la inicializamos sin llamar a nada luego le damos instrucciones
+    con un nuevo this utilizamos esta instruccion (pintarron y retornmos la inicializacion de la funcion)
+
+    creamos un if simple y listo ahi mismo invocamos la funcion
 */
 
 const mark = {
-    firstName: 'Mark',
-    lastName: 'Miller',
-    weight: 78,
-    height: 1.69,
+    fullName: 'Mark Miller',
+    peso: 78,
+    altura: 1.69,
     calcBMI: function() {
-        this.bmi = this.weight / Math.pow(this.height, 2)
-        return this.bmi.toFixed(1)
+        this.imc = this.peso / (this.altura * this.altura)
+        return this.imc
     }
-};
+}
 
 const john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    weight: 92,
-    height: 1.95,
+    fullName: 'John Smith',
+    peso: 92,
+    altura: 1.95,
     calcBMI: function() {
-        this.bmi = this.weight / Math.pow(this.height, 2)
-        return this.bmi.toFixed(1)
+        this.imc = this.peso / (this.altura * this.altura)
+        return this.imc
     }
-};
+}
 
-mark.calcBMI();
-john.calcBMI();
-
-if (mark.calcBMI > john.calcBMI) {
-    console.log(`${mark.firstName} ${mark.lastName} weights ${mark.weight} kg and height is ${mark.height} and his bmi=${mark.bmi.toFixed(1)}
-${john.firstName} ${john.lastName} has a weight of ${john.weight} kg and height ${john.height} and his bmi=${john.bmi.toFixed(1)}
-that's mean ${john.firstName} wins against ${mark.firstName}`);
+if(mark.calcBMI() > john.calcBMI()) {
+    console.log(`Pesa mas Mark`);
 } else {
-    console.log(`${john.firstName} ${john.lastName} weights ${john.weight} kg and height is ${john.height} and his bmi=${john.bmi.toFixed(1)}
-${mark.firstName} ${mark.lastName} has a weight of ${mark.weight} kg and height ${mark.height} and his bmi=${mark.bmi.toFixed(1)}
-that's mean ${mark.firstName} wins against ${john.firstName}`);
+    console.log(`Pesa mas John`);
 }
