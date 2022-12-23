@@ -40,4 +40,18 @@ for (let i = 0; i <= bills.length -1; i++) {
     totals.push(tip + bills[i])
 }
 
-console.log(bills, tips, totals);
+console.log(`Bills= ${bills}`)
+console.log(`Tips= ${tips}`);
+console.log(`Totals= ${totals}`);
+
+const calcAverage = (arr) => {
+    let sum = 0;
+    for(let i = 0; i <= arr.length -1; i++) {
+        sum = sum + arr[i]
+    }
+
+    console.log(`Cuenta Total = ${sum}`);
+    return sum / arr.length
+} 
+
+console.log('Promedio a pagar ' + calcAverage(totals))
