@@ -21,3 +21,23 @@
  * Para calcular el promedio divide la suma y calcula antes con un length de el array por el numero de elementos
  * Llama la funcion con el array totales 
  */
+
+const calcTip = (bill) => {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20
+}
+
+const bills = [
+    22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
+]
+
+const tips = []
+
+const totals = []
+
+for (let i = 0; i <= bills.length -1; i++) {
+    const tip = calcTip(bills[i])
+    tips.push(tip)
+    totals.push(tip + bills[i])
+}
+
+console.log(bills, tips, totals);
