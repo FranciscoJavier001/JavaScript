@@ -22,36 +22,41 @@
  * Llama la funcion con el array totales 
  */
 
-const calcTip = (bill) => {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20
+
+
+//** //** //** //** //** //** //** //** //** //** //** //** //** //** //** //** //** //**  */ */ */ */ */ */ */ */ */ */ */ */ */ */ */ */ */ */
+
+const calcularPropina = (cuenta) => {
+    return cuenta >= 50 && cuenta <= 300 ? cuenta * .15 : cuenta * .20
 }
 
-const bills = [
+const cuentas = [
     22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
 ]
 
-const tips = []
+const propinas = []
 
-const totals = []
+const totales = []
 
-for (let i = 0; i <= bills.length -1; i++) {
-    const tip = calcTip(bills[i])
-    tips.push(tip)
-    totals.push(tip + bills[i])
+for (let i = 0; i <= cuentas.length -1; i++) {
+    const propina = calcularPropina(cuentas[i])
+    propinas.push(propina)
+    totales.push(propina + cuentas[i])
+
+    console.log(`Numero de cuenta ${i + 1} = $${cuentas[i]}`);
+    console.log(`Propina en cuenta ${i + 1} = $${propinas[i]}`);
+    console.log(`En la cuenta ${i + 1} el total es de $${totales[i]}`);
+    console.log(`***`);
 }
 
-console.log(`Bills= ${bills}`)
-console.log(`Tips= ${tips}`);
-console.log(`Totals= ${totals}`);
-
-const calcAverage = (arr) => {
-    let sum = 0;
-    for(let i = 0; i <= arr.length -1; i++) {
-        sum = sum + arr[i]
+const calcularPromedio = (arreglo) => {
+    let suma = 0
+    for (let i = 0; i <= arreglo.length -1; i++) {
+        suma = suma + arreglo[i]
     }
 
-    console.log(`Cuenta Total = ${sum}`);
-    return sum / arr.length
-} 
+    console.log(`Cuenta Total = $${suma}`);
+    return suma / arreglo.length
+}
 
-console.log('Promedio a pagar ' + calcAverage(totals))
+console.log(`Promedio a pagar por persona $${calcularPromedio(totales)}`);
