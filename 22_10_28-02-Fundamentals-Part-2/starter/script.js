@@ -12,7 +12,7 @@ const cuentas = [ //* Un arreglo con parametros dentro */
 ]
 
 //** Array vacios, que amos a agregarle objetos con el metodo */
-const propinas = [] //*  */
+const propinas = []
 
 const totales = []
 

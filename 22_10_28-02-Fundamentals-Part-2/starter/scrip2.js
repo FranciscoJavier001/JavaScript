@@ -1,41 +1,42 @@
-const calcularPropina = (cuenta) => {  //* Definimos el nombre de la funcion y el parametro que recibe */
-    if (cuenta > 0 && cuenta <= 300) { //* Creo una condicional con condiciones a cumplir */
-        cuenta = cuenta * .15 //* Ejecuto las instrucciones de la primera condicion */
-    } else { //* En caso contrario */
-        cuenta = cuenta * .20 //* Instrucciones a seguir */
+/* Problema
+    Un restaurant tiene una politica de si su consumo es de hasta 300 se agrega un 15%, en caso de ser mas se agrega del .20
+    Ingresar un arreglo de Cuentas
+    Crear un ciclo que recorra las cuentas, agrege la propina y el total
+    Mostrar por consola las cuentas, propinas y totales
+    Crear una funcion que divida el total de las cuentas entre el numero de cuentas
+    Mostrar por consola el promedio de cuentas totales entre las personas
+*/
+
+const calcularPropina = (cuenta) => {
+    if(cuenta <= 300) {
+        cuenta = cuenta * .15
+    } else {
+        cuenta = cuenta * .20
     }
-    return cuenta //* Regreso la cuenta, que son las instruccuibes a seguir */
+    return cuenta
 }
 
-const cuentas = [ //* Un arreglo con parametros dentro */
-    22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
-]
-
-//** Array vacios, que amos a agregarle objetos con el metodo */
+const cuentas = [100, 200, 300, 400]
 const propinas = []
-
 const totales = []
 
-for (let i = 0; i <= cuentas.length -1; i++) { //* Iteracion del arreglo que se repite hasta terminar todos */
-    const propina = calcularPropina(cuentas[i])  //* Declaro funcion, llama a calcularPropina y reciba las cuentas iteradas */
-    propinas.push(propina) //* Array definido antes, esta agregando el valor de la propina por instruccion calcularPropina */
-    totales.push(propina + cuentas[i]) //* Array definido antes, metodo agregar valor propina por funcion e iteracion de cuentas */
+for(i = 0; i <= cuentas.length -1; i++) {
+    const propina = calcularPropina(cuentas[i])
+    propinas.push(propina)
+    totales.push(cuentas[i] + propina)
 
-    //* Mostramos en consola */
-    console.log(`Numero de cuenta ${i + 1} = $${cuentas[i].toFixed(2)}`);
-    console.log(`Propina en cuenta ${i + 1} = $${propinas[i].toFixed(2)}`);
-    console.log(`En la cuenta ${i + 1} el total es de $${totales[i].toFixed(2)}`);
-    console.log(`***`);
+    console.log(cuentas[i]);
+    console.log(propinas[i]);
+    console.log(totales[i]);
 }
 
-const calcularPromedio = (arreglo) => { //* Definimos nueva funcion que recibe un parametro */ 
-    let suma = 0 //* Inicializamos una variable */
-    for (let i = 0; i <= arreglo.length -1; i++) { //* Creamos una iteracion donde voy a recorrer todo el arreglo */
-        suma = suma + arreglo[i] //* Sumamos el arreglo en cada iteracion */
+const calcularPromedio = (arr) => {
+    let suma = 0
+    for(i = 0; i <= arr.length -1; i++) {
+        suma = suma + arr[i]
     }
-
-    console.log(`Cuenta Total = $${suma.toFixed(2)}`); //* Mensaje en consola */
-    return suma / arreglo.length //* Retornamos esta respuesta por la cuenta individual */
+    return suma / arr.length
 }
 
-console.log(`Promedio a pagar por cuenta individual $${calcularPromedio(totales).toFixed(2)}`); //* Mensaje Consola */
+console.log(calcularPromedio(totales));
+
