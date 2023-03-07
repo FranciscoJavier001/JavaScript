@@ -1,50 +1,42 @@
-// Remember, we're gonna use strict mode in all scripts now!
-'use strict';
+//* Defino un arreglo con numeros y un error */
 
-/* "Hacer un arreglo de temperaturas, calcula la amplitus de temperaturas, tambien hay que mantener uno que diga error y muestre max y min" */
+//* Realizo una funcion, que reciba un parametro */
+//* Defino una variable maxima y una minima que reciban el parametro en su posicion 0 */
 
-// Enternder el problema
-// Cual es la amplitus de temperatura, la diferencia entre la mas alta y baja temperatura
-// Como calculo la maxima y minima temperatura
-// Que hace el mensaje de error
+//* Ciclo for, que inicializa la variable en 0, recorre todo el arreglo del paramtro recibido, sube una posicion */
+//* Defino un variable con la temperatura actual que inicie en la primer posicion del arreglo */
 
-// Subdividirlos en multiples problemas
-// Como ignorar los errores
-// Encontrar la temperatura maxima en el arreglo
-// Encontrar la temperatura minima en el arreglos
-// Substraer el minimo y el maximo y retornarlo
+//* Si el tipo de temperatura actual es diferente a un numero, solo continua */
 
-//*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  */
+//* Condicional si temperatura actual es mayor a maxima, que defina maxima como temperatura actual */
+//* Condicional si temperatura actual es menor a minima, que defina minima como temperatura actual */
 
-// const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+//* Mostrar por consola temperatura maxima y minima */
+//* Retornar la variable maxima menos minima que sera el rango de temperaturas
 
-// const amplitudTemperaturas = (temperaturas) => {
-//   let max = temperaturas[0];
-//   let min = temperaturas[0];
+//* Llamamos a la funcion de temperaturas recibiendo el array, por consola */
 
-//   for (let i = 0; i < temperaturas.length; i++) {
-//     const temperaturaActual = temperaturas[i];
-//     if (typeof temperaturaActual !== 'number') continue;
+//* Defino una nueva variable que llame una funcion con el array */
+//* Muestro en consola la variable definida */
 
-//     if (temperaturaActual > max) max = temperaturaActual;
-//     if (temperaturaActual < min) min = temperaturaActual;
-//   }
+const array = [-10, -5, -1, 0, 2, 4, 6, 8, 10, 12, 'error'];
 
-//   console.log(max, min);
-//   return max - min;
-// };
+const calcularTemperaturas = (arregloTemperaturas) => {
+  let min = arregloTemperaturas[0];
+  let max = arregloTemperaturas[0];
 
-// const ampplitud = amplitudTemperaturas(temperatures);
-// console.log(ampplitud);
+  for (i = 0; i < arregloTemperaturas.length; i++) {
+    const temperaturaActual = arregloTemperaturas[i]; //* Lo tenia en 0 y era en i */
 
-//*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  */
+    if (typeof temperaturaActual !== 'number') continue; //* Tenia la variable arregloTemperaturas y no temperaturaActual */
 
-//* Defino un arreglo */
-//* Defino una funcion que reciba una variable */
-//* Ingreso un valor minimo/max en el array de variable recibida */
-//* Ciclo que empieza en 0, recorre todo el arreglo recibido y aumenta contador */
-//* Variable que almacene la temperatura actual del arreglo recibido en una posicion */
-//* Si el tipo de temperatura actual es diferente a un numero solo continua */
-//* Si el tipo de la temperatura actual es mayor a max, entonces max es igual a la temperatura actual (inversa) */
-//* Llamamos por consola el maximo y minimo */
-//* Los retornamos */
+    if (temperaturaActual < min) min = temperaturaActual;
+    if (temperaturaActual > max) max = temperaturaActual;
+  }
+  console.log(
+    `La temperatura minima es ${min} y la temperatura maxima es de ${max}`
+  );
+  return `El rango de temperatura es de ${max - min} grados`;
+};
+
+console.log(calcularTemperaturas(array));
