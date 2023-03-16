@@ -1,7 +1,5 @@
 //* Crear un arreglo de numeros, que puedas mostrar su temperatura minima y maxima y su rango de temperaturas */
 
-//* Como se Programa */
-
 // const arregloTemp = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]; //* Primero debemos de crear un arreglo de numeros */
 
 const calculoTemperaturas = (t1, t2) => {
