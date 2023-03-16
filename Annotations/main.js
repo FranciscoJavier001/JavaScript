@@ -1,36 +1,27 @@
-// //** Declaracion de variables */
-// const age = prompt("Ingresa tu Edad")
+document.querySelector("#miBoton").addEventListener("click", hacerClic);
+//* Seleccionamos el elemento id, le damos una accion, que llame a esta funcion */
 
-// if(age < 18) {
-//     document.getElementById('mostrarPantalla').innerHTML=`Eres menor de edad`;
-//     console.log(`Eres menor de edad`);
-// } else {
-//     document.getElementById('mostrarPantalla').innerHTML=`Eres menor de edad`;
-//     console.log(`Eres mayor de edad`);
+// function hacerClic() {
+//   //* Defino una funcion que no recibe ningun parametro */
+//   const momentoActual = new Date();
+//   //   const actividadActual = parametroActividad;
+
+//   return console.log(momentoActual);
 // }
 
-// const amigos = `Francisco, Sergio`
-// const objetivos = `Exito profesional`
-// const amistad = (amigos, objetivos) => {
+function hacerClic(parametroComentario) {
+  //* Defino una funcion que no recibe ningun parametro */
+  const momentoActual = new Date();
+  const actividadActual = parametroComentario;
 
+  return console.log(momentoActual, actividadActual);
+}
+
+// function recibirComentario(comentario) {
+//   console.log("El comentario que recibimos fue: " + comentario);
 // }
 
-// const amistadSergio = (pasatiempos) => ({
-//     team: pasatiempos
-// })
+// // Ejemplo de uso de la función:
+// recibirComentario("Este es mi comentario");
 
-// const resultadoAmistad = amistadSergio('Stay together')
-// console.log(resultadoAmistad);
-
-
-
-
-
-const getMensaje = (aviso, advertencia) => ({
-    mensajeAviso: aviso,
-    mensajeAdvertencia: advertencia
-})
-
-const mensaje = getMensaje(`Deja de perder el tiempo`, `haz lo que te toca`)
-console.log(mensaje);
-document.getElementById("xD").innerHTML = mensaje
+// //* Lo que quiero hacer es que al llamar a la funcion tambien llame a un comentario */
