@@ -1,0 +1,22 @@
+body {
+  /* A todo el Body */
+  background-color: rgb(246, 242, 221); /* Fondo de Pantalla */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente de Texto */
+  font-size: 20px; /* Tamaño de la fuente */
+}
+
+h1 {
+  /* A todo los h1 */
+  font-size: 50px; /* Le cambio el tamaño a los h1 mas grande */
+}
+
+.primero {
+  /* A la clase primero */
+  color: red; /* Esta clase va a ser color rojo */
+}
+
+#nombre {
+  /* Al id nombre */
+  background-color: yellow; /* Le asigno un fondo amarillo */
+  border: 5px solid #cec8c8; /* Le pongo un borde al elemento */
+}
