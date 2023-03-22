@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Enlace al archivo CSS -->
+    <title>Adivina el Numero!</title>
+    <!-- Titulo en la etiqueta del navegador -->
+  </head>
+  <body>
+    <header>
+      <!-- Esto es de la cabecera -->
+      <h1>Adivina el Numero!</h1>
+      <!-- Titulo en el DOM -->
+      <p class="between">(Numero entre 1 y 20)</p>
+      <!-- Un simple parrafo con una clase -->
+      <button class="btn again">Reincio!</button>
+      <!-- Un boton con clases -->
+      <div class="number">?</div>
+      <!-- Un div con un texto y una clase -->
+    </header>
+    <main>
+      <section class="left">
+        <!-- Una etiqueta section con una clase -->
+        <input type="number" class="guess" />
+        <!-- Una etiqueta input que recibe un numero y una clase -->
+        <button class="btn check">Revisa!</button>
+        <!-- Una etiqueta button, con una clase -->
+      </section>
+      <section class="right">
+        <!-- Una etiqueta section con una clase -->
+        <p class="message">Comienza a Adivinar...</p>
+        <!-- Etiqueta p con una clase -->
+        <p class="label-score">💯 Puntaje: <span class="score">20</span></p>
+        <!-- Etiqueta p con una clase, luego etiqueta span con una clase -->
+        <p class="label-highscore">
+          <!-- Etiqueta p con una clase -->
+          🥇 Puntaje mas Alto: <span class="highscore">0</span>
+          <!-- Etiqueta span con una clase -->
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <!-- Link hacia el archivo js -->
+  </body>
+</html>
