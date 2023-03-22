@@ -1,17 +1,37 @@
+* {
+  /* A todo el DOM */
+  margin: 0; /* Todos los margenes sean de 0 */
+  padding: 0; /* Elimino el Padding en todo el DOM */
+  box-sizing: border-box; /* Los bordes son del tamaño del elemento */
+}
 body {
   /* A todo el Body */
   background-color: rgb(246, 242, 221); /* Fondo de Pantalla */
   font-family: Arial, Helvetica, sans-serif; /* Fuente de Texto */
   font-size: 20px; /* Tamaño de la fuente */
+  padding: 75px; /* Le damos ese espacio de afuera hacia adentro */
 }
 
 h1 {
   /* A todo los h1 */
-  font-size: 50px; /* Le cambio el tamaño a los h1 mas grande */
+  font-size: 35px; /* Le cambio el tamaño a los h1 mas grande */
+  margin-bottom: 25px; /* Le damos un margen hacia abajo a los elementos h1 */
 }
 
+h2 {
+  /* A los elementos h2 */
+  margin-bottom: 20px; /* Asignarle un margen inferior de 20px */
+  text-align: center; /* Ponemos el texto en el centro */
+}
+
+p {
+  /* A todos las etiquetas p */
+  margin-bottom: 20px; /* Un margen inferior de 20px */
+}
+
+p,
 .primero {
-  /* A la clase primero */
+  /* A las etiquetas p y a la clase primero */
   color: red; /* Esta clase va a ser color rojo */
 }
 
@@ -19,4 +39,30 @@ h1 {
   /* Al id nombre */
   background-color: yellow; /* Le asigno un fondo amarillo */
   border: 5px solid #cec8c8; /* Le pongo un borde al elemento */
+  width: 400px; /* Anchura de la caja */
+  padding: 25px; /* De adentro hacia afuera */
+  margin-top: 30px; /* Margen superior osea espacio de arriba */
+}
+
+input,
+button {
+  /* A la etiqueta input y button */
+  padding: 10px; /* Margen de adentro hacia afuera */
+  font-style: 16px; /* Tamaño de texto */
+}
+
+a {
+  /* A las etiquetas a */
+  background-color: yellowgreen; /* Fondo amarillo */
+}
+
+#imagen {
+  /* Al id imagen */
+  width: 300px; /* Le cambio el ancho */
+  height: 300px; /* Cambio a la altura del elemento */
+}
+
+#nombre h2 {
+  /* Al id nombre, pero al hijo h2 */
+  color: olivedrab;
 }
