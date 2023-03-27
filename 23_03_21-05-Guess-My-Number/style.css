@@ -21,11 +21,11 @@ body {
   /* background-color: #60b347; */
 }
 
-/* LAYOUT */
 header {
-  position: relative;
-  height: 35vh;
-  border-bottom: 7px solid #eee;
+  /* Etiqueta de la cabecera*/
+  position: relative; /* Que su posicionamiento sea en esta etiqueta */
+  height: 35vh; /* La altura a la cual se posicionara este elemento */
+  border-bottom: 7px solid #eee; /* Le vamos a asignar un borde a esta etiqueta */
 }
 
 main {
