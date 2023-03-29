@@ -46,79 +46,88 @@ main {
 }
 
 .right {
-  width: 52rem;
-  font-size: 2rem;
+  /* Es una etiqueta */
+  width: 52rem; /* Es el ancho de esta clase */
+  font-size: 2rem; /* Es el tamaño de texto */
 }
 
-/* ELEMENTS STYLE */
 h1 {
-  font-size: 4rem;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* Es para las etiquetas h1 */
+  font-size: 4rem; /* Tamaño del texto */
+  text-align: center; /* Centramos el texto al centro */
+  position: absolute; /* Aqui vamos a tomar el posicionamiento */
+  width: 100%; /* Que el ancho sea del 100% */
+  top: 52%; /* Espacio de arriba hacia abajo */
+  left: 50%; /* Espacio que dejamos de la izquierda a la derecha */
+  transform: translate(-50%, -50%); /* Movemos el texto */
 }
 
 .number {
-  background: #eee;
-  color: #333;
-  font-size: 6rem;
-  width: 15rem;
-  padding: 3rem 0rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  /* A la clase number */
+  background: #eee; /* Fondo donde esta el ? lo hacemos blanco */
+  color: #333; /* El signo ? lo ponemos color negro */
+  font-size: 6rem; /* Tamaño de texto mas grande */
+  width: 15rem; /* La anchura del reacuadro */
+  padding: 3rem 0rem; /* Del elemento hacia afuera le damos un espacio */
+  text-align: center; /* Centramos el texto */
+  position: absolute; /* Para poderlo mover por aqui */
+  bottom: 0; /* Para posicionarlo hasta abajo */
+  left: 50%; /* Para moverlo hacia el lado de la izquierda hacia la derecha */
+  transform: translate(-50%, 50%); /* Movemos el elemento */
 }
 
 .between {
-  font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  /* El elemento que esta posicionado a la derecha de numero */
+  font-size: 1.4rem; /* Tamaño del texto */
+  position: absolute; /* Para poderlo posicionar por el elemento */
+  top: 2rem; /* Para acomodarlo de arriba hacia abajo */
+  right: 2rem; /* Espacio de derecha a izquierda */
 }
 
 .again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  /* La clase del boron que dice Reinicio */
+  position: relative; /* Para poderlo mover donde quiera */
+  top: 2rem; /* Espacio de arriba hacia abajo */
+  left: 2rem; /* Espacio de izquierda hacia derecha */
 }
 
 .guess {
-  background: none;
-  border: 4px solid #eee;
-  font-family: inherit;
-  color: inherit;
-  font-size: 5rem;
-  padding: 2.5rem;
-  width: 25rem;
-  text-align: center;
-  display: block;
-  margin-bottom: 3rem;
+  /* La clase donde voy a poner el numero que voy a adivinar */
+  background: none; /* Sin fondo, pero se hace color negro */
+  border: 4px solid #eee; /* El borde del elemento */
+  font-family: inherit; /* La tipografia */
+  color: inherit; /* Para hacerlo el color del texto color blanco */
+  font-size: 5rem; /* Tamaño del texto */
+  padding: 2.5rem; /* Espacio del elemento hacia afuera, es el espacio */
+  width: 25rem; /* La anchura del elemento */
+  text-align: center; /* Centramos el texto */
+  display: block; /* Para que el elemento se comporte como un bloque */
+  margin-bottom: 3rem; /* Margen del elemento de arriba hacia abajo */
 }
 
 .btn {
-  border: none;
-  background-color: #eee;
-  color: #222;
-  font-size: 2rem;
-  font-family: inherit;
-  padding: 2rem 3rem;
-  cursor: pointer;
+  /* La clase donde dice Revisa */
+  border: none; /* Que no tenga ningun tipo de borde */
+  background-color: #eee; /* Que el fondo sea color blanco */
+  color: #222; /* Que el color del texto sea negro */
+  font-size: 2rem; /* Tamaño del texto */
+  font-family: inherit; /* La tipografia */
+  padding: 2rem 3rem; /* Espacio hacia afuera, primero es hacia arriba luego hacia los lados */
+  cursor: pointer; /* Cuando posicione el cursor que se ponga una manita */
 }
 
 .btn:hover {
-  background-color: #ccc;
+  /* Cuando le pase el mouse por encima */
+  background-color: #ccc; /* Que haga una transicion a un blanco mas oscuro el fondo */
 }
 
 .message {
-  margin-bottom: 8rem;
-  height: 3rem;
+  /* La clase donde dice Comienza a adivinar */
+  margin-bottom: 8rem; /* Espacio que dejamos de abajo hacia arriba */
+  height: 3rem; /* La altura del elemento */
 }
 
 .label-score {
-  margin-bottom: 2rem;
+  /* Clase donde dice Puntaje */
+  margin-bottom: 2rem; /* Margen que dejamos de abajo hacia arriba */
 }
