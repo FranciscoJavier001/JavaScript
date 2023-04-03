@@ -18,9 +18,9 @@ const x = () => {
 
 document.querySelector('.check').addEventListener('click', () => {
   //* A la clase check, le agrego el evento click que dispara esta funcion */
-  const guess = Number(document.querySelector('.guess').value); //* Creo una variable, que sea un numero, de la clase check y veo su valor */
+  const guess = Number(document.querySelector('.guess').value); //* Creo una variable, que sea un numero en la clase check y veo su valor */
 
-  console.log(guess, typeof guess); //* Por consola muestro el numero en la clase guess y su tipo */
+  console.log(guess, typeof guess); //* Por consola muestro el numero de la clase guess y su tipo */
 
   if (!guess) {
     //* Si el numero guess es diferente */
