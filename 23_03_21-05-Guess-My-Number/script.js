@@ -11,12 +11,14 @@
 // document.querySelector('.guess').value = 13; //* Asi le asigno un valor */
 // console.log(document.querySelector('.guess').value); //* Este valor no tengo nada, por eso no muestro nada en consola */
 
-const x = () => {
-  //* Creo una funcion llamada x */
-  console.log(23); //* Que muestra el numero 23 en consola */
-};
+// const x = () => {
+//   //* Creo una funcion llamada x */
+//   console.log(23); //* Que muestra el numero 23 en consola */
+// };
 
-document.querySelector('.check').addEventListener('click', () => {
+const number = Math.floor(Math.random() * 20); //* Solamente guardo una variable creada aleatoreamente como una constante y crea un numero hasta el 20*/
+
+document.querySelector('.check').addEventListener('click', function () {
   //* A la clase check, le agrego el evento click que dispara esta funcion */
   const guess = Number(document.querySelector('.guess').value); //* Creo una variable, que sea un numero en la clase check y veo su valor */
 
@@ -27,3 +29,5 @@ document.querySelector('.check').addEventListener('click', () => {
     document.querySelector('.message').textContent = '⛔️ Numero Incorrecto'; //* Reasigno un comentario en clase message en el DOM con nuevo mensaje */
   }
 });
+
+console.log(number); //* Muestro en consola el numero creado */
