@@ -17,6 +17,7 @@
 // };
 
 const number = Math.floor(Math.random() * 20); //* Solamente guardo una variable creada aleatoreamente como una constante y crea un numero hasta el 20*/
+document.querySelector('.number').textContent = number; //* div/.number va a cambiar texto por variable number */
 
 document.querySelector('.check').addEventListener('click', function () {
   //* A la clase check, le agrego el evento click que dispara esta funcion */
