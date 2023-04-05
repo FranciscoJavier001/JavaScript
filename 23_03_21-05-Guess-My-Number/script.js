@@ -22,23 +22,31 @@
 const secretNumber = Math.floor(Math.random() * 21); //* Variable que me da un numero del 0 al 20 */
 // document.querySelector('.number').textContent = secretNumber; //* <div/.number va a cambiar texto por una variable */
 
+let score = 20;
+
 document.querySelector('.check').addEventListener('click', function () {
   //* <button/.check, le agrego el evento click que dispara esta funcion */
   const guess = Number(document.querySelector('.guess').value); //* Variable que es el numero recibido en <input/.guess y veo su valor */
 
   console.log(guess, typeof guess); //* Muestro el numero guess y su tipo en consola si disparo el boton Revisa */
 
-  //* Creamos un estado inicial, que no va a cambiar, recomiendo el mismo que en HTML, luego ya ponemos los cambios de estado */
+  //* Creamos una funcion, que no mames... */
+
   if (!guess) {
-    //* Cuando !gues sea diferente a un numero */
-    document.querySelector('.message').textContent = 'Comienza a Adivinar...'; //* Muestro otro mensaje en el DOM */
-  } else if (guess == secretNumber) {
-    //* Si el numero guess es igual al numero secreto */
-    document.querySelector('.message').textContent = '✅ Numero Correcto'; //* Reasigno mensaje en <p/.message */
+  } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = '✅ Numero Correcto';
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = '📈 Muy alto';
+    score--;
+    document.querySelector('.score').textContent = score;
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = '📉 Muy bajo';
+    score--;
+    document.querySelector('.score').textContent = score;
+
+    if (score < 1) {
+      document.querySelector('.score').textContent = 'Perdiste';
+    }
   }
 });
 
