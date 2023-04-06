@@ -24,6 +24,13 @@ const secretNumber = Math.floor(Math.random() * 21); //* Variable que me da un n
 
 let score = 20; //* Valor inicial del score */
 
+const reloadPage = () => {
+  //* Funcion qur restaure la pagina */
+  window.location.reload(); //* Me lleva al inicio de la pagina */
+};
+
+document.querySelector('.again').addEventListener('click', reloadPage); //* En la clase again, ponte lista del evento click y ejecuta funcion */
+
 document.querySelector('.check').addEventListener('click', function () {
   //* <button/.check, le agrego el evento click que dispara esta funcion */
   const guess = Number(document.querySelector('.guess').value); //* Variable que es el numero recibido en <input/.guess y veo su valor */
