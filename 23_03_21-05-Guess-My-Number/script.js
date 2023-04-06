@@ -35,13 +35,19 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     //* Cuando guess y el secretNumber sean iguales */
     document.querySelector('.message').textContent = '✅ Numero Correcto'; //* Muestra este mensaje en esta clase */
+
+    document.querySelector('body').style.backgroundColor = '#60b347'; //* Cuando le atine al color tambien cambio el background */
+
+    document.querySelector('.number').style.width = '30rem'; //* Cambio el tamaño del background donde tengo el ? */
   } else if (guess > secretNumber) {
     //* Cuando guess sea mayor a secretNumber */
     document.querySelector('.message').textContent = '📈 Muy alto'; //* Muestra este mensaje en esta clase */
+
     score--; //* Disminuye el valor del score */
     document.querySelector('.score').textContent = score; //* Muestra este mensaje en esta clase */
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = '📉 Muy bajo'; //* Muestra este mensaje en esta clase */
+
     score--; //* Disminuye el valor del score */
     document.querySelector('.score').textContent = score; //* Muestra este mensaje en esta clase */
 
