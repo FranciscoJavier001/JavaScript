@@ -22,7 +22,7 @@
 const secretNumber = Math.floor(Math.random() * 21); //* Variable que me da un numero del 0 al 20 */
 // document.querySelector('.number').textContent = secretNumber; //* <div/.number va a cambiar texto por una variable */
 
-let score = 20;
+let score = 20; //* Valor inicial del score */
 
 document.querySelector('.check').addEventListener('click', function () {
   //* <button/.check, le agrego el evento click que dispara esta funcion */
@@ -30,22 +30,24 @@ document.querySelector('.check').addEventListener('click', function () {
 
   console.log(guess, typeof guess); //* Muestro el numero guess y su tipo en consola si disparo el boton Revisa */
 
-  //* Creamos una funcion, que no mames... */
-
   if (!guess) {
+    //* Cuando guess sea diferente */
   } else if (guess === secretNumber) {
-    document.querySelector('.message').textContent = '✅ Numero Correcto';
+    //* Cuando guess y el secretNumber sean iguales */
+    document.querySelector('.message').textContent = '✅ Numero Correcto'; //* Muestra este mensaje en esta clase */
   } else if (guess > secretNumber) {
-    document.querySelector('.message').textContent = '📈 Muy alto';
-    score--;
-    document.querySelector('.score').textContent = score;
+    //* Cuando guess sea mayor a secretNumber */
+    document.querySelector('.message').textContent = '📈 Muy alto'; //* Muestra este mensaje en esta clase */
+    score--; //* Disminuye el valor del score */
+    document.querySelector('.score').textContent = score; //* Muestra este mensaje en esta clase */
   } else if (guess < secretNumber) {
-    document.querySelector('.message').textContent = '📉 Muy bajo';
-    score--;
-    document.querySelector('.score').textContent = score;
+    document.querySelector('.message').textContent = '📉 Muy bajo'; //* Muestra este mensaje en esta clase */
+    score--; //* Disminuye el valor del score */
+    document.querySelector('.score').textContent = score; //* Muestra este mensaje en esta clase */
 
     if (score < 1) {
-      document.querySelector('.score').textContent = 'Perdiste';
+      //* Cuando score sea 0 */
+      document.querySelector('.score').textContent = 'Perdiste'; //* Muestra este mensaje en esta clase */
     }
   }
 });
