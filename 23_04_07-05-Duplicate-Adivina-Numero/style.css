@@ -1,1 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); /* Importo una fuente de Google */
+
+* {
+  /* Estilo a todo el DOM */
+  margin: 0; /* Sin Margen el DOM, todo quedo Arriba a la Izquierda */
+  padding: 0; /* Sin Padding, todo quedo arriba a la izquierda */
+  box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar */
+}
