@@ -16,6 +16,13 @@ html {
 body {
   /* A toda la etiqueta body en el DOM */
   font-family: "Press Start 2P", sans-serif; /* Utilizo la fuente que importe */
-  color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
+  /*color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
   background-color: #eee; /* Le pongo un fondo blanco a toda la pagina */
+}
+
+header {
+  /* A la etiqueta header */
+  position: relative; /* Que tome el posicionamiento del body */
+  height: 35vh; /* Le asigno un alto al header */
+  border-bottom: 7px solid #eee; /* El borde inferior, mide 7pz, es del estilo solid y su color es blanco/aperlado */
 }
