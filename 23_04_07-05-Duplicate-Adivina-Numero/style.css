@@ -26,3 +26,12 @@ header {
   height: 35vh; /* Le asigno un alto al header */
   border-bottom: 7px solid #eee; /* El borde inferior, mide 7pz, es del estilo solid y su color es blanco/aperlado */
 }
+
+main {
+  /* La seccion que contiene el selector de ambos lados */
+  height: 65vh; /* Esto es la altura */
+  /* color: #eee; /* Este es el color del texto */
+  display: flex; /* Para poder colocar los elementos donde quisiera y que los section sean independientes */
+  align-items: center; /* Loe items centrados, pero tanto de eje x y y */
+  justify-content: space-around; /* Para que tomen su espacio a cada lado */
+}
