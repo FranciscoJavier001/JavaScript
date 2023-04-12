@@ -1,4 +1,1 @@
-* {
-  /* Confirmo que CSS esta enlazado */
-  background-color: white;
-}
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); /* Importo una fuente de Google */
