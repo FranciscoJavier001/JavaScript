@@ -12,3 +12,10 @@ html {
   font-size: 62.5%; /* Le cambio el tamaño de fuente a todo el elemento html */
   box-sizing: border-box; /* Significa que el tamaño que asignemos se va a mantener aunque le ponga padding y margin */
 }
+
+body {
+  /* A toda la etiqueta body en el DOM */
+  font-family: "Press Start 2P", sans-serif; /* Utilizo la fuente que importe */
+  color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
+  background-color: #eee; /* Le pongo un fondo blanco a toda la pagina */
+}
