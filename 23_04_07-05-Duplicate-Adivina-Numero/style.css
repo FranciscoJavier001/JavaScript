@@ -35,3 +35,11 @@ main {
   align-items: center; /* Loe items centrados, pero tanto de eje x y y */
   justify-content: space-around; /* Para que tomen su espacio a cada lado */
 }
+
+.izquierda {
+  /* Esta es una clase en una etiqueta del selector */
+  width: 52rem; /* Le asigno un tamaño al selector izquierdo */
+  display: flex; /* Para poderlo mover aqui y ajustar su anchura como quiera */
+  flex-direction: column; /* Que ocupe todo el espacio, porque va a ser como columna */
+  align-items: center; /* Centro este elemento al centro */
+}
