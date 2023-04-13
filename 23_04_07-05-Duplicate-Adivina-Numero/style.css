@@ -49,3 +49,17 @@ main {
   width: 52rem; /* Le damos un tamaño al elemento */
   font-size: 2rem; /* Aumentamos el tamaño de texto */
 }
+
+h1 {
+  /* A todos los elementos h1 */
+  font-size: 4rem; /* Le cambio el tamaño al texto */
+  text-align: center; /* Centramos el texto */
+  position: absolute; /* El elemento se puede mover en todo este elemento */
+  width: 100%; /* Que ocupe toda la anchura este elemento */
+  top: 52%; /* Espacio de arriba hacia abajo */
+  left: 50%; /* Esta super a la derecha el elemento */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* El elemento lo centro mas a la izquierda y tambien lo pongo mas arriba */
+}
