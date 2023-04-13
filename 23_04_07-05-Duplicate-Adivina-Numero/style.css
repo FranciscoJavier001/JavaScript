@@ -43,3 +43,9 @@ main {
   flex-direction: column; /* Que ocupe todo el espacio, porque va a ser como columna */
   align-items: center; /* Centro este elemento al centro */
 }
+
+.derecha {
+  /* Una clase de una etiqueta Section */
+  width: 52rem; /* Le damos un tamaño al elemento */
+  font-size: 2rem; /* Aumentamos el tamaño de texto */
+}
