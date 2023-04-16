@@ -5,6 +5,7 @@
   margin: 0; /* Sin Margen el DOM, todo quedo Arriba a la Izquierda */
   padding: 0; /* Sin Padding, todo quedo arriba a la izquierda */
   box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar */
+  background-color: black;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 body {
   /* A toda la etiqueta body en el DOM */
   font-family: "Press Start 2P", sans-serif; /* Utilizo la fuente que importe */
-  /* color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
+  color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
   background-color: #eee; /* Le pongo un fondo blanco a toda la pagina */
 }
 
@@ -30,7 +31,7 @@ header {
 main {
   /* La seccion que contiene el selector de ambos lados */
   height: 65vh; /* Esto es la altura */
-  /* color: #eee; /* Este es el color del texto */
+  color: #eee; /* Este es el color del texto */
   display: flex; /* Para poder colocar los elementos donde quisiera y que los section sean independientes */
   align-items: center; /* Loe items centrados, pero tanto de eje x y y */
   justify-content: space-around; /* Para que tomen su espacio a cada lado */
