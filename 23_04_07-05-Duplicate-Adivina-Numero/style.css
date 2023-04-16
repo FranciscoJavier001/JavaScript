@@ -88,3 +88,10 @@ h1 {
   top: 2rem; /* Espacio de arriba hacia abajo */
   right: 2rem; /* Lo posicionamos de derecha a izquierda y le dejamos un espacio hacia la derecha */
 }
+
+.btnReinicio {
+  /* Etiqueta boton, con una clase */
+  position: relative; /* Va a estar dependiendo de la clase header el posicionamiento */
+  top: 2rem; /* Espacio de arriba hacia abajo */
+  left: 2rem; /* Espacio de la izquierda hacia la derecha */
+}
