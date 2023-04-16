@@ -80,3 +80,11 @@ h1 {
     50%
   ); /* Lo pongo un poco mas a la izquierda y un poco mas abajo osea primero x luego y */
 }
+
+.rangoNumero {
+  /* Parrafo con una clase */
+  font-size: 1.4rem; /* Le aumento el tamaño a la tipografia */
+  position: absolute; /* Que esta clase sea el padre, y de aqui podamo posicionar elementos y colocar esto donde quiera */
+  top: 2rem; /* Espacio de arriba hacia abajo */
+  right: 2rem; /* Lo posicionamos de derecha a izquierda y le dejamos un espacio hacia la derecha */
+}
