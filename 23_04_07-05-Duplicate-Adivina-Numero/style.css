@@ -109,3 +109,14 @@ h1 {
   display: block; /* Que se comporte como un bloque */
   margin-bottom: 3rem; /* MArgen que subimos de abajo hacia arriba */
 }
+
+.btn {
+  /* Personalizamos la etiqueta button que contiene la clase .btn */
+  border: none; /* Que no contenga ningun borde */
+  background-color: #eee; /* Le damos un fondo blanco al boton */
+  color: #222; /* Que las letras sean color negro */
+  font-size: 2rem; /* Le aumentamos el tamaño de la tipografia */
+  font-family: inherit; /* El tipo de tipografia es la que traemos de google fonts */
+  padding: 2rem 3rem; /* Espacio del elemento de dentro hacia afuera un poco mas largo hacia la derecha */
+  cursor: pointer; /* Que cuando le ponga el cursor salga una manita */
+}
