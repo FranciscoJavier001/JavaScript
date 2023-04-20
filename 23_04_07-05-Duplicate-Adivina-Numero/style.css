@@ -96,3 +96,16 @@ h1 {
   top: 2rem; /* Espacio de arriba hacia abajo */
   left: 2rem; /* Espacio de la izquierda hacia la derecha */
 }
+.adivinanza {
+  /* Al input en su clase adivinanza */
+  background: none; /* Sin ningun color de fondo */
+  border: 4px solid #eee; /* Borde del emento color blanco */
+  font-family: inherit; /* Tipografia del input */
+  color: inherit; /* Color de las letras */
+  font-size: 5rem; /* Le cambio el tamaño de texto dentro de la caja */
+  padding: 2.5rem; /* Le aumentamos el tamaño a la caja del input */
+  width: 25rem; /* Anchura del input */
+  text-align: center; /* Texto centrado al medio */
+  display: block; /* Que se comporte como un bloque */
+  margin-bottom: 3rem; /* MArgen que subimos de abajo hacia arriba */
+}
