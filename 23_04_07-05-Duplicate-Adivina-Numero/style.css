@@ -120,3 +120,8 @@ h1 {
   padding: 2rem 3rem; /* Espacio del elemento de dentro hacia afuera un poco mas largo hacia la derecha */
   cursor: pointer; /* Que cuando le ponga el cursor salga una manita */
 }
+
+.btn:hover {
+  /* A la etiqueta button, cuando le pasemos el mouse */
+  background-color: #ccc; /* El color se va a a hacer un poco mas gros */
+}
