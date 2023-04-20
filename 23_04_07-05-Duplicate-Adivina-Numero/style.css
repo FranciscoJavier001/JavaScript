@@ -5,7 +5,7 @@
   margin: 0; /* Sin Margen el DOM, todo quedo Arriba a la Izquierda */
   padding: 0; /* Sin Padding, todo quedo arriba a la izquierda */
   box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar */
-  background-color: black;
+  background-color: black; /* Que el fondo de color sea negro */
 }
 
 html {
@@ -25,7 +25,7 @@ header {
   /* A la etiqueta header */
   position: relative; /* Que tome el posicionamiento del body */
   height: 35vh; /* Le asigno un alto al header */
-  border-bottom: 7px solid #eee; /* El borde inferior, mide 7pz, es del estilo solid y su color es blanco/aperlado */
+  border-bottom: 7px solid #eee; /* El borde inferior, mide 7px, es del estilo solid y su color es blanco/aperlado */
 }
 
 main {
@@ -85,7 +85,7 @@ h1 {
 .rangoNumero {
   /* Parrafo con una clase */
   font-size: 1.4rem; /* Le aumento el tamaño a la tipografia */
-  position: absolute; /* Que esta clase sea el padre, y de aqui podamo posicionar elementos y colocar esto donde quiera */
+  position: absolute; /* Que esta clase sea el padre, y de aqui podamos posicionar elementos y colocar esto donde quiera */
   top: 2rem; /* Espacio de arriba hacia abajo */
   right: 2rem; /* Lo posicionamos de derecha a izquierda y le dejamos un espacio hacia la derecha */
 }
@@ -107,7 +107,7 @@ h1 {
   width: 25rem; /* Anchura del input */
   text-align: center; /* Texto centrado al medio */
   display: block; /* Que se comporte como un bloque */
-  margin-bottom: 3rem; /* MArgen que subimos de abajo hacia arriba */
+  margin-bottom: 3rem; /* Margen que subimos de abajo hacia arriba */
 }
 
 .btn {
@@ -123,7 +123,7 @@ h1 {
 
 .btn:hover {
   /* A la etiqueta button, cuando le pasemos el mouse */
-  background-color: #ccc; /* El color se va a a hacer un poco mas gros */
+  background-color: #ccc; /* El color se va a a hacer un poco mas gris */
 }
 
 .mensaje {
