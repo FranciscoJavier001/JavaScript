@@ -125,3 +125,9 @@ h1 {
   /* A la etiqueta button, cuando le pasemos el mouse */
   background-color: #ccc; /* El color se va a a hacer un poco mas gros */
 }
+
+.mensaje {
+  /* Parrafo con la clase mensaje, que dice el texto "Comienza a Adivinar... */
+  margin-bottom: 8rem; /* Espacio hacia abajo del texto */
+  height: 3rem; /* Le asigno un poco mas de altura */
+}
