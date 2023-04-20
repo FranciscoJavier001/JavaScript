@@ -131,3 +131,8 @@ h1 {
   margin-bottom: 8rem; /* Espacio hacia abajo del texto */
   height: 3rem; /* Le asigno un poco mas de altura */
 }
+
+.etiquetaPuntaje {
+  /* Etiqueta parrafo, con un texto, que contiene texto dentro de una etiqueta span */
+  margin-bottom: 2rem; /* Le damos un margen inferior */
+}
