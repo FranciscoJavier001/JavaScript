@@ -1,1 +1,1 @@
-// alert("Hola"); //* Funcionando */
+"use strict"; //* Forzamos el uso estrictor de JS */
