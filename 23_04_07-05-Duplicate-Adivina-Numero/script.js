@@ -7,4 +7,6 @@ let puntajeMasAlto = 0; //* Inicializamos el puntaje, importante definirlo aqui 
 document.querySelector(".btnReinicio").addEventListener("click", function () {
   //* En el DOM, seleccionamos una clase de una etiqueta button, le asignamos una accion click y que realice una funcion */
   puntaje = 20; //* Le asignamos un puntaje estatico */
+
+  numeroSecreto = Math.floor(Math.random() * 21); //* Reasigno un nuevo numero Secreto */
 });
