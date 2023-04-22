@@ -9,4 +9,5 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
   puntaje = 20; //* Le asignamos un puntaje estatico */
 
   numeroSecreto = Math.floor(Math.random() * 21); //* Reasigno un nuevo numero Secreto del 0 al 20 */
+  document.querySelector(".numero").textContent = "?"; //* Cambiamos el texto por un ? */
 });
