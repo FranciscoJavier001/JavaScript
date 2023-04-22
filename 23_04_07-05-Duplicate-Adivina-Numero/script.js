@@ -11,4 +11,6 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
   numeroSecreto = Math.floor(Math.random() * 21); //* Reasigno un nuevo numero Secreto del 0 al 20 */
   document.querySelector(".numero").textContent = "?"; //* Cambiamos el texto por un ? */
   document.querySelector(".mensaje").textContent = "Comienza a Adivinar..."; //* Cambiamos el mensaje */
+  document.querySelector("body").style.backgroundColor = "#222"; //* Le pongo un color negro a todo el body */
+  document.querySelector(".puntaje").textContent = puntaje; //* Voy a volver a colocar el puntaje en 20 */
 });
