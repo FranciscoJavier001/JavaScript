@@ -15,4 +15,5 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
   document.querySelector(".puntaje").textContent = puntaje; //* Voy a volver a colocar el puntaje en 20 */
   document.querySelector(".numero").style.width = "15rem"; //* Le cambio el tamaño que tenia desde el inicio asignado */
   document.querySelector(".adivinanza").value = ""; //* Dejamos el numero de la adivinanza en blanco */
+  console.log(numeroSecreto); //* Muestro en consola el numero secreto */
 });
