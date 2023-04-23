@@ -13,5 +13,5 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
   document.querySelector(".mensaje").textContent = "Comienza a Adivinar..."; //* Cambiamos el mensaje */
   document.querySelector("body").style.backgroundColor = "#222"; //* Le pongo un color negro a todo el body */
   document.querySelector(".puntaje").textContent = puntaje; //* Voy a volver a colocar el puntaje en 20 */
-  document.querySelector(".numero").style.width = "15rem"; //* Le cambio el tamaño que tenia desde el inicio asignado  */
+  document.querySelector(".numero").style.width = "15rem"; //* Le cambio el tamaño que tenia desde el inicio asignado */
 });
