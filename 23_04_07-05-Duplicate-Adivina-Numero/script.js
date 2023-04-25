@@ -17,3 +17,8 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
   document.querySelector(".adivinanza").value = ""; //* Dejamos el numero de la adivinanza en blanco */
   console.log(numeroSecreto); //* Muestro en consola el numero secreto */
 });
+
+document.querySelector(".btnRevisa").addEventListener("click", function () {
+  //* Etiqueta boton en su clase le pongo un evento click y que realice una funcion */
+  const adivinanza = Number(document.querySelector(".adivinanza").value); //* Veo el numero que esta en la etiqueta input de adivinanza */
+});
