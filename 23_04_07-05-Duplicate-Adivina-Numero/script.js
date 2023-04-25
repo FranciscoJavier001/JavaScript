@@ -21,4 +21,6 @@ document.querySelector(".btnReinicio").addEventListener("click", function () {
 document.querySelector(".btnRevisa").addEventListener("click", function () {
   //* Etiqueta boton en su clase le pongo un evento click y que realice una funcion */
   const adivinanza = Number(document.querySelector(".adivinanza").value); //* Veo el numero que esta en la etiqueta input de adivinanza */
+
+  console.log(adivinanza, typeof adivinanza); //* Muestro el numero del input, y su tipo */
 });
