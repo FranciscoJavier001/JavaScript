@@ -26,5 +26,8 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
 
   if (!adivinanza) {
     //* Cuando el numero en el input de adivinanza sea incorrecto */
+  } else if (adivinanza === numeroSecreto) {
+    //* Pero cuando sean iguales ambos numeros */
+    document.querySelector(".mensaje").textContent = "Numero Correcto"; //* Etiqueta Parrafo, se modifica el comentario, donde dice Comienza. */
   }
 });
