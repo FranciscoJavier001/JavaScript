@@ -29,5 +29,6 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
   } else if (adivinanza === numeroSecreto) {
     //* Pero cuando sean iguales ambos numeros */
     document.querySelector(".mensaje").textContent = "Numero Correcto"; //* Etiqueta Parrafo, se modifica el comentario, donde dice Comienza. */
+    document.querySelector(".numero").textContent = adivinanza; //* Se Coloca el numero secreto en el Div en la clase numero */
   }
 });
