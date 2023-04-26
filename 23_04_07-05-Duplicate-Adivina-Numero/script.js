@@ -23,4 +23,8 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
   const adivinanza = Number(document.querySelector(".adivinanza").value); //* Veo el numero que esta en la etiqueta input de adivinanza */
 
   console.log(adivinanza, typeof adivinanza); //* Muestro el numero del input, y su tipo */
+
+  if (!adivinanza) {
+    //* Cuando el numero en el input de adivinanza sea incorrecto */
+  }
 });
