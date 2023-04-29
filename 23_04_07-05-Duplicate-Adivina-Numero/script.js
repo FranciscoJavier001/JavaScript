@@ -31,5 +31,6 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     document.querySelector(".mensaje").textContent = "Numero Correcto"; //* Etiqueta Parrafo, se modifica el comentario, donde dice Comienza. */
     document.querySelector(".numero").textContent = adivinanza; //* Se Coloca el numero secreto en el Div en la clase numero */
     document.querySelector("body").style.backgroundColor = "#60b347";
+    document.querySelector(".numero").style.width = "30rem"; //* Le cambio el tamaño cuando adivino el numero */
   }
 });
