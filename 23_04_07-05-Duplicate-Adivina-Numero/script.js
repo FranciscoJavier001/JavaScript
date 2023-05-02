@@ -32,5 +32,11 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     document.querySelector(".numero").textContent = adivinanza; //* Se Coloca el numero secreto en el Div en la clase numero */
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector(".numero").style.width = "30rem"; //* Le cambio el tamaño cuando adivino el numero */
+
+    if (puntaje >= puntajeMasAlto) {
+      //* Si el puntaje es mayor al puntaje maximo entonces */
+      puntajeMasAlto = puntaje; //* Voy a colocar el puntaje en la variable puntaje maximo */
+      document.querySelector(".puntajeMaximo").textContent = puntaje;
+    }
   }
 });
