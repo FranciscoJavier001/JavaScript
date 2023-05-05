@@ -40,8 +40,13 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     }
   } else if (adivinanza > numeroSecreto) {
     //* Cuando adivinanza sea mayor al numero secreto */
-    document.querySelector(".mensaje").textContent = "Muy Alto";
+    document.querySelector(".mensaje").textContent = "Muy Alto"; //* Cuando el numero sea mayor ponemos mensaje DOM */
     puntaje--; //* Restamos un numero a puntaje */
     document.querySelector(".puntaje").textContent = puntaje; //* Cambiamos el numero del puntaje */
+  } else if (adivinanza < numeroSecreto) {
+    //* Cundo adivinanza sea menor al numero secreto */
+    document.querySelector(".mensaje").textContent = "Muy Bajo"; //* Cuando el numero secreto sea inferior mensaje DOM*/
+    puntaje--; //* Restamos el puntaje */
+    document.querySelector(".puntaje").textContent = puntaje; //* Colocamos el puntaje en el DOM */
   }
 });
