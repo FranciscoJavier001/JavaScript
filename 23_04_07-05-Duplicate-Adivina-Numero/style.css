@@ -17,7 +17,7 @@ body {
   /* A toda la etiqueta body en el DOM */
   font-family: "Press Start 2P", sans-serif; /* Utilizo la fuente que importe */
   color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
-  background-color: #eee; /* Le pongo un fondo blanco a toda la pagina */
+  background-color: #222; /* Le pongo un fondo negro a toda la pagina */
 }
 
 header {
