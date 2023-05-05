@@ -41,7 +41,7 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
   } else if (adivinanza > numeroSecreto) {
     //* Cuando adivinanza sea mayor al numero secreto */
     document.querySelector(".mensaje").textContent = "Muy Alto";
-    puntaje--;
-    document.querySelector(".puntaje").textContent = puntaje;
+    puntaje--; //* Restamos un numero a puntaje */
+    document.querySelector(".puntaje").textContent = puntaje; //* Cambiamos el numero del puntaje */
   }
 });
