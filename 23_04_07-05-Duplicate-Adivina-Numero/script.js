@@ -30,7 +30,7 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     //* Cuando el numero en el input de adivinanza sea incorrecto */
   } else if (adivinanza === numeroSecreto) {
     //* Pero cuando sean iguales ambos numeros */
-    document.querySelector(".mensaje").textContent = "Numero Correcto"; //* Etiqueta Parrafo, se modifica el comentario, donde dice Comienza. */
+    document.querySelector(".mensaje").textContent = "✅Numero Correcto"; //* Etiqueta Parrafo, se modifica el comentario, donde dice Comienza. */
     document.querySelector(".numero").textContent = adivinanza; //* Se Coloca el numero secreto en el Div en la clase numero */
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector(".numero").style.width = "30rem"; //* Le cambio el tamaño cuando adivino el numero */
@@ -42,17 +42,17 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     }
   } else if (adivinanza > numeroSecreto) {
     //* Cuando adivinanza sea mayor al numero secreto */
-    document.querySelector(".mensaje").textContent = "Muy Alto"; //* Cuando el numero sea mayor ponemos mensaje DOM */
+    document.querySelector(".mensaje").textContent = "📈Muy Alto"; //* Cuando el numero sea mayor ponemos mensaje DOM */
     puntaje--; //* Restamos un numero a puntaje */
     document.querySelector(".puntaje").textContent = puntaje; //* Cambiamos el numero del puntaje */
   } else if (adivinanza < numeroSecreto) {
     //* Cundo adivinanza sea menor al numero secreto */
-    document.querySelector(".mensaje").textContent = "Muy Bajo"; //* Cuando el numero secreto sea inferior mensaje DOM*/
+    document.querySelector(".mensaje").textContent = "📉Muy Bajo"; //* Cuando el numero secreto sea inferior mensaje DOM*/
     puntaje--; //* Restamos el puntaje */
     document.querySelector(".puntaje").textContent = puntaje; //* Colocamos el puntaje en el DOM */
   }
   if (puntaje < 1) {
     //* Cuando el sea 0 */
-    document.querySelector(".puntaje").textContent = "Perdiste";
+    document.querySelector(".puntaje").textContent = "Perdiste😭";
   }
 });
