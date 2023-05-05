@@ -4,6 +4,8 @@ let numeroSecreto = Math.floor(Math.random() * 21); //* Solicito un numero enter
 let puntaje = 20; //* Inicializamos el puntaje, importante definirlo aqui afuera */
 let puntajeMasAlto = 0; //* Inicializamos el puntaje, importante definirlo aqui afuera */
 
+console.log(numeroSecreto); //* Saner en consola cual es el numero secreto desde un inicio */
+
 document.querySelector(".btnReinicio").addEventListener("click", function () {
   //* En el DOM, seleccionamos una clase de una etiqueta button, le asignamos una accion click y que realice una funcion boton Reinicio */
   puntaje = 20; //* Le asignamos un puntaje estatico */
@@ -48,5 +50,9 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     document.querySelector(".mensaje").textContent = "Muy Bajo"; //* Cuando el numero secreto sea inferior mensaje DOM*/
     puntaje--; //* Restamos el puntaje */
     document.querySelector(".puntaje").textContent = puntaje; //* Colocamos el puntaje en el DOM */
+  }
+  if (puntaje < 1) {
+    //* Cuando el sea 0 */
+    document.querySelector(".puntaje").textContent = "Perdiste";
   }
 });
