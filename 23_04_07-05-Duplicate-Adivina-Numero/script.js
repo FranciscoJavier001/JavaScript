@@ -38,5 +38,10 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
       puntajeMasAlto = puntaje; //* Voy a colocar el puntaje en la variable puntaje maximo */
       document.querySelector(".puntajeMaximo").textContent = puntaje;
     }
+  } else if (adivinanza > numeroSecreto) {
+    //* Cuando adivinanza sea mayor al numero secreto */
+    document.querySelector(".mensaje").textContent = "Muy Alto";
+    puntaje--;
+    document.querySelector(".puntaje").textContent = puntaje;
   }
 });
