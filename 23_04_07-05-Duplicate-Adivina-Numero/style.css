@@ -70,7 +70,7 @@ h1 {
   color: #333; /* Que el signo de ? sea color blanco */
   font-size: 6rem; /* Hacemos mas grande la tipografia */
   width: 15rem; /* Le asignamos un ancho */
-  padding: 3rem, 0rem; /* Le asignamos un padding al elemento, que es de adentro hacia afuera, luego lo dejamos en 0 en el eje de las y */
+  padding: 3rem 0rem; /* Le asignamos un padding al elemento, que es de adentro hacia afuera, luego lo dejamos en 0 en el eje de las y */
   text-align: center; /* Centramos el elemento al centro */
   position: absolute; /* Aqui sera el padre para las futuras posiciones */
   bottom: 0; /* Lo bajo hasta abajo de toda su altura */
