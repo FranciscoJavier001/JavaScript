@@ -4,3 +4,26 @@
   padding: 0; /* Sin Padding */
   box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar y se hereda */
 }
+
+html {
+  /* A la etiqueta HTML */
+  font-size: 62.5%; /* Tamaño de texto */
+  box-sizing: border-box; /* Tamaño de la caja incliye contenido, relleno y borde, pero no margen */
+}
+
+body {
+  /* A la etiqueta body */
+  font-family: sans-serif; /* Le cambio la tipografia */
+  color: #333; /* Que sea color negro */
+  line-height: 1.5; /* Espacio del espaciado hacia de cada renglon */
+  height: 100vh; /* Que la altura sea del 100% de la pantalla */
+  position: relative; /* Para poderlo mover por aqui, pero sobre el body */
+  display: flex; /* Para que cada elemento pueda tener un tamaño personalizado o moverse libre por el body */
+  align-items: flex-start; /* Los items se alinean al principio del contenedor, con su tamaño ajustado */
+  justify-content: center; /* Los elementos se alinean en el centro del contenedor */
+  background: linear-gradient(
+    to top left,
+    #28b487,
+    #7dd56f
+  ); /* El fondo tiene un color, el primero de derecha y el segundo a la izquierda */
+}
