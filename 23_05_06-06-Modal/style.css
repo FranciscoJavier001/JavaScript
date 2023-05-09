@@ -1,0 +1,5 @@
+*{ /* A todo el documento */
+    margin: 0; /* Sin Margen */
+    padding: 0; /* Sin Padding */
+    box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar y se hereda */
+}
