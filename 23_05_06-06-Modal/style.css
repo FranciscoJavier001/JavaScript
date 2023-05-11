@@ -63,7 +63,26 @@ p {
   font-size: 1.8rem; /* Tamaño de texto */
 }
 
-.oculto {
-  /* Todo lo que diga oculto en CSS */
-  display: none; /* Lo desaparezco del DOM */
+/* .oculto { */
+/* Todo lo que diga oculto en CSS */
+/* display: none;  */
+/* Lo desaparezco del DOM */
+/* } */
+
+.modal {
+  /* A todas las clases que digan modal */
+  position: absolute; /* Se posiciona hasta arriba */
+  top: 50%; /* Lo bajo de arriba hacia abajo */
+  left: 50%; /* Le doy un espacio de izquierda hacia derecha */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Con esto queda centrado, primero eje x luego eje y */
+  width: 70%; /* Le cambio la anchura */
+
+  background-color: white; /* Le pongo un fondo blanco */
+  padding: 6rem; /* Espacio que va de adentro hacia afuera */
+  border-radius: 5px; /* Hago redondeado el fondo blanco las esquinas */
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); /* Sombreado de la caja, (desconocido,abajo,sombreado-rgba eje x-y, leve sombra */
+  z-index: 10; /* Sombra mas difuminada */
 }
