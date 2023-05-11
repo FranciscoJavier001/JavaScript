@@ -62,3 +62,8 @@ p {
   /* A la etiquetas p */
   font-size: 1.8rem; /* Tamaño de texto */
 }
+
+.oculto {
+  /* Todo lo que diga oculto en CSS */
+  display: none; /* Lo desaparezco del DOM */
+}
