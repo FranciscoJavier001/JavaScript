@@ -27,3 +27,15 @@ body {
     #7dd56f
   ); /* El fondo tiene un color, el primero de derecha y el segundo a la izquierda */
 }
+
+.mostrar-modal {
+  /* A esta clase, que es un boton */
+  font-size: 2rem; /* Tamaño de texto de los botones */
+  font-weight: 600; /* Es como hacerla negritas */
+  padding: 1.75rem 3.5rem; /* Espacio de adentro hacia afuera, primero hacia abajo, despues hacia los lados */
+  margin: 5rem 2rem; /* Separacion de modales, segundo es separacion de arriba hacia abajo */
+  border: none; /* Que los modales no tengan bordes */
+  background-color: #fff; /* Fondo de este elemento que sea blanco */
+  border-radius: 10rem; /* Que los modales esten redondeados */
+  cursor: pointer; /* Al pasarles el mouse, que salga la manita */
+}
