@@ -39,3 +39,15 @@ body {
   border-radius: 10rem; /* Que los modales esten redondeados */
   cursor: pointer; /* Al pasarles el mouse, que salga la manita */
 }
+
+.cerrar-modal {
+  /* A la clase cerrar-modal, que es un boton, que es solo una tachita */
+  position: absolute; /* Donde lo quiera poner, con que no tope con los otros contenedores */
+  top: 1.2rem; /* Lo bajo de arriba hacia abajo */
+  right: 2rem; /* Lo coloco de derecha a izquierda */
+  font-size: 5rem; /* Lo hago mas grande */
+  color: #333; /* Que sea color negro */
+  cursor: pointer; /* Que cuando este ahi se ponga una manita */
+  border: none; /* Que no tenga ningun borde */
+  background: none; /* Que no tenga ningun fondo */
+}
