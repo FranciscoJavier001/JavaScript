@@ -63,11 +63,10 @@ p {
   font-size: 1.8rem; /* Tamaño de texto */
 }
 
-/* .oculto { */
-/* Todo lo que diga oculto en CSS */
-/* display: none;  */
-/* Lo desaparezco del DOM */
-/* } */
+.oculto {
+  /* Todo lo que diga oculto en CSS */
+  display: none; /* Lo desaparezco del DOM */
+}
 
 .modal {
   /* A todas las clases que digan modal */
@@ -85,4 +84,16 @@ p {
   border-radius: 5px; /* Hago redondeado el fondo blanco las esquinas */
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); /* Sombreado de la caja, (desconocido,abajo,sombreado-rgba eje x-y, leve sombra */
   z-index: 10; /* Sombra mas difuminada */
+}
+
+.superposicion {
+  /* Estilos a la clase superposicion */
+  position: absolute; /* Qur abarque todo este div */
+  top: 0; /* Que este hasta arriba */
+  left: 0; /* Que este hasta la izquierda */
+  width: 100%; /* Que tenga un ancho del 100% de todo el ancho */
+  height: 100%; /* Que tenga una altura del 100% */
+  background-color: rgba(0, 0, 0, 0.6); /* Que tenga este fondo */
+  backdrop-filter: blur(3px); /* Que se vea difuminado */
+  z-index: 5; /* Que este atras, osea que haya capaz que lo tapen */
 }
