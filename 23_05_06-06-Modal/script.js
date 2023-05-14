@@ -9,5 +9,8 @@ console.log(btnsMostrarModal); //* Mostramos en consola los Modales */
 
 for (let i = 0; i < btnsMostrarModal.length; i++) {
   //* Recorro el arreglo de btnsMostrarModal con un for */
-  console.log(btnsMostrarModal[i].textContent); //* Muestro en consola cada uno de los elementos, con su contenido de texto */
+  btnsMostrarModal[i].addEventListener("click", function () {
+    //* A cada boton, con el evento click, lanzo funcion anonima que muestre en consola Click */
+    console.log("Click");
+  });
 }
