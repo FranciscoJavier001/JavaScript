@@ -14,8 +14,6 @@ for (let i = 0; i < btnsMostrarModal.length; i++) {
     console.log("Click");
     modal.classList.remove("oculto"); //* De esta manera remuevo esa clase y se va a mostrar */
     superposicion.classList.remove("oculto");
-
-    modal.style.display = "block";
   });
 }
 
