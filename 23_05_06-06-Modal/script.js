@@ -13,7 +13,7 @@ for (let i = 0; i < btnsMostrarModal.length; i++) {
     //* A cada boton, con el evento click, lanzo funcion anonima que muestre en consola Click */
     console.log("Click");
     modal.classList.remove("oculto"); //* De esta manera remuevo esa clase y se va a mostrar */
-    superposicion.classList.remove("oculto");
+    superposicion.classList.remove("oculto"); //* Entonces tambien le removemos la clase  */
   });
 }
 
