@@ -99,12 +99,12 @@ p {
 }
 
 footer {
-  height: auto;
-  background-color: #191919;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  /* Nueva Etiqueta en el Pie de Pagina */
+  background-color: #191919; /*  Color de Fondo */
+  color: white; /* La tipografia de las letras es blanca */
+  position: absolute; /* Esta en la posicion absoluta de la pagina, justo debajo del body */
+  bottom: 0; /* Es el espaciado hacia abajo del footer */
+  width: 100%; /* La anchura del elemento */
 }
 
 .container {
@@ -118,7 +118,7 @@ footer {
   line-height: 3vh;
 }
 
-.social-icon {
+.social {
   font-size: 3.5rem;
   margin: 1rem 1rem;
 }
