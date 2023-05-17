@@ -105,20 +105,18 @@ footer {
   position: absolute; /* Esta en la posicion absoluta de la pagina, justo debajo del body */
   bottom: 0; /* Es el espaciado hacia abajo del footer */
   width: 100%; /* La anchura del elemento */
-}
-
-.container {
-  margin: auto;
-  min-width: 100%;
-  text-align: center;
-  padding: 1vh;
-}
-
-.end {
-  line-height: 3vh;
+  text-align: center; /* Para centar el texto en el footer */
+  padding: 1.5vh; /* Espaciado en el footer */
+  line-height: 3vh; /* Espacio de cada linea */
 }
 
 .social {
+  display: inline-block;
   font-size: 3.5rem;
-  margin: 1rem 1rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.social:hover {
+  filter: saturate(100%) brightness(150%); /* Aumenta el brillo al pasar el cursor sobre el elemento */
+  transition-duration: 1.5s;
 }
