@@ -114,10 +114,11 @@ footer {
   /* Estilos personalizados a esta clase */
   display: inline-block; /* Que se comporten en bloque de linea */
   font-size: 3.5rem; /* Tamaño de cada elemento */
-  padding: 1.2rem 1.5rem; /* Separacion de los iconos sociables */
+  padding: 1.1rem 1.1rem; /* Separacion de los iconos sociables */
 }
 
 .social:hover {
-  filter: saturate(100%) brightness(150%); /* Aumenta el brillo al pasar el cursor sobre el elemento */
-  transition-duration: 1.5s;
+  /* Al pasarle el mouse por los iconos sociales */
+  filter: saturate(100%) brightness(150%); /* Saturarlos y aumenta el brillo */
+  transition-duration: 1.5s; /* Duracion de la transicion */
 }
