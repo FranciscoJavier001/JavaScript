@@ -1,0 +1,124 @@
+* {
+  /* A todo el documento */
+  margin: 0; /* Sin Margen */
+  padding: 0; /* Sin Padding */
+  box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar y se hereda */
+}
+
+html {
+  /* A la etiqueta HTML */
+  font-size: 62.5%; /* Tamaño de texto */
+  box-sizing: border-box; /* Tamaño de la caja incliye contenido, relleno y borde, pero no margen */
+}
+
+body {
+  /* A la etiqueta body */
+  font-family: sans-serif; /* Le cambio la tipografia */
+  color: #333; /* Que sea color negro */
+  line-height: 1.5; /* Espacio del espaciado hacia de cada renglon */
+  height: 100vh; /* Que la altura sea del 100% de la pantalla */
+  position: relative; /* Para poderlo mover por aqui, pero sobre el body */
+  display: flex; /* Para que cada elemento pueda tener un tamaño personalizado o moverse libre por el body */
+  align-items: flex-start; /* Los items se alinean al principio del contenedor, con su tamaño ajustado */
+  justify-content: center; /* Los elementos se alinean en el centro del contenedor */
+  background: linear-gradient(
+    to top left,
+    #28b487,
+    #7dd56f
+  ); /* El fondo tiene un color, el primero de derecha y el segundo a la izquierda */
+}
+
+.mostrar-modal {
+  /* A esta clase, que es un boton */
+  font-size: 2rem; /* Tamaño de texto de los botones */
+  font-weight: 600; /* Es como hacerla negritas */
+  padding: 1.75rem 3.5rem; /* Espacio de adentro hacia afuera, primero hacia abajo, despues hacia los lados */
+  margin: 5rem 2rem; /* Separacion de modales, segundo es separacion de arriba hacia abajo */
+  border: none; /* Que los modales no tengan bordes */
+  background-color: #fff; /* Fondo de este elemento que sea blanco */
+  border-radius: 10rem; /* Que los modales esten redondeados */
+  cursor: pointer; /* Al pasarles el mouse, que salga la manita */
+}
+
+.cerrar-modal {
+  /* A la clase cerrar-modal, que es un boton, que es solo una tachita */
+  position: absolute; /* Donde lo quiera poner, con que no tope con los otros contenedores */
+  top: 1.2rem; /* Lo bajo de arriba hacia abajo */
+  right: 2rem; /* Lo coloco de derecha a izquierda */
+  font-size: 5rem; /* Lo hago mas grande */
+  color: #333; /* Que sea color negro */
+  cursor: pointer; /* Que cuando este ahi se ponga una manita */
+  border: none; /* Que no tenga ningun borde */
+  background: none; /* Que no tenga ningun fondo */
+}
+
+h1 {
+  /* A las etiquetas h1-(Titulos) */
+  font-size: 2.5rem; /* Tamaño de texto */
+  margin-bottom: 2rem; /* Margen que dejamos hacia abajo de este elemento */
+}
+
+p {
+  /* A la etiquetas p */
+  font-size: 1.8rem; /* Tamaño de texto */
+}
+
+.oculto {
+  /* Todo lo que diga oculto en CSS */
+  display: none; /* Lo desaparezco del DOM */
+}
+
+.modal {
+  /* A todas las clases que digan modal */
+  position: absolute; /* Se posiciona hasta arriba */
+  top: 50%; /* Lo bajo de arriba hacia abajo */
+  left: 50%; /* Le doy un espacio de izquierda hacia derecha */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Con esto queda centrado, primero eje x luego eje y */
+  width: 70%; /* Le cambio la anchura */
+
+  background-color: white; /* Le pongo un fondo blanco */
+  padding: 6rem; /* Espacio que va de adentro hacia afuera */
+  border-radius: 5px; /* Hago redondeado el fondo blanco las esquinas */
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); /* Sombreado de la caja, (desconocido,abajo,sombreado-rgba eje x-y, leve sombra */
+  z-index: 10; /* Sombra mas difuminada */
+}
+
+.superposicion {
+  /* Estilos a la clase superposicion */
+  position: absolute; /* Qur abarque todo este div */
+  top: 0; /* Que este hasta arriba */
+  left: 0; /* Que este hasta la izquierda */
+  width: 100%; /* Que tenga un ancho del 100% de todo el ancho */
+  height: 100%; /* Que tenga una altura del 100% */
+  background-color: rgba(0, 0, 0, 0.6); /* Que tenga este fondo */
+  backdrop-filter: blur(3px); /* Que se vea difuminado */
+  z-index: 5; /* Que este atras, osea que haya capaz que lo tapen */
+}
+
+footer {
+  height: auto;
+  background-color: #191919;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  min-width: 100%;
+  text-align: center;
+  padding: 1vh;
+}
+
+.end {
+  line-height: 3vh;
+}
+
+.social-icon {
+  font-size: 3.5rem;
+  margin: 1rem 1rem;
+}

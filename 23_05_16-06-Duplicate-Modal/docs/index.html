@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Conexion a la Hoja de Estilos -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css" />
+    <title>Ventana Modal</title>
+    <!-- Etiqueta Titulo Ventana Navegador -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <button class="mostrar-modal">Mostrar Modal I</button>
+    <!-- Botones con clase -->
+    <button class="mostrar-modal">Mostrar Modal II</button>
+    <button class="mostrar-modal">Mostrar Modal III</button>
+
+    <div class="reinicio">
+      <!-- Creo nueva clase que me al darle click a la pantalla se reinicie el DOM -->
+      <div class="modal oculto">
+        <!-- Div con una clase -->
+        <button class="cerrar-modal">&times;</button>
+        <!-- Asi pongo la tachita para cerrar -->
+        <h1>Soy una ventana modal 😍</h1>
+        <!-- Titulo con Texto -->
+        <p>
+          <!-- Etiqueta Parrafo -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          cupiditate velit iste, in odit obcaecati est numquam soluta sed
+          explicabo possimus assumenda tempore facere ad nihil perspiciatis
+          mollitia amet consectetur? Doloremque consequatur ipsum exercitationem
+          quisquam eligendi accusamus assumenda beatae perspiciatis quo qui odit
+          maiores expedita, corporis architecto ipsam sapiente, labore illo
+          minima suscipit nam ex. Accusamus ipsam dolore nesciunt maxime.
+          Pariatur voluptatem dolorum exercitationem nemo voluptates laudantium
+          voluptas odit labore ullam? Vitae iure sed accusamus distinctio
+          voluptates facere, veniam repellendus eaque perspiciatis voluptas unde
+          rem voluptatum similique eius! Aperiam, nobis.
+        </p>
+      </div>
+      <div class="superposicion oculto"></div>
+    </div>
+    <!-- Div con clase -->
+
+    <footer>
+      <div class="container end">
+        <p>
+          &copy; Francisco Javier Martinez Duran
+          <br />
+          Fecha de Creacion: <span id="date">`${fechaFija}`</span>
+          <br />
+          Fecha Actual: <span id="date1"></span>
+        </p>
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/francisco-javier-martinez-duran-62a003a8/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="social-icon" href="" target="_blank"
+          ><i class="fas fa-code" style="color: rgb(59, 57, 60)"></i
+        ></a>
+        <a
+          class="social-icon"
+          href="https://github.com/FranciscoJavier001"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- Link al archivo JS -->
+  </body>
+</html>
