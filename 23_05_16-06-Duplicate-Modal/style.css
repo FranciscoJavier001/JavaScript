@@ -111,9 +111,10 @@ footer {
 }
 
 .social {
-  display: inline-block;
-  font-size: 3.5rem;
-  padding: 1.2rem 1.5rem;
+  /* Estilos personalizados a esta clase */
+  display: inline-block; /* Que se comporten en bloque de linea */
+  font-size: 3.5rem; /* Tamaño de cada elemento */
+  padding: 1.2rem 1.5rem; /* Separacion de los iconos sociables */
 }
 
 .social:hover {
