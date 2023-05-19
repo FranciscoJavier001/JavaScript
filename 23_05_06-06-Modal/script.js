@@ -16,4 +16,10 @@ for (let i = 0; i < btnsMostrarModal.length; i++) {
     modal.classList.remove("oculto"); //* De esta manera remuevo esa clase y se va a mostrar */
     superposicion.classList.remove("oculto"); //* Entonces tambien le removemos la clase  */
   });
+
+  btnCerrarModal.addEventListener("click", () => {
+    //* Nueva variable que es una funcion que obedece al evento click y llama a funcion */
+    modal.classList.add("oculto"); //* A la variable modal le volvemos a agregamos la clase oculto z-index */
+    superposicion.classList.add("oculto"); //* Variable superposicion le volvemos a agregamos la clase oculto z-index */
+  });
 }
