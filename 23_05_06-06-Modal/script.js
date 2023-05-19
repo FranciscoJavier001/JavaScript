@@ -16,12 +16,3 @@ for (let i = 0; i < btnsMostrarModal.length; i++) {
     superposicion.classList.remove("oculto"); //* Entonces tambien le removemos la clase  */
   });
 }
-
-const cerrarModal = () => {
-  //* Creo funcion que es anonima y no recibe parametros, pero ejecuta */
-  modal.classList.add("oculto"); //* Le agrega un nuevo atributo a la clase modal */
-  superposicion.classList.add("oculto");
-  console.log("Click En Pantalla"); //* Muestro en consola donde se dio el click */
-};
-
-reinicioDOM.addEventListener("click", cerrarModal); //* Donde le de click en la pantalla se cierra el modal */
