@@ -22,4 +22,10 @@ for (let i = 0; i < btnsMostrarModal.length; i++) {
     modal.classList.add("oculto"); //* A la variable modal le volvemos a agregamos la clase oculto z-index */
     superposicion.classList.add("oculto"); //* Variable superposicion le volvemos a agregamos la clase oculto z-index */
   });
+
+  superposicion.addEventListener("click", () => {
+    //* Variable, le asignamos un evento y le damos funcionalidades */
+    modal.classList.add("oculto"); //* A la variable modal le volvemos a agregamos la clase oculto z-index */
+    superposicion.classList.add("oculto"); //* Variable superposicion le volvemos a agregamos la clase oculto z-index */
+  });
 }
