@@ -4,7 +4,6 @@ const modal = document.querySelector(".modal"); //* La variable modal, va a ser 
 const superposicion = document.querySelector(".superposicion"); //* Le asigno esta clase del html a una variable */
 const btnCerrarModal = document.querySelector(".cerrar-modal"); //* Llamo a esta clase del html, personalizada en CSS */
 const btnsMostrarModal = document.querySelectorAll(".mostrar-modal"); //* Asigno una variable a todas las clases del html */
-const reinicioDOM = document.querySelector(".reinicio"); //* Tomo control del DOM para reiniciarlo */
 
 console.log(btnsMostrarModal); //* Mostramos en consola los Modales */
 
