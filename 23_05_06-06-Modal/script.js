@@ -12,13 +12,18 @@ const abrirModal = () => {
 for (let i = 0; i < btnsMostrarModal.length; i++) {
   //* Recorro el arreglo de btnsMostrarModal con un for */
   btnsMostrarModal[i].addEventListener("click", abrirModal); //* Cada ve que damos click en el Modal, evocamos la funcion */
-
-  const cerrarModal = () => {
-    //* Nueva variable, funcion de flecha que sigue instrucciones */
-    modal.classList.add("oculto"); //* A la variable modal le volvemos a agregamos la clase oculto z-index */
-    superposicion.classList.add("oculto"); //* Variable superposicion le volvemos a agregamos la clase oculto z-index */
-  };
-
-  btnCerrarModal.addEventListener("click", cerrarModal); //* Variable que esta en el DOM, le damos un evento y una funcion */
-  superposicion.addEventListener("click", cerrarModal); //* Variable que esta en el DOM, le damos un evento y una funcion */
 }
+
+const cerrarModal = () => {
+  //* Nueva variable, funcion de flecha que sigue instrucciones */
+  modal.classList.add("oculto"); //* A la variable modal le volvemos a agregamos la clase oculto z-index */
+  superposicion.classList.add("oculto"); //* Variable superposicion le volvemos a agregamos la clase oculto z-index */
+};
+
+btnCerrarModal.addEventListener("click", cerrarModal); //* Variable que esta en el DOM, le damos un evento y una funcion */
+superposicion.addEventListener("click", cerrarModal); //* Variable que esta en el DOM, le damos un evento y una funcion */
+
+document.addEventListener("keydown", (e) => {
+  //* Agrego un evento al DOM, que sea al precionar una tecla reciba el evento que se lanzo */
+  console.log(e.key); //* Muestro en consola el evento y muestro un atributo del evento */
+});
