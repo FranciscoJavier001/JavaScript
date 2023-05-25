@@ -6,3 +6,9 @@
   padding: 0; /* Eliinamos el margen de adentro hacia afuera del elemento */
   box-sizing: inherit; /* Tamaño de cajas sera personalizado y se hereda a las demas cajas */
 }
+
+html {
+  /* A la etiqueta Html se le agregan estos estilos */
+  font-size: 62.5%; /* Reduci el tamaño de texto */
+  box-sizing: border-box; /* Con esto ajustamos el tamaño de las cajas */
+}
