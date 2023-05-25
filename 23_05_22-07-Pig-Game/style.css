@@ -1,1 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); /* Importo una nueva tipografia */
+
+* {
+  /* A Todo el documento */
+  margin: 0; /* Eliminamos todos los margenes en el Documento */
+  padding: 0; /* Eliinamos el margen de adentro hacia afuera del elemento */
+  box-sizing: inherit; /* Tamaño de cajas sera personalizado y se hereda a las demas cajas */
+}
