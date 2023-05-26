@@ -12,3 +12,19 @@ html {
   font-size: 62.5%; /* Reduci el tamaño de texto */
   box-sizing: border-box; /* Con esto ajustamos el tamaño de las cajas */
 }
+
+body {
+  /* A la etiqueta body */
+  font-family: "Nunito", sans-serif; /* Le cambie la tipografia a la que importe arriba (Nombre Importante) */
+  font-weight: 400; /* Las letras las hago de tamaño mas grande */
+  height: 100vh; /* La altura del body va a ser todo el Dom de alto */
+  color: #333; /* Color del texto Negro */
+  background-image: linear-gradient(
+    to top left,
+    #753682 10%,
+    #bf2e34 90%
+  ); /* Tipo picaso, va hacia arriba a la izquierda y el porcentaje es lo que ocupa del espacio +=- & -=+ */
+  display: flex; /* Que todo quepa segun su contenido */
+  align-items: center; /* Movemos hacia el medio de la pagina, todo el texto del body */
+  justify-content: center; /* Centramos todo el contenido a la mitad del DOM */
+}
