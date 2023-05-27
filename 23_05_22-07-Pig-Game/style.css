@@ -28,3 +28,24 @@ body {
   align-items: center; /* Movemos hacia el medio de la pagina, todo el texto del body */
   justify-content: center; /* Centramos todo el contenido a la mitad del DOM */
 }
+/* Diseño */
+main {
+  /* A la etiqueta main, le voy a dar estilos personalizados, que es a todo */
+  position: relative; /* La posicion se va a mantener en esta etiqueta, absolute es la etiqueta de mayor gerarquia */
+  width: 100rem; /* Es la anchura de este elemento, lo hice mas grande */
+  height: 60rem; /* Altura, lo hice mas grande */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Es color blanco de fondo del elemento, pero el blanco lo bajo de tonalidad de 1 a .3 mas gris */
+  backdrop-filter: blur(
+    200px
+  ); /* Es el desenfoque para hacerlos parcealmente transparentes */
+  filter: blur(); /* El filtro que voy a aplicar va a ser el desenfoque */
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25); /* Sombreado, primero es eje x, y, difuminado; color sombra, bajo intensidad */
+  border-radius: 9px; /* De la caja, le voy a dar borde redondeado */
+  overflow: hidden; /* Lo oculto para que no se desborde el contenido en el contenedor que lo tiene */
+  display: flex; /* Para que el contenido se ajuste a lo que debe de medir el contenedor */
+}
