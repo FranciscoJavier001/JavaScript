@@ -49,3 +49,13 @@ main {
   overflow: hidden; /* Lo oculto para que no se desborde el contenido en el contenedor que lo tiene */
   display: flex; /* Para que el contenido se ajuste a lo que debe de medir el contenedor */
 }
+
+.player {
+  /* Son las secciones donde iban los player, y abajo de las sections estaba lo de los botones(imagen) */
+  flex: 50%; /* Que las secciones de los jugadores se dividan en el 50% del Ancho que tenemos */
+  padding: 9rem; /* Margen de adentro hacia afuera del elemento */
+  display: flex; /* Para que todo se acomodem en filas siguientes, cada etiqueta, pero los div se quedan juntos */
+  flex-direction: column; /* Que la alineacion flex no sea en columnas */
+  align-items: center; /* Voy a alinear los tag's mayores al centro */
+  transition: all 1s; /* Esto quiere decir, que vengan desde donde estaban al principio, pero que termine donde yo digo, a todo */
+}
