@@ -67,8 +67,6 @@ main {
   text-transform: uppercase; /* Que el texto sea Mayuscula */
   letter-spacing: 2px; /* Que esta sea la separacion de las letras */
   word-spacing: 3px; /* Separacion entre cada oracion */
-  /*  */
   font-weight: 400; /* Seria la anchura de las letras, pero no se distingue */
-  /*  */
   margin-bottom: 1rem; /* El margen desde el h2 hacia abajo  */
 }
