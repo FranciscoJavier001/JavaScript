@@ -59,3 +59,16 @@ main {
   align-items: center; /* Voy a alinear los tag's mayores al centro */
   transition: all 1s; /* Esto quiere decir, que vengan desde donde estaban al principio, pero que termine donde yo digo, a todo */
 }
+/* Elementos */
+.name {
+  /* A la Clase Name de la etiqueta h2 */
+  position: relative; /* Estas trabajando en dentro de ete elemento, el lugar donde te posicionare */
+  font-size: 4rem; /* Mayor tamaño de letra */
+  text-transform: uppercase; /* Que el texto sea Mayuscula */
+  letter-spacing: 2px; /* Que esta sea la separacion de las letras */
+  word-spacing: 3px; /* Separacion entre cada oracion */
+  /*  */
+  font-weight: 400; /* Seria la anchura de las letras, pero no se distingue */
+  /*  */
+  margin-bottom: 1rem; /* El margen desde el h2 hacia abajo  */
+}
