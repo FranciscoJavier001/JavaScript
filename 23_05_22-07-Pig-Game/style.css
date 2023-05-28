@@ -75,4 +75,6 @@ main {
   /* A la clase score, que esta en una etiqueta parrafo */
   font-size: 8rem; /* Al numero, le aumentamos el tamaño de letra */
   font-weight: 300; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
+  color: #c7365f; /* Se le cambia el color a los numeros */
+  margin-bottom: auto; /* Que el margen de este elemento sea abajo */
 }
