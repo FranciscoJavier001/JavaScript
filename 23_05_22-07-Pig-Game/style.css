@@ -78,3 +78,23 @@ main {
   color: #c7365f; /* Se le cambia el color a los numeros */
   margin-bottom: auto; /* Que el margen de este elemento sea abajo */
 }
+
+.player--active {
+  /* A esta clase le damos estos estilos */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* A la clase del jugador actual, le damos un fondo de gris, lo ultimo es la opacidad/transparencia */
+}
+.player--active .name {
+  font-weight: 700; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
+}
+.player--active .score {
+  font-weight: 700; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
+}
+
+.player--active .current {
+  opacity: 1; /* Para que no se oculte con la opacidad del .player--active donde esta el current y el numero */
+}
