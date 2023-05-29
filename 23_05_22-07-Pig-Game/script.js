@@ -7,3 +7,5 @@ const score0El = document.querySelector("#score--0"); //* Asignacion de Elemento
 const score1El = document.querySelector("#score--1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 const current0El = document.querySelector("#current--0"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 const current1El = document.querySelector("#current-1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
+
+const diceEl = document.querySelector(".dice"); //* Asignacion de una clase a una etiqueta img */
