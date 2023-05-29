@@ -98,3 +98,15 @@ main {
 .player--active .current {
   opacity: 1; /* Para que no se oculte con la opacidad del .player--active donde esta el current y el numero */
 }
+
+.current {
+  /* A donde van el current y el numero */
+  background-color: #c7365f; /* Le Asigno un fondo de pantalla */
+  opacity: 0.8; /* Lo hago un poco mas opaco, para que no tape al otro */
+  border-radius: 9px; /* Al background rosa le asigno un borde redondeado */
+  color: #fff; /* Que el texto sea color blanco */
+  width: 65%; /* Le asigno una anchura, segun su elemento, osea abarca el porcentaje correspondiente al 100 del elemento */
+  padding: 2rem; /* Le damod un margen de adentro hacia afuera */
+  text-align: center; /* Quiero solo el texto alineado en medio */
+  transition: all 0.1s; /* Le doy una transicion a este elemento de 1 seg que venga desde donde inicia */
+}
