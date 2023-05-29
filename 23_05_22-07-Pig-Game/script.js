@@ -13,3 +13,5 @@ const diceEl = document.querySelector(".dice"); //* Asignacion de una clase a un
 const btnNew = document.querySelector(".btn--new"); //* Asignacion de una clase a una etiqueta Button */
 const btnRoll = document.querySelector("btn--roll"); //* Asignacion de una clase a una etiqueta Button */
 const btnHold = document.querySelector(".btn--hold"); //* Asignacion de una clase a una etiqueta Button */
+
+let scores, currentScore, activePlayer, playing; //* Defino nuevas variables que pueden cambiar */
