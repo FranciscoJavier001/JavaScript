@@ -118,3 +118,8 @@ main {
   font-size: 1.7rem; /* Tamaño de la fuente */
   color: #ddd; /* El color de las letras o el elemento */
 }
+
+.current-score {
+  /* Personalizacion a una etiqueta P */
+  font-size: 3.5rem; /* Le asigno un mayor tamaño de letra */
+}
