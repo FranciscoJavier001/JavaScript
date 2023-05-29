@@ -6,7 +6,7 @@ const player1El = document.querySelector(".player--1"); //* Asignacion de Elemen
 const score0El = document.querySelector("#score--0"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 const score1El = document.querySelector("#score--1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 const current0El = document.querySelector("#current--0"); //* Asignacion de Elemento en el DOM en Etiqueta P */
-const current1El = document.querySelector("#current-1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
+const current1El = document.querySelector("#current--1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 
 const diceEl = document.querySelector(".dice"); //* Asignacion de una clase a una etiqueta img */
 
@@ -28,5 +28,7 @@ const init = () => {
   score1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   current0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   current1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
+
+  diceEl.classList.remove("hidden"); //* Etiqueta Img, le agrege una nueva clase */
 };
 init(); //* Inicializo la funcion para confirmar que todo funcione */
