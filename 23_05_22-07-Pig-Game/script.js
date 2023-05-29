@@ -15,3 +15,12 @@ const btnRoll = document.querySelector("btn--roll"); //* Asignacion de una clase
 const btnHold = document.querySelector(".btn--hold"); //* Asignacion de una clase a una etiqueta Button */
 
 let scores, currentScore, activePlayer, playing; //* Defino nuevas variables que pueden cambiar */
+
+//* Condiciones Iniciales */
+const init = () => {
+  //* Esta es una funcion de flecha anonima porque no recibe nada */
+  scores = [0, 0]; //* Le asigno un valor a este Arreglo */
+  currentScore = 0; //* Inicializo esta variable en 0 */
+  activePlayer = 0; //* Inicializo esta variable en 0 */
+  playing = true; //* La inicializo con un valor booleano */
+};
