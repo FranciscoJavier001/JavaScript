@@ -5,3 +5,5 @@ const player0El = document.querySelector(".player--0"); //* Asignacion de Elemen
 const player1El = document.querySelector(".player--1"); //* Asignacion de Elemento en el DOM en Etiqueta Section */
 const score0El = document.querySelector("#score--0"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 const score1El = document.querySelector("#score--1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
+const current0El = document.querySelector("#current--0"); //* Asignacion de Elemento en el DOM en Etiqueta P */
+const current1El = document.querySelector("#current-1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
