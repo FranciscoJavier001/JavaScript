@@ -23,4 +23,9 @@ const init = () => {
   currentScore = 0; //* Inicializo esta variable en 0 */
   activePlayer = 0; //* Inicializo esta variable en 0 */
   playing = true; //* La inicializo con un valor booleano */
+
+  score0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
+  score1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
+  current0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
+  current1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
 };
