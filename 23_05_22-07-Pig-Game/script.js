@@ -26,6 +26,7 @@ const init = () => {
 
   score0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   score1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
+
   current0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   current1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
 
