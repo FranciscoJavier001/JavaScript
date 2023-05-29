@@ -29,3 +29,4 @@ const init = () => {
   current0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   current1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
 };
+init(); //* Inicializo la funcion para confirmar que todo funcione */
