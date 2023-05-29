@@ -9,3 +9,7 @@ const current0El = document.querySelector("#current--0"); //* Asignacion de Elem
 const current1El = document.querySelector("#current-1"); //* Asignacion de Elemento en el DOM en Etiqueta P */
 
 const diceEl = document.querySelector(".dice"); //* Asignacion de una clase a una etiqueta img */
+
+const btnNew = document.querySelector(".btn--new"); //* Asignacion de una clase a una etiqueta Button */
+const btnRoll = document.querySelector("btn--roll"); //* Asignacion de una clase a una etiqueta Button */
+const btnHold = document.querySelector(".btn--hold"); //* Asignacion de una clase a una etiqueta Button */
