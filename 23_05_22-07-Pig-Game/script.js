@@ -33,5 +33,8 @@ const init = () => {
 
   player0El.classList.remove("player--winner"); //* Creo nueva clase, asignativa al ganador etiqueta Section */
   player1El.classList.remove("player--winner"); //* Creo nueva clase, asignativa al ganador etiqueta Section */
+
+  player0El.classList.add("player--active"); //* Añado nueva clase al Jugador Activo */
+  player1El.classList.remove("player--active"); //* Remuevo la clase del jugador Activo */
 };
 init(); //* Inicializo la funcion para confirmar que todo funcione */
