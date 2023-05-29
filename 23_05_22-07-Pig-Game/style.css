@@ -110,3 +110,11 @@ main {
   text-align: center; /* Quiero solo el texto alineado en medio */
   transition: all 0.1s; /* Le doy una transicion a este elemento de 1 seg que venga desde donde inicia */
 }
+
+.current-label {
+  /* Etiqueta P de parrafos */
+  text-transform: uppercase; /* Mensaje de current ya quedo activo */
+  margin-bottom: 1rem; /* Que tenga un mayor espacio hacia abajo */
+  font-size: 1.7rem; /* Tamaño de la fuente */
+  color: #ddd; /* El color de las letras o el elemento */
+}
