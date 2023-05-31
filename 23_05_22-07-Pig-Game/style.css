@@ -155,3 +155,10 @@ main {
   border-radius: 50rem; /* Que el borde sea redondeado */
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3); /* Es el sombreado x,y,difuminado, lo otro es el color */
 }
+
+.btn::first-letter {
+  /* El primer Elemento, osea el emoji */
+  font-size: 2.4rem; /* Aumentale el tamaño  */
+  display: inline-block; /* Bloques donde establezco altura y ancho y respeta margenes y rellenos*/
+  margin-right: 0.7rem; /* Margen del elemento a la derecha */
+}
