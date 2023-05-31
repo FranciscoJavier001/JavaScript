@@ -123,3 +123,35 @@ main {
   /* Personalizacion a una etiqueta P */
   font-size: 3.5rem; /* Le asigno un mayor tamaño de letra */
 }
+
+/* Elementos en Posicion Absoluta */
+.btn {
+  /* Esta Clase se va a posicionar dentro de la etiqueta superior a esta, que es main */
+  position: absolute;
+  left: 50%; /* Posiciona esto a la mitad */
+  transform: translateX(
+    -50%
+  ); /* Asi lo centro mas, porque pierde porcentaje en eje x */
+  color: #444; /* Que las letras de los colores sean balnca */
+  background: none; /* Que no tengan ningun tipo de background, transparentes */
+  border: none; /* No quiero que esto tenga ningun borde */
+  font-family: inherit; /* La fuente la mantiene heredada de la etiqueta de arriba */
+  font-size: 1.8rem; /* Le cambio el tamaño de fuente */
+  text-transform: uppercase; /* Que el texto sea mayusculas */
+  cursor: pointer; /* Que al pasar el mouse por este elemento, salga una mano */
+  font-weight: 400; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
+  transition: all 0.2s; /* Que vengan de donde estaban cuando los posicione */
+
+  background-color: white; /* Que tengan un fondo de pantalla blanco */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Que tenga un color un poco mas trasparente */
+  backdrop-filter: blur(10px); /* Este como que les da un filtro mas blanco */
+
+  padding: 0.7rem 2.5rem; /* Tomaron Margen de adentro hacia afuera Y, luego tomaron un poco mas X */
+  border-radius: 50rem; /* Que el borde sea redondeado */
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3); /* Es el sombreado x,y,difuminado, lo otro es el color */
+}
