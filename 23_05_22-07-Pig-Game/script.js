@@ -45,7 +45,7 @@ const switchPlayer = () => {
   document.getElementById(`current--${activePlayer}`).textContent = 0; //* Id de <div> que va puntaje abajo, cuadro rosa */
   currentScore = 0; //* Esto es el valor que debe de tener el valor actual */
 
-  activePlayer = activePlayer === 0 ? 1 : 0; //* Jugador activo tienen 0, cambialo 1, sino dejalo en 0 */
+  activePlayer = activePlayer === 0 ? 1 : 0; //* Jugador activo tienen 0, Dejalo en 1, sino dejalo en 0 */
 
   player0El.classList.toggle("player--active"); //* Cambio de turno al jugador 1 */
   player1El.classList.toggle("player--active"); //* Cambio de turno del jugadoe 0 */
