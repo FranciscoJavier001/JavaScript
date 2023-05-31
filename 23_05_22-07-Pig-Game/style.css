@@ -128,7 +128,7 @@ main {
 .btn {
   /* Esta Clase se va a posicionar dentro de la etiqueta superior a esta, que es main */
   position: absolute;
-  left: 50%; /* Posiciona esto a la mitad */
+  left: 47%; /* Posiciona esto a la mitad */
   transform: translateX(
     -50%
   ); /* Asi lo centro mas, porque pierde porcentaje en eje x */
@@ -161,4 +161,17 @@ main {
   font-size: 2.4rem; /* Aumentale el tamaño  */
   display: inline-block; /* Bloques donde establezco altura y ancho y respeta margenes y rellenos*/
   margin-right: 0.7rem; /* Margen del elemento a la derecha */
+}
+
+.btn--new {
+  /* A esta clase le asignamos estilos */
+  top: 4rem; /* De arriba hacia abajo, un espacio */
+}
+.btn--roll {
+  /* A esta clase le asigno estilo */
+  top: 39rem; /* De arriba hacia abajo, un espacio */
+}
+.btn--hold {
+  /* A esta clase le asigno estilos personalizados */
+  top: 46rem;
 }
