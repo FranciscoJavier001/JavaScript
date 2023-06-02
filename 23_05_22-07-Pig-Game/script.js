@@ -51,3 +51,13 @@ const switchPlayer = () => {
   player1El.classList.toggle("player--active"); //* Cambio de turno del jugadoe 0 */
 };
 // switchPlayer(); //* Invoco la funcion para comprobar funcionamiento */
+
+//* Funcionalidad de la tirada de dados */
+btnRoll.addEventListener("click", () => {
+  //* Agrego evento click al boton de Girar */
+  if (playing) {
+    //* Si hay un jugador, y esta variable la inicialize en true */
+    const dice = Math.trunc(Math.random() * 6) + 1; //* Nueva variable, primero elimino la parte decimal luego asigno numero hasta el 6 */
+    console.log(dice); //* Muestro en consola la variable de dado */
+  }
+});
