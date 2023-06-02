@@ -59,5 +59,9 @@ btnRoll.addEventListener("click", () => {
     //* Si hay un jugador, y esta variable la inicialize en true */
     const dice = Math.trunc(Math.random() * 6) + 1; //* Nueva variable, primero elimino la parte decimal luego asigno numero hasta el 6 */
     console.log(dice); //* Muestro en consola la variable de dado */
+
+    //* Mostramos en pantalla el dado */
+    diceEl.classList.remove("hidden"); //* Remuevo esta clase que anteriormente habia agregado */
+    diceEl.src = `dice-${dice}.png`; //* De esta manera, muestro el nuevo dado en el display */
   }
 });
