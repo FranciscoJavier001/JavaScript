@@ -30,7 +30,7 @@ const init = () => {
   current0El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
   current1El.textContent = 0; //* Establezco en el la etiqueta el numero 0 */
 
-  diceEl.classList.remove("hidden"); //* Etiqueta Img, le agrege una nueva clase */
+  diceEl.classList.add("hidden"); //* Etiqueta Img, le agrege una nueva clase */
 
   player0El.classList.remove("player--winner"); //* Creo nueva clase, asignativa al ganador etiqueta Section */
   player1El.classList.remove("player--winner"); //* Creo nueva clase, asignativa al ganador etiqueta Section */
