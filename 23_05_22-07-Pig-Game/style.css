@@ -184,3 +184,15 @@ main {
   ); /* Se va a quedar donde esta en el eje de las x, se va a mover hacia abajo */
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15); /* Sombreado no se mueve eje x,y,z(no se altera en profundidad */
 }
+
+.dice {
+  /* A la clase dado */
+  position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
+  left: 50%; /* Coloco el elemento a la izquierda*/
+  top: 16.5rem; /* Lo coloco mas abajo de arriba hacia abajo */
+  transform: translateX(
+    -50%
+  ); /* Coloco en medio el elemento, solo trasladandolo en el eje de las x */
+  height: 10rem; /* Tamaño de la caja */
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15); /* Eje x,y,z - Lo ultimo es el color de la sombra */
+}
