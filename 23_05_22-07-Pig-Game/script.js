@@ -63,5 +63,16 @@ btnRoll.addEventListener("click", () => {
     //* Mostramos en pantalla el dado */
     diceEl.classList.remove("hidden"); //* Remuevo esta clase que anteriormente habia agregado */
     diceEl.src = `dice-${dice}.png`; //* De esta manera, muestro el nuevo dado en el display */
+
+    //* Revisamos que no sea el numero de cambio de turno osea toxico */
+    if (dice !== 6) {
+      //* Si el dado es diferente a 6 */
+      currentScore += dice; //* Agregamos el Puntaje al Puntaje Actual con el valor del dado */
+      document.getElementById(`current--${activePlayer}`).textContent = //* Seleccionamos este id <p> del jugador activo */
+        currentScore; //* Y les asigno un valor actual al puntane actual */
+    } else {
+      //* En caso contrario */
+      switchPlayer(); //* Cuando cae un 6 ejecuta esta funcion de cambio de jugador */
+    }
   }
 });
