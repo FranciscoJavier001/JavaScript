@@ -101,3 +101,5 @@ btnHold.addEventListener("click", () => {
     }
   }
 });
+
+btnNew.addEventListener("click", init); //* Boton New Game, reinicia el juego llamando la funcion definida arriba init */
