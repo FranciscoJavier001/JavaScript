@@ -196,3 +196,8 @@ main {
   height: 10rem; /* Tamaño de la caja */
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15); /* Eje x,y,z - Lo ultimo es el color de la sombra */
 }
+
+.player--winner {
+  /* Creamos una nueva clase */
+  background-color: #2f2f2f; /* Que asigna un color de fondo negro */
+}
