@@ -201,3 +201,8 @@ main {
   /* Creamos una nueva clase */
   background-color: #2f2f2f; /* Que asigna un color de fondo negro */
 }
+
+.player--winner .name {
+  font-weight: 700; /* Bug - No cambia de tamaño de fuente */
+  color: #c736ff; /* No se muestra este color */
+}
