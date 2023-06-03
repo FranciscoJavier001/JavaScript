@@ -206,3 +206,8 @@ main {
   font-weight: 700; /* Bug - No cambia de tamaño de fuente */
   color: #c736ff; /* No se muestra este color */
 }
+
+.hidden {
+  /* Creo la clase hidden que pongo y quito */
+  display: none; /* Con esto desaparece de la pantalla */
+}
