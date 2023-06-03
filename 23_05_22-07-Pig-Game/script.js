@@ -76,3 +76,28 @@ btnRoll.addEventListener("click", () => {
     }
   }
 });
+
+btnHold.addEventListener("click", () => {
+  //* Le agregamos un evento click al boton de hold */
+  if (playing) {
+    //* Si hay un jugador activo */
+    scores[activePlayer] += currentScore; //* Total de puntos, de cada jugador activo son la suma de su puntaje actual */
+    document.getElementById(`score--${activePlayer}`).textContent = //* DOM selecciona score--(con su jugador activo), mostramos DOM */
+      scores[activePlayer]; //* Los resultados de cada jugador actual */
+    // console.log(scores); //* Muestro en consola el resultado */
+
+    if (scores[activePlayer] >= 100) {
+      //* Revisamos si el resultado es mayor a 100 */
+      playing = false; //* Terminamos el juego */
+      diceEl.classList.add("hidden"); //* Agregamos la clase oculto del dado */
+      document //* En el DOM */
+        .querySelector(`.player--${activePlayer}`) //* Seleccionamos la clase del jugador activo */
+        .classList.add("player--winner"); //* Agregamos esta clase al elemento */
+      document
+        .querySelector(`.player--${activePlayer}`) //* Vamos a seleccionar esta clase en el DOM */
+        .classList.remove("player--active"); //* Le vamos a remover la clase de jugador activo */
+    } else {
+      switchPlayer(); //* Invoco a esta funcion */
+    }
+  }
+});
