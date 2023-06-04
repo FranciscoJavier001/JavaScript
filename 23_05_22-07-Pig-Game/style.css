@@ -67,14 +67,12 @@ main {
   text-transform: uppercase; /* Que el texto sea Mayuscula */
   letter-spacing: 2px; /* Que esta sea la separacion de las letras */
   word-spacing: 3px; /* Separacion entre cada oracion */
-  font-weight: 400; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
   margin-bottom: 1rem; /* El margen desde el h2 hacia abajo  */
 }
 
 .score {
   /* A la clase score, que esta en una etiqueta parrafo */
   font-size: 8rem; /* Al numero, le aumentamos el tamaño de letra */
-  font-weight: 300; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
   color: #c7365f; /* Se le cambia el color a los numeros */
   margin-bottom: auto; /* Que el margen de este elemento sea abajo */
 }
@@ -87,12 +85,6 @@ main {
     255,
     0.4
   ); /* A la clase del jugador actual, le damos un fondo de gris, lo ultimo es la opacidad/transparencia */
-}
-.player--active .name {
-  font-weight: 700; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
-}
-.player--active .score {
-  font-weight: 700; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
 }
 
 .player--active .current {
@@ -108,7 +100,7 @@ main {
   width: 65%; /* Le asigno una anchura, segun su elemento, osea abarca el porcentaje correspondiente al 100 del elemento */
   padding: 2rem; /* Le damod un margen de adentro hacia afuera */
   text-align: center; /* Quiero solo el texto alineado en medio */
-  transition: all 0.1s; /* Le doy una transicion a este elemento de 1 seg que venga desde donde inicia */
+  transition: all 1s; /* Le doy una transicion a este elemento de 1 seg que venga desde donde inicia */
 }
 
 .current-label {
@@ -128,7 +120,7 @@ main {
 .btn {
   /* Esta Clase se va a posicionar dentro de la etiqueta superior a esta, que es main */
   position: absolute;
-  left: 47%; /* Posiciona esto a la mitad */
+  left: 50%; /* Posiciona esto a la mitad */
   transform: translateX(
     -50%
   ); /* Asi lo centro mas, porque pierde porcentaje en eje x */
@@ -139,7 +131,6 @@ main {
   font-size: 1.8rem; /* Le cambio el tamaño de fuente */
   text-transform: uppercase; /* Que el texto sea mayusculas */
   cursor: pointer; /* Que al pasar el mouse por este elemento, salga una mano */
-  font-weight: 400; /*BUG*/ /* Seria la anchura de las letras, pero no se distingue */
   transition: all 0.2s; /* Que vengan de donde estaban cuando los posicione */
 
   background-color: white; /* Que tengan un fondo de pantalla blanco */
@@ -195,16 +186,6 @@ main {
   ); /* Coloco en medio el elemento, solo trasladandolo en el eje de las x */
   height: 10rem; /* Tamaño de la caja */
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15); /* Eje x,y,z - Lo ultimo es el color de la sombra */
-}
-
-.player--winner {
-  /* Creamos una nueva clase */
-  background-color: #2f2f2f; /* Que asigna un color de fondo negro */
-}
-
-.player--winner .name {
-  font-weight: 700; /* Bug - No cambia de tamaño de fuente */
-  color: #c736ff; /* No se muestra este color */
 }
 
 .hidden {
