@@ -1,0 +1,6 @@
+* {
+  /* Todo el DOM */
+  margin: 0 auto; /* Que no tenga margenes */
+  padding: 0; /* Que no tenga margenes de adentro hacia afuera */
+  box-sizing: inherit; /* El tamaño de la caja se va a heredar */
+}
