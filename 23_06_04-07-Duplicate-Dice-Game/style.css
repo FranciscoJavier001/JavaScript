@@ -4,3 +4,9 @@
   padding: 0; /* Que no tenga margenes de adentro hacia afuera */
   box-sizing: inherit; /* El tamaño de la caja se va a heredar */
 }
+
+html {
+  /* Etiqueta Html */
+  font-size: 62.5%; /* Tamaño de texto */
+  box-sizing: border-box; /* Tamaño de cajas, incluyen margin, padding y border al total asignado */
+}
