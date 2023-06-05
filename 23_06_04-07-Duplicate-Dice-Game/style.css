@@ -25,3 +25,25 @@ body {
   align-items: center; /* Items a la mitad del Body (depende flex) */
   justify-content: center; /* Justifica el contenido hacia la mitad (depende flex) */
 }
+
+/* Diseño del contenedor */
+main {
+  /* A la etiqueta Main */
+  position: relative; /* Su posicion sera donde indica su etiqueta padre */
+  width: 100rem; /* Ancho de la Caja */
+  height: 60rem; /* Largo de la Caja */
+  background-color: rgb(
+    207,
+    197,
+    182,
+    0.3
+  ); /* Color de la caja - Entre mas Alto mas Intenso y mas Bajo, mas Debil */
+  backdrop-filter: blur(
+    200px
+  ); /* Es el desenfoque para hacerlos parcealmente transparentes */
+  filter: blur(); /* El filtro que voy a aplicar va a ser el desenfoque */
+  box-shadow: 1rem 3rem 5rem rgba(0, 0, 0, 0.9); /* Sombra de la caja, x,y,z; color sombra e itensidad */
+  border-radius: 12px; /* Caja Principal los bordes redondeados */
+  overflow: hidden; /* Es el Scroll, aqui lo desaparezco, pero tiene muchas funciones, se muestra ultimo */
+  display: flex; /* Para que el contenido valla hacia la derecha y no hacia abajo */
+}
