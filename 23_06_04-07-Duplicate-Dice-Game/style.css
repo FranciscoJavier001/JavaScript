@@ -1,6 +1,6 @@
 * {
   /* Todo el DOM */
-  margin: 0 auto; /* Que no tenga margenes */
+  margin: 0; /* Que no tenga margenes */
   padding: 0; /* Que no tenga margenes de adentro hacia afuera */
   box-sizing: inherit; /* El tamaño de la caja se va a heredar */
 }
@@ -9,4 +9,19 @@ html {
   /* Etiqueta Html */
   font-size: 62.5%; /* Tamaño de texto */
   box-sizing: border-box; /* Tamaño de cajas, incluyen margin, padding y border al total asignado */
+}
+
+body {
+  /* A la etiqueta body */
+  font-family: serif; /* Fuente */
+  height: 100vh; /* Va a ocupar el 100 de la vista */
+  color: black; /* Color tippografia */
+  background-image: linear-gradient(
+    to top left,
+    #c3599e 50%,
+    #2e1c36 75%
+  ); /* Division DOM, y donde empieza (rosa) y donde va a terminar (negro) */
+  display: flex; /* Que todo valla hacia el lado derecho segun su elemento */
+  align-items: center; /* Items a la mitad del Body (depende flex) */
+  justify-content: center; /* Justifica el contenido hacia la mitad (depende flex) */
 }
