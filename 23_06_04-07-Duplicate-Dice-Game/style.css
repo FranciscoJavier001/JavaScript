@@ -47,3 +47,13 @@ main {
   overflow: hidden; /* Es el Scroll, aqui lo desaparezco, pero tiene muchas funciones, se muestra ultimo */
   display: flex; /* Para que el contenido valla hacia la derecha y no hacia abajo */
 }
+
+.jugador {
+  /* <> Por el momento solo contiene otro <> */
+  flex: 50%; /* Cada <> se dividio en 2 */
+  padding: 9rem; /* Margen de adentro hacia afuera */
+  display: flex; /* Movemos elementos <> */
+  flex-direction: column; /* Que se mantengan como columnas */
+  align-items: center; /* Alineo los elementos al centro */
+  transition: all 3s; /* De la ubicacion donde vienen, quedaran asi en 3 segundos */
+}
