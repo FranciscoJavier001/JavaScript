@@ -57,3 +57,13 @@ main {
   align-items: center; /* Alineo los elementos al centro */
   transition: all 3s; /* De la ubicacion donde vienen, quedaran asi en 3 segundos */
 }
+
+/* Elementos */
+.nombre {
+  /* A la clase nombre en el DOM */
+  position: relative; /* Te mantienes dentro de tu etiqueta superior */
+  font-size: 4rem; /* Tamaño del texto */
+  text-transform: uppercase; /* Se cambian las mayusculas por minusculas */
+  letter-spacing: 2px; /* Espacio entre cada letra */
+  word-spacing: 3px; /* Espacio entre cada Oalabra */
+}
