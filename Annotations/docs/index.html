@@ -1,8 +1,3 @@
-<!-- Crear una app, que te pida un input donde puedas ingresar el numero de una persona
-luego presionas el boton enviar
-y eso me crea un nuevo enlace de la pagina html donde automaticzmente entro a la pagina web y ya le puedo mandar
-inclusive un mensaje personalizado -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,16 +6,20 @@ inclusive un mensaje personalizado -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>WhatsApp Num</title>
+    <!-- Titulo de la Pestaña -->
   </head>
   <body>
     <h1>Phone Number</h1>
+    <!-- <> con texto -->
     <input
       type="number"
       class="numero-telefonico"
       id="numero-telefonico"
       inputmode="numeric"
       pattern="[0-9]*" />
-    <button class="btn btnEnviar">Enviar</button>
+    <!-- <> input con diversos atributos -->
+    <button class="btnEnviar">Enviar</button>
+    <!-- Un boton con clase-->
     <script src="./main.js"></script>
   </body>
 </html>
