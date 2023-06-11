@@ -105,3 +105,21 @@ main {
   /* A la clase dado */
   position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
 }
+
+.btn {
+  /* <> BotonES */
+  position: absolute; /* Se posiciona sobre su etiqueta madre main */
+}
+
+.btn-nuevo {
+  /* A esta clase le asignamos estilos */
+  top: 4rem; /* De arriba hacia abajo, un espacio */
+}
+.btn-juega {
+  /* A esta clase le asigno estilo */
+  top: 39rem; /* De arriba hacia abajo, un espacio */
+}
+.btn-quedarse {
+  /* A esta clase le asigno estilos personalizados */
+  top: 46rem;
+}
