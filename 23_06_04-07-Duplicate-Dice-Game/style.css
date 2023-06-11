@@ -104,6 +104,11 @@ main {
 .dado {
   /* A la clase dado */
   position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
+  left: 50%; /* Posicionamos el objeto a la mitad en el eje de las x, ahi inicia */
+  top: 16.5rem; /* El espacio que tiene entre su top y el elemento */
+  transform: translateX(-50%); /* Asi el objeto queda en la mitad */
+  height: 10rem; /* Lo que va a medir */
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4); /* XYZ sombras - Ultimo el sombra difuminada */
 }
 
 .btn {
