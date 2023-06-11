@@ -98,5 +98,5 @@ main {
   width: 65%; /* Abarcas un 65% de tu espacio disponible */
   padding: 2rem; /* Tamaño de lo gris, del contador */
   text-align: center; /* Texto centrado */
-  transition: all 1s;
+  transition: all 1s; /* Transiciona todo en 1 seg */
 }
