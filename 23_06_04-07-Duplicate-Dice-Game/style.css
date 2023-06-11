@@ -73,3 +73,13 @@ main {
   font-size: 8rem; /* Aumento el tamaño del texto */
   color: #0c2db2; /* Se le cambia el color a los numeros */
 }
+
+.jugador-activo {
+  /* Cuando esta clase esta activa */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Es un fondo de gris, lo ultimo es la opacidad/transparencia */
+}
