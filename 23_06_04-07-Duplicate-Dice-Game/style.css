@@ -101,6 +101,14 @@ main {
   transition: all 1s; /* Transiciona todo en 1 seg */
 }
 
+.contador-etiqueta {
+  /* A esta <p> Clase */
+  text-transform: uppercase; /* Su texto sea mayusculas */
+  margin-bottom: 1rem; /* Espacio hacia abajo de las letras */
+  font-size: 1.7rem; /* Tamaño de texto */
+  color: #ffffff; /* El color de las letras o el elemento mas brillante */
+}
+
 .dado {
   /* A la clase dado */
   position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
