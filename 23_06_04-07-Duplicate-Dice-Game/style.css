@@ -109,6 +109,10 @@ main {
   color: #ffffff; /* El color de las letras o el elemento mas brillante */
 }
 
+.contador-actual {
+  font-size: 3.5rem;
+}
+
 .dado {
   /* A la clase dado */
   position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
