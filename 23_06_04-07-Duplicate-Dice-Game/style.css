@@ -88,3 +88,15 @@ main {
   /* Necesito personalizar el contador */
   opacity: 1; /* Para que no se tape bajo la opacidad */
 }
+
+.contador {
+  /* Clase Contador donde va Puntos Actuales y el Cero */
+  background-color: #7b7274; /* Le Asigno un fondo de pantalla */
+  opacity: 0.8; /* La opacidad al fondo de pantalla */
+  border-radius: 10px; /* Le asigno bordes redondeados */
+  color: #fff; /* Color del texto */
+  width: 65%; /* Abarcas un 65% de tu espacio disponible */
+  padding: 2rem; /* Tamaño de lo gris, del contador */
+  text-align: center; /* Texto centrado */
+  transition: all 1s;
+}
