@@ -100,3 +100,8 @@ main {
   text-align: center; /* Texto centrado */
   transition: all 1s; /* Transiciona todo en 1 seg */
 }
+
+.dado {
+  /* A la clase dado */
+  position: absolute; /* Va a tener una posicion absoluta dentro de su elemento padre */
+}
