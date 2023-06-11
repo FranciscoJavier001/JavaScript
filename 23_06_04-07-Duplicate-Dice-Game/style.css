@@ -83,3 +83,8 @@ main {
     0.1
   ); /* Es un fondo de gris, lo ultimo es la opacidad/transparencia */
 }
+
+.jugador-activo .contador {
+  /* Necesito personalizar el contador */
+  opacity: 1; /* Para que no se tape bajo la opacidad */
+}
