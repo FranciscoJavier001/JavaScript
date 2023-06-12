@@ -170,3 +170,15 @@ main {
   ); /* Se va a quedar donde esta en el eje de las x, se va a mover hacia abajo */
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); /* Sombreado en eje x,y,z(no se altera en profundidad */
 }
+
+.btn::first-letter {
+  /* El primer Elemento, osea el emoji */
+  font-size: 2.2rem; /* Aumentale el tamaño  */
+  margin-right: 0.9rem; /* Margen del elemento a la derecha */
+}
+
+.tamaño-emoji {
+  /* Ultimo emoji en los botones */
+  font-size: 2.2rem; /* Aumentale el tamaño  */
+  margin-left: 0.6rem; /* Margen del elemento a la izquierda */
+}
