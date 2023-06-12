@@ -36,3 +36,8 @@ const init = () => {
   jugador1.classList.remove("jugador-activo"); //* Remuevo esta Clase y la puedo reactivar */
 };
 init(); //* Ejecuto la funcion para confirmar lo que hace */
+
+const cambioJugador = () => {
+  //* Funcion que no recibe nada, pero se ejecuta cuando se indica */
+  document.getElementById(`actual-${jugadorActivo}`).textContent = 0; //* Cambie de Jugador, inicializa 0 el de abajo */
+};
