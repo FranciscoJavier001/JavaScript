@@ -29,6 +29,11 @@ const init = () => {
   puntosActuales1.textContent = 0; /* Se muestra esto en el DOM */
 
   dado.classList.add("oculto"); //* Oculto el dado, agregando una clase a un elemento en el DOM */
+
+  jugador0.classList.remove("jugador-ganador"); //* Remuevo esta Clase de cada variable y la puedo reactivar */
+  jugador1.classList.remove("jugador-ganador"); //* Remuevo esta Clase de cada variable y la puedo reactivar */
+  jugador0.classList.add("jugador-activo"); //* Agrego esta clase a la variable. DOM y CSS */
+  jugador1.classList.remove("jugador-activo"); //* Remuevo esta Clase y la puedo reactivar */
 };
 init(); //* Ejecuto la funcion para confirmar lo que hace */
 
