@@ -161,3 +161,12 @@ main {
   /* A esta clase le asigno estilos personalizados */
   top: 46rem;
 }
+
+.btn:hover {
+  /* Esta es una pseudoclase */
+  transform: translate(
+    -50%,
+    2px
+  ); /* Se va a quedar donde esta en el eje de las x, se va a mover hacia abajo */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); /* Sombreado en eje x,y,z(no se altera en profundidad */
+}
