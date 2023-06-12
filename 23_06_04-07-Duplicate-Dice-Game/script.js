@@ -8,6 +8,8 @@ const puntos1 = document.querySelector("#puntos-1"); //* Selecciono <> por su id
 const puntosActuales0 = document.querySelector("#actual-0"); //* Selecciono <> por su id */
 const puntosActuales1 = document.querySelector("#actual-1"); //* Selecciono <> por su id */
 
+const dado = document.querySelector(".dado"); //* Selecciono <> por su clase */
+
 let puntos, puntosActuales; //* Empiezo a definir las variables para iniciar la funcion */
 
 const init = () => {
