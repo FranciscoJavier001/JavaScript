@@ -55,7 +55,7 @@ main {
   display: flex; /* Movemos elementos <> */
   flex-direction: column; /* Que se mantengan como columnas */
   align-items: center; /* Alineo los elementos al centro */
-  transition: all 3s; /* De la ubicacion donde vienen, quedaran asi en 3 segundos */
+  transition: all; /* De la ubicacion donde vienen, sin tiempo */
 }
 
 /* Elementos */
