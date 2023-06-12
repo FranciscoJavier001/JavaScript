@@ -20,6 +20,8 @@ const init = () => {
   //* Funcion que no recibe nada, pero se ejecuta cuando se le indica */
   puntos = [0, 0]; //* Inicializo lo puntos en 0 */
   puntosActuales = 0; //* inicializo esta variable en 0 */
+  jugadorActivo = 0; //* Defino esta variable en 0 */
+  jugando = true; //* Esta variable es solo un valor booleano */
 
   puntos0.textContent = 0; //* Se muestra esto en el DOM */
   puntos1.textContent = 0; /* Se muestra esto en el DOM */
