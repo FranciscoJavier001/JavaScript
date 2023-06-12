@@ -126,6 +126,27 @@ main {
 .btn {
   /* <> Botones */
   position: absolute; /* Se posiciona sobre su etiqueta madre main */
+  left: 50%; /* Se crea un margen de 50% en la izquierda */
+  transform: translateX(
+    -50%
+  ); /* Otro poquito mas a la izquierda y de esta manera dejamos un elemento a la mitad */
+  color: #444; /* Color del texto de los dados */
+  background: none; /* Sin ningun tipo de fondo */
+  border: none; /* Elemento sin bordes */
+  font-size: 1.8rem; /* Tamaño del texto */
+  text-transform: uppercase; /* Texto en mayusculas */
+  cursor: pointer; /* Al pasar el cursor se vea la manita */
+  transition: all 0.2s; /* Que llegen desde su posicion madre hasta la actual */
+  background-color: rgb(
+    255,
+    255,
+    255,
+    0.6
+  ); /* El Background queda un poco mas humo */
+  backdrop-filter: blur(10px); /* Filtro aplicado sera difuminado */
+  padding: 0.7rem 2.5rem; /* A lo alto y a lo ancho espacio de adentro hacia afuera */
+  border-radius: 50rem; /* Que los bordes del elemento sean redondeados */
+  box-shadow: 0rem 1.75rem 3.5rem rgba(0, 0, 0, 0.4); /* XYZ - Difuminado e intensidad */
 }
 
 .btn-nuevo {
