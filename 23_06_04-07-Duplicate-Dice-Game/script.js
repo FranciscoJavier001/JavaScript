@@ -36,6 +36,3 @@ const init = () => {
   jugador1.classList.remove("jugador-activo"); //* Remuevo esta Clase y la puedo reactivar */
 };
 init(); //* Ejecuto la funcion para confirmar lo que hace */
-
-jugador0.classList.remove(".jugador-ganador"); //* Cuando el Juego Empiece, les quitamos estas clases */
-jugador1.classList.remove(".jugador-ganador"); //* Cuando el Juego Empiece, les quitamos estas clases */
