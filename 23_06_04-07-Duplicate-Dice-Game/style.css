@@ -182,3 +182,8 @@ main {
   font-size: 2.2rem; /* Aumentale el tamaño  */
   margin-left: 0.6rem; /* Margen del elemento a la izquierda */
 }
+
+.oculto {
+  /* Esta Clase */
+  display: none; /* Desaparezco el dado */
+}
