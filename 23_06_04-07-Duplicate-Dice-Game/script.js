@@ -14,7 +14,7 @@ const btnNuevo = document.querySelector(".btn-nuevo"); //* Selecciono <> por su 
 const btnTirar = document.querySelector(".btn-juega"); //* Selecciono <> por su clase */
 const btnQuedarse = document.querySelector(".btn-quedarse"); //* Selecciono <> por su clase */
 
-let puntos, puntosActuales; //* Empiezo a definir las variables para iniciar la funcion */
+let puntos, puntosActuales, jugadorActivo, jugando; //* Defino variables para las funciones */
 
 const init = () => {
   //* Funcion que no recibe nada, pero se ejecuta cuando se le indica */
