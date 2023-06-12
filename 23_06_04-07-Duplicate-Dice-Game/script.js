@@ -10,6 +10,10 @@ const puntosActuales1 = document.querySelector("#actual-1"); //* Selecciono <> p
 
 const dado = document.querySelector(".dado"); //* Selecciono <> por su clase */
 
+const btnNuevo = document.querySelector(".btn-nuevo"); //* Selecciono <> por su clase */
+const btnTirar = document.querySelector(".btn-juega"); //* Selecciono <> por su clase */
+const btnQuedarse = document.querySelector(".btn-quedarse"); //* Selecciono <> por su clase */
+
 let puntos, puntosActuales; //* Empiezo a definir las variables para iniciar la funcion */
 
 const init = () => {
