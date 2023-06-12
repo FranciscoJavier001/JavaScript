@@ -27,6 +27,8 @@ const init = () => {
   puntos1.textContent = 0; /* Se muestra esto en el DOM */
   puntosActuales0.textContent = 0; /* Se muestra esto en el DOM */
   puntosActuales1.textContent = 0; /* Se muestra esto en el DOM */
+
+  dado.classList.add("oculto"); //* Oculto el dado, agregando una clase a un elemento en el DOM */
 };
 init(); //* Ejecuto la funcion para confirmar lo que hace */
 
