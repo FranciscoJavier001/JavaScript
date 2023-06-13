@@ -51,9 +51,12 @@ const cambioJugador = () => {
 
 btnTirar.addEventListener("click", () => {
   //* Vamos a darle funcionalidad al boton de Tirar */
-  if (playing) {
+  if (jugando) {
     //* Variable Booleana, donde le preguntas si es verdadero */
+    const dado = Math.trunc(Math.random() * 6) + 1; //* Metodos Matematicos para sacar un numero entre 1 y 6 */
+    // console.log(dado); //* Muestro en consola el valor de la operacion mateatica */
   } else {
     //* En caso Booleano falso */}
+    cambioJugador(); //* Ejecuta esta funcion */
   }
 });
