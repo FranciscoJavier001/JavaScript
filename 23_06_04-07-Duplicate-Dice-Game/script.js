@@ -70,3 +70,7 @@ btnTirar.addEventListener("click", () => {
     }
   }
 });
+
+btnQuedarse.addEventListener("click", () => {
+  //* Funcion de flecha que no recibe nada, pero se ejecuta con el boton quedarse */
+});
