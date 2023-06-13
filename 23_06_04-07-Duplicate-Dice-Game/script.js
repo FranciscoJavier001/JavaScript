@@ -57,6 +57,7 @@ btnTirar.addEventListener("click", () => {
     // console.log(dado); //* Muestro en consola el valor de la operacion mateatica */
 
     dadoDom.classList.remove("oculto"); //* Quito una clase que habia asignado */
+    dadoDom.src = `dice-${dado}.png`; //* Mostramos en pantalla el numero de numeros del dado */
   } else {
     //* En caso Booleano falso */}
     cambioJugador(); //* Ejecuta esta funcion */
