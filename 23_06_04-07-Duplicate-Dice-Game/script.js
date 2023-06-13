@@ -48,3 +48,7 @@ const cambioJugador = () => {
   jugador1.classList.toggle("jugador-activo"); //* Debo tenerlas para que el cambio funcione */
 };
 // cambioJugador(); //* Funciona */
+
+btnTirar.addEventListener("click", () => {
+  //* Vamos a darle funcionalidad al boton de Tirar */
+});
