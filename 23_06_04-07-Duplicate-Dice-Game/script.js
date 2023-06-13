@@ -58,8 +58,12 @@ btnTirar.addEventListener("click", () => {
 
     dadoDom.classList.remove("oculto"); //* Quito una clase que habia asignado */
     dadoDom.src = `dice-${dado}.png`; //* Mostramos en pantalla el numero de numeros del dado */
-  } else {
-    //* En caso Booleano falso */}
-    cambioJugador(); //* Ejecuta esta funcion */
+
+    if (dado !== 6) {
+      //* Si el dado es diferente a 6 */
+    } else {
+      //* En caso Booleano falso */}
+      cambioJugador(); //* Ejecuta esta funcion */
+    }
   }
 });
