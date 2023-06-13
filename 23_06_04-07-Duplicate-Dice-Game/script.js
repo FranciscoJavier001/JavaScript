@@ -8,7 +8,7 @@ const puntos1 = document.querySelector("#puntos-1"); //* Selecciono <> por su id
 const puntosActuales0 = document.querySelector("#actual-0"); //* Selecciono <> por su id */
 const puntosActuales1 = document.querySelector("#actual-1"); //* Selecciono <> por su id */
 
-const dado = document.querySelector(".dado"); //* Selecciono <> por su clase */
+const dadoDom = document.querySelector(".dado"); //* Selecciono <> por su clase */
 
 const btnNuevo = document.querySelector(".btn-nuevo"); //* Selecciono <> por su clase */
 const btnTirar = document.querySelector(".btn-juega"); //* Selecciono <> por su clase */
@@ -28,7 +28,7 @@ const init = () => {
   puntosActuales0.textContent = 0; /* Se muestra esto en el DOM */
   puntosActuales1.textContent = 0; /* Se muestra esto en el DOM */
 
-  dado.classList.add("oculto"); //* Oculto el dado, agregando una clase a un elemento en el DOM */
+  dadoDom.classList.add("oculto"); //* Oculto el dado, agregando una clase a un elemento en el DOM */
 
   jugador0.classList.remove("jugador-ganador"); //* Remuevo esta Clase de cada variable y la puedo reactivar */
   jugador1.classList.remove("jugador-ganador"); //* Remuevo esta Clase de cada variable y la puedo reactivar */
@@ -55,6 +55,8 @@ btnTirar.addEventListener("click", () => {
     //* Variable Booleana, donde le preguntas si es verdadero */
     const dado = Math.trunc(Math.random() * 6) + 1; //* Metodos Matematicos para sacar un numero entre 1 y 6 */
     // console.log(dado); //* Muestro en consola el valor de la operacion mateatica */
+
+    dadoDom.classList.remove("oculto"); //* Quito una clase que habia asignado */
   } else {
     //* En caso Booleano falso */}
     cambioJugador(); //* Ejecuta esta funcion */
