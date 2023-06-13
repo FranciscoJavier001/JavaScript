@@ -75,6 +75,7 @@ btnQuedarse.addEventListener("click", () => {
   //* Funcion de flecha que no recibe nada, pero se ejecuta con el boton quedarse */
   if (jugando) {
     //* Si jugando es verdadero */
+    puntos[jugadorActivo] += puntosActuales; //* Puntos del Jugador Activo, se les va a sumar los Puntos Actuales */
   } else {
     cambioJugador(); //* Sino invoco esta funcion */
   }
