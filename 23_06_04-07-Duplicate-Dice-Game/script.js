@@ -61,6 +61,9 @@ btnTirar.addEventListener("click", () => {
 
     if (dado !== 6) {
       //* Si el dado es diferente a 6 */
+      puntosActuales += dado; //* Vas agregando el valor del dado en los puntos actuales */
+      document.getElementById(`actual-${jugadorActivo}`).textContent = //* Seleccionamos <> por su id y que cambie segun el jugador */
+        puntosActuales; //* Y muestre los puntos actuales en el DOM */
     } else {
       //* En caso Booleano falso */}
       cambioJugador(); //* Ejecuta esta funcion */
