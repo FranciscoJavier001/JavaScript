@@ -51,4 +51,9 @@ const cambioJugador = () => {
 
 btnTirar.addEventListener("click", () => {
   //* Vamos a darle funcionalidad al boton de Tirar */
+  if (playing) {
+    //* Variable Booleana, donde le preguntas si es verdadero */
+  } else {
+    //* En caso Booleano falso */}
+  }
 });
