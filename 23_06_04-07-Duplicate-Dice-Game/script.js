@@ -90,3 +90,5 @@ btnQuedarse.addEventListener("click", () => {
     }
   }
 });
+
+btnNuevo.addEventListener("click", () => init()); //* Inicializo el Juego */
