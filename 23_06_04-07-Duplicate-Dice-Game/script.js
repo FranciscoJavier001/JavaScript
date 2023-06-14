@@ -78,7 +78,15 @@ btnQuedarse.addEventListener("click", () => {
     puntos[jugadorActivo] += puntosActuales; //* Puntos del Jugador Activo, se les va a sumar los Puntos Actuales */
     document.getElementById(`puntos-${jugadorActivo}`).textContent = //* Seleccionamos <> por Id */
       puntos[jugadorActivo]; //* Que se muestren los puntos deL jugadorActivo (Cambiarlos en el DOM) */
-  } else {
-    cambioJugador(); //* Sino invoco esta funcion */
+
+    if (puntos[jugadorActivo] < -1) {
+      //* Si los puntos del jugador activo son negativos(No puede pasar) */
+      jugando = false; //* Cambia el estado de true a false */
+      document
+        .querySelector(`.jugador-${jugadorActivo}`) //* Selecciona el jugador activo */
+        .classList.remove("jugador-activo"); //* Remueve la clase de Jugador Activo */
+    } else {
+      cambioJugador(); //* Sino invoco esta funcion */
+    }
   }
 });
