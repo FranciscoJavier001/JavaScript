@@ -76,6 +76,8 @@ btnQuedarse.addEventListener("click", () => {
   if (jugando) {
     //* Si jugando es verdadero */
     puntos[jugadorActivo] += puntosActuales; //* Puntos del Jugador Activo, se les va a sumar los Puntos Actuales */
+    document.getElementById(`puntos-${jugadorActivo}`).textContent = //* Seleccionamos <> por Id */
+      puntos[jugadorActivo]; //* Que se muestren los puntos deL jugadorActivo (Cambiarlos en el DOM) */
   } else {
     cambioJugador(); //* Sino invoco esta funcion */
   }
