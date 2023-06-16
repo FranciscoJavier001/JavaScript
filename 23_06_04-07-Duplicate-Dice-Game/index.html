@@ -53,15 +53,17 @@
 
       <button class="btn btn-nuevo" onclick="contadorNuevo()">
         🔄 Juego Nuevo<span class="tamaño-emoji"> 🔄</span>
-        <p>Clicks: <a id="clicks">0</a></p>
+        <p>Clicks: <a id="clicks-nuevo">0</a></p>
       </button>
       <!-- Nueva Etiqueta Boton, dentro una etiqueta span con clases -->
-      <button class="btn btn-juega">
+      <button class="btn btn-juega" onclick="contadorJuego()">
         🎲 Tirar Dados<span class="tamaño-emoji"> 🎲</span>
+        <p>Clicks: <a id="clicks-juego">0</a></p>
       </button>
       <!-- Nueva Etiqueta Boton, dentro una etiqueta span con clases -->
-      <button class="btn btn-quedarse">
+      <button class="btn btn-quedarse" onclick="contadorCambio()">
         🖐🏻 Quedarse<span class="tamaño-emoji"> 🖐🏻</span>
+        <p>Clicks: <a id="clicks-cambio">0</a></p>
       </button>
       <!-- Nueva Etiqueta Boton, dentro una etiqueta span con clases -->
     </main>

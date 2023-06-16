@@ -99,11 +99,22 @@ var today = new Date();
 var dateString = today.toLocaleString();
 document.getElementById("date1").innerHTML = dateString;
 
-var clicks = 0;
-
+var clicksNuevo = 0;
 function contadorNuevo() {
-  clicks += 1;
-  document.getElementById("clicks").innerHTML = clicks;
+  clicksNuevo += 1;
+  document.getElementById("clicks-nuevo").innerHTML = clicksNuevo;
+}
+
+var clicksJuego = 0;
+function contadorJuego() {
+  clicksJuego += 1;
+  document.getElementById("clicks-juego").innerHTML = clicksJuego;
+}
+
+var clicksCambio = 0;
+function contadorCambio() {
+  clicksCambio += 1;
+  document.getElementById("clicks-cambio").innerHTML = clicksCambio;
 }
 
 //* Debo de tener una variable para contar los clicks a cada uno de los botones que tengo */
