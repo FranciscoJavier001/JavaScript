@@ -99,19 +99,19 @@ var today = new Date();
 var dateString = today.toLocaleString();
 document.getElementById("date1").innerHTML = dateString;
 
-var clicksNuevo = 0;
+let clicksNuevo = 0;
 function contadorNuevo() {
   clicksNuevo += 1;
   document.getElementById("clicks-nuevo").innerHTML = clicksNuevo;
 }
 
-var clicksJuego = 0;
+let clicksJuego = 0;
 function contadorJuego() {
   clicksJuego += 1;
   document.getElementById("clicks-juego").innerHTML = clicksJuego;
 }
 
-var clicksCambio = 0;
+let clicksCambio = 0;
 function contadorCambio() {
   clicksCambio += 1;
   document.getElementById("clicks-cambio").innerHTML = clicksCambio;
