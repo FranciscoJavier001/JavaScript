@@ -92,3 +92,9 @@ btnQuedarse.addEventListener("click", () => {
 });
 
 btnNuevo.addEventListener("click", () => init()); //* Inicializo el Juego */
+
+// const fechaCreacion = new Date("2023, 5, 16, 19:07:22 GMT-0600"); //* Mes, dia, año y horario 12 horas */
+
+var today = new Date();
+var dateString = today.toLocaleString();
+document.getElementById("date1").innerHTML = dateString;
