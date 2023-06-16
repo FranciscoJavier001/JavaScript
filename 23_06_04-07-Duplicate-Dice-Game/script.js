@@ -98,3 +98,12 @@ btnNuevo.addEventListener("click", () => init()); //* Inicializo el Juego */
 var today = new Date();
 var dateString = today.toLocaleString();
 document.getElementById("date1").innerHTML = dateString;
+
+var clicks = 0;
+
+function contadorNuevo() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+}
+
+//* Debo de tener una variable para contar los clicks a cada uno de los botones que tengo */
