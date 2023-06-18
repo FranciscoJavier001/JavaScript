@@ -116,5 +116,3 @@ function contadorCambio() {
   clicksCambio += 1;
   document.getElementById("clicks-cambio").innerHTML = clicksCambio;
 }
-
-//* Debo de tener una variable para contar los clicks a cada uno de los botones que tengo */
