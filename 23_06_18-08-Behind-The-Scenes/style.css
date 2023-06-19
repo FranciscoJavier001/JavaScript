@@ -9,3 +9,13 @@ body {
     #7dd56f
   ); /* Finaliza arriba a la izquierda, color #1 abajo, color #2 arriba */
 }
+
+h1 {
+  /* Etiqueta de Titulo */
+  font-family: sans-serif; /* Tipografia */
+  font-size: 50px; /* Tamaño de la tipografia */
+  line-height: 1.3; /* Espacio que dejamos hacia abajo de cada etiqueta */
+  width: 100%; /* Que ocupe el ancho en su totalidad */
+  text-align: center; /* Centramos el texto en eje de las X */
+  color: white; /* Color del texto */
+}
