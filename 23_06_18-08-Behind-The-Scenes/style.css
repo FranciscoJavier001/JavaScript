@@ -1,0 +1,11 @@
+body {
+  /* A la etiqueta body */
+  height: 100vh; /* Altura es todo lo que se ve en la pantalla */
+  display: flex; /* Para poder mover los elementos */
+  align-items: center; /* Centramos la etiqueta en medio de la pagina en el eje de las Y */
+  background: linear-gradient(
+    to top left,
+    #28b487,
+    #7dd56f
+  ); /* Finaliza arriba a la izquierda, color #1 abajo, color #2 arriba */
+}
