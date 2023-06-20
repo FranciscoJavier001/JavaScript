@@ -37,3 +37,11 @@ const calcularEdad = (añoNacimiento) => {
 
 const primerNombre = "Jaime"; //* Esta es una variable Global */
 calcularEdad(1987); //* Funcion Global, parametro necesario*/
+
+document.querySelector(".botonEnviar").addEventListener("click", () => {
+  //* Etiqueta boton en su clase le pongo un evento click y que realice una funcion */
+  const inputSection = String(document.querySelector(".input-section").value); //* Veo el numero que esta en la etiqueta input de adivinanza */
+
+  console.log(inputSection, typeof inputSection); //* Muestro el numero del input, y su tipo */
+  document.getElementById("p-section").innerHTML = inputSection; //* Asi puedo meterle info directamente al DOM */
+});
