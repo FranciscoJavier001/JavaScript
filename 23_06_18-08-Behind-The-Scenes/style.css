@@ -19,3 +19,10 @@ h1 {
   text-align: center; /* Centramos el texto en eje de las X */
   color: white; /* Color del texto */
 }
+
+section {
+  /* A la etiqueta Section */
+  position: absolute; /* Toma el Display de tu elemento Padre */
+  top: 0%; /* Mantente Hasta Arriba */
+  left: 0%; /* Mantente hasta la izquierda */
+}
