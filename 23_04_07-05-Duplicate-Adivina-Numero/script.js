@@ -56,3 +56,7 @@ document.querySelector(".btnRevisa").addEventListener("click", function () {
     document.querySelector(".puntaje").textContent = "Perdiste😭";
   }
 });
+
+let today = new Date(); //* inicializo una nueva variable */
+let dateString = today.toLocaleString(); //* Que te de la fecha inmediata */
+document.getElementById("date1").innerHTML = dateString; //* Que lo coloque en el DOM */
