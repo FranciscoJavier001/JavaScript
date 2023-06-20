@@ -135,3 +135,28 @@ h1 {
   /* Etiqueta parrafo, con un texto, que contiene texto dentro de una etiqueta span */
   margin-bottom: 2rem; /* Le damos un margen inferior */
 }
+
+footer {
+  /* Nueva Etiqueta en el Pie de Pagina, pero con una clase */
+  background-color: #191919; /*  Color de Fondo */
+  color: white; /* La tipografia de las letras es blanca */
+  position: absolute; /* Esta en la posicion absoluta de la pagina, justo debajo del body */
+  bottom: 0; /* Es el espaciado hacia abajo del footer */
+  width: 100%; /* La anchura del elemento */
+  text-align: center; /* Para centar el texto en el footer */ /* Espaciado en el footer */
+  line-height: 2.1vh; /* Espacio de cada linea */
+  font-size: small; /* Tamaño de texto */
+}
+
+.social {
+  /* Estilos personalizados a esta clase */
+  display: inline-block; /* Que se comporten en bloque de linea */
+  font-size: 3rem; /* Tamaño de cada elemento */
+  padding: 0.4rem 1.1rem; /* Separacion de los iconos sociables */
+}
+
+.social:hover {
+  /* Al pasarle el mouse por los iconos sociales */
+  filter: saturate(100%) brightness(150%); /* Saturarlos y aumenta el brillo */
+  transition-duration: 1.5s; /* Duracion de la transicion */
+}
