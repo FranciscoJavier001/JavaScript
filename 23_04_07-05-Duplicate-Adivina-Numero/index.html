@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- Ya enlace el CSS, este lo pongo mas arriba -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Invoco el Script de fontAwesome para poder usarlo -->
     <title>Numero Secreto</title>
     <!-- Titulo -->
   </head>
@@ -45,6 +52,42 @@
         <!-- Es un parrafo con una clase, dentro un texto dentro otro span con una clase y texto -->
       </section>
     </main>
+    <footer class="footer">
+      <!-- Etiqueta pie de pagina -->
+      <p>
+        <!-- Parrafo, ya contiene estilos predefinidos en CSS -->
+        &copy; Francisco Javier Martinez Duran
+        <br />
+        <!-- Espacio entre lineas -->
+        Fecha de Creacion: 20/06/2023, 12:13:02 PM
+        <!-- Texto en parrafo, con un span e invoco variable desde JS al id -->
+        <br />
+        Fecha Actual: <span id="date1"></span>
+        <!-- Texto en parrafo, con un span e invoco variable desde JS al id -->
+      </p>
+      <a
+        class="social"
+        href="https://www.linkedin.com/in/francisco-javier-martinez-duran-92055b275/"
+        target="_blank"
+        ><i class="fab fa-linkedin-in" style="color: rgb(33, 56, 205)"></i
+      ></a>
+      <!-- Hipervinculo, con una clase definida en CSS, en link de pestaña nueva, con etiqueta de FontAwesome, con estilos -->
+      <a
+        class="social"
+        href="https://github.com/FranciscoJavier001/JavaScript/tree/main/23_04_07-05-Duplicate-Adivina-Numero"
+        target="_blank"
+        ><i class="fas fa-code" style="color: rgb(59, 57, 60)"></i
+      ></a>
+      <!-- Hipervinculo, con una clase definida en CSS, en link de pestaña nueva, con etiqueta de FontAwesome, con estilos -->
+      <a
+        class="social"
+        href="https://github.com/FranciscoJavier001"
+        target="_blank"
+        ><i class="fa-brands fa-github" style="color: #430688"></i
+      ></a>
+      <!-- Hipervinculo, con una clase definida en CSS, en link de pestaña nueva, con etiqueta de FontAwesome, con estilos -->
+    </footer>
+
     <script src="script.js"></script>
     <!-- Enlace al Archivo Logico -->
   </body>
