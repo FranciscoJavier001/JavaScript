@@ -45,3 +45,61 @@ document.querySelector(".botonEnviar").addEventListener("click", () => {
   console.log(inputSection, typeof inputSection); //* Muestro el numero del input, y su tipo */
   document.getElementById("p-section").innerHTML = inputSection; //* Asi puedo meterle info directamente al DOM */
 });
+
+console.log("Nuevos Datos"); //* Volvemos a JS */
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //* Espacio */
+
+function calcularEdadDos(anoNacimientoDos) {
+  //* Defino una funcion que recibe un parametro */
+  const edadDos = 2024 - anoNacimientoDos; //* Defino una variable que sea una operacion artimetica */
+  console.log(primerNombreDos); //* Muestro en consola una variable que aun no defino */
+  return edadDos; //* Regreso la variable para que no salga undefine */
+}
+
+const primerNombreDos = "Francisco"; //* Defino una variable global que se ejecuta en la linea 55 */
+console.log(calcularEdadDos(1987)); //* Ejecuto la funcion recibiendo un parametro */
+
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //* Espacio */
+
+//*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  */
+
+function calcularEdadTres(anoNacimientoTres) {
+  //* Defino una funcion que recibe un parametro */
+  const edadTres = 2024 - anoNacimientoTres; //* Defino una variable que sea una operacion artimetica */
+
+  function imprimirEdadTres() {
+    //* Defino una funcion que no recibe nada */
+    const salidaTres = `${primerNombreDos}, Tu edad es ${edadTres}, naciste en ${anoNacimientoTres}`; //* Defino una variable que sea un mensaje */
+    console.log(salidaTres); //* Muestro en consola la variable de L72 */
+  }
+
+  imprimirEdadTres(); //* Invoco la funcion anteriormente creada */
+  return edadTres; //* Lo que se va a regresar cuando invoque la funcion */
+}
+
+console.log(calcularEdadTres(1987)); //* Ejecuto la funcion recibiendo un parametro */
+
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //* Espacio */
+
+//*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  *///*  */
+
+function calcularEdadCuatro(anoNacimientoCuatro) {
+  //* Defino una funcion que recibe un parametro */
+  const edadCuatro = 2024 - anoNacimientoCuatro; //* Defino una variable que sea una operacion artimetica */
+
+  function imprimirEdadCuatro() {
+    //* Defino una funcion que no recibe nada */
+    const salidaCuatro = `${primerNombreDos}, Tu edad es ${edadCuatro}, naciste en ${anoNacimientoCuatro}`; //* Defino una variable que sea un mensaje */
+    console.log(salidaCuatro); //* Muestro en consola la variable de L92 */
+
+    if (anoNacimientoCuatro >= 1981 && anoNacimientoCuatro <= 1999) {
+      const stringCuatro = `Eres un Millenial, ${primerNombreDos}`;
+      console.log(stringCuatro);
+    }
+  }
+
+  imprimirEdadCuatro(); //* Invoco la funcion anteriormente creada */
+  return edadCuatro; //* Lo que se va a regresar cuando invoque la funcion */
+}
+
+console.log(calcularEdadCuatro(1987)); //* Ejecuto la funcion recibiendo un parametro */
