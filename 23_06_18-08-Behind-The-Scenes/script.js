@@ -28,6 +28,9 @@ const calcularEdad = (añoNacimiento) => {
       console.log(agregar(2, 3)); //* Mando llamar esta funcion y le paso parametros */
     }
 
+    const agregarFlecha = (a, b) => a + b; //* Funcion de Flecha */
+    console.log(agregarFlecha(10, 20)); //* Muestro en conola la funcion de flecha con sus parametros */
+
     console.log(millenial); //* Hasta aqui llega esta variable */
     console.log(salidaConsola); //* Hasta aqui llega esta variable */
     console.log(edad); //* Hasta aqui llega esta variable */
