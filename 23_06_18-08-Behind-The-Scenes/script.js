@@ -106,3 +106,15 @@ function calcularEdadCuatro(anoNacimientoCuatro) {
 }
 
 console.log(calcularEdadCuatro(1987)); //* Ejecuto la funcion recibiendo un parametro */
+
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //* Espacio */
+
+const francisco = {
+  //* Variable que es un objeto */
+  ano: 1987, //* Informacion dentro del objeto */
+  calcularEdad: function () {
+    //* Es una funcion dentro del objeto */
+    console.log(`Tu edad es ${2024 - this.ano} años`); //* Mensaje en consola con operacion aritmetica dentro */
+  },
+};
+francisco.calcularEdad(); //* Ejecutamos este objeto, con la funcion calcularEdad */
