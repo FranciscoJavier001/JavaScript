@@ -118,3 +118,15 @@ const francisco = {
   },
 };
 francisco.calcularEdad(); //* Ejecutamos este objeto, con la funcion calcularEdad */
+
+const eduardo = {
+  //* Creo un nuevo objeto */
+  ano: 2024, //* Estos son los valores del objeto */
+};
+
+eduardo.calcularEdad = francisco.calcularEdad; //* A estos objetos les paso esta funcion y los igualo */
+eduardo.calcularEdad(); //* A este objeto le pido que ejecute la funcion de calcularEdad */
+francisco.calcularEdad(); //* A este objeto le pido que ejecute la funcion de calcularEdad */
+
+const f = francisco.calcularEdad; //* Le asigno un nuevo nombre a este objeto con esta funcion */
+console.log(f); //* Muestro en consola la variable anteriormente creada L131 */
