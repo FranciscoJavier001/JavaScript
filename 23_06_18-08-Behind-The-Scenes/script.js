@@ -130,3 +130,8 @@ francisco.calcularEdad(); //* A este objeto le pido que ejecute la funcion de ca
 
 const f = francisco.calcularEdad; //* Le asigno un nuevo nombre a este objeto con esta funcion */
 console.log(f); //* Muestro en consola la variable anteriormente creada L131 */
+
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //* Espacio */
+
+//* Primitive Types */ //* Los Clasicos */
+//* Reference Types */ //* Son objetos que contienen informacion */
