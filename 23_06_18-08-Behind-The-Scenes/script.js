@@ -135,3 +135,17 @@ console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"); //*
 
 //* Primitive Types */ //* Los Clasicos */
 //* Reference Types */ //* Son objetos que contienen informacion */
+
+const objFrancisco = {
+  //* Inicializo un objeto con variables definidas */
+  nombre: "Francisco",
+  apellido: "Martinez",
+  edad: 36,
+  familia: ["Maricela", "Hector", "Lorena"],
+};
+
+const objFranciscoCopia = Object.assign({}, objFrancisco); //* Nueva variable que le asigen los valores definidos de variable anterior */
+objFranciscoCopia.apellido = "Duran"; //* La variable que tenia le voy a asignar nuevos valores */
+
+console.log("Primer Apellido", objFrancisco); //* Primer Objeto en consola */
+console.log("Segundo Apellido", objFranciscoCopia); //* Segundo objeto en consola */
