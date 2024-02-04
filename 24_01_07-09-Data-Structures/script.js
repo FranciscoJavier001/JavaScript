@@ -40,3 +40,5 @@ console.log(i, j, k); //* Muestro en consola estas posiciones del arreglo */
 
 const [p = 1, q = 1, r = 1] = [8, 9]; //* Desestructuro el array y le asigno numeros pero solo cambia la ultima posicion */
 console.log(p, q, r); //* Muestro en consola el arreglo */
+
+//* Programacion Personal */
