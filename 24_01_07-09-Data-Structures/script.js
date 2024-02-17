@@ -22,6 +22,7 @@ const arr = [2, 3, 4]; //* Es un Arreglo */
 const a = [0]; //* Es una constate que es un elemento del array */
 const b = [1]; //* Es una constate que es un elemento del array */
 const c = [2]; //* Es una constate que es un elemento del array */
+console.log(arr); //* Muestro el primer arr que es 2,3,4 */
 
 const [x, y, z] = arr; //* Desestructuro la constante arr y le asigno nuevos valores */
 console.log(z, y, z); //* Muestro en consola los valores del primer array */
