@@ -19,10 +19,12 @@ const restaurant = {
 };
 
 const arr = [2, 3, 4]; //* Es un Arreglo */
+console.log(arr); //* Muestro el primer arr que es 2,3,4 */
+
+//* Son variables sin ninguna utilidad */
 const a = [0]; //* Es una constate que es un elemento del array */
 const b = [1]; //* Es una constate que es un elemento del array */
 const c = [2]; //* Es una constate que es un elemento del array */
-console.log(arr); //* Muestro el primer arr que es 2,3,4 */
 
 const [x, y, z] = arr; //* Desestructuro la constante arr y le asigno nuevos valores */
 console.log(z, y, z); //* Muestro en consola los valores del primer array */
@@ -43,3 +45,18 @@ const [p = 1, q = 1, r = 1] = [8, 9]; //* Desestructuro el array y le asigno num
 console.log(p, q, r); //* Muestro en consola el arreglo */
 
 //* Programacion Personal */
+
+//* Lo que hace el tutor */
+/*
+  Tiene una variable que es un objeto porque tiene propiedades y tiene 2 variables dentro que son arrays
+  inicializa un arreglo con numeros unque tiene el del objeto y no el del array
+  Inicializa una constante que va a desestructurar(objeto), pero le volvio a asignar estas nuevas variables a la constante arr(objeto)
+  Desestructuro 2 variables de un objeto y se metio a los array de la constante restaurant
+  Creo una variable que tiene copia el nombre variable#1, luego paso la variable al numero 2, luego la var 2 la establecio como 1, consola
+  Cambio el orden de la variable desestructurando las 2 y las pone iguale 
+  Dentro de la variable restaurante  inicializo una funcion que tiene 2 variables y luego me retorna, luego con this regresa un objeto dentro
+  de la funcion restaurant pero usa el this, luego dentro utiliza una variable dentro del objeto en este objeto, luego hace la misma operacion,
+  luego mostro en consola lo que queria de cada lugar solamente con numero, luego desestructuro antes y las tiene reasignadas y consola
+  inicializo un arreglo, dentro otro arreglo, inicializo otro arreglo, con comas para pasar espacio y lo ubica y consola
+  Inicializo una variable que esta desestructurada y luego reasigno los valores luego puso un arreglo de 2 y mostro 3 en consola por 1ero
+/**/
