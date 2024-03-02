@@ -1,40 +1,40 @@
 "use strict"; //* Para que nos pida una estructura e impedir algunas acciones globales */
 
-const restaurant = {
-  //* Inicializo una variable que sea un objeto */
-  nombre: "Classico Italiano", //* Atributo dentro del objeto */
-  localizacion: "Via Angelo Tavanti 23, Florencia, Italia", //* Atributo dentro del objeto */
-  categorias: ["Italiano", "Pizzeria", "Vegetariano", "Organico"], //* Atributo dentro del objeto, es un arreglo */
-  menuInicial: ["Estofado", "Brocheta", "Pan de Ajo", "Ensalada Campecina"], //* Atributo dentro del objeto, es un arreglo */
-  menuPrincipal: ["Pizza", "Pasta", "Rioli"], //* Atributo dentro del objeto, es un arreglo */
+// const restaurant = {
+//   //* Inicializo una variable que sea un objeto */
+//   nombre: "Classico Italiano", //* Atributo dentro del objeto */
+//   localizacion: "Via Angelo Tavanti 23, Florencia, Italia", //* Atributo dentro del objeto */
+//   categorias: ["Italiano", "Pizzeria", "Vegetariano", "Organico"], //* Atributo dentro del objeto, es un arreglo */
+//   menuInicial: ["Estofado", "Brocheta", "Pan de Ajo", "Ensalada Campecina"], //* Atributo dentro del objeto, es un arreglo */
+//   menuPrincipal: ["Pizza", "Pasta", "Rioli"], //* Atributo dentro del objeto, es un arreglo */
 
-  orden: function (pedidoInicial, pedidoPrincipal) {
-    //* Nueva variable ques una funcion que recibe 2 parametros */
-    return [
-      //* Lo que regresa al ejecutarla */
-      this.menuInicial[pedidoInicial], //* El menu inicial se va a tomar como pedido inicial */
-      this.menuPrincipal[pedidoPrincipal], //* Menu Principal se va a tomar como pedido inicial */
-    ];
-  },
-};
+//   orden: function (pedidoInicial, pedidoPrincipal) {
+//     //* Nueva variable ques una funcion que recibe 2 parametros */
+//     return [
+//       //* Lo que regresa al ejecutarla */
+//       this.menuInicial[pedidoInicial], //* El menu inicial se va a tomar como pedido inicial */
+//       this.menuPrincipal[pedidoPrincipal], //* Menu Principal se va a tomar como pedido inicial */
+//     ];
+//   },
+// };
 
 const arr = [2, 3, 4]; //* Es un Arreglo */
 console.log(arr); //* Muestro el primer arr que es 2,3,4 */
 
 //* Son variables sin ninguna utilidad */
-const a = [0]; //* Es una constate que es un elemento del array */
-const b = [1]; //* Es una constate que es un elemento del array */
-const c = [2]; //* Es una constate que es un elemento del array */
+// const a = [0]; //* Es una constate que es un elemento del array */
+// const b = [1]; //* Es una constate que es un elemento del array */
+// const c = [2]; //* Es una constate que es un elemento del array */
 
 const [x, y, z] = arr; //* Desestructuro la constante arr y le asigno nuevos valores */
 console.log(z, y, z); //* Muestro en consola los valores del primer array */
 console.log(arr); //* Muestro en consola el primer array que se llama arr */
 
-let [primero, segundo] = restaurant.categorias; //* Desestructuro el arreglo de este objeto y asigno ese orden */
-console.log(segundo, primero); //* Muestro en consola con el orden invertido */
+// let [primero, segundo] = restaurant.categorias; //* Desestructuro el arreglo de este objeto y asigno ese orden */
+// console.log(segundo, primero); //* Muestro en consola con el orden invertido */
 
-const [inicial, principal] = restaurant.orden(2, 0); //* Desestructuro 2 arreglos del objeto oeden de restaurant en su posicion 2 y 9 */
-console.log(inicial, principal); //* Mostramos estas 2 variables en consola */
+// const [inicial, principal] = restaurant.orden(2, 0); //* Desestructuro 2 arreglos del objeto oeden de restaurant en su posicion 2 y 9 */
+// console.log(inicial, principal); //* Mostramos estas 2 variables en consola */
 
 const anidado = [2, 4, [5, 6]]; //* Nueva variable que es un array anidado */
 // const [i, , j] = anidado;
@@ -60,3 +60,77 @@ console.log(p, q, r); //* Muestro en consola el arreglo */
   inicializo un arreglo, dentro otro arreglo, inicializo otro arreglo, con comas para pasar espacio y lo ubica y consola
   Inicializo una variable que esta desestructurada y luego reasigno los valores luego puso un arreglo de 2 y mostro 3 en consola por 1ero
 /**/
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegeratarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0,
+      close: 24,
+    },
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+};
+
+restaurant.orderDelivery({
+  time: "22:30",
+  address: "Via del Sole, 21",
+  mainIndex: 2,
+  starterIndex: 2,
+});
+
+restaurant.orderDelivery({
+  addresaddress: "Via del Sole, 21",
+
+  starterIndex: 1,
+});
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+console.log(a, b);
+
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c);
