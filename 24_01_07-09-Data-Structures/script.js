@@ -19,7 +19,7 @@
 // };
 
 const arr = [2, 3, 4]; //* Es un Arreglo */
-console.log(arr); //* Muestro el primer arr que es 2,3,4 */
+// console.log(arr); //* Muestro el primer arr que es 2,3,4 */
 
 //* Son variables sin ninguna utilidad */
 // const a = [0]; //* Es una constate que es un elemento del array */
@@ -28,7 +28,7 @@ console.log(arr); //* Muestro el primer arr que es 2,3,4 */
 
 const [x, y, z] = arr; //* Desestructuro la constante arr y le asigno nuevos valores */
 console.log(z, y, z); //* Muestro en consola los valores del primer array */
-console.log(arr); //* Muestro en consola el primer array que se llama arr */
+// console.log(arr); //* Muestro en consola el primer array que se llama arr */
 
 // let [primero, segundo] = restaurant.categorias; //* Desestructuro el arreglo de este objeto y asigno ese orden */
 // console.log(segundo, primero); //* Muestro en consola con el orden invertido */
@@ -123,11 +123,11 @@ const letters = [...str, "", "S."];
 console.log(letters);
 console.log(...str);
 
-const ingredients = [prompt(`Let's make pasta! Ingredients 1`)];
-console.log(ingredients);
+// const ingredients = [prompt(`Let's make pasta! Ingredients 1`)];
+// console.log(ingredients);
 
 // restaurant.orderPasta(ingredients[0]);
-restaurant.orderPasta(...ingredients);
+// restaurant.orderPasta(...ingredients);
 
 const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
 console.log(newRestaurant);
@@ -136,6 +136,9 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = "Ristorante Roma";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
+const [a, b, ...otras] = [1, 2, 3, 4, 5];
+console.log(a, b, otras);
 
 // restaurant.orderDelivery({
 //   time: "22:30",
