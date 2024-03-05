@@ -177,3 +177,5 @@ console.log(a, b, otras);
 //   fri: { open: o, close: c },
 // } = openingHours;
 // console.log(o, c);
+
+// || OR, && AND,
