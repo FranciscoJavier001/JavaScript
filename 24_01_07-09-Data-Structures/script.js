@@ -178,4 +178,4 @@ console.log(a, b, otras);
 // } = openingHours;
 // console.log(o, c);
 
-// || OR, && AND,
+// || OR, && AND, ?? NULLISH
