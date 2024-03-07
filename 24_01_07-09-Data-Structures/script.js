@@ -182,9 +182,11 @@
 
 // Prueba..
 const game = {
-  team1: "Bayer Munich",
+  //* Es un arreglo de elementos */
+  team1: "Bayer Munich", //* Son elementos dentro del arreglo */
   team2: "Borrussia Dortmund",
   players: [
+    //* Un arreglo dentro de otro arreglo */
     [
       "Neuer",
       "Pavard",
@@ -213,38 +215,42 @@ const game = {
     ],
   ],
 
-  score: "4:0",
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
-  date: "Nov 9th, 2037",
+  score: "4:0", //* Mas elementos dentro del arreglo */
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"], //* Otro elemento del arreglo */
+  date: "Nov 9th, 2037", //* Elemento arreglo */
   odds: {
+    //* Un arreglo dentro de otro arreglo */
     team1: 1.33,
     x: 3.25,
     team2: 6.5,
   },
 };
 
-const [players1, players2] = game.players;
-console.log(players1, players2);
+const [players1, players2] = game.players; //* Desestructuro el arrglo y los nombro como se me anotoje, solo son 2 variables */
+console.log(players1, players2); //* Muestro los elemento del arreglo en consola los 2 equipo */
 
-const [gk, ...fieldPlayers] = players1;
-console.log(gk, fieldPlayers);
+const [gk, ...fieldPlayers] = players1; //* Desestructuro el jugadores1 y muestro posicion 1 del arreglo y lo demas */
+console.log(gk, fieldPlayers); //* Muestro un arreglo en consola y los otros elementos que faltan  */
 
-const allPlayers = [...players1, ...players2];
-console.log(allPlayers);
+const allPlayers = [...players1, ...players2]; //*  Muestro los elementos de estos dos arreglo */
+console.log(allPlayers); //* Muestro en consola */
 
-const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"];
+const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"]; //* Le voy a agregar elementos a este arreglo */
+console.log(players1Final); //* Muestro los elementos con los nuevos elementos en consola */
 
 const {
-  odds: { team1, x: draw, team2 },
-} = game;
-console.log(team1, draw, team2);
+  //* Inizializo un arreglo */
+  odds: { team1, x: draw, team2 }, //* Solamente son variables definidas arriba y una que se reasigna */
+} = game; //* De que variable viene */
+console.log(team1, draw, team2); //* Muestro en consola solo numeros */
 
 const printGoals = function (...players) {
-  console.log(players);
-  console.log(`${players.length} goals were scored`);
+  //* Defino una variable que ejecute una funcion que llame a todos los jugadores */
+  console.log(players); //* Muestro en consola solo los jugaroes que anotaron goles */
+  console.log(`${players.length} goals were scored`); //* Mostramos el tamaño del arreglo y pasamos este mensaje en consola */
 };
 
-printGoals(...game.scored);
+printGoals(...game.scored); //* Aqui reasigno el valor de la variable que muestro en consola arriba */
 
-team1 < team2 && console.log("Team 1 is more likely to win");
+team1 < team2 && console.log("Team 1 is more likely to win"); //* Ambas afirmaciones son correctas y muestro en consola */
 team1 > team2 && console.log("Team 2 is more likely to win");
