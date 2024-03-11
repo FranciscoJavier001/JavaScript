@@ -260,9 +260,11 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]; //* Es un arra
 for (const item of menu) console.log(item); //* Mientras exista un item en el menu, muestra el item en consola */
 
 for (const item of menu.entries()) {
-  console.log(item);
+  //* Recorro un arreglo, asigno el nombre variable y de donde viene y que son y cuales */
+  console.log(item); //* Muestro en consola */
 }
 
 for (const [i, el] of menu.entries()) {
-  console.log(`${i + 1}:${el}`);
+  //* Recorro el arreglo, asigno las variables definidas[] y de donde viene y que y cuales son */
+  console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
 }
