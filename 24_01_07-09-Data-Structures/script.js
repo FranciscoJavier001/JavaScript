@@ -268,3 +268,5 @@ for (const [i, el] of menu.entries()) {
   //* Recorro el arreglo, asigno las variables definidas[] y de donde viene y que y cuales son */
   console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
 }
+
+// BE-F2-48-26-AB-02:ET-2144LU-2
