@@ -141,131 +141,164 @@
 
 // || OR, && AND, ?? NULLISH
 
-// Prueba..
-const game = {
-  //* Es un arreglo de elementos */
-  team1: "Bayer Munich", //* Son elementos dentro del arreglo */
-  team2: "Borrussia Dortmund",
-  players: [
-    //* Un arreglo dentro de otro arreglo */
-    [
-      "Neuer",
-      "Pavard",
-      "Martinez",
-      "Alaba",
-      "Davies",
-      "Kimmich",
-      "Goretzka",
-      "Coman",
-      "Muller",
-      "Gnarby",
-      "Lewandowski",
-    ],
-    [
-      "Burki",
-      "Schulz",
-      "Hummels",
-      "Akanji",
-      "Hakimi",
-      "Weigl",
-      "Witsel",
-      "Hazard",
-      "Brandt",
-      "Sancho",
-      "Gotze",
-    ],
+// // Prueba..
+// const game = {
+//   //* Es un arreglo de elementos */
+//   team1: "Bayer Munich", //* Son elementos dentro del arreglo */
+//   team2: "Borrussia Dortmund",
+//   players: [
+//     //* Un arreglo dentro de otro arreglo */
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+
+//   score: "4:0", //* Mas elementos dentro del arreglo */
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"], //* Otro elemento del arreglo */
+//   date: "Nov 9th, 2037", //* Elemento arreglo */
+//   odds: {
+//     //* Un arreglo dentro de otro arreglo */
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
+
+// const [players1, players2] = game.players; //* Desestructuro el arrglo y los nombro como se me anotoje, solo son 2 variables */
+// console.log(players1, players2); //* Muestro los elemento del arreglo en consola los 2 equipo */
+
+// const [gk, ...fieldPlayers] = players1; //* Desestructuro el jugadores1 y muestro posicion 1 del arreglo y lo demas */
+// console.log(gk, fieldPlayers); //* Muestro un arreglo en consola y los otros elementos que faltan  */
+
+// const allPlayers = [...players1, ...players2]; //*  Muestro los elementos de estos dos arreglo */
+// console.log(allPlayers); //* Muestro en consola */
+
+// const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"]; //* Le voy a agregar elementos a este arreglo */
+// console.log(players1Final); //* Muestro los elementos con los nuevos elementos en consola */
+
+// const {
+//   //* Inizializo un arreglo */
+//   odds: { team1, x: draw, team2 }, //* Solamente son variables definidas arriba y una que se reasigna */
+// } = game; //* De que variable viene */
+// console.log(team1, draw, team2); //* Muestro en consola solo numeros */
+
+// const printGoals = function (...players) {
+//   //* Defino una variable que ejecute una funcion que llame a todos los jugadores */
+//   console.log(players); //* Muestro en consola solo los jugaroes que anotaron goles */
+//   console.log(`${players.length} goals were scored`); //* Mostramos el tamaño del arreglo y pasamos este mensaje en consola */
+// };
+
+// printGoals(...game.scored); //* Aqui reasigno el valor de la variable que muestro en consola arriba */
+
+// team1 < team2 && console.log("Team 1 is more likely to win"); //* Ambas afirmaciones son correctas y muestro en consola */
+// team1 > team2 && console.log("Team 2 is more likely to win");
+
+// const restaurant = {
+//   name: "Classico Italiano",
+//   location: "Via Angelo Tavanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegeratarian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 24,
+//     },
+//   },
+
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery: function ({
+//     starterIndex = 1,
+//     mainIndex = 0,
+//     time = "20:00",
+//     address,
+//   }) {
+//     console.log(
+//       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+//     );
+//   },
+//   orderPasta: function (ing1, ing2, ing3) {
+//     console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+//   },
+// };
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]; //* Es un array que llama lo que tiene este array y dentro otro array, solo identificamos */
+
+// for (const item of menu) console.log(item); //* Mientras exista un item en el menu, muestra el item en consola */
+
+// for (const item of menu.entries()) {
+//   //* Recorro un arreglo, asigno el nombre variable y de donde viene y que son y cuales */
+//   console.log(item); //* Muestro en consola */
+// }
+
+// for (const [i, el] of menu.entries()) {
+//   //* Recorro el arreglo, asigno las variables definidas[] y de donde viene y que y cuales son */
+//   console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
+// }
+
+// Prueba Tecnica
+const juego = {
+  equipo1: "Necaxa",
+  equipo2: "Chivas",
+  jugadores: [
+    ["A", "B", "C", "D", "E", "F", "G", "Y"],
+    ["H", "I", "J", "K", "L", "M", "N", "Z"],
   ],
-
-  score: "4:0", //* Mas elementos dentro del arreglo */
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"], //* Otro elemento del arreglo */
-  date: "Nov 9th, 2037", //* Elemento arreglo */
-  odds: {
-    //* Un arreglo dentro de otro arreglo */
-    team1: 1.33,
+  marcador: "4:0",
+  anotadores: ["A", "Y", "H", "Z"],
+  fecha: "Noviembre 9, 2020",
+  posibilidades: {
+    equipo1: 1.33,
     x: 3.25,
-    team2: 6.5,
+    equipo2: 6.5,
   },
 };
 
-const [players1, players2] = game.players; //* Desestructuro el arrglo y los nombro como se me anotoje, solo son 2 variables */
-console.log(players1, players2); //* Muestro los elemento del arreglo en consola los 2 equipo */
+for (const [i, jugadores] of juego.anotadores.entries())
+  console.log(`Goles ${i + 1}: ${jugadores}`);
 
-const [gk, ...fieldPlayers] = players1; //* Desestructuro el jugadores1 y muestro posicion 1 del arreglo y lo demas */
-console.log(gk, fieldPlayers); //* Muestro un arreglo en consola y los otros elementos que faltan  */
+const posibilidades = Object.values(juego.posibilidades);
+let promedio = 0;
+for (const posibilidad of posibilidades) promedio += posibilidad;
 
-const allPlayers = [...players1, ...players2]; //*  Muestro los elementos de estos dos arreglo */
-console.log(allPlayers); //* Muestro en consola */
+promedio /= posibilidades.length;
+console.log(promedio);
 
-const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"]; //* Le voy a agregar elementos a este arreglo */
-console.log(players1Final); //* Muestro los elementos con los nuevos elementos en consola */
-
-const {
-  //* Inizializo un arreglo */
-  odds: { team1, x: draw, team2 }, //* Solamente son variables definidas arriba y una que se reasigna */
-} = game; //* De que variable viene */
-console.log(team1, draw, team2); //* Muestro en consola solo numeros */
-
-const printGoals = function (...players) {
-  //* Defino una variable que ejecute una funcion que llame a todos los jugadores */
-  console.log(players); //* Muestro en consola solo los jugaroes que anotaron goles */
-  console.log(`${players.length} goals were scored`); //* Mostramos el tamaño del arreglo y pasamos este mensaje en consola */
-};
-
-printGoals(...game.scored); //* Aqui reasigno el valor de la variable que muestro en consola arriba */
-
-team1 < team2 && console.log("Team 1 is more likely to win"); //* Ambas afirmaciones son correctas y muestro en consola */
-team1 > team2 && console.log("Team 2 is more likely to win");
-
-const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegeratarian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
-
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderDelivery: function ({
-    starterIndex = 1,
-    mainIndex = 0,
-    time = "20:00",
-    address,
-  }) {
-    console.log(
-      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-    );
-  },
-  orderPasta: function (ing1, ing2, ing3) {
-    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
-  },
-};
-
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]; //* Es un array que llama lo que tiene este array y dentro otro array, solo identificamos */
-
-for (const item of menu) console.log(item); //* Mientras exista un item en el menu, muestra el item en consola */
-
-for (const item of menu.entries()) {
-  //* Recorro un arreglo, asigno el nombre variable y de donde viene y que son y cuales */
-  console.log(item); //* Muestro en consola */
+for (const [equipo, posibilidad] of Object.entries(juego.posibilidades)) {
+  // console.log(equipo, posibilidad);
+  const equipoValor = equipo === "x" ? "empate" : `victoria ${juego[equipo]}`;
+  console.log(`Posibilidad de ${equipoValor} ${posibilidad}`);
 }
-
-for (const [i, el] of menu.entries()) {
-  //* Recorro el arreglo, asigno las variables definidas[] y de donde viene y que y cuales son */
-  console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
-}
-//* Es una ecuacion de rapido y lento */
