@@ -269,45 +269,48 @@
 //   console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
 // }
 
-// Prueba Tecnica
-// Cuando lo que tenga tenga variables independientes poner [], variables con mas info {}
-const juego = {
-  //* Creo un array, que tenga variables */
-  equipo1: "Necaxa",
-  equipo2: "Chivas",
-  jugadores: [
-    //* Otro Array con mas informacion dentro de otro array */
-    ["A", "B", "C", "D", "E", "F", "G", "Y"],
-    ["H", "I", "J", "K", "L", "M", "N", "Z"],
-  ],
-  marcador: "4:0",
-  anotadores: ["A", "Y", "H", "Z"], //* Array dentro de otro array */
-  fecha: "Noviembre 9, 2020",
-  posibilidades: {
-    //* Array con mas informacion */
-    equipo1: 1.33,
-    x: 0.5,
-    equipo2: 6.5,
-  },
-};
+// // Prueba Tecnica
+// // Cuando lo que tenga tenga variables independientes poner [], variables con mas info {}
+// const juego = {
+//   //* Creo un array, que tenga variables */
+//   equipo1: "Necaxa",
+//   equipo2: "Chivas",
+//   jugadores: [
+//     //* Otro Array con mas informacion dentro de otro array */
+//     ["A", "B", "C", "D", "E", "F", "G", "Y"],
+//     ["H", "I", "J", "K", "L", "M", "N", "Z"],
+//   ],
+//   marcador: "4:0",
+//   anotadores: ["A", "Y", "H", "Z"], //* Array dentro de otro array */
+//   fecha: "Noviembre 9, 2020",
+//   posibilidades: {
+//     //* Array con mas informacion */
+//     equipo1: 1.33,
+//     x: 0.5,
+//     equipo2: 6.5,
+//   },
+// };
 
-for (const [i, jugadores] of juego.anotadores.entries()) //* Iteracion for, pero definimos un contador y otro contador y de donde vamos a tomar las entradas */
-  console.log(`Goles ${i + 1}: ${jugadores}`); //* Gol 1 de Jugador */
+// for (const [i, jugadores] of juego.anotadores.entries()) //* Iteracion for, pero definimos un contador y otro contador y de donde vamos a tomar las entradas */
+//   console.log(`Goles ${i + 1}: ${jugadores}`); //* Gol 1 de Jugador */
 
-const posibilidades = Object.values(juego.posibilidades); //* Variable, que toma los valores de una variable en su variable */
-let promedio = 0; //* Inicializo una variable en 0 */
-for (const posibilidad of posibilidades) promedio += posibilidad; //* Iteracion, definimos variable de localizacion de almacenamiento, luego promedio multiplicado en posibilidad */
+// const posibilidades = Object.values(juego.posibilidades); //* Variable, que toma los valores de una variable en su variable */
+// let promedio = 0; //* Inicializo una variable en 0 */
+// for (const posibilidad of posibilidades) promedio += posibilidad; //* Iteracion, definimos variable de localizacion de almacenamiento, luego promedio multiplicado en posibilidad */
 
-promedio /= posibilidades.length; //* Luego el promedio sera dividido en las posibilidades en su espacio */
-console.log(promedio); //* Mostramos en consola el promedio */
+// promedio /= posibilidades.length; //* Luego el promedio sera dividido en las posibilidades en su espacio */
+// console.log(promedio); //* Mostramos en consola el promedio */
 
-console.log(Object.entries(juego.posibilidades)); //* Muestro en consola este arreglo, solo viene lo que esta en posibilidades */
+// console.log(Object.entries(juego.posibilidades)); //* Muestro en consola este arreglo, solo viene lo que esta en posibilidades */
 
-for (const [nombreEquipo, posibilidad] of Object.entries(juego.posibilidades)) {
-  //* Iteracion, desectructuramos y definimos de donde vienen las entradas */
-  // console.log(equipo, posibilidad); //* Mensaje en consola */
-  const equipoValor =
-    nombreEquipo === "x" ? "empate" : `victoria ${juego[nombreEquipo]}`; //* Definimos variable, que sea igual a equipo y que si es identica a x muestra empate o victoria y muestra el nombre del equipo */
-  // console.log(equipoValor); //* Equipo valor toma valor del nombre del equipo */
-  console.log(`Posibilidad de ${equipoValor} ${posibilidad}`);
-}
+// for (const [nombreEquipo, posibilidad] of Object.entries(juego.posibilidades)) {
+//   //* Iteracion, desectructuramos y definimos de donde vienen las entradas */
+//   // console.log(equipo, posibilidad); //* Mensaje en consola */
+//   const equipoValor =
+//     nombreEquipo === "x" ? "empate" : `victoria ${juego[nombreEquipo]}`; //* Definimos variable, que sea igual a equipo y que si es identica a x muestra empate o victoria y muestra el nombre del equipo */
+//   // console.log(equipoValor); //* Equipo valor toma valor del nombre del equipo */
+//   console.log(`Posibilidad de ${equipoValor} ${posibilidad}`);
+// }
+
+// Los metodos en javascript es la manera en la cual interactuas con la pagina, para todo se utiliza un metodo y una metodologia
+console.log(new Set("franciscojaviermartinezduran").size); //* Importante, estudiar los metodos */
