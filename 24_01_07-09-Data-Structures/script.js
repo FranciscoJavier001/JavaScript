@@ -314,3 +314,34 @@
 
 // Los metodos en javascript es la manera en la cual interactuas con la pagina, para todo se utiliza un metodo y una metodologia
 console.log(new Set("franciscojaviermartinezduran").size); //* Importante, estudiar los metodos */
+
+const restaurante = new Map();
+restaurante.set("nombre", "Clasico Italiano");
+restaurante.set(1, "Florenza, Italia");
+console.log(restaurante);
+console.log(restaurante.set(2, "Lisboa, Portugal"));
+
+restaurante
+  .set("categorias", ["Italiano", "Pizzeria", "Vegetariano", "Organica"])
+  .set("abierto", 11)
+  .set("cerrado", 23)
+  .set(true, "Estamos Abiertos")
+  .set(false, "Estamos Cerrados");
+
+console.log(restaurante.get("nombre"));
+console.log(restaurante.get(true));
+console.log(restaurante.get(1));
+
+const tiempo = 21;
+restaurante.get(
+  console.log(
+    tiempo > restaurante.get("abierto") && tiempo < restaurante.get("cerrado")
+  )
+);
+
+console.log(restaurante.has("categorias"));
+restaurante.delete(2);
+console.log(restaurante);
+
+console.log(restaurante.size);
+console.log(restaurante.clear);
