@@ -313,36 +313,36 @@
 // }
 
 // Los metodos en javascript es la manera en la cual interactuas con la pagina, para todo se utiliza un metodo y una metodologia
-console.log(new Set("franciscojaviermartinezduran").size); //* Importante, estudiar los metodos */
+// console.log(new Set("franciscojaviermartinezduran").size); //* Importante, estudiar los metodos */
 
-const restaurante = new Map(); //* Creo una variable que mapeo, es decir la creo en un nuevo arreglo */
-restaurante.set("nombre", "Clasico Italiano"); //* Le asigno variables */
-restaurante.set(1, "Florenza, Italia"); //* Le asigno variables */
-console.log(restaurante); //* Muestro en consola sus propiedades */
-console.log(restaurante.set(2, "Lisboa, Portugal")); //* Le asigno esta variable */
+// const restaurante = new Map(); //* Creo una variable que mapeo, es decir la creo en un nuevo arreglo */
+// restaurante.set("nombre", "Clasico Italiano"); //* Le asigno variables */
+// restaurante.set(1, "Florenza, Italia"); //* Le asigno variables */
+// console.log(restaurante); //* Muestro en consola sus propiedades */
+// console.log(restaurante.set(2, "Lisboa, Portugal")); //* Le asigno esta variable */
 
-restaurante
-  .set("categorias", ["Italiano", "Pizzeria", "Vegetariano", "Organica"])
-  .set("abierto", 11)
-  .set("cerrado", 23)
-  .set(true, "Estamos Abiertos")
-  .set(false, "Estamos Cerrados"); //* Le asigne estas propiedades a la variable */
+// restaurante
+//   .set("categorias", ["Italiano", "Pizzeria", "Vegetariano", "Organica"])
+//   .set("abierto", 11)
+//   .set("cerrado", 23)
+//   .set(true, "Estamos Abiertos")
+//   .set(false, "Estamos Cerrados"); //* Le asigne estas propiedades a la variable */
 
-console.log(restaurante.get("nombre")); //* Muestro en consola esta informacion */
-console.log(restaurante.get(true));
-console.log(restaurante.get(1));
+// console.log(restaurante.get("nombre")); //* Muestro en consola esta informacion */
+// console.log(restaurante.get(true));
+// console.log(restaurante.get(1));
 
-const tiempo = 21; //* Defino esta variable */
-restaurante.get(
-  //* Le pido informacion */
-  console.log(
-    tiempo > restaurante.get("abierto") && tiempo < restaurante.get("cerrado") //* Muestro en consola esta condicional */
-  )
-);
+// const tiempo = 21; //* Defino esta variable */
+// restaurante.get(
+//   //* Le pido informacion */
+//   console.log(
+//     tiempo > restaurante.get("abierto") && tiempo < restaurante.get("cerrado") //* Muestro en consola esta condicional */
+//   )
+// );
 
-console.log(restaurante.has("categorias")); //* Muestro las categorias */
-restaurante.delete(2); //* Elimino una variable */
-console.log(restaurante); //* Muestro en consola la variable restaurante */
+// console.log(restaurante.has("categorias")); //* Muestro las categorias */
+// restaurante.delete(2); //* Elimino una variable */
+// console.log(restaurante); //* Muestro en consola la variable restaurante */
 
-console.log(restaurante.size); //* Reviso el tamaño de la variable restaurante */
-console.log(restaurante.clear); //* Limpio la informacion de esa variable */
+// console.log(restaurante.size); //* Reviso el tamaño de la variable restaurante */
+// console.log(restaurante.clear); //* Limpio la informacion de esa variable */
