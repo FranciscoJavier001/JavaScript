@@ -346,3 +346,17 @@
 
 // console.log(restaurante.size); //* Reviso el tamaño de la variable restaurante */
 // console.log(restaurante.clear); //* Limpio la informacion de esa variable */
+
+const eventoJuego = new Map([
+  [17, "⚽️ Gol"],
+  [(36, "🔁 Sustitucion")],
+  [(47, "⚽️ Gol")],
+  [(61, "🔁 Sustitucion")],
+  [(64, "🔸 Tarjeta")],
+  [(69, "🔴 Expulsado")],
+  [(70, "🔁 Sustitucion")],
+  [(72, "🔁 Sustitucion")],
+  [(76, "⚽️ Gol")],
+  [(80, "⚽️ Gol")],
+  [(92, "🔸 Tarjeta")],
+]);
