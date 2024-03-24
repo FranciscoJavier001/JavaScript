@@ -1,381 +1,369 @@
-// "use strict"; //* Para que nos pida una estructura e impedir algunas acciones globales */
+"use strict";
 
-// // const restaurant = {
-// //   //* Inicializo una variable que sea un objeto */
-// //   nombre: "Classico Italiano", //* Atributo dentro del objeto */
-// //   localizacion: "Via Angelo Tavanti 23, Florencia, Italia", //* Atributo dentro del objeto */
-// //   categorias: ["Italiano", "Pizzeria", "Vegetariano", "Organico"], //* Atributo dentro del objeto, es un arreglo */
-// //   menuInicial: ["Estofado", "Brocheta", "Pan de Ajo", "Ensalada Campecina"], //* Atributo dentro del objeto, es un arreglo */
-// //   menuPrincipal: ["Pizza", "Pasta", "Rioli"], //* Atributo dentro del objeto, es un arreglo */
-
-// //   orden: function (pedidoInicial, pedidoPrincipal) {
-// //     //* Nueva variable ques una funcion que recibe 2 parametros */
-// //     return [
-// //       //* Lo que regresa al ejecutarla */
-// //       this.menuInicial[pedidoInicial], //* El menu inicial se va a tomar como pedido inicial */
-// //       this.menuPrincipal[pedidoPrincipal], //* Menu Principal se va a tomar como pedido inicial */
-// //     ];
-// //   },
-// // };
-
-// const arr = [2, 3, 4]; //* Es un Arreglo */
-// // console.log(arr); //* Muestro el primer arr que es 2,3,4 */
-
-// //* Son variables sin ninguna utilidad */
-// // const a = [0]; //* Es una constate que es un elemento del array */
-// // const b = [1]; //* Es una constate que es un elemento del array */
-// // const c = [2]; //* Es una constate que es un elemento del array */
-
-// const [x, y, z] = arr; //* Desestructuro la constante arr y le asigno nuevos valores */
-// console.log(z, y, z); //* Muestro en consola los valores del primer array */
-// // console.log(arr); //* Muestro en consola el primer array que se llama arr */
-
-// // let [primero, segundo] = restaurant.categorias; //* Desestructuro el arreglo de este objeto y asigno ese orden */
-// // console.log(segundo, primero); //* Muestro en consola con el orden invertido */
-
-// // const [inicial, principal] = restaurant.orden(2, 0); //* Desestructuro 2 arreglos del objeto oeden de restaurant en su posicion 2 y 9 */
-// // console.log(inicial, principal); //* Mostramos estas 2 variables en consola */
-
-// const anidado = [2, 4, [5, 6]]; //* Nueva variable que es un array anidado */
-// // const [i, , j] = anidado;
-// const [i, , [j, k]] = anidado; //* Defino la posicion de cada objeto en el arreglo anidado */
-// console.log(i, j, k); //* Muestro en consola estas posiciones del arreglo */
-
-// const [p = 1, q = 1, r = 1] = [8, 9]; //* Desestructuro el array y le asigno numeros pero solo cambia la ultima posicion */
-// console.log(p, q, r); //* Muestro en consola el arreglo */
-
-// //* Programacion Personal */
-
-// //* Lo que hace el tutor */
-// /*
-//   Tiene una variable que es un objeto porque tiene propiedades y tiene 2 variables dentro que son arrays
-//   inicializa un arreglo con numeros unque tiene el del objeto y no el del array
-//   Inicializa una constante que va a desestructurar(objeto), pero le volvio a asignar estas nuevas variables a la constante arr(objeto)
-//   Desestructuro 2 variables de un objeto y se metio a los array de la constante restaurant
-//   Creo una variable que tiene copia el nombre variable#1, luego paso la variable al numero 2, luego la var 2 la establecio como 1, consola
-//   Cambio el orden de la variable desestructurando las 2 y las pone iguale
-//   Dentro de la variable restaurante  inicializo una funcion que tiene 2 variables y luego me retorna, luego con this regresa un objeto dentro
-//   de la funcion restaurant pero usa el this, luego dentro utiliza una variable dentro del objeto en este objeto, luego hace la misma operacion,
-//   luego mostro en consola lo que queria de cada lugar solamente con numero, luego desestructuro antes y las tiene reasignadas y consola
-//   inicializo un arreglo, dentro otro arreglo, inicializo otro arreglo, con comas para pasar espacio y lo ubica y consola
-//   Inicializo una variable que esta desestructurada y luego reasigno los valores luego puso un arreglo de 2 y mostro 3 en consola por 1ero
-// /**/
-
-// const arrr = [7, 8, 9];
-// const badNewArr = [1, 2, [arrr[0]], arrr[1], arrr[2]];
-// console.log(badNewArr);
-
-// const newArr = [1, 2, ...arrr];
-// console.log(newArr);
-
-// console.log(...newArr);
-// console.log(1, 2, 7, 8, 9);
-
-// const newMenu = [...restaurant.mainMenu, "Gnocci"];
-// console.log(newMenu);
-
-// const mainMenuCopy = [...restaurant.mainMenu];
-
-// const menuu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-// console.log(menuu);
-
-// const str = "Jonas";
-// const letters = [...str, "", "S."];
-// console.log(letters);
-// console.log(...str);
-
-// // const ingredients = [prompt(`Let's make pasta! Ingredients 1`)];
-// // console.log(ingredients);
-
-// // restaurant.orderPasta(ingredients[0]);
-// // restaurant.orderPasta(...ingredients);
-
-// const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
-// console.log(newRestaurant);
-
-// const restaurantCopy = { ...restaurant };
-// restaurantCopy.name = "Ristorante Roma";
-// console.log(restaurantCopy.name);
-// console.log(restaurant.name);
-
-// const [a, b, ...otras] = [1, 2, 3, 4, 5];
-// console.log(a, b, otras);
-
-// restaurant.orderDelivery({
-//   time: "22:30",
-//   address: "Via del Sole, 21",
-//   mainIndex: 2,
-//   starterIndex: 2,
-// });
-
-// restaurant.orderDelivery({
-//   addresaddress: "Via del Sole, 21",
-
-//   starterIndex: 1,
-// });
-
-// const { name, openingHours, categories } = restaurant;
-// console.log(name, openingHours, categories);
-
-// const {
-//   name: restaurantName,
-//   openingHours: hours,
-//   categories: tags,
-// } = restaurant;
-// console.log(restaurantName, hours, tags);
-
-// const { menu = [], starterMenu: starters = [] } = restaurant;
-// console.log(menu, starters);
-
-// let a = 111;
-// let b = 999;
-// const obj = { a: 23, b: 7, c: 14 };
-
-// ({ a, b } = obj);
-// console.log(a, b);
-
-// const {
-//   fri: { open: o, close: c },
-// } = openingHours;
-// console.log(o, c);
-
-// || OR, && AND, ?? NULLISH
-
-// // Prueba..
-// const game = {
-//   //* Es un arreglo de elementos */
-//   team1: "Bayer Munich", //* Son elementos dentro del arreglo */
-//   team2: "Borrussia Dortmund",
-//   players: [
-//     //* Un arreglo dentro de otro arreglo */
-//     [
-//       "Neuer",
-//       "Pavard",
-//       "Martinez",
-//       "Alaba",
-//       "Davies",
-//       "Kimmich",
-//       "Goretzka",
-//       "Coman",
-//       "Muller",
-//       "Gnarby",
-//       "Lewandowski",
-//     ],
-//     [
-//       "Burki",
-//       "Schulz",
-//       "Hummels",
-//       "Akanji",
-//       "Hakimi",
-//       "Weigl",
-//       "Witsel",
-//       "Hazard",
-//       "Brandt",
-//       "Sancho",
-//       "Gotze",
-//     ],
-//   ],
-
-//   score: "4:0", //* Mas elementos dentro del arreglo */
-//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"], //* Otro elemento del arreglo */
-//   date: "Nov 9th, 2037", //* Elemento arreglo */
-//   odds: {
-//     //* Un arreglo dentro de otro arreglo */
-//     team1: 1.33,
-//     x: 3.25,
-//     team2: 6.5,
+// const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// const openingHours = {
+//   [weekdays[3]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   [weekdays[4]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [weekdays[5]]: {
+//     open: 0, // Open 24 hours
+//     close: 24,
 //   },
 // };
-
-// const [players1, players2] = game.players; //* Desestructuro el arrglo y los nombro como se me anotoje, solo son 2 variables */
-// console.log(players1, players2); //* Muestro los elemento del arreglo en consola los 2 equipo */
-
-// const [gk, ...fieldPlayers] = players1; //* Desestructuro el jugadores1 y muestro posicion 1 del arreglo y lo demas */
-// console.log(gk, fieldPlayers); //* Muestro un arreglo en consola y los otros elementos que faltan  */
-
-// const allPlayers = [...players1, ...players2]; //*  Muestro los elementos de estos dos arreglo */
-// console.log(allPlayers); //* Muestro en consola */
-
-// const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"]; //* Le voy a agregar elementos a este arreglo */
-// console.log(players1Final); //* Muestro los elementos con los nuevos elementos en consola */
-
-// const {
-//   //* Inizializo un arreglo */
-//   odds: { team1, x: draw, team2 }, //* Solamente son variables definidas arriba y una que se reasigna */
-// } = game; //* De que variable viene */
-// console.log(team1, draw, team2); //* Muestro en consola solo numeros */
-
-// const printGoals = function (...players) {
-//   //* Defino una variable que ejecute una funcion que llame a todos los jugadores */
-//   console.log(players); //* Muestro en consola solo los jugaroes que anotaron goles */
-//   console.log(`${players.length} goals were scored`); //* Mostramos el tamaño del arreglo y pasamos este mensaje en consola */
-// };
-
-// printGoals(...game.scored); //* Aqui reasigno el valor de la variable que muestro en consola arriba */
-
-// team1 < team2 && console.log("Team 1 is more likely to win"); //* Ambas afirmaciones son correctas y muestro en consola */
-// team1 > team2 && console.log("Team 2 is more likely to win");
 
 // const restaurant = {
 //   name: "Classico Italiano",
 //   location: "Via Angelo Tavanti 23, Firenze, Italy",
-//   categories: ["Italian", "Pizzeria", "Vegeratarian", "Organic"],
+//   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
 //   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
 //   mainMenu: ["Pizza", "Pasta", "Risotto"],
-//   openingHours: {
-//     thu: {
-//       open: 12,
-//       close: 22,
-//     },
-//     fri: {
-//       open: 11,
-//       close: 23,
-//     },
-//     sat: {
-//       open: 0,
-//       close: 24,
-//     },
-//   },
 
-//   order: function (starterIndex, mainIndex) {
+//   // ES6 enhanced object literals
+//   openingHours,
+
+//   order(starterIndex, mainIndex) {
 //     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
 //   },
-//   orderDelivery: function ({
-//     starterIndex = 1,
-//     mainIndex = 0,
-//     time = "20:00",
-//     address,
-//   }) {
+
+//   orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
 //     console.log(
 //       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
 //     );
 //   },
-//   orderPasta: function (ing1, ing2, ing3) {
-//     console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+
+//   orderPasta(ing1, ing2, ing3) {
+//     console.log(
+//       `Here is your declicious pasta with ${ing1}, ${ing2} and ${ing3}`
+//     );
+//   },
+
+//   orderPizza(mainIngredient, ...otherIngredients) {
+//     console.log(mainIngredient);
+//     console.log(otherIngredients);
 //   },
 // };
 
-// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]; //* Es un array que llama lo que tiene este array y dentro otro array, solo identificamos */
+///////////////////////////////////////
+// String Methods Practice
 
-// for (const item of menu) console.log(item); //* Mientras exista un item en el menu, muestra el item en consola */
+// const flights =
+//   "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
 
-// for (const item of menu.entries()) {
-//   //* Recorro un arreglo, asigno el nombre variable y de donde viene y que son y cuales */
-//   console.log(item); //* Muestro en consola */
+// 🔴 Delayed Departure from FAO to TXL (11h25)
+//              Arrival from BRU to FAO (11h45)
+//   🔴 Delayed Arrival from HEL to FAO (12h05)
+//            Departure from FAO to LIS (12h30)
+
+// const getCode = (str) => str.slice(0, 3).toUpperCase();
+
+// for (const flight of flights.split("+")) {
+//   const [type, from, to, time] = flight.split(";");
+//   const output = `${type.startsWith("_Delayed") ? "🔴" : ""}${type.replaceAll(
+//     "_",
+//     " "
+//   )} ${getCode(from)} ${getCode(to)} (${time.replace(":", "h")})`.padStart(36);
+//   console.log(output);
 // }
 
-// for (const [i, el] of menu.entries()) {
-//   //* Recorro el arreglo, asigno las variables definidas[] y de donde viene y que y cuales son */
-//   console.log(`${i + 1}:${el}`); //* Muestro en consola numero inicio contador y el valor del elemento */
-// }
+///////////////////////////////////////
+// Coding Challenge #4
 
-// // Prueba Tecnica
-// // Cuando lo que tenga tenga variables independientes poner [], variables con mas info {}
-// const juego = {
-//   //* Creo un array, que tenga variables */
-//   equipo1: "Necaxa",
-//   equipo2: "Chivas",
-//   jugadores: [
-//     //* Otro Array con mas informacion dentro de otro array */
-//     ["A", "B", "C", "D", "E", "F", "G", "Y"],
-//     ["H", "I", "J", "K", "L", "M", "N", "Z"],
-//   ],
-//   marcador: "4:0",
-//   anotadores: ["A", "Y", "H", "Z"], //* Array dentro de otro array */
-//   fecha: "Noviembre 9, 2020",
-//   posibilidades: {
-//     //* Array con mas informacion */
-//     equipo1: 1.33,
-//     x: 0.5,
-//     equipo2: 6.5,
-//   },
-// };
+/* 
+Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
 
-// for (const [i, jugadores] of juego.anotadores.entries()) //* Iteracion for, pero definimos un contador y otro contador y de donde vamos a tomar las entradas */
-//   console.log(`Goles ${i + 1}: ${jugadores}`); //* Gol 1 de Jugador */
+The input will come from a textarea inserted into the DOM (see code below), and conversion will happen when the button is pressed.
 
-// const posibilidades = Object.values(juego.posibilidades); //* Variable, que toma los valores de una variable en su variable */
-// let promedio = 0; //* Inicializo una variable en 0 */
-// for (const posibilidad of posibilidades) promedio += posibilidad; //* Iteracion, definimos variable de localizacion de almacenamiento, luego promedio multiplicado en posibilidad */
+THIS TEST DATA (pasted to textarea)
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
 
-// promedio /= posibilidades.length; //* Luego el promedio sera dividido en las posibilidades en su espacio */
-// console.log(promedio); //* Mostramos en consola el promedio */
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
+underscoreCase      ✅
+firstName           ✅✅
+someVariable        ✅✅✅
+calculateAge        ✅✅✅✅
+delayedDeparture    ✅✅✅✅✅
 
-// console.log(Object.entries(juego.posibilidades)); //* Muestro en consola este arreglo, solo viene lo que esta en posibilidades */
+HINT 1: Remember which character defines a new line in the textarea 😉
+HINT 2: The solution only needs to work for a variable made out of 2 words, like a_b
+HINT 3: Start without worrying about the ✅. Tackle that only after you have the variable name conversion working 😉
+HINT 4: This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
 
-// for (const [nombreEquipo, posibilidad] of Object.entries(juego.posibilidades)) {
-//   //* Iteracion, desectructuramos y definimos de donde vienen las entradas */
-//   // console.log(equipo, posibilidad); //* Mensaje en consola */
-//   const equipoValor =
-//     nombreEquipo === "x" ? "empate" : `victoria ${juego[nombreEquipo]}`; //* Definimos variable, que sea igual a equipo y que si es identica a x muestra empate o victoria y muestra el nombre del equipo */
-//   // console.log(equipoValor); //* Equipo valor toma valor del nombre del equipo */
-//   console.log(`Posibilidad de ${equipoValor} ${posibilidad}`);
-// }
+Afterwards, test with your own test data!
 
-// Los metodos en javascript es la manera en la cual interactuas con la pagina, para todo se utiliza un metodo y una metodologia
-// console.log(new Set("franciscojaviermartinezduran").size); //* Importante, estudiar los metodos */
+GOOD LUCK 😀
+*/
 
-// const restaurante = new Map(); //* Creo una variable que mapeo, es decir la creo en un nuevo arreglo */
-// restaurante.set("nombre", "Clasico Italiano"); //* Le asigno variables */
-// restaurante.set(1, "Florenza, Italia"); //* Le asigno variables */
-// console.log(restaurante); //* Muestro en consola sus propiedades */
-// console.log(restaurante.set(2, "Lisboa, Portugal")); //* Le asigno esta variable */
+/*
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
 
-// restaurante
-//   .set("categorias", ["Italiano", "Pizzeria", "Vegetariano", "Organica"])
-//   .set("abierto", 11)
-//   .set("cerrado", 23)
-//   .set(true, "Estamos Abiertos")
-//   .set(false, "Estamos Cerrados"); //* Le asigne estas propiedades a la variable */
+document.querySelector('button').addEventListener('click', function () {
+  const text = document.querySelector('textarea').value;
+  const rows = text.split('\n');
 
-// console.log(restaurante.get("nombre")); //* Muestro en consola esta informacion */
-// console.log(restaurante.get(true));
-// console.log(restaurante.get(1));
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split('_');
 
-// const tiempo = 21; //* Defino esta variable */
-// restaurante.get(
-//   //* Le pido informacion */
-//   console.log(
-//     tiempo > restaurante.get("abierto") && tiempo < restaurante.get("cerrado") //* Muestro en consola esta condicional */
-//   )
-// );
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+  }
+});
+*/
 
-// console.log(restaurante.has("categorias")); //* Muestro las categorias */
-// restaurante.delete(2); //* Elimino una variable */
-// console.log(restaurante); //* Muestro en consola la variable restaurante */
+/*
+///////////////////////////////////////
+// Working With Strings - Part 2
 
-// console.log(restaurante.size); //* Reviso el tamaño de la variable restaurante */
-// console.log(restaurante.clear); //* Limpio la informacion de esa variable */
+// Split and join
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas Schmedtmann'.split(' '));
 
-// const eventosJuego = new Map([
-//   [17, "⚽️ Gol"],
-//   [(36, "🔁 Sustitucion")],
-//   [(47, "⚽️ Gol")],
-//   [(61, "🔁 Sustitucion")],
-//   [(64, "🔸 Tarjeta")],
-//   [(69, "🔴 Expulsado")],
-//   [(70, "🔁 Sustitucion")],
-//   [(72, "🔁 Sustitucion")],
-//   [(76, "⚽️ Gol")],
-//   [(80, "⚽️ Gol")],
-//   [(92, "🔸 Tarjeta")],
-// ]);
+const [firstName, lastName] = 'Jonas Schmedtmann'.split(' ');
 
-// const eventos = [...new Set(eventosJuego.values())];
-// console.log(eventos);
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
 
-// eventosJuego.delete(64);
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
 
-// console.log(
-//   `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
-// );
-// const tiempo = [...eventosJuego.keys()].pop();
-// console.log(tiempo);
-// console.log(
-//   `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
-// );
+  for (const n of names) {
+    // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+};
 
-// for (const [min, evento] of eventosJuego) {
-//   const mitad = min <= 45 ? "Primero" : "Segundo";
-//   console.log(`[${mitad} Mitad] ${min}: ${evento}`);
-// }
+capitalizeName('jessica ann smith davis');
+capitalizeName('jonas schmedtmann');
+
+// Padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(20, '+').padEnd(30, '+'));
+console.log('Jonas'.padStart(20, '+').padEnd(30, '+'));
+
+const maskCreditCard = function (number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(64637836));
+console.log(maskCreditCard(43378463864647384));
+console.log(maskCreditCard('334859493847755774747'));
+
+// Repeat
+const message2 = 'Bad waether... All Departues Delayed... ';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'🛩'.repeat(n)}`);
+};
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
+
+
+///////////////////////////////////////
+// Working With Strings - Part 2
+
+const airline = 'TAP Air Portugal';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix capitalization in name
+const passenger = 'jOnAS'; // Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Comparing emails
+const email = 'hello@jonas.io';
+const loginEmail = '  Hello@Jonas.Io \n';
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// replacing
+const priceGB = '288,97£';
+const priceUS = priceGB.replace('£', '$').replace(',', '.');
+console.log(priceUS);
+
+const announcement =
+  'All passengers come to boarding door 23. Boarding door 23!';
+
+console.log(announcement.replace('door', 'gate'));
+// console.log(announcement.replaceAll('door', 'gate'));
+console.log(announcement.replace(/door/g, 'gate'));
+
+// Booleans
+const plane = 'Airbus A320neo';
+console.log(plane.includes('A320'));
+console.log(plane.includes('Boeing'));
+console.log(plane.startsWith('Airb'));
+
+if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
+  console.log('Part of the NEW ARirbus family');
+}
+
+// Practice exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are NOT allowed on board');
+  } else {
+    console.log('Welcome aboard!');
+  }
+};
+
+checkBaggage('I have a laptop, some Food and a pocket Knife');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection');
+
+
+///////////////////////////////////////
+// Working With Strings - Part 1
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airline.length);
+console.log('B737'.length);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('portugal'));
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') console.log('You got the middle seat 😬');
+  else console.log('You got lucky 😎');
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas'));
+
+console.log(typeof new String('jonas').slice(1));
+*/
+
+///////////////////////////////////////
+// Coding Challenge #3
+
+/* 
+Let's continue with our football betting app! This time, we have a map with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
+
+1. Create an array 'events' of the different game events that happened (no duplicates)
+2. After the game has finished, is was found that the yellow card from minute 64 was unfair. So remove this event from the game events log.
+3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
+4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
+      [FIRST HALF] 17: ⚽️ GOAL
+
+GOOD LUCK 😀
+*/
+
+const gameEvents = new Map([
+  [17, "⚽️ GOAL"],
+  [36, "🔁 Substitution"],
+  [47, "⚽️ GOAL"],
+  [61, "🔁 Substitution"],
+  [64, "🔶 Yellow card"],
+  [69, "🔴 Red card"],
+  [70, "🔁 Substitution"],
+  [72, "🔁 Substitution"],
+  [76, "⚽️ GOAL"],
+  [80, "⚽️ GOAL"],
+  [92, "🔶 Yellow card"],
+]);
+
+const eventosJuego = new Map([
+  [17, "⚽️ Gol"],
+  [(36, "🔁 Sustitucion")],
+  [(47, "⚽️ Gol")],
+  [(61, "🔁 Sustitucion")],
+  [(64, "🔸 Tarjeta")],
+  [(69, "🔴 Expulsado")],
+  [(70, "🔁 Sustitucion")],
+  [(72, "🔁 Sustitucion")],
+  [(76, "⚽️ Gol")],
+  [(80, "⚽️ Gol")],
+  [(92, "🔸 Tarjeta")],
+]);
+
+// 1.
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+
+const eventos = [...new Set(eventosJuego.values())];
+console.log(eventos);
+
+// 2.
+gameEvents.delete(64);
+
+eventosJuego.delete(64);
+
+// 3.
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+console.log(
+  `An event happened, on average, every ${time / gameEvents.size} minutes`
+);
+
+console.log(
+  `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
+);
+
+const tiempo = [...eventosJuego.keys()].pop();
+console.log(tiempo);
+console.log(
+  `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
+);
+
+// 4.
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALF] ${min}: ${event}`);
+}
+
+for (const [min, evento] of eventosJuego) {
+  const mitad = min <= 45 ? "Primero" : "Segundo";
+  console.log(`[${mitad} Mitad] ${min}: ${evento}`);
+}
