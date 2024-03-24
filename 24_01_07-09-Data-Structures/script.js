@@ -348,6 +348,7 @@
 // console.log(restaurante.clear); //* Limpio la informacion de esa variable */
 
 const eventosJuego = new Map([
+  //* Variable que voy a mapear */
   [17, "⚽️ Gol"],
   [36, "🔁 Sustitucion"],
   [47, "⚽️ Gol"],
@@ -359,23 +360,24 @@ const eventosJuego = new Map([
   [76, "⚽️ Gol"],
   [80, "⚽️ Gol"],
   [92, "🔸 Tarjeta"],
-]);
+]); //* La informacion de esa variable */
 
-const eventos = [...new Set(eventosJuego.values())];
-console.log(eventos);
+const eventos = [...new Set(eventosJuego.values())]; //* Defino variable que venga con la info de la variable y valores */
+console.log(eventos); //* Muestro en consola los eventos  */
 
-eventosJuego.delete(64);
+eventosJuego.delete(64); //* A esta variable le elimino un evento */
 
 console.log(
   `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
-);
-const tiempo = [...eventosJuego.keys()].pop();
-console.log(tiempo);
+); //* Muestro en consola  */ un mensaje y una operacion
+const tiempo = [...eventosJuego.keys()].pop(); //* Variable que contiene la info de la variable, busca su llave numeros, y luego los suma */
+console.log(tiempo); //* Consola muestra mensaje de tiempo total */
 console.log(
   `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
-);
+); //* Consola, se hace la division del tiempo sobre las variables dela que trae la info */
 
 for (const [min, evento] of eventosJuego) {
-  const mitad = min <= 45 ? "Primero" : "Segundo";
-  console.log(`[${mitad} Mitad] ${min}: ${evento}`);
+  //* Iteracion, defino variables individuales de donde las voy a tomar */
+  const mitad = min <= 45 ? "Primero" : "Segundo"; //* Variable que es una condicional que elija 1 de las que tiene */
+  console.log(`[${mitad} Mitad] ${min}: ${evento}`); //* Consola, mensaje que esta iterado de los eventos */
 }
