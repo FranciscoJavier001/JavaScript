@@ -1,4 +1,4 @@
-const gameEvents = new Map([
+const eventosJuego = new Map([
   [17, "⚽️ GOAL"],
   [36, "🔁 Substitution"],
   [47, "⚽️ GOAL"],
@@ -12,25 +12,39 @@ const gameEvents = new Map([
   [92, "🔶 Yellow card"],
 ]);
 
+// const eventosJuego = new Map([
+//   [17, "⚽️ Gol"],
+//   [(36, "🔁 Sustitucion")],
+//   [(47, "⚽️ Gol")],
+//   [(61, "🔁 Sustitucion")],
+//   [(64, "🔸 Tarjeta")],
+//   [(69, "🔴 Expulsado")],
+//   [(70, "🔁 Sustitucion")],
+//   [(72, "🔁 Sustitucion")],
+//   [(76, "⚽️ Gol")],
+//   [(80, "⚽️ Gol")],
+//   [(92, "🔸 Tarjeta")],
+// ]);
+
 // 1.
-const events = [...new Set(gameEvents.values())];
-console.log(events);
+const eventos = [...new Set(eventosJuego.values())];
+console.log(eventos);
 
 // 2.
-gameEvents.delete(64);
+eventosJuego.delete(64);
 
 // 3.
 console.log(
-  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+  `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
 );
-const time = [...gameEvents.keys()].pop();
-console.log(time);
+const tiempo = [...eventosJuego.keys()].pop();
+console.log(tiempo);
 console.log(
-  `An event happened, on average, every ${time / gameEvents.size} minutes`
+  `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
 );
 
 // 4.
-for (const [min, event] of gameEvents) {
-  const half = min <= 45 ? "FIRST" : "SECOND";
-  console.log(`[${half} HALF] ${min}: ${event}`);
+for (const [min, evento] of eventosJuego) {
+  const mitad = min <= 45 ? "Primero" : "Segundo";
+  console.log(`[${mitad} Mitad] ${min}: ${evento}`);
 }
