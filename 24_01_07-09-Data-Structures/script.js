@@ -362,14 +362,14 @@ const eventosJuego = new Map([
   [92, "🔸 Tarjeta"],
 ]); //* La informacion de esa variable */
 
-const eventos = [...new Set(eventosJuego.values())]; //* Defino variable que venga con la info de la variable y valores */
+const eventos = [...new Set(eventosJuego.values())]; //* Defino variable que venga con la info de la variable y valores, se convirtio en un array */
 console.log(eventos); //* Muestro en consola los eventos  */
 
 eventosJuego.delete(64); //* A esta variable le elimino un evento */
 
 console.log(
   `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
-); //* Muestro en consola  */ un mensaje y una operacion
+); //* Muestro en consola un mensaje y una operacion
 const tiempo = [...eventosJuego.keys()].pop(); //* Variable que contiene la info de la variable, busca su llave numeros, y luego los suma */
 console.log(tiempo); //* Consola muestra mensaje de tiempo total */
 console.log(
