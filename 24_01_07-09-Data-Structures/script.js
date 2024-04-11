@@ -381,3 +381,5 @@ for (const [min, evento] of eventosJuego) {
   const mitad = min <= 45 ? "Primero" : "Segundo"; //* Variable que es una condicional que elija 1 de las que tiene */
   console.log(`[${mitad} Mitad] ${min}: ${evento}`); //* Consola, mensaje que esta iterado de los eventos */
 }
+
+// Metodos JavaScript
