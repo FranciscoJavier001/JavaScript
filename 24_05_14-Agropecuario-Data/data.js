@@ -3,249 +3,351 @@
 /* 
 
 🍀00-12-43-72-23-F8✅
-01/06 Sandoval Negocio 4494012419 - 01 / 0
+🍀01/06 Sandoval Negocio 4494012419 - 01/0😌
 
 🍀00-F6-20-B8-2E-C5✅
-00/00 Texanox Tv 4495853603 - 01 / 0
+🍀00/00 Texanox Tv 4495853603 - 01/0😌
+
+🍀00-FA-21-85-80-8E✅
+🍀01/06 MariachisDos David 4497546197 - 01/100😌
 
 🍀06-9A-38-59-BB-5D🍀
-00/00 Texanox Jefe 4491183135 - 01 / 0
+🍀00/00 Texanox Jefe 4491183135 - 01/0😌
+
+🍀0A-72-85-D3-4D-FE✅
+🍀01/06 Alvarado Betty 4493628306 - 01/100😌
 
 🍀1A-90-9B-E6-C8-2B✅
-00/00 Francisco Jefe 4494373323 - 01 / 0
+🍀00/00 Francisco Jefe 4494373323 - 01/0😌
+
+🍀1E-B9-1D-3D-E5-87✅
+🍀01/06 Guero Terminal 4491205647 - 01/0😌
+
+🍀1E-C2-EE-AE-40-AD✅
+🍀01/06 Chiles Luis 4491893165 - 01/100😌
+
+🍀26-D7-72-7F-D4-D2✅
+🍀00/00 Cristina Jefa 4495877474 - 01/0😌
 
 🍀3A-0D-02-A3-CD-20✅
-01/06 Alfredo Jefe 4494126224 - 01 / 100
+🍀01/06 Alfredo Jefe 4494126224 - 01/100😌
 
 🍀3A-8B-F6-67-39-97✅
-01/06 Santiago Alan 4493838358 - 01 / 100
+🍀01/06 Santiago Alan 4493838358 - 01/100😌
 
 🍀3C-52-A1-38-C6-C7✅
-01/06 Cariñosas Negocio XXXXXXXXXX - 01 / 0
+🍀01/06 Cariñosas Negocio XXXXXXXXXX - 01/0😌
 
 🍀3C-52-A1-38-C7-1A✅
-00/00 Tortilleria Negocio 4495484376 - 01 / 0
+🍀00/00 Tortilleria Negocio 4495484376 - 01/0😌
 
 🍀3C-52-A1-38-C7-7A✅
-01/06 China Negocio 4495484376 - 01 / 0
+🍀01/06 China Negocio 4495484376 - 01/0😌
 
 🍀3C-52-A1-38-C8-B4✅
-01/06 Cholo Negocio 4492645451 - 01 / 0
+🍀01/06 Cholo Negocio 4492645451 - 01/0😌
 
 🍀3C-52-A1-38-C8-DB✅
-01/06 Grillo Negocio 4491737770 - 01 / 0
+🍀01/06 Grillo Negocio 4491737770 - 01/0😌
 
 🍀3C-52-A1-38-C9-7D✅
-01/06 MariachisDos Negocio 4491061655 - 01 / 0
+🍀01/06 MariachisDos Negocio 4491061655 - 01/0😌
 
 🍀3C-52-A1-61-12-BE✅
-01/06 MariachisTres Negocio 4494401177 - 01 / 0
+🍀01/06 MariachisTres Negocio 4494401177 - 01/0😌
 
 🍀3C-52-A1-61-14-9F✅
-01/06 TexanoDos Negocio 4495271881 - 01 / 0
+🍀01/06 TexanoDos Negocio 4495271881 - 01/0😌
 
 🍀3C-52-A1-61-14-E9✅
-01/06 Johnny Negocio 4492188478 - 01 / 0
+🍀01/06 Johnny Negocio 4492188478 - 01 /0😌
 
 🍀3C-52-A1-61-15-D9✅
-01/06 Jitomates Negocio 4493131264 - 01 / 0
+🍀01/06 Jitomates Negocio 4493131264 - 01/0😌
 
 🍀3C-52-A1-61-15-FD✅
-01/06 MariachisDos Negocio 4495904159 - 02 / 0
+🍀01/06 MariachisDos Negocio 4495904159 - 02/0😌
 
 🍀3C-52-A1-61-16-3D✅
-01/06 Xochitl Negocio 4491194034 - 01 / 0
+🍀01/06 Xochitl Negocio 4491194034 - 01/0😌
 
 🍀3C-52-A1-61-16-AD✅
-01/06 MariachisTres Negocio 4494401177 - 02 / 0
+🍀01/06 MariachisTres Negocio 4494401177 - 02/0😌
+
+🍀3C-52-A1-61-17-6D✅
+🍀01/06 Chino Negocio 4491009820 - 01/0😌
 
 🍀3C-52-A1-61-17-A8✅
-01/06 Carmela Negocio 4492857396 - 01 / 0
+🍀01/06 Carmela Negocio 4492857396 - 01/0😌
 
 🍀3C-52-A1-61-1A-09✅
-01/06 Cholo Negocio 4492645451 - 02 / 0
+🍀01/06 Cholo Negocio 4492645451 - 02/0😌
 
 🍀3C-52-A1-61-1A-AB✅
-01/06 Texanox Negocio 4491183135 - 01 / 0
+🍀01/06 Texanox Negocio 4491183135 - 01/0😌
 
 🍀3C-52-A1-61-1B-27✅
-01/06 DosGarcia Negocio XXXXXXXXXX - 01 / 0
+🍀01/06 DosGarcia Negocio 4491975843 - 01/0😌
 
 🍀3C-52-A1-61-1B-44✅
-01/06 Alvarado Negocio 4492431947 - 01 / 0
+🍀01/06 Alvarado Negocio 4492431947 - 01/0😌
 
 🍀3C-52-A1-61-1C-F3✅
-01/06 Cuadros Negocio 4491865991 - 01 / 0
+🍀01/06 Cuadros Negocio 4491865991 - 01/0😌
 
 🍀3C-52-A1-61-1D-89✅
-01/06 QuesosDos Negocio XXXXXXXXXX - 01 / 0
+🍀01/06 QuesosDos Negocio 4491102216 - 01/0😌
 
 🍀3C-52-A1-D9-40-B7✅
-01/06 Felipe Negocio XXXXXXXXXX - 01 / 0
+🍀01/06 Felipe Negocio 4491058220 - 01/0😌
 
 🍀3C-52-A1-D9-40-D3✅
-01/06 Jitomates Negocio 4493131264 - 02 / 0
+🍀01/06 Jitomates Negocio 4493131264 - 02/0😌
 
 🍀3C-52-A1-D9-42-86✅
-01/06 Jitomates Negocio 4493131264 - 03 / 0
+🍀01/06 Jitomates Negocio 4493131264 - 03/0😌
 
 🍀3C-52-A1-D9-4D-F7✅
-01/06 Alvarado Negocio 4492431947 - 02 / 0
+🍀01/06 Alvarado Negocio 4492431947 - 02/0😌
 
 🍀3C-52-A1-D9-4F-48✅
-01/06 Claudia Negocio 4494062286 - 01 / 0
+🍀01/06 Claudia Negocio 4494062286 - 01/0😌
 
 🍀3C-52-A1-D9-53-34✅
-01/06 Alvarado Negocio 4492431947 - 03 / 0
+🍀01/06 Alvarado Negocio 4492431947 - 03/0😌
 
 🍀3C-52-A1-D9-54-6A✅
-00/00 Oficina Camara 4494373323 - 01 / 0
+🍀00/00 Oficina Camara 4494373323 - 01/0😌
 
 🍀3C-52-A1-D9-57-89✅
-01/06 DosGarcia Negocio XXXXXXXXXX - 02 / 0
+🍀01/06 DosGarcia Negocio 4491975843 - 02/0😌
 
 🍀3C-52-A1-D9-59-E1✅
-01/06 Johnny Negocio 4492188478 - 02 / 0
+🍀01/06 Johnny Negocio 4492188478 - 02/0😌
 
 🍀3C-52-A1-D9-59-E2✅
-01/06 Chiles Negocio 4493952155 - 01 / 0
+🍀01/06 Chiles Negocio 4493952155 - 01/0😌
 
 🍀3C-52-A1-D9-5D-D8✅
-00/00 Oficina Camara 4494373323 - 02 / 0
+🍀00/00 Oficina Camara 4494373323 - 02/0😌
 
 🍀3C-52-A1-D9-5D-FE✅
-01/06 DosGarcia Negocio XXXXXXXXXX - 03 / 0
+🍀01/06 DosGarcia Negocio 4491975843 - 03/0😌
 
 🍀3E-74-CF-08-95-72✅
-01/06 Santiago Fernando 4493838358 - 01 / 100
+🍀01/06 Santiago Fernando 4493838358 - 01/100😌
+
+🍀42-3C-AD-F0-E0-BD✅
+🍀01/06 Gorras Ivan 5615012830 - 01/100😌
 
 🍀46-64-AA-ED-B5-D7✅
-01/06 Jitomates Azael 4495493493 - 01 / 100
+🍀01/06 Jitomates Azael 4495493493 - 01/100😌
 
 🍀46-72-74-3E-6D-51✅
-00/00 Francisco Jefe 4494373323 - 02 / 0
+🍀00/00 Francisco Jefe 4494373323 - 02/0😌
 
 🍀46-73-33-A3-5B-55✅
-01/06 Lechero Jefe 4494619556 - 01 / 100
+🍀01/06 Lechero Jefe 4494619556 - 01/100😌
+
+🍀46-EB-6F-89-00-66✅
+🍀01/06 Grillo Jefe 4491737770 - 01/50😌
+
+🍀4A-95-6A-77-00-D0✅
+🍀01/06 Cholo Andres 4498948907 - 01/100😌
 
 🍀4E-42-0E-90-43-C8✅
-01/06 Chiles Luis 4491893165 - 01 / 100
+🍀01/06 Chiles Luis 4491893165 - 01/100😌
 
 🍀52-1F-A1-4E-74-D3✅
-00/00 Texanox Janet 4495438196 - 01 / 0
+🍀00/00 Texanox Janeth 4495438196 - 01/0😌
 
 🍀52-3D-42-36-C3-DD✅
-01/06 Mayra Jefa 4495841419 - 01 / 100
+🍀01/06 Mayra Jefa 4495841419 - 01/100😌
 
 🍀56-5E-14-B0-58-4C✅
-01/06 Adolfo Eugenio 4493986064 - 01 / 100
+🍀01/06 Adolfo Eugenio 4493986064 - 01/100😌
 
 🍀5A-3E-71-D9-68-6F✅
-00/00 Texanox Joan 4495853603 - 01 / 0
+🍀00/00 Texanox Joan 4495853603 - 01/0😌
 
 🍀5A-7C-4B-3A-89-45✅
-01/06 Lechero Cristian 4494120419 - 01 / 100
+🍀01/06 Lechero Cristian 4494120419 - 01/100😌
 
 🍀5C-E9-31-40-37-BF✅
-01/06 Chiles Negocio 4493952155 - 02 / 0
+🍀01/06 Chiles Negocio 4493952155 - 02/0😌
 
 🍀5E-8F-1C-A8-37-5B✅
-01/06 Discos Maria 4492562476 - 01 / 100
+🍀01/06 Discos Maria 4492562476 - 01/100😌
+
+🍀62-3A-F6-C4-83-0C✅
+🍀01/06 Jitomates Vania 4493684949 - 01/100😌
+
+🍀62-A3-33-40-13-73✅
+🍀01/06 China Jefe 4492844100 - 01/100😌
+
+🍀66-BA-A5-40-28-F7✅
+🍀01/06 Cuadros Silvia 4492766248 - 01/100😌
+
+🍀66-DF-8D-D7-B3-2B✅
+🍀01/06 Chiles Jefe 4493952155 - 01/100😌
+
+🍀7A-DB-AF-9E-96-93✅
+🍀01/06 Mariachis Jairo 4491251437 - 01/100😌
 
 🍀7C-94-2A-94-8F-6E✅
-01/06 NopalesTeo Jefe 4491472611 - 01 / 100
+🍀01/06 NopalesTeo Jefe 4491472611 - 01/100😌
 
 🍀7E-2E-9B-59-34-AA✅
-01/06 Gallejos Jefe 4492273349 - 01 / 100
+🍀01/06 Gallejos Jefe 4492273349 - 01/100😌
 
 🍀7E-CA-C2-D5-D6-4A✅
-01/06 Cholo Oscar 4495398467 - 01 / 100
+🍀01/06 Cholo Oscar 4495398467 - 01/100😌
+
+🍀82-0A-0B-28-28-B9✅
+🍀01/06 Rocha Chispas 4492844647 - 01/100😌
+
+🍀86-11-4C-C9-DB-49✅
+🍀01/06 MariachisDos Rene 4494674141 - 01/100😌
+
+🍀86-25-FE-89-C1-A0✅
+🍀01/06 Tortilleria Cesar 4494923893 - 01/100😌
 
 🍀86-85-21-17-7A-F4✅
-00/00 Texanox Lupita 4495241593 - 01 / 0
+🍀00/00 Texanox Lupita 4495241593 - 01/0😌
 
 🍀86-A1-6B-5A-A3-43✅
-01/06 Charro Bruno 4494752068 - 01 / 100
+🍀01/06 Charro Bruno 4494752068 - 01/100😌
 
 🍀88-66-5A-49-8D-EE✅
-00/00 Francisco Jefe 4494373323 - 03 / 0
+🍀00/00 Francisco Jefe 4494373323 - 03/0😌
+
+🍀88-AE-07-7E-0C-FB✅
+🍀01/06 Chino Jefe 4491009820 - 01/100😌
+
+🍀8A-5D-DA-33-C0-29✅
+🍀01/06 Cuadros Elizabeth 4493580336 - 01/100😌
 
 🍀8E-58-33-33-FD-98✅
-00/00 Francisco Jefe 4494373323 - 04 / 0
+🍀00/00 Francisco Jefe 4494373323 - 04/0😌
 
 🍀90-6A-94-81-85-E4✅
-01/06 Mariachis Router 4491251437 - 01 / 0
+🍀01/06 Mariachis Router 4491251437 - 01/0😌
+
+🍀92-9F-98-F2-61-B3✅
+🍀01/06 Johnny Jefe 4492188478 - 01/100😌
+
+🍀96-55-E5-7B-B3-13✅
+🍀01/06 Guero Jefe 4491205647 - 01/50😌
 
 🍀9A-AF-B7-70-EA-BF✅
-01/06 Yolanda Jefa 4491213838 - 01 / 100
+🍀01/06 Yolanda Jefa 4491213838 - 01/100😌
 
 🍀9E-A0-EC-2B-3A-6F✅
-01/06 Cholo Jefe 4492645451 - 01 / 100
+🍀01/06 Cholo Jefe 4492645451 - 01/100😌
+
+🍀9E-BB-8E-B9-81-03✅
+🍀01/06 Quesos Viri 4491102216 - 01/100😌
+
+🍀A2-53-71-DE-F5-5C✅
+🍀01/06 Carmela Mari 4492857396 - 01/100😌
 
 🍀A2-69-F9-F3-69-DC✅
-01/06 MariachisTres Cristian 4494401177 - 01 / 100
+🍀01/06 MariachisTres Cristian 4494401177 - 01/100😌
 
 🍀A2-8F-C2-68-7B-8B✅
-01/06 Claudia Edgar 4497521654 - 01 / 100
+🍀01/06 Claudia Edgar 4497521654 - 01/100😌
 
 🍀A2-F8-DF-7D-16-18✅
-01/06 Discos Lizbeth 4494342539 - 01 / 100
+🍀01/06 Discos Lizbeth 4494342539 - 01/100😌
 
 🍀A6-58-0D-9A-45-40✅
-01/06 Jitomates Blanca 4493131264 - 01 / 100
+🍀01/06 Jitomates Blanca 4493131264 - 01/100😌
 
 🍀AE-48-5C-F2-32-28✅
-01/06 Xochitl Jefa 4491194034 - 01 / 100
+🍀01/06 Xochitl Jefa 4491194034 - 01/100😌
+
+🍀B4-39-39-00-DD-89✅
+🍀00/00 Tortilleria Marcos 4495484376 - 01/0😌
+
+🍀B6-9A-ED-BC-C4-7F✅
+🍀01/06 Mariachis Luis 4931903306 - 01/100😌
+
+🍀B8-3B-CC-CB-3A-E4✅
+🍀01/06 Beto Monse 4494631699 - 01/100😌
 
 🍀BA-46-8F-D8-02-6E✅
-01/06 Mariachis Ana 4961258920 - 01 / 100
+🍀01/06 Mariachis Ana 4961258920 - 01/100😌
 
 🍀BA-78-31-60-74-1E✅
-01/06 TexanoDos Everardo 4495271881 - 01 / 100
+🍀01/06 TexanoDos Everardo 4495271881 - 01/100😌
 
 🍀BC-7F-A4-37-B5-4F✅
-01/06 Gorras Jose 4495383016 - 01 / 100
+🍀01/06 Gorras Jose 4495383016 - 01/100😌
 
 🍀BE-D5-FA-BD-FC-03✅
-01/06 DosGarcia Calac 4491975843 - 01 / 100
+🍀01/06 DosGarcia Calac 4491975843 - 01/100😌
+
+🍀C6-5C-E0-A6-19-EE✅
+🍀01/06 Oscar Pedrillo 4495456260 - 01/100😌
+
+🍀CA-71-9A-56-95-6D✅
+🍀01/06 Tortilleria Brenda 4581232068 - 01/100😌
 
 🍀CC-2D-21-B8-38-25✅
-01/06 Williams Router 4495024252 - 01 / 0
+🍀01/06 Williams Router 4495024252 - 01/0😌
 
 🍀CE-B8-78-F2-16-B3✅
-01/06 Claudia Jose 4495431135 - 01 / 100
+🍀01/06 Claudia Jose 4495431135 - 01/100😌
+
+🍀CE-B7-BF-C3-57-B7✅
+🍀01/06 Chiles Daniela 4491074634 - 01/100😌
 
 🍀D2-1D-BC-25-23-31✅
-01/06 Cigarros Fernanda 4494064030 - 01 / 100
+🍀01/06 Cigarros Fernanda 4494064030 - 01/100😌
+
+🍀D2-76-B7-48-85-C1✅
+🍀01/06 Tortilleria Janeth 4493105652 - 01/100😌
+
+🍀D2-B3-3C-C7-09-54✅
+🍀00/00 Oscar Jefe 4498675205 - 01/0😌
 
 🍀D4-53-83-76-E4-30✅
-01/06 Santiago Esmeralda 4493838358 - 01 / 100
+🍀01/06 Santiago Esmeralda 4493838358 - 01/100😌
 
 🍀D4-72-26-9F-1C-8F✅
-01/06 Claudia Miguel 4492295075 - 01 / 100
+🍀01/06 Claudia Miguel 4492295075 - 01/100😌
 
 🍀D6-F5-06-8D-E3-62✅
-01/06 Bocinas Anselmo 4494396849 - 01 / 100
+🍀01/06 Bocinas Anselmo 4494396849 - 01/100😌
+
+🍀E2-3E-2A-69-DE-E0✅
+🍀01/06 Johnny Sarahi 4495375585 - 01/100😌
 
 🍀E6-B1-AA-69-49-A0✅
-01/06 Chata Tere 4493107924 - 01 / 100
+🍀01/06 Chata Tere 4493107924 - 01/100😌
 
 🍀EA-0B-32-7A-1A-DC✅
-01/06 Oscar Adrian 4492628169 - 01 / 100
+🍀01/06 Oscar Adrian 4492628169 - 01/100😌
+
+🍀EA-18-A5-42-6D-3D✅
+🍀01/06 Mayra Mario 4493132810 - 01/100😌
 
 🍀EA-42-63-1F-F8-3B✅
-01/06 Charro Jefe 4493113421 - 01 / 100
+🍀01/06 Charro Jefe 4493113421 - 01/100😌
+
+🍀EA-78-9F-0A-95-44✅
+🍀01/06 MariachisDos Claudia 4495481123 - 01/100😌
 
 🍀F0-A7-31-58-44-25✅
-01/06 QuesosDos Negocio XXXXXXXXXX - 02 / 0
+🍀01/06 QuesosDos Negocio 4491102216 - 02/0😌
+
+🍀F0-A7-31-58-6D-DB✅
+🍀01/06 Colombiano Negocio XXXXXXXXXX - 01/0😌
 
 🍀F6-DB-81-8C-91-C5✅
-01/06 Gorras Jose 4495383016 - 02 / 100
+🍀01/06 Gorras Jose 4495383016 - 02/100😌
 
 🍀FA-BD-46-6A-9D-FD✅
-00/00 Francisco Jefe 4494373323 - 05 / 0
+🍀00/00 Francisco Jefe 4494373323 - 05/0😌
 
 */
-
-// HONOR-50-Lite
-// 82-0A-0B-28-28-B9
