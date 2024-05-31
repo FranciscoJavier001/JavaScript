@@ -189,7 +189,7 @@
 🍀01/06 Lechero Cristian 4494120419 - 01/100😌
 
 🍀5C-E9-31-40-37-BF✅
-🍀01/06 Chiles Negocio 4493952155 - 02/0😌
+01/06 Chiles Negocio 4493952155 - 02/0
 
 🍀5E-8F-1C-A8-37-5B✅
 🍀01/06 Discos Maria 4492562476 - 01/100😌
@@ -249,7 +249,7 @@
 01/06 MariachisDos Adela 4495904159 - 01/100
 
 🍀88-66-5A-49-8D-EE✅
-🍀00/00 Francisco Jefe 4494373323 - 03/0😌
+🍀00/00 Francisco MacbookPro 4494373323 - 01/0
 
 🍀88-AE-07-7E-0C-FB✅
 🍀01/06 Chino Jefe 4491009820 - 01/100😌
@@ -414,3 +414,5 @@
 🍀00/00 Francisco Jefe 4494373323 - 05/0😌
 
 */
+
+1 kg calabaza, zanahoria, chayote, frijol peruano 3 kilos, chile arbol 1/2, lentejas, garbansos, limones 1 kg
