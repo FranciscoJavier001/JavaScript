@@ -347,39 +347,95 @@
 // console.log(restaurante.size); //* Reviso el tamaño de la variable restaurante */
 // console.log(restaurante.clear); //* Limpio la informacion de esa variable */
 
-const eventosJuego = new Map([
-  //* Variable que voy a mapear */
-  [17, "⚽️ Gol"],
-  [36, "🔁 Sustitucion"],
-  [47, "⚽️ Gol"],
-  [61, "🔁 Sustitucion"],
-  [64, "🔸 Tarjeta"],
-  [69, "🔴 Expulsado"],
-  [70, "🔁 Sustitucion"],
-  [72, "🔁 Sustitucion"],
-  [76, "⚽️ Gol"],
-  [80, "⚽️ Gol"],
-  [92, "🔸 Tarjeta"],
-]); //* La informacion de esa variable */
+// const eventosJuego = new Map([
+//   //* Variable que voy a mapear */
+//   [17, "⚽️ Gol"],
+//   [36, "🔁 Sustitucion"],
+//   [47, "⚽️ Gol"],
+//   [61, "🔁 Sustitucion"],
+//   [64, "🔸 Tarjeta"],
+//   [69, "🔴 Expulsado"],
+//   [70, "🔁 Sustitucion"],
+//   [72, "🔁 Sustitucion"],
+//   [76, "⚽️ Gol"],
+//   [80, "⚽️ Gol"],
+//   [92, "🔸 Tarjeta"],
+// ]); //* La informacion de esa variable */
 
-const eventos = [...new Set(eventosJuego.values())]; //* Defino variable que venga con la info de la variable y valores, se convirtio en un array */
-console.log(eventos); //* Muestro en consola los eventos  */
+// const eventos = [...new Set(eventosJuego.values())]; //* Defino variable que venga con la info de la variable y valores, se convirtio en un array */
+// console.log(eventos); //* Muestro en consola los eventos  */
 
-eventosJuego.delete(64); //* A esta variable le elimino un evento */
+// eventosJuego.delete(64); //* A esta variable le elimino un evento */
 
-console.log(
-  `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
-); //* Muestro en consola un mensaje y una operacion
-const tiempo = [...eventosJuego.keys()].pop(); //* Variable que contiene la info de la variable, busca su llave numeros, y luego los suma */
-console.log(tiempo); //* Consola muestra mensaje de tiempo total */
-console.log(
-  `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
-); //* Consola, se hace la division del tiempo sobre las variables dela que trae la info */
+// console.log(
+//   `Un evento paso en aproximadamente, cada ${90 / eventosJuego.size} minutos`
+// ); //* Muestro en consola un mensaje y una operacion
+// const tiempo = [...eventosJuego.keys()].pop(); //* Variable que contiene la info de la variable, busca su llave numeros, y luego los suma */
+// console.log(tiempo); //* Consola muestra mensaje de tiempo total */
+// console.log(
+//   `Un evento ocurrio aproximadamente cada ${tiempo / eventosJuego.size} minutos`
+// ); //* Consola, se hace la division del tiempo sobre las variables dela que trae la info */
 
-for (const [min, evento] of eventosJuego) {
-  //* Iteracion, defino variables individuales de donde las voy a tomar */
-  const mitad = min <= 45 ? "Primero" : "Segundo"; //* Variable que es una condicional que elija 1 de las que tiene */
-  console.log(`[${mitad} Mitad] ${min}: ${evento}`); //* Consola, mensaje que esta iterado de los eventos */
-}
+// for (const [min, evento] of eventosJuego) {
+//   //* Iteracion, defino variables individuales de donde las voy a tomar */
+//   const mitad = min <= 45 ? "Primero" : "Segundo"; //* Variable que es una condicional que elija 1 de las que tiene */
+//   console.log(`[${mitad} Mitad] ${min}: ${evento}`); //* Consola, mensaje que esta iterado de los eventos */
+// }
 
 // Metodos JavaScript
+const aerolinea = "TAP Air Portugal";
+
+console.log(aerolinea.toLowerCase()); //* Metodo para hacerlo minusculas */
+console.log(aerolinea.toUpperCase());
+
+const pasajero = "jOnas";
+const pasajeroMinusculas = pasajero.toLowerCase();
+const pasajeroCorrecto =
+  pasajeroMinusculas[0].toUpperCase() + pasajeroMinusculas.slice(1); //* Metodo para acomodarlo en mausculas y minusculas */
+console.log(pasajeroCorrecto);
+
+// Comparar Email
+
+const email = "hola@mail.com";
+const loginEmail = "Hola@mail.com ";
+
+const emailMinusculas = loginEmail.toLocaleLowerCase();
+const sinEspacioEmail = emailMinusculas.trim();
+console.log(sinEspacioEmail);
+
+const emailNormal = loginEmail.toLocaleLowerCase().trim();
+console.log(emailNormal);
+console.log(email === emailNormal);
+
+// Remplazando
+const precioMX = "500$";
+const precioUS = precioMX.replace("$", "US");
+console.log(precioUS);
+
+const anuncio = "Todos pasar a puerta 23. Abordar puerta 23";
+console.log(anuncio.replace("puerta", "entrada"));
+console.log(anuncio.replace(/puerta/g, "entrada"));
+console.log(anuncio.replaceAll("puerta", "entrada"));
+
+// Booleanos
+const avion = "A320neo";
+console.log(avion.includes("A320"));
+console.log(avion.includes("Boing"));
+console.log(avion.startsWith("Air"));
+
+if (avion.startsWith("A3") && avion.endsWith("o")) {
+  console.log("Correcto");
+}
+
+const revisarBolsa = function (items) {
+  const bolsa = items.toLocaleLowerCase();
+  if (bolsa.includes("cuchillo") || bolsa.includes("arma")) {
+    console.log("No puedes abordar");
+  } else {
+    console.log("Aborda");
+  }
+};
+
+revisarBolsa("Yo laptop y comuda");
+revisarBolsa("calcetas y camara");
+revisarBolsa("Golosina y arma por seguridad");
