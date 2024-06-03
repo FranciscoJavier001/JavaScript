@@ -436,6 +436,6 @@ const revisarBolsa = function (items) {
   }
 };
 
-revisarBolsa("Yo laptop y comuda");
+revisarBolsa("Yo laptop y comida");
 revisarBolsa("calcetas y camara");
 revisarBolsa("Golosina y arma por seguridad");
