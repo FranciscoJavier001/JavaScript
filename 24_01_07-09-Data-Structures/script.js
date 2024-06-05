@@ -439,3 +439,25 @@ const revisarBolsa = function (items) {
 revisarBolsa("Yo laptop y comida");
 revisarBolsa("calcetas y camara");
 revisarBolsa("Golosina y arma por seguridad");
+
+console.log("un+string+lindo".split("+")); //* Metodo split es para separar */
+
+// const [nombre, apeido] = "Francisco Javier+Martinez Duran".split("+");
+// console.log(nombre, apeido);
+
+// const nombreDos = 'francisco javier+martinez duran'
+
+const letraMayusculaNombre = function (nombreUno) {
+  //*  */
+  const nombres = nombreUno.split(" ");
+  const nombresUpper = [];
+
+  for (const n of nombres) {
+    nombresUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(nombresUpper.join(" "));
+};
+
+console.log();
+letraMayusculaNombre("francisco javier martinez duran");
+letraMayusculaNombre("andrea rodriguez ramirez");
