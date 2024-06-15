@@ -383,81 +383,103 @@
 // }
 
 // Metodos JavaScript
-const aerolinea = "TAP Air Portugal";
+// const aerolinea = "TAP Air Portugal";
 
-console.log(aerolinea.toLowerCase()); //* Metodo para hacerlo minusculas */
-console.log(aerolinea.toUpperCase());
+// console.log(aerolinea.toLowerCase()); //* Metodo para hacerlo minusculas */
+// console.log(aerolinea.toUpperCase());
 
-const pasajero = "jOnas";
-const pasajeroMinusculas = pasajero.toLowerCase();
-const pasajeroCorrecto =
-  pasajeroMinusculas[0].toUpperCase() + pasajeroMinusculas.slice(1); //* Metodo para acomodarlo en mausculas y minusculas */
-console.log(pasajeroCorrecto);
+// const pasajero = "jOnas";
+// const pasajeroMinusculas = pasajero.toLowerCase();
+// const pasajeroCorrecto =
+//   pasajeroMinusculas[0].toUpperCase() + pasajeroMinusculas.slice(1); //* Metodo para acomodarlo en mausculas y minusculas */
+// console.log(pasajeroCorrecto);
 
 // Comparar Email
 
-const email = "hola@mail.com";
-const loginEmail = "Hola@mail.com ";
+// const email = "hola@mail.com";
+// const loginEmail = "Hola@mail.com ";
 
-const emailMinusculas = loginEmail.toLocaleLowerCase();
-const sinEspacioEmail = emailMinusculas.trim();
-console.log(sinEspacioEmail);
+// const emailMinusculas = loginEmail.toLocaleLowerCase();
+// const sinEspacioEmail = emailMinusculas.trim();
+// console.log(sinEspacioEmail);
 
-const emailNormal = loginEmail.toLocaleLowerCase().trim();
-console.log(emailNormal);
-console.log(email === emailNormal);
+// const emailNormal = loginEmail.toLocaleLowerCase().trim();
+// console.log(emailNormal);
+// console.log(email === emailNormal);
 
-// Remplazando
-const precioMX = "500$";
-const precioUS = precioMX.replace("$", "US");
-console.log(precioUS);
+// // Remplazando
+// const precioMX = "500$";
+// const precioUS = precioMX.replace("$", "US");
+// console.log(precioUS);
 
-const anuncio = "Todos pasar a puerta 23. Abordar puerta 23";
-console.log(anuncio.replace("puerta", "entrada"));
-console.log(anuncio.replace(/puerta/g, "entrada"));
-console.log(anuncio.replaceAll("puerta", "entrada"));
+// const anuncio = "Todos pasar a puerta 23. Abordar puerta 23";
+// console.log(anuncio.replace("puerta", "entrada"));
+// console.log(anuncio.replace(/puerta/g, "entrada"));
+// console.log(anuncio.replaceAll("puerta", "entrada"));
 
-// Booleanos
-const avion = "A320neo";
-console.log(avion.includes("A320"));
-console.log(avion.includes("Boing"));
-console.log(avion.startsWith("Air"));
+// // Booleanos
+// const avion = "A320neo";
+// console.log(avion.includes("A320"));
+// console.log(avion.includes("Boing"));
+// console.log(avion.startsWith("Air"));
 
-if (avion.startsWith("A3") && avion.endsWith("o")) {
-  console.log("Correcto");
-}
+// if (avion.startsWith("A3") && avion.endsWith("o")) {
+//   console.log("Correcto");
+// }
 
-const revisarBolsa = function (items) {
-  const bolsa = items.toLocaleLowerCase();
-  if (bolsa.includes("cuchillo") || bolsa.includes("arma")) {
-    console.log("No puedes abordar");
-  } else {
-    console.log("Aborda");
-  }
-};
+// const revisarBolsa = function (items) {
+//   const bolsa = items.toLocaleLowerCase();
+//   if (bolsa.includes("cuchillo") || bolsa.includes("arma")) {
+//     console.log("No puedes abordar");
+//   } else {
+//     console.log("Aborda");
+//   }
+// };
 
-revisarBolsa("Yo laptop y comida");
-revisarBolsa("calcetas y camara");
-revisarBolsa("Golosina y arma por seguridad");
+// revisarBolsa("Yo laptop y comida");
+// revisarBolsa("calcetas y camara");
+// revisarBolsa("Golosina y arma por seguridad");
 
-console.log("un+string+lindo".split("+")); //* Metodo split es para separar */
+// console.log("un+string+lindo".split("+")); //* Metodo split es para separar */
 
 // const [nombre, apeido] = "Francisco Javier+Martinez Duran".split("+");
 // console.log(nombre, apeido);
 
 // const nombreDos = 'francisco javier+martinez duran'
 
-const letraMayusculaNombre = function (nombreUno) {
-  //*  */
-  const nombres = nombreUno.split(" ");
-  const nombresUpper = [];
+// const letraMayusculaNombre = function (nombreUno) {
+//   //*  */
+//   const nombres = nombreUno.split(" ");
+//   const nombresUpper = [];
 
-  for (const n of nombres) {
-    nombresUpper.push(n[0].toUpperCase() + n.slice(1));
+//   for (const n of nombres) {
+//     nombresUpper.push(n[0].toUpperCase() + n.slice(1));
+//   }
+//   console.log(nombresUpper.join(" "));
+// };
+
+// console.log();
+// letraMayusculaNombre("francisco javier martinez duran");
+// letraMayusculaNombre("andrea rodriguez ramirez");
+
+// Excercise
+
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+
+const text = document.querySelector("textarea").value;
+
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+  const rows = text.split("\n");
+
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
   }
-  console.log(nombresUpper.join(" "));
-};
-
-console.log();
-letraMayusculaNombre("francisco javier martinez duran");
-letraMayusculaNombre("andrea rodriguez ramirez");
+});
