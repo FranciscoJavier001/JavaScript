@@ -55,3 +55,33 @@ const newPassport = function (person) {
 
 newPassport(jonas);
 checkIn(flight, jonas);
+
+const oneWord = function (str) {
+  //* Defino variable que reciba el parametro str */
+  return str.replace(/ /g, "").toLowerCase(); //* Regresa el parametro, pero seleccionamos los espacios y los eliminamos en minusculas */
+};
+
+const upperFirstWord = function (str) {
+  //* Defino variable, que reciba un parametro */
+  const [first, ...others] = str.split(" "); //* Desestructuro un arreglo, que sea igual al parametro str, pero 2 partes */
+  return [first.toUpperCase(), ...others].join(" "); //* Retorno la primera frase en mayusculas, y luego junto lo demas pero con un espacio */
+};
+
+const transformer = function (str, fn) {
+  //* Defino una variable que recibe 2 parametros, el fn es nuevo */
+  console.log(`Original string ${str}`); //* Muestro en consola el string original */
+  console.log(`Transformed string ${fn(str)}`); //* Muestro en consola, invoco la funcion fn y veo el string cambiado */
+
+  console.log(`Transformed by: ${fn.name}`); //* Muestro en consola la funcion que realizo el cambio y su nombre */
+};
+
+transformer("JavaScript is the best!", upperFirstWord); //* Invoco la funcion y le paso esta variable (funcion) */
+transformer("JavaScript is the best!", oneWord); //* Invoco la funcion y le paso esta variable (funcion) */
+
+const high5 = function () {
+  //* Declaro esta variable que invoca una funcion */
+  console.log("👋🏻"); //* Muestro en consola la manita como string */
+};
+document.body.addEventListener("click", high5); //* Al precionarle en cualquier parte del body invoco la funcion, al hacer click */
+
+["Jonas", "Martha", "Adam", "x"].forEach(high5); //* Para cada uno de los parametros invoco la funcion */
