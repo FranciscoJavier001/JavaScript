@@ -86,13 +86,13 @@
 
 // ["Jonas", "Martha", "Adam", "x"].forEach(high5); //* Para cada uno de los parametros invoco la funcion */
 
-const greet = function (greeting) {
-  //* Defino variable que recibe el parametro de una funcion */
-  return function (name) {
-    //* Retorno un parametro */
-    console.log(`${greeting} ${name}`); //* Muestro en consola el parametro que recibe greet y el parametro que retorno  */
-  };
-};
+// const greet = function (greeting) {
+//   //* Defino variable que recibe el parametro de una funcion */
+//   return function (name) {
+//     //* Retorno un parametro */
+//     console.log(`${greeting} ${name}`); //* Muestro en consola el parametro que recibe greet y el parametro que retorno  */
+//   };
+// };
 
 // //* Misma funcion pero como funcion de flecha */
 // const greet = (greeting) => {
@@ -103,8 +103,8 @@ const greet = function (greeting) {
 //   };
 // };
 
-const greeterHey = greet("Hey"); //* Le doy un valor al parametro greet en la variable greeterHey */
-greeterHey("Jonas"); //* Parametro que retorna la funcion de la linea 91 */
-greeterHey("Steven"); //* Parametro que retorna la funcion de la linea 91 */
+// const greeterHey = greet("Hey"); //* Le doy un valor al parametro greet en la variable greeterHey */
+// greeterHey("Jonas"); //* Parametro que retorna la funcion de la linea 91 */
+// greeterHey("Steven"); //* Parametro que retorna la funcion de la linea 91 */
 
-greet("Hello")("Jonas"); //* Invoco funcion greet y le paso los parametros que necesita */
+// greet("Hello")("Jonas"); //* Invoco funcion greet y le paso los parametros que necesita */
