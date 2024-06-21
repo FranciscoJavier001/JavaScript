@@ -110,51 +110,56 @@
 // greet("Hello")("Jonas"); //* Invoco funcion greet y le paso los parametros que necesita */
 
 const lufthansa = {
-  airline: "Lufthansa",
+  //* Defino una variable que es un objeto */
+  airline: "Lufthansa", //* Le defino unas propiedades con informacio */
   iataCode: "Lh",
-  bookings: [],
+  bookings: [], //* Es un arreglo dentro de un objeto */
   book(flightNum, name) {
+    //* Defino una funcion que recibe 2 parametros */
     console.log(
+      //* Voy a mostrar en consola */
       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
-    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+    ); //* Scope con el name, el otro esta fuera, asi que utilizo el this */
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name }); //* En este arreglo, agrega esta informacion */
   },
 };
 
-lufthansa.book(239, "Jonas Schmedtmann");
-lufthansa.book(635, "John Smith");
-console.log(lufthansa);
+lufthansa.book(239, "Jonas Schmedtmann"); //* Invoca esta funcion y llama esta funcion y pasale estos parametros */
+lufthansa.book(635, "John Smith"); //* Invoca esta funcion y llama esta funcion y pasale estos parametros */
+console.log(lufthansa); //* Muestra en consola estos parametros, son los primeros dos */
 
 const eurowings = {
+  //* Defino una variable que dentro tiene propiedades */
   airline: "Eurowings",
   iataCode: "EW",
   bookings: [],
 };
 
-const book = lufthansa.book;
+const book = lufthansa.book; //* Defino una variable, que haga el llamado a una funcion */
 
 // Boes NOT Work
 // book(23, 'Sarah Williams')
 
 // Call Method
-book.call(eurowings, 23, "Sarah Williams");
-console.log(eurowings);
+book.call(eurowings, 23, "Sarah Williams"); //* Llamo una funcion, con el metodo de llamada, llamo otra funcion y le paso parametros */
+console.log(eurowings); //* Muestro en consola lo que se recibio, es el la variable y sus propiedades como array */
 
-book.call(lufthansa, 239, "Mary Cooper");
-console.log(lufthansa);
+book.call(lufthansa, 239, "Mary Cooper"); //* Llamo la otra funcion pero con los mismos parametros */
+console.log(lufthansa); //* Lamo esta funcion y recibe estos parametros */
 
 const swiss = {
+  //* Defino una variable y dentro le asigno propiedades */
   airline: "Swiss Air Lines",
   iataCode: "LX",
   bookings: [],
 };
 
-book.call(swiss, 583, "Mary Cooper");
-console.log(swiss);
+book.call(swiss, 583, "Mary Cooper"); //* Llamo la funcion y le paso parametros */
+console.log(swiss); //* Muestro en consola el arreglo definido */
 
 // Apply Method
-const flightData = [583, "George Cooper"];
-book.apply(swiss, flightData);
-console.log(swiss);
+const flightData = [583, "George Cooper"]; //* Defino una variable que recibe un arreglo */
+book.apply(swiss, flightData); //* Llamo una funcion definida, y le paso los parametros de un arreglo */
+console.log(swiss); //* Muestro en consola lo que recibio el parametro */
 
-book.call(swiss, ...flightData);
+book.call(swiss, ...flightData); //* Llamo una fuincion, recibe un arreglo con propiedades, muestra la informacion dentro de la funcion */
