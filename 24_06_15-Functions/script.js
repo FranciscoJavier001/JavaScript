@@ -163,3 +163,5 @@ book.apply(swiss, flightData); //* Llamo una funcion definida, y le paso los par
 console.log(swiss); //* Muestro en consola lo que recibio el parametro */
 
 book.call(swiss, ...flightData); //* Llamo una fuincion, recibe un arreglo con propiedades, muestra la informacion dentro de la funcion */
+
+// Jessy
