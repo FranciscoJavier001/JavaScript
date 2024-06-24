@@ -164,4 +164,51 @@ console.log(swiss); //* Muestro en consola lo que recibio el parametro */
 
 book.call(swiss, ...flightData); //* Llamo una fuincion, recibe un arreglo con propiedades, muestra la informacion dentro de la funcion */
 
-// Jessy
+const bookEW = book.bind(eurowings); //* Defino una variable y mando llamar la funcion */
+const bookLH = book.bind(lufthansa); //* Defino la variable y mando llamar la funcion */
+const bookLX = book.bind(swiss); //* Defino la variable y mando llamar la funcion */
+
+bookEW(23, "Steven Williams"); //* Invoco la funcion, le paso parametros que necesita y se muestra en consola porque asi defini la funcion */
+
+const bookEW23 = book.bind(eurowings, 23); //* Defino una variable, que recibe parametros de una funcion con un argumento definido */
+bookEW23("Jonas Schmedtmann"); //* Le falta un arguento a la variable llamada, solo le falta el nombre */
+bookEW23("Martha Cooper");
+
+lufthansa.planes = 300; //* Le asigno un metodo llamado como planes a la variable lufthansa */
+lufthansa.buyPlane = function () {
+  //* Asigno un metodo que invoca una funcion */
+  //* Le asigno un */
+  console.log(this); //* Muestro lo que tenga este arreglo */
+
+  this.planes++; //* Le voy a agregar un valor a la variable que tiene el metodo planes y aumento 1 */
+  console.log(this.planes); //* Muestro en consola el nuevo valor de la suma en planes */
+};
+
+// lufthansa.buyPlane();
+
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+//* Selecciono en el documento la clase buy, cuando le haga click llama a este metodo, lo invocas como viene con el bind y lo vuelves a llamar */
+
+const addTax = (rate, value) => value + value * rate; //* Defino una variable que recibe 2 valores, luego hace una operacion */
+console.log(addTax(0.1, 200)); //* Muestro en consola la funcion, recibiendo 2 prametros que se necesitan */
+
+const addVAT = addTax.bind(null, 0.23); //* Defino una variable que mando llamar una funcion, que viene con 2 valores */
+// addVAT = (value) => value + value * 0.23;
+
+console.log(addVAT(100)); //* Se le asigna un valor de 23% */
+console.log(addVAT(23)); //* Se le asigna un valor de 23% */
+
+const addTaxRate = function (rate) {
+  //* Declaro una variable que recibe un parametro */
+  return function (value) {
+    //* Retorno una nueva funcion que recibe un valor */
+    return value + value * rate; //* Esta me retorna una operacion aritmetica */
+  };
+};
+
+const addVAT2 = addTaxRate(0.23); //* Aqui le asigno un valor definido a la funcion declarada */
+
+console.log(addVAT2(100)); //* Se muestra el valor de la operacion pero con otra metodologia en declaracion de funcion */
+console.log(addVAT2(23));
