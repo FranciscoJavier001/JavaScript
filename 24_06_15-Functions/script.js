@@ -213,47 +213,82 @@
 // console.log(addVAT2(100)); //* Se muestra el valor de la operacion pero con otra metodologia en declaracion de funcion */
 // console.log(addVAT2(23));
 
-const poll = {
-  //* Creo un objeto en JS */
-  question: "What is your favorite programming language?", //* Propiedades del objeto */
-  options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"], //* Propiedades del objeto que es un array */
-  answers: new Array(4).fill(0), //* Propiedad que es un arreglo de 5 elementos que se va a llenar desde la posicion 0 */
-  registerNewAnswer() {
-    //* Realizamos una nueva funcion, pero no recibe nada */
-    const answer = Number(
-      //* Creamos una variable que recibe un numero */
+// const poll = {
+//   //* Creo un objeto en JS */
+//   question: "What is your favorite programming language?", //* Propiedades del objeto */
+//   options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"], //* Propiedades del objeto que es un array */
+//   answers: new Array(4).fill(0), //* Propiedad que es un arreglo de 5 elementos que se va a llenar desde la posicion 0 */
+//   registerNewAnswer() {
+//     //* Realizamos una nueva funcion, pero no recibe nada */
+//     const answer = Number(
+//       //* Creamos una variable que recibe un numero */
+//       prompt(
+//         `${this.question}\n${this.options.join("\n")}\n(Write option number)`
+//       ) //* Que se muestre estre prompt en pantalla */
+//     );
+//     console.log(answer); //* Mostramos en consola la respuesta */
+
+//     typeof answer === "number" && //* Creamos esta condicion, si answer es un numero */
+//       answer < this.answers.length && //* Y answer es mayor que es espacio del tamaño del arreglo */
+//       this.answers[answer]++; //* Aumentamos en 1 el numero de respuesta que es */
+
+//     this.displayResults(); //* Vamos a mostrar en consola el arreglo con el aumento en el numero seleccionado */
+//     this.displayResults("string"); //* Vamos a mostrar en consola, un mensaje, pero adelante ponemos la logica */
+//   },
+
+//   displayResults(type = "array") {
+//     //* Si esta variable es de este tipo */
+//     if (type === "array") {
+//       //* La condicion es que si es del tipo array */
+//       console.log(this.answers); //* Muestra esto en consola ocmo un array */
+//     } else if (type === "string") {
+//       //* Y si es del tipo string */
+//       console.log(`Poll results are ${this.answers.join(", ")}`); //* Muestra esto en consola, juntandolos y separandolos por coma */
+//     }
+//   },
+// };
+// // poll.registerNewAnswer();
+
+// document
+//   .querySelector(".poll") //* En el Dom localiza la clase pool */
+//   .addEventListener("click", poll.registerNewAnswer.bind(poll));
+// //* Le agregas evento click y a esta variable le agregas esta funcion, juntas la original para el scope, y le dices de cual funcion para el scope bind */
+
+// poll.displayResults.call({ answers: [5, 2, 3] }, "string"); //* Mando llamar la funcion y muestro este arreglo y le asigno esta clase  (consola)*/
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
+
+const encuesta = {
+  pregunta: "Ingresa un numero",
+  opciones: ["0: 0", "1: 1", "2: 2", "3: 3", "4: 4", "5: 5"],
+  respuestas: new Array(6).fill(0),
+  registrarNuevaRespuesta() {
+    const respuesta = Number(
       prompt(
-        `${this.question}\n${this.options.join("\n")}\n(Write option number)`
-      ) //* Que se muestre estre prompt en pantalla */
+        `${this.pregunta}\n${this.opciones.join(
+          "\n"
+        )}\n(Escribe la opcion de un numero)`
+      )
     );
-    console.log(answer); //* Mostramos en consola la respuesta */
+    console.log(respuesta);
 
-    typeof answer === "number" && //* Creamos esta condicion, si answer es un numero */
-      answer < this.answers.length && //* Y answer es mayor que es espacio del tamaño del arreglo */
-      this.answers[answer]++; //* Aumentamos en 1 el numero de respuesta que es */
+    typeof respuesta === "number" &&
+      respuesta < this.respuestas.length &&
+      this.respuestas[respuesta]++;
 
-    this.displayResults(); //* Vamos a mostrar en consola el arreglo con el aumento en el numero seleccionado */
-    this.displayResults("string"); //* Vamos a mostrar en consola, un mensaje, pero adelante ponemos la logica */
+    this.resultadosPantalla();
+    this.resultadosPantalla("string");
   },
 
-  displayResults(type = "array") {
-    //* Si esta variable es de este tipo */
+  resultadosPantalla(type = "array") {
     if (type === "array") {
-      //* La condicion es que si es del tipo array */
-      console.log(this.answers); //* Muestra esto en consola ocmo un array */
+      console.log(this.respuestas);
     } else if (type === "string") {
-      //* Y si es del tipo string */
-      console.log(`Poll results are ${this.answers.join(", ")}`); //* Muestra esto en consola, juntandolos y separandolos por coma */
+      console.log(`La encuesta de resultados es ${this.respuestas.join(", ")}`);
     }
   },
 };
-// poll.registerNewAnswer();
 
 document
-  .querySelector(".poll") //* En el Dom localiza la clase pool */
-  .addEventListener("click", poll.registerNewAnswer.bind(poll));
-//* Le agregas evento click y a esta variable le agregas esta funcion, juntas la original para el scope, y le dices de cual funcion para el scope bind */
-
-poll.displayResults.call({ answers: [5, 2, 3] }, "string"); //* Mando llamar la funcion y muestro este arreglo y le asigno esta clase  (consola)*/
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
+  .querySelector(".poll")
+  .addEventListener("click", encuesta.registrarNuevaRespuesta.bind(encuesta));
