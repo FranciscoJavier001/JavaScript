@@ -293,18 +293,18 @@
 //   .querySelector(".poll")
 //   .addEventListener("click", encuesta.registrarNuevaRespuesta.bind(encuesta));
 
-const runOnce = () => {
-  console.log("This will never run again");
-};
-runOnce();
+// const runOnce = () => {
+//   console.log("This will never run again");
+// };
+// runOnce();
 
-(function () {
-  console.log("This will never run again");
-})();
+// (function () {
+//   console.log("This will never run again");
+// })();
 
-(() => console.log("This will ALSO never run again"))();
+// (() => console.log("This will ALSO never run again"))();
 
-{
-  var isPrivate = 23;
-}
-console.log(isPrivate);
+// {
+//   var isPrivate = 23;
+// }
+// console.log(isPrivate);
