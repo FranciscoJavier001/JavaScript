@@ -258,37 +258,37 @@
 // poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
 // poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, "string");
 
-const encuesta = {
-  pregunta: "Ingresa un numero",
-  opciones: ["0: 0", "1: 1", "2: 2", "3: 3", "4: 4", "5: 5"],
-  respuestas: new Array(6).fill(0),
-  registrarNuevaRespuesta() {
-    const respuesta = Number(
-      prompt(
-        `${this.pregunta}\n${this.opciones.join(
-          "\n"
-        )}\n(Escribe la opcion de un numero)`
-      )
-    );
-    console.log(respuesta);
+// const encuesta = {
+//   pregunta: "Ingresa un numero",
+//   opciones: ["0: 0", "1: 1", "2: 2", "3: 3", "4: 4", "5: 5"],
+//   respuestas: new Array(6).fill(0),
+//   registrarNuevaRespuesta() {
+//     const respuesta = Number(
+//       prompt(
+//         `${this.pregunta}\n${this.opciones.join(
+//           "\n"
+//         )}\n(Escribe la opcion de un numero)`
+//       )
+//     );
+//     console.log(respuesta);
 
-    typeof respuesta === "number" &&
-      respuesta < this.respuestas.length &&
-      this.respuestas[respuesta]++;
+//     typeof respuesta === "number" &&
+//       respuesta < this.respuestas.length &&
+//       this.respuestas[respuesta]++;
 
-    this.resultadosPantalla();
-    this.resultadosPantalla("string");
-  },
+//     this.resultadosPantalla();
+//     this.resultadosPantalla("string");
+//   },
 
-  resultadosPantalla(type = "array") {
-    if (type === "array") {
-      console.log(this.respuestas);
-    } else if (type === "string") {
-      console.log(`La encuesta de resultados es ${this.respuestas.join(", ")}`);
-    }
-  },
-};
+//   resultadosPantalla(type = "array") {
+//     if (type === "array") {
+//       console.log(this.respuestas);
+//     } else if (type === "string") {
+//       console.log(`La encuesta de resultados es ${this.respuestas.join(", ")}`);
+//     }
+//   },
+// };
 
-document
-  .querySelector(".poll")
-  .addEventListener("click", encuesta.registrarNuevaRespuesta.bind(encuesta));
+// document
+//   .querySelector(".poll")
+//   .addEventListener("click", encuesta.registrarNuevaRespuesta.bind(encuesta));
