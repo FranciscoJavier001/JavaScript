@@ -327,3 +327,62 @@
 // booker();
 
 // console.dir(booker); //* Puedo ver informacion del scoope de la variable que invoca a la funcion */
+
+let f; //* Defino una variable que puede cambiar */
+
+const g = () => {
+  //* Inicializo una funcion */
+  const a = 23; //* Defino una variable y le asigno un valor */
+  f = () => {
+    //* Defino una funcion */
+    console.log(a * 2); //* Muestro en consola una operacion aritmetica */
+  };
+};
+
+const h = () => {
+  //* Inicializo una funcion */
+  const b = 777; //* Defino una variable dentro de la funcion */
+  f = () => {
+    //* Inicializo una funcon */
+    console.log(b * 2); //* La funcion muestra en consola una funcion aritmetica */
+  };
+};
+
+g(); //* Inicializo la funcion */
+f(); //* Para poder inicializar la funcion, primero invovo f luego f */
+console.dir(f); //* Reviso el scooe de las variables */
+
+//* Reasigno las variables */
+h();
+f();
+console.dir(f); //* Reviso el scooe de las variables */
+
+// const boardPassengers = (n, wait) => { //* Inicializo una funcion que recibe 2 parametros */
+//   const perGroup = n / 3; //* Defino una variable que es una operacion aritmetica para definir el total del grupo */
+
+//   setTimeout(() => { //* inizializo una funcion que no recibe parametros */
+//     console.log(`We are now boarding all ${n} passengers`); //* Muestro el mensaje en consola */
+//     console.log(`There are 3 groups, each with ${perGroup} passengers`); //* Mensaje consola, numero de pasajeros entre 3 */
+//   }, wait * 1000); //* Tiempo en el cual mostraremos el mensaje en consola */
+
+//   console.log(`Will start boarding in ${wait} seconds`); //* Primer mensaje en consola */
+// };
+
+// const perGroup = 1000 //* En caso que no tengamos el primero */
+// boardPassengers(180, 3); //* Funcion que recibe 2 parametros */
+
+const abordoPasajeros = (num, espera) => {
+  const grupoIndividual = num / 3;
+
+  setTimeout(() => {
+    console.log(`Estamos abordando todos los ${num} de pasajeros`);
+    console.log(
+      `Son 3 grupos, cada grupo contiene ${grupoIndividual} de pasajeros`
+    );
+  }, espera * 1000);
+
+  console.log(`Iniciaremos el abordaje en ${espera} segundos`);
+};
+
+const grupoIndividual = 1000000;
+abordoPasajeros(180, 2);
