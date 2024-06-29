@@ -325,3 +325,5 @@
 // booker(); //* Mando llamar la variable que invoca la funcion */
 // booker();
 // booker();
+
+// console.dir(booker); //* Puedo ver informacion del scoope de la variable que invoca a la funcion */
