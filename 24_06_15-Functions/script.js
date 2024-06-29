@@ -309,19 +309,19 @@
 // }
 // console.log(isPrivate);
 
-const secureBooking = () => {
-  //* Defino una funcion */
-  let passengerCount = 0; //* Le declaro propiedades */
+// const secureBooking = () => {
+//   //* Defino una funcion */
+//   let passengerCount = 0; //* Le declaro propiedades */
 
-  return () => {
-    //* Lo que me va a retornar */
-    passengerCount++; //* La propiedad la aumento en 1 */
-    console.log(`${passengerCount} passengers`); //* Muestro en consola la propiedad mas texto */
-  };
-};
+//   return () => {
+//     //* Lo que me va a retornar */
+//     passengerCount++; //* La propiedad la aumento en 1 */
+//     console.log(`${passengerCount} passengers`); //* Muestro en consola la propiedad mas texto */
+//   };
+// };
 
-const booker = secureBooking(); //* Declaro una variable que invoca a la funcion */
+// const booker = secureBooking(); //* Declaro una variable que invoca a la funcion */
 
-booker(); //* Mando llamar la variable que invoca la funcion */
-booker();
-booker();
+// booker(); //* Mando llamar la variable que invoca la funcion */
+// booker();
+// booker();
