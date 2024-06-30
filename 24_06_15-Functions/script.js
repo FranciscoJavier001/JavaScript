@@ -386,3 +386,14 @@
 
 // const grupoIndividual = 1000000;
 // abordoPasajeros(180, 2);
+
+(() => {
+  //* Inicializo una funcion y le paso instrucciones */
+  const header = document.querySelector("h1"); //* Declaro una variable, que sea el elemento h1 del Html */
+  header.style.color = "red"; //* La variable le asigno un color */
+
+  document.querySelector("body").addEventListener("click", () => {
+    //* Selecciono el body en el DOM, y le añado un evento click */
+    header.style.color = "blue"; //* Al hacer click que cambie el color a azul */
+  });
+})(); //* Al hacer click inicializo la funcion */
