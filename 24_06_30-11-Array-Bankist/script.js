@@ -71,31 +71,31 @@ const currencies = new Map([
   ["GBP", "Pound sterling"],
 ]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
 /////////////////////////////////////////////////
 
-let arr = ["a", "b", "c", "d", "e"]; //* Inicializo un array */
+// let arr = ["a", "b", "c", "d", "e"]; //* Inicializo un array */
 
-console.log(arr.slice(2)); //* Metodo Slice me muestra un inicio y hasta el final(opcional) */
-console.log(arr.slice(2, 4)); //* Aqui le pongo un inicio y un final */
-console.log(arr.slice(-2)); //* Asi muestro los ultimos elementos del array */
-console.log(arr.slice(-1)); //* Asi muestro el ultimo elemento del array */
-console.log(arr.slice(1, -2)); //* Muestro posicion 2 (real) y posicion -3 (real) */
-console.log(arr.slice()); //* Muestro todo el arreglo */
-console.log([...arr]); //* Muestro todo el arreglo */
+// console.log(arr.slice(2)); //* Metodo Slice me muestra un inicio y hasta el final(opcional) */
+// console.log(arr.slice(2, 4)); //* Aqui le pongo un inicio y un final */
+// console.log(arr.slice(-2)); //* Asi muestro los ultimos elementos del array */
+// console.log(arr.slice(-1)); //* Asi muestro el ultimo elemento del array */
+// console.log(arr.slice(1, -2)); //* Muestro posicion 2 (real) y posicion -3 (real) */
+// console.log(arr.slice()); //* Muestro todo el arreglo */
+// console.log([...arr]); //* Muestro todo el arreglo */
 
-console.log(arr.splice()); //* Este metodo elimina elementos */
-console.log(arr.splice(2)); //* Elimino los primeros 2 elementos */
-console.log(arr.splice(-1)); //* Solo dejo el elemento 2 real */
+// console.log(arr.splice()); //* Este metodo elimina elementos */
+// console.log(arr.splice(2)); //* Elimino los primeros 2 elementos */
+// console.log(arr.splice(-1)); //* Solo dejo el elemento 2 real */
 
-arr = ["a", "b", "c", "d", "e"];
-const arr2 = ["j", "i", "h", "g", "f"];
-console.log(arr2.reverse()); //* Mostramos el arreglo pero del ultimo elemento al primero */
-console.log(arr2); //* Este metodo muta el arreglo */
+// arr = ["a", "b", "c", "d", "e"];
+// const arr2 = ["j", "i", "h", "g", "f"];
+// console.log(arr2.reverse()); //* Mostramos el arreglo pero del ultimo elemento al primero */
+// console.log(arr2); //* Este metodo muta el arreglo */
 
-const letters = arr.concat(arr2); //* Se unen 2 array */
-console.log(letters); //* Mostramos en consola el array completo de los 2 el arr y arr2 */
-console.log([...arr, ...arr2]); //* Mismo resultado */
+// const letters = arr.concat(arr2); //* Se unen 2 array */
+// console.log(letters); //* Mostramos en consola el array completo de los 2 el arr y arr2 */
+// console.log([...arr, ...arr2]); //* Mismo resultado */
 
-console.log(letters.join(" - ")); //* El arreglo, pero ya esta mutado y lo separo con - */
+// console.log(letters.join(" - ")); //* El arreglo, pero ya esta mutado y lo separo con - */
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
