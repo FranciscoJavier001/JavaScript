@@ -98,4 +98,47 @@ const currencies = new Map([
 
 // console.log(letters.join(" - ")); //* El arreglo, pero ya esta mutado y lo separo con - */
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130.1, 70, 1300]; //* Un arreglo */
+
+for (const movement of movements) {
+  //* Defino un nuevo arreglo que tenga una variable de variables */
+  if (movement > 0) {
+    //* Si el movimiento es mayor a 0 */
+    console.log(`You deposited ${movement}`); //* Mostrar esto en consola, con el movimiento individual */
+  } else {
+    console.log(`You withdrew ${Math.abs(movement)}`); //* Metodo JS para conseguir el numero absoluto, sin el signo de - */
+  }
+}
+
+console.log("---");
+
+for (const [i, movement] of movements.entries()) {
+  //* Creo un index para cada movimiento y e itero cada una de ellas con entries */
+  if (movement > 0) {
+    console.log(`Movement ${i + 1}: You deposited ${movement}`);
+  } else {
+    console.log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`);
+  }
+}
+
+console.log("---");
+
+movements.forEach((movement) => {
+  //* Para cada movimiento */
+  if (movement > 0) {
+    console.log(`You deposited ${movement}`);
+  } else {
+    console.log(`You withdrew ${Math.abs(movement)}`);
+  }
+});
+
+console.log("---");
+
+movements.forEach((mov, i) => {
+  //* Para cadamovimiento creo una iteracion */
+  if (mov > 0) {
+    console.log(`Movement ${i + 1}: You deposited ${mov}`);
+  } else {
+    console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
+  }
+});
