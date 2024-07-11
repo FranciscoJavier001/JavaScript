@@ -136,3 +136,22 @@ const inputClosePin = document.querySelector(".form__input--pin");
 //     console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
 //   }
 // });
+
+const currencies = new Map([
+  //* Un nuevo arreglo mapeado (nuevo) que contiene 2 valores */
+  ["USD", "United States dollar"],
+  ["EUR", "Euro"],
+  ["GBP", "Pound sterling"],
+]);
+
+currencies.forEach((value, key) => {
+  //* Para cada uno de los elementos consigue estos 2 valores, (reasigne nombres) */
+  console.log(`${key}: ${value}`); //* Muestra en consola los valores que se solicitan */
+});
+
+const currenciesUnique = new Set(["USD", "GBP", "USD", "EUR"]); //* Defino un nuevo arreglo que no se repita nada */
+console.log(currenciesUnique); //* Muestro el set del arreglo en consola */
+currenciesUnique.forEach((value, key) => {
+  //* Para cada arreglo, muestrame estas 2 variables, van a ser iguales */
+  console.log(`${key}: ${value}`); //* Muestro en consola los valores identicos separador por : */
+});
