@@ -45,7 +45,7 @@ const labelSumInterest = document.querySelector(".summary__value--interest");
 const labelTimer = document.querySelector(".timer");
 
 const containerApp = document.querySelector(".app");
-const containerMovements = document.querySelector(".movements");
+const containerMovements = document.querySelector(".movements"); //* Declaro esta variable, que va a ser donde aterrizan los cambios html */
 
 const btnLogin = document.querySelector(".login__btn");
 const btnTransfer = document.querySelector(".form__btn--transfer");
@@ -62,26 +62,28 @@ const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
 const displayMovements = (movements) => {
-  containerMovements.innerHTML = "";
+  //* Declaro una variable, que recibe esto de las variables declaras, lo que recibe es una de sus propiedades */
+  containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
   // textContent = 0
   movements.forEach((mov, i) => {
-    const type = mov > 0 ? "deposit" : "withdrawal";
+    //* Propiedad recibida, que recibe 2 argumentos de cada iteracion */
+    const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
     const html = `
-    <div class="movements__row">
+    <div class="movements__row"> 
       <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
       <div class="movements__value">${mov}</div>
     </div>
-    `;
+    `; //* Estructura HTML, primero van los colores, luego contador de operacion, luego si es deposito o retiro */
 
-    containerMovements.insertAdjacentHTML("afterbegin", html);
+    containerMovements.insertAdjacentHTML("afterbegin", html); //* Para agregar contenido dinamico, donde aterrizan los cambios */
   });
 };
 
-displayMovements(account1.movements);
+displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y muestra sus movimientos */
 
-console.log(containerMovements.innerHTML);
+console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
