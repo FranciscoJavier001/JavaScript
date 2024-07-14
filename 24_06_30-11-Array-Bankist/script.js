@@ -180,27 +180,27 @@
 //   console.log(`${key}: ${value}`); //* Muestro en consola los valores identicos separador por : */
 // });
 
-const checkDogs = (dogsJulia, dogsKate) => {
-  //* Defino una funcion que recibe 2 parametros */
-  const dogsJuliaCorrected = dogsJulia.slice(); //* Defino una variable que sera un nuevo array, conservando el original  */
-  dogsJuliaCorrected.splice(0, 1); //* Nuevo arreglo donde elimino el elemento 1 del array */
-  // console.log(dogsJuliaCorrected);
-  dogsJuliaCorrected.splice(-2); //* Nuevo arreglo donde elimino los ultimos 2 */
-  // console.log(dogsJuliaCorrected);
-  // dogsJulia(1,3)
-  const dogs = dogsJuliaCorrected.concat(dogsKate); //* Voy a juntar los 2 arreglos en 1 solo */
-  // console.log(dogs);
+// const checkDogs = (dogsJulia, dogsKate) => {
+//   //* Defino una funcion que recibe 2 parametros */
+//   const dogsJuliaCorrected = dogsJulia.slice(); //* Defino una variable que sera un nuevo array, conservando el original  */
+//   dogsJuliaCorrected.splice(0, 1); //* Nuevo arreglo donde elimino el elemento 1 del array */
+//   // console.log(dogsJuliaCorrected);
+//   dogsJuliaCorrected.splice(-2); //* Nuevo arreglo donde elimino los ultimos 2 */
+//   // console.log(dogsJuliaCorrected);
+//   // dogsJulia(1,3)
+//   const dogs = dogsJuliaCorrected.concat(dogsKate); //* Voy a juntar los 2 arreglos en 1 solo */
+//   // console.log(dogs);
 
-  dogs.forEach((dog, i) => {
-    //* Para cada elemento del array y aparte voy a iterar */
-    if (dog >= 3) {
-      //* Si el perro es mayor o igual a 3 años */
-      console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`); //* El numero de perro es un perro de x años y es adulto */
-    } else {
-      console.log(`Dog number ${i + 1} is still a puppy 🐶`); //* Pero el numero de perro es menor a 3 entonces es un cachorro */
-    }
-  });
-};
+//   dogs.forEach((dog, i) => {
+//     //* Para cada elemento del array y aparte voy a iterar */
+//     if (dog >= 3) {
+//       //* Si el perro es mayor o igual a 3 años */
+//       console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`); //* El numero de perro es un perro de x años y es adulto */
+//     } else {
+//       console.log(`Dog number ${i + 1} is still a puppy 🐶`); //* Pero el numero de perro es menor a 3 entonces es un cachorro */
+//     }
+//   });
+// };
 
-checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]); //* Estos simplemente son los arreglos que recibe la funcion checkDogs */
-checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+// checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]); //* Estos simplemente son los arreglos que recibe la funcion checkDogs */
+// checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
