@@ -116,7 +116,7 @@
 
 // console.log(letters.join(" - ")); //* El arreglo, pero ya esta mutado y lo separo con - */
 
-// const movements = [200, 450, -400, 3000, -650, -130.1, 70, 1300]; //* Un arreglo */
+const movements = [200, 450, -400, 3000, -650, -130.1, 70, 1300]; //* Un arreglo */
 
 // for (const movement of movements) {
 //   //* Defino un nuevo arreglo que tenga una variable de variables */
@@ -204,3 +204,27 @@
 
 // checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]); //* Estos simplemente son los arreglos que recibe la funcion checkDogs */
 // checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+
+const eurToUsd = 1.1; //* Le asigno el valor a una variable */
+
+const movementsUSD = movements.map((mov) => mov * eurToUsd); //* Variable, mapeo el arreglo que recibe variable y retorna operacion */
+console.log(movements); //* Estos son los movimientos */
+console.log(movementsUSD); //* Aqui estan con una operacion artiemtica */
+
+const movementsUSDfor = []; //* Defino un arreglo vacio */
+movements.forEach((mov) => movementsUSDfor.push(mov * eurToUsd)); //* Para cada iteracion, a este arreglo añado resultado de operacion */
+console.log(movementsUSDfor); //* Muestro nuevo arreglo en consola */
+
+const movementsDescriptions = movements.map(
+  //* Voy a crear un nuevo arreglo mapeado */
+  (
+    mov,
+    i //* Va a recibir 2 propiedades */
+  ) =>
+    `Movement ${i + 1}: You ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(
+      //* Iterador e if, con valores absolutos */
+      mov
+    )}`
+);
+
+console.log(movementsDescriptions); //* Descripcion de movimientos */
