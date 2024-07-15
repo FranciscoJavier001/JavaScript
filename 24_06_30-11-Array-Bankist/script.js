@@ -85,6 +85,21 @@ displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y m
 
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
+const createUsernames = (accs) => {
+  //* Defino una variable, que recibe un argumento */
+  accs.forEach((acc) => {
+    //* Del argumento recibido, para cada uno de ellos, va a recibir un argumento */
+    acc.username = acc.owner //* Este argumento tiene una propiedad y esta argumento recibe de esta propiedad */
+      .toLowerCase() //* Estp se va a poner en minusculas */
+      .split(" ") //* Se va a separar en cada espacio */
+      .map((name) => name[0]) //* Se mapea, se recibe un argumento, y se retorna ese argumento en suposicion 0 del arreglo */
+      .join(""); //* Se van a unir sin espacio */
+  });
+};
+
+createUsernames(accounts); //* Esta funcion va a recibir este argumento anteriormente definido */
+console.log(accounts); //* Muestro en consola ese argumento definido */
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
