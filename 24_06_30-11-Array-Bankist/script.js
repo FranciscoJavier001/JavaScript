@@ -4,84 +4,84 @@
 /////////////////////////////////////////////////
 // BANKIST APP
 
-// // Data
-// const account1 = {
-//   owner: "Jonas Schmedtmann",
-//   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
-//   interestRate: 1.2, // %
-//   pin: 1111,
-// };
+// Data
+const account1 = {
+  owner: "Jonas Schmedtmann",
+  movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
+  interestRate: 1.2, // %
+  pin: 1111,
+};
 
-// const account2 = {
-//   owner: "Jessica Davis",
-//   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-//   interestRate: 1.5,
-//   pin: 2222,
-// };
+const account2 = {
+  owner: "Jessica Davis",
+  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
+  interestRate: 1.5,
+  pin: 2222,
+};
 
-// const account3 = {
-//   owner: "Steven Thomas Williams",
-//   movements: [200, -200, 340, -300, -20, 50, 400, -460],
-//   interestRate: 0.7,
-//   pin: 3333,
-// };
+const account3 = {
+  owner: "Steven Thomas Williams",
+  movements: [200, -200, 340, -300, -20, 50, 400, -460],
+  interestRate: 0.7,
+  pin: 3333,
+};
 
-// const account4 = {
-//   owner: "Sarah Smith",
-//   movements: [430, 1000, 700, 50, 90],
-//   interestRate: 1,
-//   pin: 4444,
-// };
+const account4 = {
+  owner: "Sarah Smith",
+  movements: [430, 1000, 700, 50, 90],
+  interestRate: 1,
+  pin: 4444,
+};
 
-// const accounts = [account1, account2, account3, account4];
+const accounts = [account1, account2, account3, account4];
 
-// // Elements
-// const labelWelcome = document.querySelector(".welcome");
-// const labelDate = document.querySelector(".date");
-// const labelBalance = document.querySelector(".balance__value");
-// const labelSumIn = document.querySelector(".summary__value--in");
-// const labelSumOut = document.querySelector(".summary__value--out");
-// const labelSumInterest = document.querySelector(".summary__value--interest");
-// const labelTimer = document.querySelector(".timer");
+// Elements
+const labelWelcome = document.querySelector(".welcome");
+const labelDate = document.querySelector(".date");
+const labelBalance = document.querySelector(".balance__value");
+const labelSumIn = document.querySelector(".summary__value--in");
+const labelSumOut = document.querySelector(".summary__value--out");
+const labelSumInterest = document.querySelector(".summary__value--interest");
+const labelTimer = document.querySelector(".timer");
 
-// const containerApp = document.querySelector(".app");
-// const containerMovements = document.querySelector(".movements"); //* Declaro esta variable, que va a ser donde aterrizan los cambios html */
+const containerApp = document.querySelector(".app");
+const containerMovements = document.querySelector(".movements"); //* Declaro esta variable, que va a ser donde aterrizan los cambios html */
 
-// const btnLogin = document.querySelector(".login__btn");
-// const btnTransfer = document.querySelector(".form__btn--transfer");
-// const btnLoan = document.querySelector(".form__btn--loan");
-// const btnClose = document.querySelector(".form__btn--close");
-// const btnSort = document.querySelector(".btn--sort");
+const btnLogin = document.querySelector(".login__btn");
+const btnTransfer = document.querySelector(".form__btn--transfer");
+const btnLoan = document.querySelector(".form__btn--loan");
+const btnClose = document.querySelector(".form__btn--close");
+const btnSort = document.querySelector(".btn--sort");
 
-// const inputLoginUsername = document.querySelector(".login__input--user");
-// const inputLoginPin = document.querySelector(".login__input--pin");
-// const inputTransferTo = document.querySelector(".form__input--to");
-// const inputTransferAmount = document.querySelector(".form__input--amount");
-// const inputLoanAmount = document.querySelector(".form__input--loan-amount");
-// const inputCloseUsername = document.querySelector(".form__input--user");
-// const inputClosePin = document.querySelector(".form__input--pin");
+const inputLoginUsername = document.querySelector(".login__input--user");
+const inputLoginPin = document.querySelector(".login__input--pin");
+const inputTransferTo = document.querySelector(".form__input--to");
+const inputTransferAmount = document.querySelector(".form__input--amount");
+const inputLoanAmount = document.querySelector(".form__input--loan-amount");
+const inputCloseUsername = document.querySelector(".form__input--user");
+const inputClosePin = document.querySelector(".form__input--pin");
 
-// const displayMovements = (movements) => {
-//   //* Declaro una variable, que recibe esto de las variables declaras, lo que recibe es una de sus propiedades */
-//   containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
-//   // textContent = 0
-//   movements.forEach((mov, i) => {
-//     //* Propiedad recibida, que recibe 2 argumentos de cada iteracion */
-//     const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
-//     const html = `
-//     <div class="movements__row">
-//       <div class="movements__type movements__type--${type}">${
-//       i + 1
-//     } ${type}</div>
-//       <div class="movements__value">${mov}</div>
-//     </div>
-//     `; //* Estructura HTML, primero van los colores, luego contador de operacion, luego si es deposito o retiro */
+const displayMovements = (movements) => {
+  //* Declaro una variable, que recibe esto de las variables declaras, lo que recibe es una de sus propiedades */
+  containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
+  // textContent = 0
+  movements.forEach((mov, i) => {
+    //* Propiedad recibida, que recibe 2 argumentos de cada iteracion */
+    const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
+    const html = `
+    <div class="movements__row">
+      <div class="movements__type movements__type--${type}">${
+      i + 1
+    } ${type}</div>
+      <div class="movements__value">${mov}</div>
+    </div>
+    `; //* Estructura HTML, primero van los colores, luego contador de operacion, luego si es deposito o retiro */
 
-//     containerMovements.insertAdjacentHTML("afterbegin", html); //* Para agregar contenido dinamico, donde aterrizan los cambios */
-//   });
-// };
+    containerMovements.insertAdjacentHTML("afterbegin", html); //* Para agregar contenido dinamico, donde aterrizan los cambios */
+  });
+};
 
-// displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y muestra sus movimientos */
+displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y muestra sus movimientos */
 
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
@@ -205,26 +205,26 @@ const movements = [200, 450, -400, 3000, -650, -130.1, 70, 1300]; //* Un arreglo
 // checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]); //* Estos simplemente son los arreglos que recibe la funcion checkDogs */
 // checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
 
-const eurToUsd = 1.1; //* Le asigno el valor a una variable */
+// const eurToUsd = 1.1; //* Le asigno el valor a una variable */
 
-const movementsUSD = movements.map((mov) => mov * eurToUsd); //* Variable, mapeo el arreglo que recibe variable y retorna operacion */
-console.log(movements); //* Estos son los movimientos */
-console.log(movementsUSD); //* Aqui estan con una operacion artiemtica */
+// const movementsUSD = movements.map((mov) => mov * eurToUsd); //* Variable, mapeo el arreglo que recibe variable y retorna operacion */
+// console.log(movements); //* Estos son los movimientos */
+// console.log(movementsUSD); //* Aqui estan con una operacion artiemtica */
 
-const movementsUSDfor = []; //* Defino un arreglo vacio */
-movements.forEach((mov) => movementsUSDfor.push(mov * eurToUsd)); //* Para cada iteracion, a este arreglo añado resultado de operacion */
-console.log(movementsUSDfor); //* Muestro nuevo arreglo en consola */
+// const movementsUSDfor = []; //* Defino un arreglo vacio */
+// movements.forEach((mov) => movementsUSDfor.push(mov * eurToUsd)); //* Para cada iteracion, a este arreglo añado resultado de operacion */
+// console.log(movementsUSDfor); //* Muestro nuevo arreglo en consola */
 
-const movementsDescriptions = movements.map(
-  //* Voy a crear un nuevo arreglo mapeado */
-  (
-    mov,
-    i //* Va a recibir 2 propiedades */
-  ) =>
-    `Movement ${i + 1}: You ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(
-      //* Iterador e if, con valores absolutos */
-      mov
-    )}`
-);
+// const movementsDescriptions = movements.map(
+//   //* Voy a crear un nuevo arreglo mapeado */
+//   (
+//     mov,
+//     i //* Va a recibir 2 propiedades */
+//   ) =>
+//     `Movement ${i + 1}: You ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(
+//       //* Iterador e if, con valores absolutos */
+//       mov
+//     )}`
+// );
 
-console.log(movementsDescriptions); //* Descripcion de movimientos */
+// console.log(movementsDescriptions); //* Descripcion de movimientos */
