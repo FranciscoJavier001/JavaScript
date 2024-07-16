@@ -243,3 +243,24 @@ const movements = [200, 450, -400, 3000, -650, -130.1, 70, 1300]; //* Un arreglo
 // );
 
 // console.log(movementsDescriptions); //* Descripcion de movimientos */
+
+const deposits = movements.filter((mov) => {
+  //* Funcion, viene de movements(definida) la vamos a filtrar y vamos a recibir un argumento */
+  return mov > 0; //* Vamos a retornar los movimientos mayores a 0 */
+});
+
+const depositsFor = []; //* Defino un arreglo vacio */
+movements.forEach((mov) => {
+  //* Para cada iteracion de esta variable */
+  if (mov > 0) depositsFor.push(mov); //* Si el movimiento es mayor a 0, agregar a este arreglo cada uno de los movimientos */
+});
+console.log(depositsFor); //* Muestro el arreglo positivo */
+
+const withdrawals = movements.filter((mov) => {
+  //* Funcion que viene de movements, lo filtramos, recibimos un argumento */
+  return mov < 0; //* Retornamos los movimientos menores a 0 */
+});
+
+console.log(movements); //* Mostramos todos los movimientos */
+console.log(deposits); //* Mostramos los depositos */
+console.log(withdrawals); //* Mostramos los retiros */
