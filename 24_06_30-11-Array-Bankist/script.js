@@ -273,35 +273,35 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log(deposits); //* Mostramos los depositos */
 // console.log(withdrawals); //* Mostramos los retiros */
 
-console.log(movements); //* Muestro en consola esta variable */
+// console.log(movements); //* Muestro en consola esta variable */
 
-const balance = movements.reduce((acc, cur, i) => {
-  //* Funcion, que utiliza esta variable, metodo acumular valor array, primero acumulador valor actual e iterador */
-  console.log(`Iteration ${i}: ${acc}`); //* Consola, el numero de iteracion y el valor acumulado */
-  return acc + cur; //* Retornamos la suma del valor actual y la suma */
-}, 0); //* Iniciamos el inicializador en 0 */
+// const balance = movements.reduce((acc, cur, i) => {
+//   //* Funcion, que utiliza esta variable, metodo acumular valor array, primero acumulador valor actual e iterador */
+//   console.log(`Iteration ${i}: ${acc}`); //* Consola, el numero de iteracion y el valor acumulado */
+//   return acc + cur; //* Retornamos la suma del valor actual y la suma */
+// }, 0); //* Iniciamos el inicializador en 0 */
 
-console.log(balance); //* Mostramos el valor, pero no supe como sumar ultimo valor*/
+// console.log(balance); //* Mostramos el valor, pero no supe como sumar ultimo valor*/
 
-let sum = 0; //* Inicializo una variable */
-movements.forEach((cur, i) => {
-  //* De esta variable, para cada iteracion, voy a poner 2 variables, valor actual e iteracion */
-  sum = sum + cur; //* Operacion aritmetica a la variable sum */
-  console.log(`Iteration ${i + 1}: ${sum}`); //* Muestro en consola, para cada iteracion */
-});
+// let sum = 0; //* Inicializo una variable */
+// movements.forEach((cur, i) => {
+//   //* De esta variable, para cada iteracion, voy a poner 2 variables, valor actual e iteracion */
+//   sum = sum + cur; //* Operacion aritmetica a la variable sum */
+//   console.log(`Iteration ${i + 1}: ${sum}`); //* Muestro en consola, para cada iteracion */
+// });
 
-let balance2 = 0; //* inicializo una variable en 0 */
-movements.forEach((mov) => {
-  //* Para cada movimiento, recibo un argumento */
-  return (balance2 += mov); //* Voy a retornar una operacion aritmetica */
-});
-console.log(balance2); //* Muestro en consola, el total del arreglo */
+// let balance2 = 0; //* inicializo una variable en 0 */
+// movements.forEach((mov) => {
+//   //* Para cada movimiento, recibo un argumento */
+//   return (balance2 += mov); //* Voy a retornar una operacion aritmetica */
+// });
+// console.log(balance2); //* Muestro en consola, el total del arreglo */
 
-const max = movements.reduce((acc, mov) => {
-  //* Defino variable, de un arreglo, recibo 2 argumentos */
-  if (acc > mov)
-    return acc; //* Si acumulador es mayor que el movimiento retorno el acumulador */
-  else return mov; //* Si ya no hay mayor, entonces retorno el mov */
-}, movements); //* De donde inicio el arreglo */
+// const max = movements.reduce((acc, mov) => {
+//   //* Defino variable, de un arreglo, recibo 2 argumentos */
+//   if (acc > mov)
+//     return acc; //* Si acumulador es mayor que el movimiento retorno el acumulador */
+//   else return mov; //* Si ya no hay mayor, entonces retorno el mov */
+// }, movements); //* De donde inicio el arreglo */
 
-console.log(max); //* Muestro el mayor valor */
+// console.log(max); //* Muestro el mayor valor */
