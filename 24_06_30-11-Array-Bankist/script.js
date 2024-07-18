@@ -307,24 +307,27 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log(max); //* Muestro el mayor valor */
 
 const calcAverageHumanAge = (ages) => {
+  //* Funcion que recibe un argumento */
+  //* Variable mapea argumento con condicional, por ley de signos primero multiplicacion luego sumar */
   const humanAges = ages.map((age) => (age <= 2 ? 2 * age : 16 + age * 4));
-  const adults = humanAges.filter((age) => age >= 18);
-  console.log(humanAges);
-  console.log(adults);
+  const adults = humanAges.filter((age) => age >= 18); //* Variable, filtro edades solo edades mayores de 18 */
+  console.log(humanAges); //* Muestro en conosla edades de todos con operacion aritmetica */
+  console.log(adults); //* Muestro edades solo de personas mayores de 18 años */
 
   // const average = adults.reduce((acc, age) => acc + age, 0) / adults.legth
 
   const average = adults.reduce(
-    (acc, age, i, arr) => acc + age / arr.length,
-    0
+    //* Voy a darle un solo valor al arreglo */
+    (acc, age, i, arr) => acc + age / arr.length, //* Argumentos que recibe, acumulador, edad a sumar y divion entre los que hay */
+    0 //* Inicio en 0 */
   );
 
   // 2 3. (2+3)/2 = 2.5 === 2/2+3/2 = 2.5
 
-  return average;
+  return average; //* Al final del argumento, retorno esta variable */
 };
 
-const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]); //* El arreglo que le paso a una funcion */
 const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 
-console.log(avg1, avg2);
+console.log(avg1, avg2); //* Muestro en consola el resultado */
