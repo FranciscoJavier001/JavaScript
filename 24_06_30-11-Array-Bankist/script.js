@@ -356,15 +356,16 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // console.log(avg1, avg2); //* Muestro en consola el resultado */
 
-const eurToUsd = 1.1;
-console.log(movements);
+const eurToUsd = 1.1; //* Definimos una variable que sea una operacion aritmetica */
+console.log(movements); //* Mostramos los movimientos en consola */
 
-const totalDepositUSD = movements
-  .filter((mov) => 0 > 0)
+const totalDepositUSD = movements //* Funcion que reciba argumento */
+  .filter((mov) => mov > 0) //* Filtramos el arreglo (se crea una nuevo), donde solo sumemos las cantidades mayor a 0 */
   .map((mov, i, arr) => {
-    // console.log(arr);
-    return mov * eurToUsd;
+    //* Mapeamos un arreglo donde recibamos estos argumentos */
+    // console.log(arr); //* Mostramos en consola los argumentos mayores a 0 */
+    return mov * eurToUsd; //* Retornamos el resultado de la suma de esto x 1.1 */
   })
-  // .map(mov => mov * eurToUsd)
-  .reduce((acc, mov) => acc + mov, 0);
-console.log(totalDepositUSD);
+  // .map((mov) => mov * eurToUsd) //* Se mapea un arreglo, donde hagamos la operacion aritmetica de intereses */
+  .reduce((acc, mov) => acc + mov, 0); //* Vamos a recibir el total del acumulado y movimientos, donde se inicie el valor en 0 */
+console.log(totalDepositUSD); //* Mostramos en consola el total de depositados en euros */
