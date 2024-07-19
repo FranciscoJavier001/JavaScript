@@ -39,9 +39,9 @@ const accounts = [account1, account2, account3, account4];
 const labelWelcome = document.querySelector(".welcome");
 const labelDate = document.querySelector(".date");
 const labelBalance = document.querySelector(".balance__value");
-const labelSumIn = document.querySelector(".summary__value--in");
-const labelSumOut = document.querySelector(".summary__value--out");
-const labelSumInterest = document.querySelector(".summary__value--interest");
+const labelSumIn = document.querySelector(".summary__value--in"); //* La seleccionamos con TextContent para mostrar en el DOM */
+const labelSumOut = document.querySelector(".summary__value--out"); //* La seleccionamos con TextContent para mostrar en el DOM */
+const labelSumInterest = document.querySelector(".summary__value--interest"); //* La seleccionamos con TextContent para mostrar en el DOM */
 const labelTimer = document.querySelector(".timer");
 
 const containerApp = document.querySelector(".app");
@@ -86,36 +86,40 @@ displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y m
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
 const calcDisplayMovements = (movements) => {
+  //* Funcion que recibe un argumento */
   const balance = movements.reduce((acc, mov) => {
-    return acc + mov;
-  }, 0);
-  labelBalance.textContent = `${balance} EUR`;
+    //* Funcionque que viene del argumento superior, le paso un metodo y recibe argumentos */
+    return acc + mov; //* Retorno el acumulador y valor actual */
+  }, 0); //* Lo inicializo en 0 */
+  labelBalance.textContent = `${balance} EUR`; //* En el Dom, le agrego esto al HTtml */
 };
-calcDisplayMovements(account1.movements);
+calcDisplayMovements(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
 
 const calcDisplaySummary = (movements) => {
-  const incomes = movements
-    .filter((mov) => mov > 0)
-    .reduce((acc, mov) => acc + mov, 0);
-  labelSumIn.textContent = `${incomes}€`;
+  //* Funcion que recibe un argumento */
+  const incomes = movements //* Variable que pasa metodos a un argumento */
+    .filter((mov) => mov > 0) //* Pasamos Metodo a argumento, donde se recibe un argumento y donde el argumento sea mayor a 0 */
+    .reduce((acc, mov) => acc + mov, 0); //* Pasamos otro metodo, donde el acumulador y la iteracion, se suman e inicializo en 0 */
+  labelSumIn.textContent = `${incomes}€`; //* En el DOM mostramos este elemento */
 
-  const out = movements
-    .filter((mov) => mov < 0)
-    .reduce((acc, mov) => acc + mov, 0);
-  labelSumOut.textContent = `${Math.abs(out)}€`;
+  const out = movements //* Variable que pasa metodos a un argumento */
+    .filter((mov) => mov < 0) //* Le paso estos metodos, para filtrar los menores a 0 */
+    .reduce((acc, mov) => acc + mov, 0); //* Metodo, para hacer la suma, e inicializo en 0 */
+  labelSumOut.textContent = `${Math.abs(out)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 
-  const interest = movements
-    .filter((mov) => mov > 0)
-    .map((deposit) => (deposit * 1.2) / 100)
+  const interest = movements //* Variable y un argumento al que le vamos a pasar metodos */
+    .filter((mov) => mov > 0) //* Metodo para filrar los movimientos mayores a 0 */
+    .map((deposit) => (deposit * 1.2) / 100) //* Nuevo arreglo, con un argumento, donde el argumento lo multiplico y luego lo divido */
     .filter((int, i, arr) => {
-      console.log(arr);
-      return int >= 1;
+      //* Metodo donde solo vamos a dar el total, que recibe argumentos */
+      // console.log(arr); //* Muestro en consola el arreglo */
+      return int >= 1; //* Retorno, cuando el interes sea mayor o igual a 1 */
     })
-    .reduce((acc, int) => acc + int, 0);
-  labelSumInterest.textContent = `${Math.abs(interest)}€`;
+    .reduce((acc, int) => acc + int, 0); //* Metodo donde vamos a sumar un numero individual, e inicializa en 0 */
+  labelSumInterest.textContent = `${Math.abs(interest)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 };
 
-calcDisplaySummary(account1.movements);
+calcDisplaySummary(account1.movements); //* Inicializamos la funcion, en esta variable y le pasamos este argumento */
 
 const createUsernames = (accs) => {
   //* Defino una variable, que recibe un argumento */
@@ -357,7 +361,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log(avg1, avg2); //* Muestro en consola el resultado */
 
 const eurToUsd = 1.1; //* Definimos una variable que sea una operacion aritmetica */
-console.log(movements); //* Mostramos los movimientos en consola */
+// console.log(movements); //* Mostramos los movimientos en consola */
 
 const totalDepositUSD = movements //* Funcion que reciba argumento */
   .filter((mov) => mov > 0) //* Filtramos el arreglo (se crea una nuevo), donde solo sumemos las cantidades mayor a 0 */
@@ -368,4 +372,4 @@ const totalDepositUSD = movements //* Funcion que reciba argumento */
   })
   // .map((mov) => mov * eurToUsd) //* Se mapea un arreglo, donde hagamos la operacion aritmetica de intereses */
   .reduce((acc, mov) => acc + mov, 0); //* Vamos a recibir el total del acumulado y movimientos, donde se inicie el valor en 0 */
-console.log(totalDepositUSD); //* Mostramos en consola el total de depositados en euros */
+// console.log(totalDepositUSD); //* Mostramos en consola el total de depositados en euros */
