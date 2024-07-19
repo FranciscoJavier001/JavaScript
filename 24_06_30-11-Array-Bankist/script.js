@@ -360,28 +360,28 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // console.log(avg1, avg2); //* Muestro en consola el resultado */
 
-const eurToUsd = 1.1; //* Definimos una variable que sea una operacion aritmetica */
-// console.log(movements); //* Mostramos los movimientos en consola */
+// const eurToUsd = 1.1; //* Definimos una variable que sea una operacion aritmetica */
+// // console.log(movements); //* Mostramos los movimientos en consola */
 
-const totalDepositUSD = movements //* Funcion que reciba argumento */
-  .filter((mov) => mov > 0) //* Filtramos el arreglo (se crea una nuevo), donde solo sumemos las cantidades mayor a 0 */
-  .map((mov, i, arr) => {
-    //* Mapeamos un arreglo donde recibamos estos argumentos */
-    // console.log(arr); //* Mostramos en consola los argumentos mayores a 0 */
-    return mov * eurToUsd; //* Retornamos el resultado de la suma de esto x 1.1 */
-  })
-  // .map((mov) => mov * eurToUsd) //* Se mapea un arreglo, donde hagamos la operacion aritmetica de intereses */
-  .reduce((acc, mov) => acc + mov, 0); //* Vamos a recibir el total del acumulado y movimientos, donde se inicie el valor en 0 */
-// console.log(totalDepositUSD); //* Mostramos en consola el total de depositados en euros */
+// const totalDepositUSD = movements //* Funcion que reciba argumento */
+//   .filter((mov) => mov > 0) //* Filtramos el arreglo (se crea una nuevo), donde solo sumemos las cantidades mayor a 0 */
+//   .map((mov, i, arr) => {
+//     //* Mapeamos un arreglo donde recibamos estos argumentos */
+//     // console.log(arr); //* Mostramos en consola los argumentos mayores a 0 */
+//     return mov * eurToUsd; //* Retornamos el resultado de la suma de esto x 1.1 */
+//   })
+//   // .map((mov) => mov * eurToUsd) //* Se mapea un arreglo, donde hagamos la operacion aritmetica de intereses */
+//   .reduce((acc, mov) => acc + mov, 0); //* Vamos a recibir el total del acumulado y movimientos, donde se inicie el valor en 0 */
+// // console.log(totalDepositUSD); //* Mostramos en consola el total de depositados en euros */
 
-const calcAverageHumanAge = (ages) => {
-  //* Defino una funcion que recibe un argumento */
-  return ages //* Voy a retornar el argumento (obligado cuando uso asi el metodo) */
-    .map((age) => (age <= 2 ? 2 * age : 16 + age * 4)) //* Mapeo el argumento y que siga esta condicional */
-    .filter((age) => age >= 18) //* Filtro el argumento y le pongo condicional */
-    .reduce((acc, age, i, arr) => acc + age / arr.length, 0); //* Resultado unico, del argumento, con operacion aritmetica */
-};
+// const calcAverageHumanAge = (ages) => {
+//   //* Defino una funcion que recibe un argumento */
+//   return ages //* Voy a retornar el argumento (obligado cuando uso asi el metodo) */
+//     .map((age) => (age <= 2 ? 2 * age : 16 + age * 4)) //* Mapeo el argumento y que siga esta condicional */
+//     .filter((age) => age >= 18) //* Filtro el argumento y le pongo condicional */
+//     .reduce((acc, age, i, arr) => acc + age / arr.length, 0); //* Resultado unico, del argumento, con operacion aritmetica */
+// };
 
-const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]); //* Variable que recibe la funcion y un arreglo */
-const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]); //* Variable que recibe la funcion y un arreglo */
-console.log(avg1, avg2); //* Muestro en consola la respuesta */
+// const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]); //* Variable que recibe la funcion y un arreglo */
+// const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]); //* Variable que recibe la funcion y un arreglo */
+// console.log(avg1, avg2); //* Muestro en consola la respuesta */
