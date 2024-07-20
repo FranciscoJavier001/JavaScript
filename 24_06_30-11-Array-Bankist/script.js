@@ -140,6 +140,8 @@ createUsernames(accounts); //* Esta funcion va a recibir este argumento anterior
 /////////////////////////////////////////////////
 // LECTURES
 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo */
+
 /////////////////////////////////////////////////
 
 // let arr = ["a", "b", "c", "d", "e"]; //* Inicializo un array */
@@ -166,8 +168,6 @@ createUsernames(accounts); //* Esta funcion va a recibir este argumento anterior
 // console.log([...arr, ...arr2]); //* Mismo resultado */
 
 // console.log(letters.join(" - ")); //* El arreglo, pero ya esta mutado y lo separo con - */
-
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo */
 
 // for (const movement of movements) {
 //   //* Defino un nuevo arreglo que tenga una variable de variables */
@@ -386,13 +386,13 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]); //* Variable que recibe la funcion y un arreglo */
 // console.log(avg1, avg2); //* Muestro en consola la respuesta */
 
-const firstWithdrawal = movements.find((mov) => mov < 0); //* Funcion, de donde viene, metodo, parametro que recibe e instrucciones */
+// const firstWithdrawal = movements.find((mov) => mov < 0); //* Funcion, de donde viene, metodo, parametro que recibe e instrucciones */
 
-console.log(movements); //* Muestro en consola los movimientos */
-console.log(firstWithdrawal); //* Muestro en consola el primer retiro */
+// console.log(movements); //* Muestro en consola los movimientos */
+// console.log(firstWithdrawal); //* Muestro en consola el primer retiro */
 
-console.log(accounts); //* Muestro en consola los arreglos, que son 4 */
+// console.log(accounts); //* Muestro en consola los arreglos, que son 4 */
 
-const account = accounts.find((acc) => acc.owner === "Jessica Davis");
-//* Funcion, de donde viene lo que recibe, metodo, argumento que recibe, variable de argumento igual a */
-console.log(account); //* Muestro el arreglo en consola */
+// const account = accounts.find((acc) => acc.owner === "Jessica Davis");
+// //* Funcion, de donde viene lo que recibe, metodo, argumento que recibe, variable de argumento igual a */
+// console.log(account); //* Muestro el arreglo en consola */
