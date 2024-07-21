@@ -85,13 +85,13 @@ displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y m
 
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
-const calcDisplayBalance = (movements) => {
+const calcDisplayBalance = (acc) => {
   //* Funcion que recibe un argumento */
-  const balance = movements.reduce((acc, mov) => {
+  acc.balance = acc.movements.reduce((acc, mov) => {
     //* Funcionque que viene del argumento superior, le paso un metodo y recibe argumentos */
     return acc + mov; //* Retorno el acumulador y valor actual */
   }, 0); //* Lo inicializo en 0 */
-  labelBalance.textContent = `${balance} EUR`; //* En el Dom, le agrego esto al HTtml */
+  labelBalance.textContent = `${acc.balance} EUR`; //* En el Dom, le agrego esto al HTtml */
 };
 // calcDisplayBalance(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
 
@@ -136,6 +136,14 @@ const createUsernames = (accs) => {
 createUsernames(accounts); //* Esta funcion va a recibir este argumento anteriormente definido */
 // console.log(accounts); //* Muestro en consola ese argumento definido */
 
+const updateUI = (acc) => {
+  displayMovements(acc.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+
+  calcDisplayBalance(acc); //* Llamo esta funcion, analizo el balance */
+
+  calcDisplaySummary(acc); //* Analizo los resultado de abajo de la pantalla */
+};
+
 let currentAccount; //* Definimos una variable que puede cambiar */
 
 btnLogin.addEventListener("click", (e) => {
@@ -151,7 +159,7 @@ btnLogin.addEventListener("click", (e) => {
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     //* Si el pin es igual al numero del pin del usuario */
-    console.log("Match Login"); //* Cuando accedemos ponemos esto en consola */
+    // console.log("Match Login"); //* Cuando accedemos ponemos esto en consola */
 
     labelWelcome.textContent = `Welcome back, ${
       //* Etiqueta donde cambiamos el texto */
@@ -162,11 +170,32 @@ btnLogin.addEventListener("click", (e) => {
     inputLoginUsername.value = inputLoginPin.value = ""; //* Vuelvo a poner los inputs blancos */
     inputLoginPin.blur(); //* Señalo el input */
 
-    displayMovements(currentAccount.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+    updateUI(currentAccount);
+  }
+});
 
-    calcDisplayBalance(currentAccount.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+btnTransfer.addEventListener("click", (e) => {
+  e.preventDefault();
 
-    calcDisplaySummary(currentAccount); //* Analizo los resultado de abajo de la pantalla */
+  const amount = Number(inputTransferAmount.value);
+  const receiverAcc = accounts.find(
+    (acc) => acc.username === inputTransferTo.value
+  );
+  console.log(amount, receiverAcc);
+
+  inputTransferAmount.value = inputTransferTo.value = "";
+
+  if (
+    amount > 0 &&
+    receiverAcc &&
+    currentAccount.balance >= amount &&
+    receiverAcc?.username !== currentAccount.username
+  ) {
+    console.log("Transfer Valid");
+    currentAccount.movements.push(-amount);
+    receiverAcc.movements.push(amount);
+
+    updateUI(currentAccount);
   }
 });
 
