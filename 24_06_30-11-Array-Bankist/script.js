@@ -36,7 +36,7 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 // Elements
-const labelWelcome = document.querySelector(".welcome");
+const labelWelcome = document.querySelector(".welcome"); //* Etiqueta de bienvenida */
 const labelDate = document.querySelector(".date");
 const labelBalance = document.querySelector(".balance__value");
 const labelSumIn = document.querySelector(".summary__value--in"); //* La seleccionamos con TextContent para mostrar en el DOM */
@@ -47,13 +47,13 @@ const labelTimer = document.querySelector(".timer");
 const containerApp = document.querySelector(".app");
 const containerMovements = document.querySelector(".movements"); //* Declaro esta variable, que va a ser donde aterrizan los cambios html */
 
-const btnLogin = document.querySelector(".login__btn");
+const btnLogin = document.querySelector(".login__btn"); //* Lo seleccionamos para darle funcion */
 const btnTransfer = document.querySelector(".form__btn--transfer");
 const btnLoan = document.querySelector(".form__btn--loan");
 const btnClose = document.querySelector(".form__btn--close");
 const btnSort = document.querySelector(".btn--sort");
 
-const inputLoginUsername = document.querySelector(".login__input--user");
+const inputLoginUsername = document.querySelector(".login__input--user"); //* El valor del username */
 const inputLoginPin = document.querySelector(".login__input--pin");
 const inputTransferTo = document.querySelector(".form__input--to");
 const inputTransferAmount = document.querySelector(".form__input--amount");
@@ -85,7 +85,7 @@ displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y m
 
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
-const calcDisplayMovements = (movements) => {
+const calcDisplayBalance = (movements) => {
   //* Funcion que recibe un argumento */
   const balance = movements.reduce((acc, mov) => {
     //* Funcionque que viene del argumento superior, le paso un metodo y recibe argumentos */
@@ -93,23 +93,23 @@ const calcDisplayMovements = (movements) => {
   }, 0); //* Lo inicializo en 0 */
   labelBalance.textContent = `${balance} EUR`; //* En el Dom, le agrego esto al HTtml */
 };
-calcDisplayMovements(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
+// calcDisplayBalance(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
 
-const calcDisplaySummary = (movements) => {
+const calcDisplaySummary = (acc) => {
   //* Funcion que recibe un argumento */
-  const incomes = movements //* Variable que pasa metodos a un argumento */
+  const incomes = acc.movements //* Variable que pasa metodos a un argumento */
     .filter((mov) => mov > 0) //* Pasamos Metodo a argumento, donde se recibe un argumento y donde el argumento sea mayor a 0 */
     .reduce((acc, mov) => acc + mov, 0); //* Pasamos otro metodo, donde el acumulador y la iteracion, se suman e inicializo en 0 */
   labelSumIn.textContent = `${incomes}€`; //* En el DOM mostramos este elemento */
 
-  const out = movements //* Variable que pasa metodos a un argumento */
+  const out = acc.movements //* Variable que pasa metodos a un argumento */
     .filter((mov) => mov < 0) //* Le paso estos metodos, para filtrar los menores a 0 */
     .reduce((acc, mov) => acc + mov, 0); //* Metodo, para hacer la suma, e inicializo en 0 */
   labelSumOut.textContent = `${Math.abs(out)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 
-  const interest = movements //* Variable y un argumento al que le vamos a pasar metodos */
+  const interest = acc.movements //* Variable y un argumento al que le vamos a pasar metodos */
     .filter((mov) => mov > 0) //* Metodo para filrar los movimientos mayores a 0 */
-    .map((deposit) => (deposit * 1.2) / 100) //* Nuevo arreglo, con un argumento, donde el argumento lo multiplico y luego lo divido */
+    .map((deposit) => (deposit * acc.interestRate) / 100) //* Nuevo arreglo, con un argumento, donde el argumento lo multiplico y luego lo divido */
     .filter((int, i, arr) => {
       //* Metodo donde solo vamos a dar el total, que recibe argumentos */
       // console.log(arr); //* Muestro en consola el arreglo */
@@ -119,7 +119,7 @@ const calcDisplaySummary = (movements) => {
   labelSumInterest.textContent = `${Math.abs(interest)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 };
 
-calcDisplaySummary(account1.movements); //* Inicializamos la funcion, en esta variable y le pasamos este argumento */
+// calcDisplaySummary(account1.movements); //* Inicializamos la funcion, en esta variable y le pasamos este argumento */
 
 const createUsernames = (accs) => {
   //* Defino una variable, que recibe un argumento */
@@ -135,6 +135,40 @@ const createUsernames = (accs) => {
 
 createUsernames(accounts); //* Esta funcion va a recibir este argumento anteriormente definido */
 // console.log(accounts); //* Muestro en consola ese argumento definido */
+
+let currentAccount; //* Definimos una variable que puede cambiar */
+
+btnLogin.addEventListener("click", (e) => {
+  //* Le damos el evento click a este elemento del dom y su argumento recibido es e para ponerle el preventDefault  */
+  e.preventDefault(); //* Prevengo la accion determinada del boton */
+  // console.log("Login"); //* Muestro en consola login, si no pongo el preventDefault se desaparece el evento en consola */
+
+  currentAccount = accounts.find(
+    //* Funcion, trabaja con un array, le paso un metodo */
+    (acc) => acc.username === inputLoginUsername.value //* Recibo argumento, funcion, donde el argumento debe hacer con match con el valor recibido */
+  );
+  console.log(currentAccount); //* Aqui vemos el arreglo del accounts, el que encontro */
+
+  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    //* Si el pin es igual al numero del pin del usuario */
+    console.log("Match Login"); //* Cuando accedemos ponemos esto en consola */
+
+    labelWelcome.textContent = `Welcome back, ${
+      //* Etiqueta donde cambiamos el texto */
+      currentAccount.owner.split(" ")[0] //* Nombre, donde solo va el primer nombre */
+    }`;
+    containerApp.style.opacity = 100; //* Cuando todo concuerda, mostramos el DOM */
+
+    inputLoginUsername.value = inputLoginPin.value = ""; //* Vuelvo a poner los inputs blancos */
+    inputLoginPin.blur(); //* Señalo el input */
+
+    displayMovements(currentAccount.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+
+    calcDisplayBalance(currentAccount.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+
+    calcDisplaySummary(currentAccount); //* Analizo los resultado de abajo de la pantalla */
+  }
+});
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
