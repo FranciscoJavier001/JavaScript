@@ -5,6 +5,7 @@
 // BANKIST APP
 
 // Data
+//* Arreglos */
 const account1 = {
   owner: "Jonas Schmedtmann",
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
@@ -33,7 +34,7 @@ const account4 = {
   pin: 4444,
 };
 
-const accounts = [account1, account2, account3, account4];
+const accounts = [account1, account2, account3, account4]; //* Un Arreglo que contiene los arreglos */
 
 // Elements
 const labelWelcome = document.querySelector(".welcome"); //* Etiqueta de bienvenida */
@@ -62,11 +63,11 @@ const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
 const displayMovements = (movements) => {
-  //* Declaro una variable, que recibe esto de las variables declaras, lo que recibe es una de sus propiedades */
+  //* Funcion, que recibe un argumento */
   containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
   // textContent = 0
   movements.forEach((mov, i) => {
-    //* Propiedad recibida, que recibe 2 argumentos de cada iteracion */
+    //* Argumento recibido, recibe 2 argumentos por cada iteracion */
     const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
     const html = `
     <div class="movements__row">
@@ -91,7 +92,7 @@ const calcDisplayBalance = (acc) => {
     //* Funcionque que viene del argumento superior, le paso un metodo y recibe argumentos */
     return acc + mov; //* Retorno el acumulador y valor actual */
   }, 0); //* Lo inicializo en 0 */
-  labelBalance.textContent = `${acc.balance} EUR`; //* En el Dom, le agrego esto al HTtml */
+  labelBalance.textContent = `${acc.balance} EUR`; //* En el Dom, le agrego esto al Httml */
 };
 // calcDisplayBalance(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
 
@@ -133,7 +134,7 @@ const createUsernames = (accs) => {
   });
 };
 
-createUsernames(accounts); //* Esta funcion va a recibir este argumento anteriormente definido */
+createUsernames(accounts); //* Esta funcion va a recibir este argumento */
 // console.log(accounts); //* Muestro en consola ese argumento definido */
 
 const updateUI = (acc) => {
@@ -170,15 +171,17 @@ btnLogin.addEventListener("click", (e) => {
     inputLoginUsername.value = inputLoginPin.value = ""; //* Vuelvo a poner los inputs blancos */
     inputLoginPin.blur(); //* Señalo el input */
 
-    updateUI(currentAccount);
+    updateUI(currentAccount); //* Funcion, que dentro realiza mas funciones en argumentos */
   }
 });
 
 btnTransfer.addEventListener("click", (e) => {
-  e.preventDefault();
+  //* Boton que le asignamos funcionalidad */
+  e.preventDefault(); //* Para que no se recarge cada que le damos click */
 
-  const amount = Number(inputTransferAmount.value);
+  const amount = Number(inputTransferAmount.value); //* Defino una variable, que sera igual al valor del input transformado en un numero */
   const receiverAcc = accounts.find(
+    //* Variable que de un argumento */
     (acc) => acc.username === inputTransferTo.value
   );
   console.log(amount, receiverAcc);
