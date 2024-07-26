@@ -181,24 +181,27 @@ btnTransfer.addEventListener("click", (e) => {
 
   const amount = Number(inputTransferAmount.value); //* Defino una variable, que sera igual al valor del input transformado en un numero */
   const receiverAcc = accounts.find(
-    //* Variable que de un argumento */
-    (acc) => acc.username === inputTransferTo.value
+    //* Funcion que recibe las cuentas y busca en ellas */
+    (acc) =>
+      acc.username ===
+      inputTransferTo.value /* Recibo argumento, funcion, donde el argumento debe hacer con match con el valor recibido */
   );
-  console.log(amount, receiverAcc);
+  console.log(amount, receiverAcc); //* Muestro en consola las 2 variables devlaradas */
 
-  inputTransferAmount.value = inputTransferTo.value = "";
+  inputTransferAmount.value = inputTransferTo.value = ""; //* Asi borro el input, despues de hacer las transferencias */
 
   if (
-    amount > 0 &&
-    receiverAcc &&
-    currentAccount.balance >= amount &&
-    receiverAcc?.username !== currentAccount.username
+    //* Validacion */
+    amount > 0 && //* Si la cantidad es mayor a 0 */
+    receiverAcc && //* Y la cuenta que recibe */
+    currentAccount.balance >= amount && //* Si el dinero en la cuenta actual es mayor a la cantidad */
+    receiverAcc?.username !== currentAccount.username //* Si la cuenta que recibe tiene un usuario es diferente a esa misma cuenta */
   ) {
-    console.log("Transfer Valid");
-    currentAccount.movements.push(-amount);
-    receiverAcc.movements.push(amount);
+    console.log("Transfer Valid"); //* Muestro en consola que se realizo la transferencia */
+    currentAccount.movements.push(-amount); //* Le descuento a la cantidad el monto transferido */
+    receiverAcc.movements.push(amount); //* Le agrego esta nueva variable del arreglo a los movimientos */
 
-    updateUI(currentAccount);
+    updateUI(currentAccount); //* Ejecuto esta funcion, que tiene funciones */
   }
 });
 
