@@ -692,5 +692,32 @@ C0-6B-55-F4-E0-D6🤩
 68.190
 68.191
 68.192
-
+68.193
 68.194
+68.195
+68.196
+68.197
+68.198
+68.199
+68.200
+
+68.202
+68.203
+68.204
+68.205
+68.206
+68.207
+
+Oficina= A0-F0-09
+Tortilleria= D4-3F-F4
+Cholo= A0-FF-18
+Quesos= A0-F0-04
+MariachisDos= D4-48-F4
+Mariachis= 6E-25-B0
+Jitomates= A0-F6-94
+Sandoval= A0-FD-F4
+Maricela0 A0-F7-8C
+NopalesTeo= 6E-26-B4
+Chiles= A1-02-0C
+Tianguis= 44-82-AC
+Principal= A0-F6-98
