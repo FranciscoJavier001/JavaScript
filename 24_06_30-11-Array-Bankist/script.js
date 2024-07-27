@@ -205,6 +205,26 @@ btnTransfer.addEventListener("click", (e) => {
   }
 });
 
+btnClose.addEventListener("click", (e) => {
+  //* Le asignamos un funcionamiento a este boton que es una clase */
+  e.preventDefault(); //* Para que solo se carge cuando hacemos click */
+  // console.log("Delete"); //* Muestro en consola este mensaje */
+
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      (acc) => acc.username == currentAccount.username
+    );
+    // console.log(index);
+    accounts.splice(index, 1);
+
+    containerApp.style.opacity = 0;
+  }
+  inputCloseUsername.value = inputClosePin.value = "";
+});
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
