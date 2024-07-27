@@ -205,6 +205,24 @@ btnTransfer.addEventListener("click", (e) => {
   }
 });
 
+btnLoan.addEventListener("click", (e) => {
+  //* Le doy funcionamiento al boton */
+  e.preventDefault(); //* Para que solo se recarge cuando haga click */
+
+  const amount = Number(inputLoanAmount.value); //* Esta variable es el valor que tiene este input transformado a un numero */
+
+  if (
+    //* Condicional */
+    amount > 0 && //* Si la cantidad */
+    currentAccount.movements.some((mov) => mov >= amount * 0.1) //* Si algun movimiento, es mayor o igual por la cantidad total existente autorizar */
+  ) {
+    currentAccount.movements.push(amount); //* Agrego esto al array, si cumple la condicion pasada */
+
+    updateUI(currentAccount); //* Esta funcion, recibe este valor */
+  }
+  inputLoanAmount.value = ""; //* Limpio en input */
+});
+
 btnClose.addEventListener("click", (e) => {
   //* Le asignamos un funcionamiento a este boton que es una clase */
   e.preventDefault(); //* Para que solo se carge cuando hacemos click */
@@ -487,3 +505,20 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // const account = accounts.find((acc) => acc.owner === "Jessica Davis");
 // //* Funcion, de donde viene lo que recibe, metodo, argumento que recibe, variable de argumento igual a */
 // console.log(account); //* Muestro el arreglo en consola */
+
+console.log(movements); //* Muestro en consola los movimientos */
+console.log(movements.includes(-130)); //* Con este metodo, busco que ese numero exista */
+
+console.log(movements.some((mov) => mov === -130)); //* Muestro en consola esta condicion */
+const anyDeposits = movements.some((mov) => mov > 0); //* Funcion, que busca en esta variable, algun movimiento, que cumpla esta condicion */
+console.log(anyDeposits); //* Muestro en consola true, porque es verdadero */
+
+console.log(movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
+console.log(account4.movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
+
+console.log("---");
+
+const deposit = (mov) => mov > 0; //* Funcion con una condicion */
+console.log(movements.some(deposit)); //* Funciona */
+console.log(movements.every(deposit)); //* Metodo a evitar */
+console.log(movements.filter(deposit)); //* Muestra un arreglo con lo verdadero */
