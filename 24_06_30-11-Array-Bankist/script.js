@@ -211,18 +211,20 @@ btnClose.addEventListener("click", (e) => {
   // console.log("Delete"); //* Muestro en consola este mensaje */
 
   if (
-    inputCloseUsername.value === currentAccount.username &&
-    Number(inputClosePin.value) === currentAccount.pin
+    //* Condicional */
+    inputCloseUsername.value === currentAccount.username && //* Si este campo, tiene el mismo campo */
+    Number(inputClosePin.value) === currentAccount.pin //* Si el numero en el input, pasandolo a numero con su valor es el mismo */
   ) {
     const index = accounts.findIndex(
-      (acc) => acc.username == currentAccount.username
+      //* Cuando queremos encontrar el indice con esta propiedad */
+      (acc) => acc.username == currentAccount.username //* Argumento recibido, tiene que ser igual a estos argumentos con propiedades */
     );
     // console.log(index);
-    accounts.splice(index, 1);
+    accounts.splice(index, 1); //* Del elemento encontrado en el indice, lo voy a eliminar */
 
-    containerApp.style.opacity = 0;
+    containerApp.style.opacity = 0; //* Muestro la pagina como si apenas ingresara */
   }
-  inputCloseUsername.value = inputClosePin.value = "";
+  inputCloseUsername.value = inputClosePin.value = ""; //* Limpio el campo */
 });
 
 /////////////////////////////////////////////////
