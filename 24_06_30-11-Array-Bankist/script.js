@@ -506,19 +506,19 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // //* Funcion, de donde viene lo que recibe, metodo, argumento que recibe, variable de argumento igual a */
 // console.log(account); //* Muestro el arreglo en consola */
 
-console.log(movements); //* Muestro en consola los movimientos */
-console.log(movements.includes(-130)); //* Con este metodo, busco que ese numero exista */
+// console.log(movements); //* Muestro en consola los movimientos */
+// console.log(movements.includes(-130)); //* Con este metodo, busco que ese numero exista */
 
-console.log(movements.some((mov) => mov === -130)); //* Muestro en consola esta condicion */
-const anyDeposits = movements.some((mov) => mov > 0); //* Funcion, que busca en esta variable, algun movimiento, que cumpla esta condicion */
-console.log(anyDeposits); //* Muestro en consola true, porque es verdadero */
+// console.log(movements.some((mov) => mov === -130)); //* Muestro en consola esta condicion */
+// const anyDeposits = movements.some((mov) => mov > 0); //* Funcion, que busca en esta variable, algun movimiento, que cumpla esta condicion */
+// console.log(anyDeposits); //* Muestro en consola true, porque es verdadero */
 
-console.log(movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
-console.log(account4.movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
+// console.log(movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
+// console.log(account4.movements.every((mov) => mov > 0)); //* JS Esta loco, este metodo mas */
 
-console.log("---");
+// console.log("---");
 
-const deposit = (mov) => mov > 0; //* Funcion con una condicion */
-console.log(movements.some(deposit)); //* Funciona */
-console.log(movements.every(deposit)); //* Metodo a evitar */
-console.log(movements.filter(deposit)); //* Muestra un arreglo con lo verdadero */
+// const deposit = (mov) => mov > 0; //* Funcion con una condicion */
+// console.log(movements.some(deposit)); //* Funciona */
+// console.log(movements.every(deposit)); //* Metodo a evitar */
+// console.log(movements.filter(deposit)); //* Muestra un arreglo con lo verdadero */
