@@ -522,3 +522,39 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log(movements.some(deposit)); //* Funciona */
 // console.log(movements.every(deposit)); //* Metodo a evitar */
 // console.log(movements.filter(deposit)); //* Muestra un arreglo con lo verdadero */
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8],
+]; //* Un arreglo */
+
+console.log(arr.flat()); //* Muestro el arreglo continuo */
+
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8]; //* Nuevo Arreglo */
+console.log(arrDeep.flat(2)); //* Asi muestro todo el arreglo */
+
+const accountMovements = accounts.map((acc) => acc.movements); //* Recibo un arreglo, lo mapeo y lo paso como nuevo */
+console.log(accountMovements); //* Muestro en consola ese arreglo */
+const allMovements = accountMovements.flat(); //* Quiero ver todos los elementos de los arreglos */
+console.log(allMovements); //* Muestro en consola todos los movimientos continuos */
+// const overalBalance = allMovements.reduce((acc, mov) => acc + mov, 0); //* Metodo para hacer una suma, recibo argumentos, lo que hago y con que numero inicio */
+
+const overalBalance1 = accounts.map((acc) =>
+  acc.movements.flat().reduce((acc, mov) => acc + mov, 0)
+); //* Funcion, mapeo, recibo, a cada arreglo lo hago unico, lo hago arreglo continuo, le doy instruccion aritmetica e inicia en 0 */
+
+console.log(overalBalance1); //* Muestro en consola el total de cada arreglo */
+
+const overalBalance = accounts
+  .map((acc) => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0); //* Variable, que mapea el arreglo, recibiendo los movimientos, hago el arreglo continuo y recibo el total inicio en 0 */
+
+console.log(overalBalance); //* Muestro en consola el total */
+
+const overalBalance2 = accounts
+  .flatMap((acc) => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0); //* Variable, que mapea el arreglo y lo hago continuo y recibo el total inicio en 0 */
+
+console.log(overalBalance2); //* Muestro en consola el total */
