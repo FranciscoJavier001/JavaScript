@@ -62,11 +62,15 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
-const displayMovements = (movements) => {
-  //* Funcion, que recibe un argumento */
+const displayMovements = (movements, sort = false) => {
+  //* Funcion, que recibe un argumento y otro argumento pero como falso */
   containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
   // textContent = 0
-  movements.forEach((mov, i) => {
+
+  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+  //* Si la condicion de movs es verdadera, nuevo array igual que el original, pero ordenado, sino pues solo los movimientos */
+
+  movs.forEach((mov, i) => {
     //* Argumento recibido, recibe 2 argumentos por cada iteracion */
     const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
     const html = `
@@ -243,6 +247,15 @@ btnClose.addEventListener("click", (e) => {
     containerApp.style.opacity = 0; //* Muestro la pagina como si apenas ingresara */
   }
   inputCloseUsername.value = inputClosePin.value = ""; //* Limpio el campo */
+});
+
+let sorted = false;
+btnSort.addEventListener("click", (e) => {
+  //* Le agrego funcion al boton */
+  e.preventDefault(); //* Para que solo se active al darle click */
+  displayMovements(currentAccount.movements, !sorted);
+  //* Llamamos esta funcion, con la cuenta actual y sus movimientos, y sorted que pueda cambiar entre ambos */
+  sorted = !sorted; //* Que el valor de esta variable sea lo contrario para poderlo cambiar */
 });
 
 /////////////////////////////////////////////////
@@ -558,3 +571,24 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 //   .reduce((acc, mov) => acc + mov, 0); //* Variable, que mapea el arreglo y lo hago continuo y recibo el total inicio en 0 */
 
 // console.log(overalBalance2); //* Muestro en consola el total */
+
+const owners = ["Jonas", "Zach", "Adam", "Martha"]; //* Un arreglo */
+console.log(owners); //* Consola arreglo desordenado */
+console.log(owners.sort()); //* Arreglo ordenado 0-9,A-Z */
+
+console.log(movements); //* Arreglo Desordenado */
+console.log(movements.sort()); //* Arreglo ordenado */
+
+movements.sort((a, b) => {
+  if (a > b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
+  if (a < b) return -1; //* Asi salen ordenados de mayor a menor en el menor */
+});
+// movements.sort((a, b) => a - b); //* Lo mismo */
+console.log(movements); //* Muestro en consola los movimientos */
+
+movements.sort((a, b) => {
+  if (a > b) return -1; //* Asi salen ordenados, de menor a mayor en el menor */
+  if (a < b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
+});
+// movements.sort((a, b) => b - a); //* Lo mismo */
+console.log(movements); //* Muestro en consola los movimientos */
