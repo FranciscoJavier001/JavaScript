@@ -572,23 +572,23 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // console.log(overalBalance2); //* Muestro en consola el total */
 
-const owners = ["Jonas", "Zach", "Adam", "Martha"]; //* Un arreglo */
-console.log(owners); //* Consola arreglo desordenado */
-console.log(owners.sort()); //* Arreglo ordenado 0-9,A-Z */
+// const owners = ["Jonas", "Zach", "Adam", "Martha"]; //* Un arreglo */
+// console.log(owners); //* Consola arreglo desordenado */
+// console.log(owners.sort()); //* Arreglo ordenado 0-9,A-Z */
 
-console.log(movements); //* Arreglo Desordenado */
-console.log(movements.sort()); //* Arreglo ordenado */
+// console.log(movements); //* Arreglo Desordenado */
+// console.log(movements.sort()); //* Arreglo ordenado */
 
-movements.sort((a, b) => {
-  if (a > b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
-  if (a < b) return -1; //* Asi salen ordenados de mayor a menor en el menor */
-});
-// movements.sort((a, b) => a - b); //* Lo mismo */
-console.log(movements); //* Muestro en consola los movimientos */
+// movements.sort((a, b) => {
+//   if (a > b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
+//   if (a < b) return -1; //* Asi salen ordenados de mayor a menor en el menor */
+// });
+// // movements.sort((a, b) => a - b); //* Lo mismo */
+// console.log(movements); //* Muestro en consola los movimientos */
 
-movements.sort((a, b) => {
-  if (a > b) return -1; //* Asi salen ordenados, de menor a mayor en el menor */
-  if (a < b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
-});
-// movements.sort((a, b) => b - a); //* Lo mismo */
-console.log(movements); //* Muestro en consola los movimientos */
+// movements.sort((a, b) => {
+//   if (a > b) return -1; //* Asi salen ordenados, de menor a mayor en el menor */
+//   if (a < b) return 1; //* Asi salen ordenados, de menor a mayor en el menor */
+// });
+// // movements.sort((a, b) => b - a); //* Lo mismo */
+// console.log(movements); //* Muestro en consola los movimientos */
