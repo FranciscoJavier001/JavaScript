@@ -592,3 +592,32 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // });
 // // movements.sort((a, b) => b - a); //* Lo mismo */
 // console.log(movements); //* Muestro en consola los movimientos */
+
+// console.log([1, 2, 3, 4, 5, 6, 7]); //* Defino un arreglo y lo muestro en consola */
+// console.log(new Array([1, 2, 3, 4, 5, 6, 7])); //* Creo un nuevo array con estas propiedades */
+
+const x = new Array(7); //* Creo un nuevo array de 7 posiciones */
+console.log(x); //* Muestro en consola el nuevo array, esta vacio */
+console.log(x.map(() => 5)); //* Se cre un nuevo array con 7 posicones */
+
+x.fill(1); //* Al array lo llevo con puro 1 */
+console.log(x); //* Muestro en consola el array de puroa 1 */
+
+const y = Array.from({ length: 7 }, () => 1); //* Funcion, que crea un array de 7 posiciones que recibe puros 1 */
+console.log(y); //* Arreglo que solo muestra 1 */
+
+const z = Array.from({ length: 7 }, (_, i) => 1 + 1); //* Un array, que recibe 2 argumentos y los suma */
+console.log(z); //* Un arreglo de 7 posiciones con puro 2 */
+
+labelBalance.addEventListener("click", () => {
+  //* Le agregamos un evento click al boton */
+  const movementsUI = Array.from(
+    //* Definimos una variable, que agarra todos los argumentos */
+    document.querySelectorAll(".movements__value"), //* De esta parte del documento */
+    (el) => Number(el.textContent.replace("€", "")) //* Recibo un argumento, lo hago numero, de donde viene el contenido y lo replazo con esto */
+  );
+  console.log(movementsUI);
+
+  const movementsUI2 = [...document.querySelectorAll(".movements__value")]; //* Variable, que recibe el arreglo de esta parte del documento */
+  console.log(movementsUI2); //* Muestro en consola el array */
+});
