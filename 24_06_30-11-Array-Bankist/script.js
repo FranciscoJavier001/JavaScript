@@ -623,6 +623,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // });
 
 const dogs = [
+  //* Un arreglo con propiedades definidas y dentro otro arreglo */
   { weight: 22, curFood: 250, owners: ["Alice", "Bob"] },
   { weight: 8, curFood: 200, owners: ["Matilda"] },
   { weight: 13, curFood: 275, owners: ["Sarah", "John"] },
@@ -630,16 +631,17 @@ const dogs = [
 ];
 
 dogs.forEach((dog) => (dog.recFood = Math.trunc(dog.weight ** 0.75 * 28)));
+//* Variable en cada elemento, recibe elemento, al elemento le paso variable y recibe metodo, variable recibida de una propiedad y operacion aritmetica */
 
-const dogSarah = dogs.find((dog) => dog.owners.includes("Sarah"));
-console.log(dogSarah);
+const dogSarah = dogs.find((dog) => dog.owners.includes("Sarah")); //* Funcion del arreglo metodo de argumento recibido, argumento recibido definido, metodo definido */
+console.log(dogSarah); //* Muestro en consola la variable */
 console.log(
   `Sarah's dog is eating too ${
-    dogSarah.curFood > dogSarah.recFood ? "much" : "little"
+    dogSarah.curFood > dogSarah.recFood ? "much" : "little" //* Comparo 2 variables de diferentes arreglos, el primero verdadero, otro falso */
   }`
 );
 
-const ownersEatTooMuch = dogs
+const ownersEatTooMuch = dogs //* Funcion que trabaja con array, le paso metodo que filtre el arreglo y hago una comparacion */
   .filter((dog) => dog.curFood > dog.recFood)
   .flatMap((dog) => dog.owners);
 
