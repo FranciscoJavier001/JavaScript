@@ -629,6 +629,7 @@ const dogs = [
   { weight: 13, curFood: 275, owners: ["Sarah", "John"] },
   { weight: 32, curFood: 340, owners: ["Michael"] },
 ];
+console.log(dogs); //* Muestro en consola el arreglo */
 
 dogs.forEach((dog) => (dog.recFood = Math.trunc(dog.weight ** 0.75 * 28)));
 //* Variable en cada elemento, recibe elemento, al elemento le paso variable y recibe metodo, variable recibida de una propiedad y operacion aritmetica */
@@ -643,21 +644,22 @@ console.log(
 
 const ownersEatTooMuch = dogs //* Funcion que trabaja con array, le paso metodo que filtre el arreglo y hago una comparacion */
   .filter((dog) => dog.curFood > dog.recFood)
-  .flatMap((dog) => dog.owners);
+  .flatMap((dog) => dog.owners); //* Metodo que aplana el arreglo para cada elemento del array y me dice el nombre del perro y dueño(s) */
 
-console.log(ownersEatTooMuch);
+console.log(ownersEatTooMuch); //* Muestro en consola el resultado de la condicion y dueños */
 
 console.log(`${ownersEatTooMuch.join(" and ")}'s dogs eat too much`);
-console.log(`${ownersEatTooMuch.join(" and ")}'s dogs eat too little`);
+// console.log(`${ownersEatTooMuch.join(" and ")}'s dogs eat too little`);
 
-console.log(dogs.some((dog) => dog.curFood === dog.recFood));
+console.log(dogs.some((dog) => dog.curFood === dog.recFood)); //* Coindicion si algun perro recive la misma comida que la comida recomendada */
 
-const checkEatingOkay = (dog) =>
-  dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1;
+const checkEatingOkay = (
+  dog //* Funcion que recibe un argumento */
+) => dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1; //* Si la comida del perro es mayor a la comida recomendada operacion aritmetica y si es menor operacion aritmetica */
 
-console.log(dogs.some(checkEatingOkay));
+console.log(dogs.some(checkEatingOkay)); //* Esta condicion es verdadera */
 
-console.log(dogs.filter(checkEatingOkay));
+console.log(dogs.filter(checkEatingOkay)); //* Filtra a los que estan comiendo bien */
 
-const dogsSorted = dogs.slice().sort((a, b) => a.recFood - b.recFood);
-console.log(dogsSorted);
+const dogsSorted = dogs.slice().sort((a, b) => a.recFood - b.recFood); //* Recorto una seccion del arreglo, de una posicion a otra y luego lo ordeno de a-z,0-9 */
+console.log(dogsSorted); //* Muestro en consola el ultimo arreglo */
