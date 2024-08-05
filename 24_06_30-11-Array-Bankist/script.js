@@ -162,7 +162,7 @@ btnLogin.addEventListener("click", (e) => {
   );
   console.log(currentAccount); //* Aqui vemos el arreglo del accounts, el que encontro */
 
-  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+  if (currentAccount?.pin === +inputLoginPin.value) {
     //* Si el pin es igual al numero del pin del usuario */
     // console.log("Match Login"); //* Cuando accedemos ponemos esto en consola */
 
@@ -183,7 +183,7 @@ btnTransfer.addEventListener("click", (e) => {
   //* Boton que le asignamos funcionalidad */
   e.preventDefault(); //* Para que no se recarge cada que le damos click */
 
-  const amount = Number(inputTransferAmount.value); //* Defino una variable, que sera igual al valor del input transformado en un numero */
+  const amount = +inputTransferAmount.value; //* Defino una variable, que sera igual al valor del input transformado en un numero */
   const receiverAcc = accounts.find(
     //* Funcion que recibe las cuentas y busca en ellas */
     (acc) =>
@@ -213,7 +213,7 @@ btnLoan.addEventListener("click", (e) => {
   //* Le doy funcionamiento al boton */
   e.preventDefault(); //* Para que solo se recarge cuando haga click */
 
-  const amount = Number(inputLoanAmount.value); //* Esta variable es el valor que tiene este input transformado a un numero */
+  const amount = +inputLoanAmount.value; //* Esta variable es el valor que tiene este input transformado a un numero */
 
   if (
     //* Condicional */
@@ -235,7 +235,7 @@ btnClose.addEventListener("click", (e) => {
   if (
     //* Condicional */
     inputCloseUsername.value === currentAccount.username && //* Si este campo, tiene el mismo campo */
-    Number(inputClosePin.value) === currentAccount.pin //* Si el numero en el input, pasandolo a numero con su valor es el mismo */
+    +inputClosePin.value === currentAccount.pin //* Si el numero en el input, pasandolo a numero con su valor es el mismo */
   ) {
     const index = accounts.findIndex(
       //* Cuando queremos encontrar el indice con esta propiedad */
@@ -663,3 +663,26 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // const dogsSorted = dogs.slice().sort((a, b) => a.recFood - b.recFood); //* Recorto una seccion del arreglo, de una posicion a otra y luego lo ordeno de a-z,0-9 */
 // console.log(dogsSorted); //* Muestro en consola el ultimo arreglo */
+
+console.log(23 === 23.0); //* Son Iguales */
+
+console.log(0.1 + 0.2); //* Se suma xD */
+
+console.log(Number("23")); //* Combierto este string en numero */
+console.log(+"23"); //* Asi me ahorro el Number */
+
+console.log(Number.parseInt("30xD")); //* Lo hago un numero */
+console.log(Number.parseInt("e30")); //* No es un numero */
+
+console.log(Number.parseInt(2.5)); //* Lo hago un entero */
+console.log(Number.parseFloat("2.5rem")); //* Lo muestro como esta, pero sin el texto */
+
+console.log(Number.isNaN(20)); //* Falso porque es un numero */
+console.log(Number.isNaN("20")); //* Falso porque es un numero */
+console.log(Number.isNaN(+"20x")); //* Verdadero porque no es un numero */
+console.log(Number.isNaN(23 / 0)); //* Falso porque es un numero */
+
+console.log(Number.isFinite(20)); //* Es Finito */
+console.log(Number.isFinite("20")); //* Es Infinito */
+console.log(Number.isFinite(+"20x")); //* Es Infinito */
+console.log(Number.isFinite(23 / 0)); //* Es Infinito */
