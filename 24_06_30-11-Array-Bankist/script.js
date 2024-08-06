@@ -664,25 +664,25 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // const dogsSorted = dogs.slice().sort((a, b) => a.recFood - b.recFood); //* Recorto una seccion del arreglo, de una posicion a otra y luego lo ordeno de a-z,0-9 */
 // console.log(dogsSorted); //* Muestro en consola el ultimo arreglo */
 
-console.log(23 === 23.0); //* Son Iguales */
+// console.log(23 === 23.0); //* Son Iguales */
 
-console.log(0.1 + 0.2); //* Se suma xD */
+// console.log(0.1 + 0.2); //* Se suma xD */
 
-console.log(Number("23")); //* Combierto este string en numero */
-console.log(+"23"); //* Asi me ahorro el Number */
+// console.log(Number("23")); //* Combierto este string en numero */
+// console.log(+"23"); //* Asi me ahorro el Number */
 
-console.log(Number.parseInt("30xD")); //* Lo hago un numero */
-console.log(Number.parseInt("e30")); //* No es un numero */
+// console.log(Number.parseInt("30xD")); //* Lo hago un numero */
+// console.log(Number.parseInt("e30")); //* No es un numero */
 
-console.log(Number.parseInt(2.5)); //* Lo hago un entero */
-console.log(Number.parseFloat("2.5rem")); //* Lo muestro como esta, pero sin el texto */
+// console.log(Number.parseInt(2.5)); //* Lo hago un entero */
+// console.log(Number.parseFloat("2.5rem")); //* Lo muestro como esta, pero sin el texto */
 
-console.log(Number.isNaN(20)); //* Falso porque es un numero */
-console.log(Number.isNaN("20")); //* Falso porque es un numero */
-console.log(Number.isNaN(+"20x")); //* Verdadero porque no es un numero */
-console.log(Number.isNaN(23 / 0)); //* Falso porque es un numero */
+// console.log(Number.isNaN(20)); //* Falso porque es un numero */
+// console.log(Number.isNaN("20")); //* Falso porque es un numero */
+// console.log(Number.isNaN(+"20x")); //* Verdadero porque no es un numero */
+// console.log(Number.isNaN(23 / 0)); //* Falso porque es un numero */
 
-console.log(Number.isFinite(20)); //* Es Finito */
-console.log(Number.isFinite("20")); //* Es Infinito */
-console.log(Number.isFinite(+"20x")); //* Es Infinito */
-console.log(Number.isFinite(23 / 0)); //* Es Infinito */
+// console.log(Number.isFinite(20)); //* Es Finito */
+// console.log(Number.isFinite("20")); //* Es Infinito */
+// console.log(Number.isFinite(+"20x")); //* Es Infinito */
+// console.log(Number.isFinite(23 / 0)); //* Es Infinito */
