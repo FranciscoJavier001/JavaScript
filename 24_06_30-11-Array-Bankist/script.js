@@ -78,7 +78,7 @@ const displayMovements = (movements, sort = false) => {
       <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
-      <div class="movements__value">${mov}€</div>
+      <div class="movements__value">${mov.toFixed(2)}€</div>
     </div>
     `; //* Estructura HTML, primero van los colores, luego contador de operacion, luego si es deposito o retiro */
 
@@ -96,7 +96,7 @@ const calcDisplayBalance = (acc) => {
     //* Funcionque que viene del argumento superior, le paso un metodo y recibe argumentos */
     return acc + mov; //* Retorno el acumulador y valor actual */
   }, 0); //* Lo inicializo en 0 */
-  labelBalance.textContent = `${acc.balance} EUR`; //* En el Dom, le agrego esto al Httml */
+  labelBalance.textContent = `${acc.balance.toFixed(2)}€`; //* En el Dom, le agrego esto al Httml */
 };
 // calcDisplayBalance(account1.movements); //* Llamo la funcion, recibe un arreglo y le paso la este metodo */
 
@@ -105,12 +105,12 @@ const calcDisplaySummary = (acc) => {
   const incomes = acc.movements //* Variable que pasa metodos a un argumento */
     .filter((mov) => mov > 0) //* Pasamos Metodo a argumento, donde se recibe un argumento y donde el argumento sea mayor a 0 */
     .reduce((acc, mov) => acc + mov, 0); //* Pasamos otro metodo, donde el acumulador y la iteracion, se suman e inicializo en 0 */
-  labelSumIn.textContent = `${incomes}€`; //* En el DOM mostramos este elemento */
+  labelSumIn.textContent = `${incomes.toFixed(2)}€`; //* En el DOM mostramos este elemento */
 
   const out = acc.movements //* Variable que pasa metodos a un argumento */
     .filter((mov) => mov < 0) //* Le paso estos metodos, para filtrar los menores a 0 */
     .reduce((acc, mov) => acc + mov, 0); //* Metodo, para hacer la suma, e inicializo en 0 */
-  labelSumOut.textContent = `${Math.abs(out)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
+  labelSumOut.textContent = `${Math.abs(out).toFixed(2)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 
   const interest = acc.movements //* Variable y un argumento al que le vamos a pasar metodos */
     .filter((mov) => mov > 0) //* Metodo para filrar los movimientos mayores a 0 */
@@ -121,7 +121,7 @@ const calcDisplaySummary = (acc) => {
       return int >= 1; //* Retorno, cuando el interes sea mayor o igual a 1 */
     })
     .reduce((acc, int) => acc + int, 0); //* Metodo donde vamos a sumar un numero individual, e inicializa en 0 */
-  labelSumInterest.textContent = `${Math.abs(interest)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
+  labelSumInterest.textContent = `${interest.toFixed(2)}€`; //* Mostramos este elemento en el DOM pero con valor positivo absoluto */
 };
 
 // calcDisplaySummary(account1.movements); //* Inicializamos la funcion, en esta variable y le pasamos este argumento */
@@ -183,7 +183,7 @@ btnTransfer.addEventListener("click", (e) => {
   //* Boton que le asignamos funcionalidad */
   e.preventDefault(); //* Para que no se recarge cada que le damos click */
 
-  const amount = +inputTransferAmount.value; //* Defino una variable, que sera igual al valor del input transformado en un numero */
+  const amount = inputTransferAmount.value; //* Defino una variable, que sera igual al valor del input transformado en un numero */
   const receiverAcc = accounts.find(
     //* Funcion que recibe las cuentas y busca en ellas */
     (acc) =>
@@ -213,7 +213,7 @@ btnLoan.addEventListener("click", (e) => {
   //* Le doy funcionamiento al boton */
   e.preventDefault(); //* Para que solo se recarge cuando haga click */
 
-  const amount = +inputLoanAmount.value; //* Esta variable es el valor que tiene este input transformado a un numero */
+  const amount = Math.floor(inputLoanAmount.value); //* Esta variable es el valor que tiene este input transformado a un numero */
 
   if (
     //* Condicional */
@@ -686,3 +686,42 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log(Number.isFinite("20")); //* Es Infinito */
 // console.log(Number.isFinite(+"20x")); //* Es Infinito */
 // console.log(Number.isFinite(23 / 0)); //* Es Infinito */
+
+console.log(Math.sqrt(25)); //* Raiz cuadrada de 25 es igual a 5 */
+console.log(25 ** (1 / 2));
+console.log(8 ** (1 / 3));
+
+console.log(Math.max(5, 18, 23, 11, 2));
+console.log(Math.max(5, 18, "23", 11, 2));
+console.log(Math.max(5, 18, "23px", 11, 2));
+
+console.log(Math.min(5, 18, 23, 11, 2));
+
+console.log(Math.PI * Number.parseFloat("10px") ** 2);
+
+console.log(Math.trunc(Math.random() * 6) + 1);
+
+const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + min);
+
+console.log(randomInt(10, 20));
+
+console.log(Math.trunc(23.3));
+
+console.log(Math.round(23.3));
+console.log(Math.round(23.9));
+
+console.log(Math.ceil(23.3));
+console.log(Math.ceil(23.9));
+
+console.log(Math.floor(23.3));
+console.log(Math.floor(23.9));
+
+console.log(Math.trunc(23.3));
+
+console.log(Math.floor(23.3));
+console.log(Math.floor(23.3));
+
+console.log((2.7).toFixed(0));
+console.log((2.7).toFixed(3));
+console.log((2.345).toFixed(2));
+console.log(+(2.345).toFixed(2));
