@@ -725,3 +725,22 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // console.log((2.7).toFixed(3));
 // console.log((2.345).toFixed(2));
 // console.log(+(2.345).toFixed(2));
+
+console.log(9 % 2); //* Esto me da el resuido, osea 1 */
+
+const isEven = (n) => {
+  //* Funcion para saber si es par */
+  return n % 2 === 0; //* Recuerda que en este caso debo de poner el return para que funcione */
+};
+
+console.log(isEven(8)); //* Es par */
+console.log(isEven(9)); //* Es impar */
+
+labelBalance.addEventListener("click", () => {
+  //* Etiqueta, le asigno un evento click */
+  [...document.querySelectorAll(".movements__row")].forEach((row, i) => {
+    //* Seleccionamos todos los movimientos, para cada fila y elemento */
+    if (i % 2 === 0) row.style.backgroundColor = "orangered"; //* Cada fila impar la pongo en naranja */
+    if (i % 3 === 0) row.style.backgroundColor = " blue"; //* Cada fila de cada 3 la pinto azul */
+  });
+});
