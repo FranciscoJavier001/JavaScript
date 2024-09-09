@@ -745,9 +745,9 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 //   });
 // });
 
-console.log(Number.MAX_SAFE_INTEGER); //* Numero mas grande en JS */
-console.log(20n); //* Numero como BigInt */
-console.log(typeof 20n); //* El tipo de este es BigInt */
-const num = 20; //* Defino un numero en una variable */
-const huge = 202020202202n; //* Numero de tipo BigInt */
-console.log(huge * BigInt(num)); //* Asi puedo definir un numero para hacer una operacion aritmetica */
+// console.log(Number.MAX_SAFE_INTEGER); //* Numero mas grande en JS */
+// console.log(20n); //* Numero como BigInt */
+// console.log(typeof 20n); //* El tipo de este es BigInt */
+// const num = 20; //* Defino un numero en una variable */
+// const huge = 202020202202n; //* Numero de tipo BigInt */
+// console.log(huge * BigInt(num)); //* Asi puedo definir un numero para hacer una operacion aritmetica */
