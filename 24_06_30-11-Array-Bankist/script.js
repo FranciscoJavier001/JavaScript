@@ -751,3 +751,22 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 // const num = 20; //* Defino un numero en una variable */
 // const huge = 202020202202n; //* Numero de tipo BigInt */
 // console.log(huge * BigInt(num)); //* Asi puedo definir un numero para hacer una operacion aritmetica */
+
+const now = new Date(); //* La fecha actual */
+console.log(now); //* Muestro en consola la fecha actual */
+
+const future = new Date(2040, 1, 19, 15, 23, 50);
+console.log(future.getFullYear()); //* Año */
+console.log(future.getMonth()); //* Mes */
+console.log(future.getDate()); //* Dia */
+console.log(future.getDay()); //* Dia Semana*/
+console.log(future.getHours()); //* Hora */
+console.log(future.getMinutes()); //* Minutos */
+console.log(future.getSeconds()); //* Segundos */
+console.log(future.toISOString()); //* Muestro la hora en otro formato */
+console.log(future.getTime()); //* Muestro el tiempo  */
+
+console.log(Date.now()); //* Fecha hoy */
+
+future.setFullYear(2050); //* Cambio el año */
+console.log(future); //* Nueva fecha en consola */
