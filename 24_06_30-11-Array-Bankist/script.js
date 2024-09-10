@@ -88,22 +88,33 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
-const displayMovements = (movements, sort = false) => {
+const displayMovements = (acc, sort = false) => {
   //* Funcion, que recibe un argumento y otro argumento pero como falso */
   containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
   // textContent = 0
 
-  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+  const movs = sort
+    ? acc.movements.slice().sort((a, b) => a - b)
+    : acc.movements;
   //* Si la condicion de movs es verdadera, nuevo array igual que el original, pero ordenado, sino pues solo los movimientos */
 
   movs.forEach((mov, i) => {
     //* Argumento recibido, recibe 2 argumentos por cada iteracion */
     const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
+
+    const date = new Date(acc.movementsDates[i]);
+    const day = `${date.getDate()}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+    const month = `${date.getMonth() + 1}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+    const year = date.getFullYear(); //* Fechas */
+
+    const displayDate = `${day}/${month}/${year}`; //* Mostramos en esta etiqueta la fecha actual */
+
     const html = `
     <div class="movements__row">
       <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
+    <div class="movements__date">${displayDate}</div>
       <div class="movements__value">${mov.toFixed(2)}€</div>
     </div>
     `; //* Estructura HTML, primero van los colores, luego contador de operacion, luego si es deposito o retiro */
@@ -111,8 +122,6 @@ const displayMovements = (movements, sort = false) => {
     containerMovements.insertAdjacentHTML("afterbegin", html); //* Para agregar contenido dinamico, donde aterrizan los cambios */
   });
 };
-
-displayMovements(account1.movements); //* Esta funcion, recibe una propiedad y muestra sus movimientos */
 
 // console.log(containerMovements.innerHTML); //* Mostramos en consola su estructira html */
 
@@ -168,7 +177,7 @@ createUsernames(accounts); //* Esta funcion va a recibir este argumento */
 // console.log(accounts); //* Muestro en consola ese argumento definido */
 
 const updateUI = (acc) => {
-  displayMovements(acc.movements); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
+  displayMovements(acc); //* Llamo esta funcion, analizo el usuario en el login y veo sus movimentos */
 
   calcDisplayBalance(acc); //* Llamo esta funcion, analizo el balance */
 
@@ -180,14 +189,6 @@ let currentAccount; //* Definimos una variable que puede cambiar */
 currentAccount = account1; //* Esta va a ser el arreglo a utilizar */
 updateUI(currentAccount); //* Vamos a actualizar esta Data */
 containerApp.style.opacity = 100; //* Que se muestre en pantalla */
-
-const now = new Date(); //* Creamos una variable con la fecha */
-const day = `${now.getDate()}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
-const month = `${now.getMonth() + 1}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
-const year = now.getFullYear(); //* Fechas */
-const hour = now.getHours(); //* Fechas */
-const min = now.getMinutes(); //* Fechas */
-labelDate.textContent = `${day}/${month}/${year}, ${hour}:${min}`; //* Mostramos en esta etiqueta la fecha actual */
 
 btnLogin.addEventListener("click", (e) => {
   //* Le damos el evento click a este elemento del dom y su argumento recibido es e para ponerle el preventDefault  */
@@ -210,6 +211,15 @@ btnLogin.addEventListener("click", (e) => {
     }`;
     containerApp.style.opacity = 100; //* Cuando todo concuerda, mostramos el DOM */
 
+    //* Lo mostramos cuando nos logeamos */
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0);
+    const month = `${now.getMonth() + 1}`.padStart(2, 0);
+    const year = now.getFullYear();
+    const hour = now.getHours();
+    const min = now.getMinutes();
+    labelDate.textContent = `${day}/${month}/${year},${hour}:${min}`;
+
     inputLoginUsername.value = inputLoginPin.value = ""; //* Vuelvo a poner los inputs blancos */
     inputLoginPin.blur(); //* Señalo el input */
 
@@ -228,7 +238,7 @@ btnTransfer.addEventListener("click", (e) => {
       acc.username ===
       inputTransferTo.value /* Recibo argumento, funcion, donde el argumento debe hacer con match con el valor recibido */
   );
-  console.log(amount, receiverAcc); //* Muestro en consola las 2 variables devlaradas */
+  console.log(amount, receiverAcc); //* Muestro en consola las 2 variables declaradas */
 
   inputTransferAmount.value = inputTransferTo.value = ""; //* Asi borro el input, despues de hacer las transferencias */
 
@@ -242,6 +252,9 @@ btnTransfer.addEventListener("click", (e) => {
     console.log("Transfer Valid"); //* Muestro en consola que se realizo la transferencia */
     currentAccount.movements.push(-amount); //* Le descuento a la cantidad el monto transferido */
     receiverAcc.movements.push(amount); //* Le agrego esta nueva variable del arreglo a los movimientos */
+
+    currentAccount.movementsDates.push(new Date().toISOString());
+    receiverAcc.movementsDates.push(new Date().toISOString());
 
     updateUI(currentAccount); //* Ejecuto esta funcion, que tiene funciones */
   }
@@ -259,6 +272,8 @@ btnLoan.addEventListener("click", (e) => {
     currentAccount.movements.some((mov) => mov >= amount * 0.1) //* Si algun movimiento, es mayor o igual por la cantidad total existente autorizar */
   ) {
     currentAccount.movements.push(amount); //* Agrego esto al array, si cumple la condicion pasada */
+
+    currentAccount.movementsDates.push(new Date().toISOString());
 
     updateUI(currentAccount); //* Esta funcion, recibe este valor */
   }
