@@ -177,9 +177,17 @@ const updateUI = (acc) => {
 
 let currentAccount; //* Definimos una variable que puede cambiar */
 
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+currentAccount = account1; //* Esta va a ser el arreglo a utilizar */
+updateUI(currentAccount); //* Vamos a actualizar esta Data */
+containerApp.style.opacity = 100; //* Que se muestre en pantalla */
+
+const now = new Date(); //* Creamos una variable con la fecha */
+const day = `${now.getDate()}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+const month = `${now.getMonth() + 1}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+const year = now.getFullYear(); //* Fechas */
+const hour = now.getHours(); //* Fechas */
+const min = now.getMinutes(); //* Fechas */
+labelDate.textContent = `${day}/${month}/${year}, ${hour}:${min}`; //* Mostramos en esta etiqueta la fecha actual */
 
 btnLogin.addEventListener("click", (e) => {
   //* Le damos el evento click a este elemento del dom y su argumento recibido es e para ponerle el preventDefault  */
