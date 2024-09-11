@@ -848,20 +848,3 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // const days1 = calcDaysPassed(new Date(2024, 8, 10), new Date(1987, 10, 21)); //* Dias calculados desde mi nacimiento hasta hoy */
 // console.log(days1); //* Estos son milisegundos */
-
-// Acceso 68.1
-
-// Principal 71.250
-
-// Jitomates 71.240
-// Tianguis 71.239
-// Mariachis 71.238
-// MariachisDos 71.237
-// Chiles 71.236
-// Oficina 71.235
-// Tortilleria 71.234
-// NopalesTeo 71.233
-// Sandoval 71.232
-// Cholo 71.231
-// Maricela 71.230
-// Maricela 71.229
