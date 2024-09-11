@@ -19,8 +19,8 @@ const account1 = {
     "2020-04-01T10:17:24.185Z",
     "2020-05-08T14:11:59.604Z",
     "2019-05-27T17:01:17.194Z",
-    "2019-07-11T23:36:17.929Z",
-    "2019-07-12T10:51:36.790Z",
+    "2024-09-07T23:36:17.929Z",
+    "2024-09-10T10:51:36.790Z",
   ],
   currency: "EUR",
   locale: "pt-PT",
@@ -88,6 +88,24 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
+const formatMovementDate = (date) => {
+  const calcDaysPassed = (date1, date2) => {
+    return Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
+  };
+
+  const dayPassed = calcDaysPassed(new Date(), date);
+  console.log(dayPassed);
+
+  if (dayPassed === 0) return "Today";
+  if (dayPassed === 1) return "Yesterday";
+  if (dayPassed <= 7) return `${dayPassed} days ago`;
+
+  const day = `${date.getDate()}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+  const month = `${date.getMonth() + 1}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
+  const year = date.getFullYear(); //* Fechas */
+  return `${day}/${month}/${year}`; //* Mostramos en esta etiqueta la fecha actual */
+};
+
 const displayMovements = (acc, sort = false) => {
   //* Funcion, que recibe un argumento y otro argumento pero como falso */
   containerMovements.innerHTML = ""; //* Contenedor de movimientos, donde estan los las transacciones */
@@ -103,11 +121,7 @@ const displayMovements = (acc, sort = false) => {
     const type = mov > 0 ? "deposit" : "withdrawal"; //* Defino una variable, si el mov es mayor a 0 deposito y menor retiro  */
 
     const date = new Date(acc.movementsDates[i]);
-    const day = `${date.getDate()}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
-    const month = `${date.getMonth() + 1}`.padStart(2, 0); //* Que sea una constante de 2 numeros */
-    const year = date.getFullYear(); //* Fechas */
-
-    const displayDate = `${day}/${month}/${year}`; //* Mostramos en esta etiqueta la fecha actual */
+    const displayDate = formatMovementDate(date);
 
     const html = `
     <div class="movements__row">
@@ -823,3 +837,31 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; //* Un arreglo *
 
 // future.setFullYear(2050); //* Cambio el año */
 // console.log(future); //* Nueva fecha en consola */
+
+// const future = new Date(2040, 11, 19, 15, 23); //* Nueva variable con una fecha definida */
+// console.log(future); //* Muestro la fecha */
+// console.log(+future);
+
+// const calcDaysPassed = (date1, date2) => {
+//   return Math.abs(date2 - date1) / (1000 * 60 * 60 * 24); //* Ahora los hice dias y que sean positivos */
+// };
+
+// const days1 = calcDaysPassed(new Date(2024, 8, 10), new Date(1987, 10, 21)); //* Dias calculados desde mi nacimiento hasta hoy */
+// console.log(days1); //* Estos son milisegundos */
+
+// Acceso 68.1
+
+// Principal 71.250
+
+// Jitomates 71.240
+// Tianguis 71.239
+// Mariachis 71.238
+// MariachisDos 71.237
+// Chiles 71.236
+// Oficina 71.235
+// Tortilleria 71.234
+// NopalesTeo 71.233
+// Sandoval 71.232
+// Cholo 71.231
+// Maricela 71.230
+// Maricela 71.229
