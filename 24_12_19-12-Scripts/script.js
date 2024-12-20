@@ -1,10 +1,10 @@
-class Car {
-    constructor(brand, speed) {
-        this.brand = brand
+class Car { /* inicializo una clase, van con Mayusculas la primera */
+    constructor(brand, speed) { /* Le asigno un constructor */
+        this.brand = brand /* Donde van a aterrizar los parametros definidos */
         this.speed = speed
     }
 
-    accelerate() {
+    accelerate() { /* Defino una funcion */
         this.speed += 10
         console.log(`${this.brand} is going at ${this.speed} km/h`);
     }
@@ -25,5 +25,4 @@ bmw.accelerate()
 mercedes.accelerate()
 mercedes.accelerate()
 mercedes.brake()
-mercedes.accelerate()
-
+mercedes.accelerate() 
