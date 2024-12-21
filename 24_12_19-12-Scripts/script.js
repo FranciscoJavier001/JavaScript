@@ -5,20 +5,20 @@ class Car { /* inicializo una clase, van con Mayusculas la primera */
     }
 
     accelerate() { /* Defino una funcion */
-        this.speed += 10
-        console.log(`${this.brand} is going at ${this.speed} km/h`);
+        this.speed += 10 /* Aterrizo esta operacion aritmetica y lo que ocaciona un cambio aritmetico */
+        console.log(`${this.brand} is going at ${this.speed} km/h`); /* Muestro en consola un mensaje */
     }
 
-    brake() {
-        this.speed -= 5
-        console.log(`${this.brand} is going at ${this.speed} km/h`);
+    brake() { /* Defino una funcion */
+        this.speed -= 5 /* Aterrizo esta operacion aritmetica y ocaciona un cambio aritmetico */
+        console.log(`${this.brand} is going at ${this.speed} km/h`); /* Muestro en consola un mensaje */
     }
 }
 
-const bmw = new Car('BMW', 120)
-const mercedes = new Car('Mercedes', 95)
+const bmw = new Car('BMW', 120) /* Creo un nuevo objeto llamado bmw que recibe parametros de la funcion */
+const mercedes = new Car('Mercedes', 95) /* Creo un nuevo objeto y le paso parametros al constructor de la clase */
 
-bmw.brake()
+bmw.brake() /* Le paso la funcion a el objeto llamado bmw */
 bmw.accelerate()
 bmw.accelerate()
 
