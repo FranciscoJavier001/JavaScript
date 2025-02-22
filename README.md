@@ -1,4 +1,6 @@
 # JavaScript
+🍀00/00 Francisco AppleWatch 4491110087 - 24/182/0✅
+😌24-5E-48-08-BB-93🤩
 
 🍀01/03 Mariachis Ana 4961258920 - 24/183/100✅
 😌48-90-2F-CC-7A-B4🤩
@@ -18,21 +20,13 @@ Francisco Papa 4499407906 - 24/213/0
 🍀01/02 Angye Mario 4493132810 - 24/184/50✅
 😌C0-8C-71-10-E3-DB🤩
 
-01-Alvarado= A0-FD-F4
-02-Chiles= A1-02-0C
 03-DosGarcia= A0-F0-0C
 04-Frank= 23-03-FC
-05-Jitomates= A0-F6-94
 07-Lupita= A0-F0-08
 08-Mariachis= 6E-25-B0
-09-MariachisDos= D4-48-F4
-10-Maricela= A0-F7-8C
-11-Principal= A0-F6-98
 12-Quesos= A0-F0-04
 13-Tianguis= 44-82-AC
-
-🍀01/03 Chiles Jefe 4493952155 - 24/183/100✅
-😌48-C4-61-64-7F-F7🤩
+Tortilleria= D4-3F-F4
 
 🍀01/03 Charro Jefe 4493113421 - 24/183/100✅
 😌02-F7-81-9B-10-2C🤩
@@ -182,9 +176,6 @@ AA-F1-69-F4-89-01
 
 🍀01/03 China Jefe 4492844100 - 25/032/100✅ x
 😌34-15-00-CD-B6-DF🤩
-
-🍀00/00 Francisco AppleWatch 4491110087 - 24/182/0✅
-😌24-5E-48-08-BB-93🤩
 
 🍀00/00 Francisco iPad 4491110087 - 24/213/0✅
 😌0E-06-7B-42-8F-1C🤩
@@ -780,21 +771,12 @@ AA-F1-69-F4-89-01
 
 ---
 
-Oficina= A0-F0-08
 Cholo= A0-FF-18
-Quesos= A0-F0-04
-MariachisDos= D4-48-F4
-Mariachis= 6E-25-B0
 Jitomates= A0-F6-94
 Johnny= 23-05-64
-Sandoval= A0-FD-F4
 Maricela= A0-F7-8C
-NopalesTeo= 6E-26-B4
-Chiles= A1-02-0C
-Tianguis= 44-82-AC
+Cueritos= 6E-26-B4
 Acceso= A0-F6-98
-
-## Main= A0-F0-0C
 
 Bloqueados
 
@@ -1503,18 +1485,10 @@ AE-BE-EC-A8-30-CB
 25/035-Angye Jesus 4493066266 - 25/016/
 42-B8-14-17-72-85
 
-Principal= A0-F6-98
 Chiles= A1-02-0C
 Frank= 23-03-FC
-Mariachis= 6E-25-B0
 MariachisDos= D4-48-F4
-Tianguis= 44-82-AC
 Quesos= A0-F0-04
-Lupita= A0-F0-08
-Jitomates= A0-F6-94
-Maricela= A0-F7-8C
-DosGarcia= A0-F0-0C
-Alvarado= A0-FD-F4
 
 🍀01/02 Johnny Negocio 4492188478 - 24/183/0✅
 😌3C-52-A1-D9-59-E1🤩
@@ -1861,16 +1835,8 @@ Alvarado= A0-FD-F4
 
 Oficina= A0-F0-08
 Quesos= A0-F0-04
-MariachisDos= D4-48-F4
-Mariachis= 6E-25-B0
-Jitomates= A0-F6-94
 Alvarado= A0-FD-F4
-Maricela= A0-F7-8C
-NopalesTeo= 6E-26-B4
-Chiles= A1-02-0C
 Tianguis= 44-82-AC
-Principal= A0-F6-98
-DosGarcia= A0-F0-0C
 
 Bloqueados
 
