@@ -52,9 +52,6 @@ Tortilleria= D4-3F-F4
 🍀01/03 QuesosTres Raul 4492904497 - 24/187/100✅
 😌6C-97-6D-AB-F7-9F🤩
 
-🍀01/03 Cholo Lula 4491896966 - 24/216/0✅
-😌6C-97-6D-66-E5-5E🤩
-
 🍀01/03 Punto Guero XXXXXXXXXX - 24/032/100✅
 😌30-6D-F9-56-DC-43🤩
 
@@ -134,9 +131,6 @@ B2-80-4D-F5-8D-EB
 
 25/031-Galaxy-S22-Ultra
 62-8A-BD-BA-FC-69
-
-25/033-A35-de-Melissa-Guadalupe
-BA-D7-98-25-65-17
 
 25/036-A53-de-Diego
 3A-E5-2D-5A-7B-8F
