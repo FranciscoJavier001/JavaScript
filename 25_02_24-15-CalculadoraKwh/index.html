@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora de Gastos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            white-space: pre-line;
+            /* Para que los saltos de línea se respeten */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Gastos</h1>
+        <p>Esta calculadora te muestra cuánto has gastado desde el <strong>10 de enero de 2025</strong> hasta la fecha
+            que indiques, asumiendo un gasto de $4.20 por día.</p>
+
+        <!-- Campo para ingresar la fecha final -->
+        <label for="fechaFinal">Selecciona la fecha o usa el botón de Hoy:</label>
+        <input type="date" id="fechaFinal" />
+
+        <!-- Botón para poner la fecha de hoy automáticamente -->
+        <button onclick="setFechaHoy()">Usar fecha de hoy</button>
+
+        <!-- Botón para calcular -->
+        <button onclick="calcularGasto()">Calcular</button>
+
+        <!-- Se mostrará el resultado del cálculo aquí -->
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        /**
+         * Función para asignar la fecha de "hoy" (la fecha actual)
+         * al campo de fechaFinal
+         */
+        function setFechaHoy() {
+            // Creamos un objeto Date para la fecha actual
+            const hoy = new Date();
+            // Convertimos la fecha a formato ISO (YYYY-MM-DD) para el input[type="date"]
+            const hoyISO = hoy.toISOString().split('T')[0];
+            // Asignamos el valor
+            document.getElementById('fechaFinal').value = hoyISO;
+        }
+
+        /**
+         * Función para calcular el gasto desde el 10 de enero de 2025 
+         * hasta la fecha ingresada en el input
+         */
+        function calcularGasto() {
+            // Tomamos la fecha del input
+            const fechaIngresada = document.getElementById('fechaFinal').value;
+
+            // Validamos que exista una fecha
+            if (!fechaIngresada) {
+                document.getElementById('resultado').textContent =
+                    "Por favor, ingresa o selecciona una fecha.";
+                return;
+            }
+
+            // Convertimos la fecha ingresada a un objeto Date de JavaScript
+            const fechaFinal = new Date(fechaIngresada);
+
+            // Definimos la fecha de inicio (10 de enero de 2025)
+            // Nota: enero es el mes 0 en JS (0=enero, 1=febrero, ...)
+            const fechaInicio = new Date(2025, 0, 9);
+
+            // Calculamos la diferencia en milisegundos
+            const diferenciaMs = fechaFinal - fechaInicio;
+            const unDiaMs = 24 * 60 * 60 * 1000;
+
+            // Convertimos milisegundos a días
+            const diasDiferencia = Math.floor(diferenciaMs / unDiaMs);
+
+            // Verificamos si la fecha ingresada es anterior al 10 de enero de 2025
+            if (diasDiferencia < 0) {
+                document.getElementById('resultado').textContent =
+                    "La fecha ingresada es anterior al 10 de enero de 2025. No hay gastos que calcular.";
+                return;
+            }
+
+            // Cálculo del gasto
+            const gastoPorDia = 4.22;
+            const totalGastado = diasDiferencia * gastoPorDia;
+
+            // Mostramos el resultado
+            document.getElementById('resultado').textContent =
+                "Días transcurridos: " + diasDiferencia + "\n" +
+                "Total gastado: $" + totalGastado.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
