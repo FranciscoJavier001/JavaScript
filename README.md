@@ -26,9 +26,6 @@ Francisco Papa 4499407906 - 24/213/0
 13-Tianguis= 44-82-AC
 Tortilleria= D4-3F-F4
 
-🍀01/03 Lupita Lucero 4491027376 - 25/016/50✅
-😌30-82-16-7B-55-B3🤩
-
 🍀01/03 NopalesTeo Negocio 4491472611 - 25/037/0✅
 😌7C-F1-7E-64-12-65🤩
 
