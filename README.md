@@ -1,3 +1,24 @@
+Eliminar
+🍀011/04 Beto Dany 4499831679 - 24/037/50✅
+😌C8-EA-F8-40-60-9E🤩
+-----
+
+-----🍀01/03 Camionero Alejandro 5543834692 - 25/034/25✅-----
+-----😌8C-7A-3D-B5-07-EE🤩-----
+
+
+
+
+
+
+
+
+
+
+Eliminar
+🍀011/04 Charro Ivan 4495231960 - 24/205/100✅
+😌14-E0-1D-46-6C-AE🤩
+
 # JavaScript
 
 🍀01/04 NopalesKaren Negocio 4492099003 - 25/038/0✅
@@ -2817,5 +2838,3 @@ DC-D4-44-F5-1C-2D
 
 25/074-Bocho Carlos 4492792624 - 24/182/
 82-44-CB-DF-6F-9C
-
-Disculpe la hora del mensaje, se cambio el password del Wifi... por favor cuando estes en el agropecuario ponte en contacto conmigo para actualizarte el password. Gracias
