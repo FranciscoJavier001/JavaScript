@@ -2,14 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>createImage & wait Example</title>
 </head>
 
 <body>
+    <!-- Container where images will be appended -->
+    <div class="images"></div>
 
+    <script>
+        // 1. Function: createImage
+        function createImage(imgPath) {
+            return new Promise((resolve, reject) => {
+                const img = document.createElement('img');
+                img.src = imgPath;
+
+                // On successful load
+                img.addEventListener('load', () => {
+                    document.querySelector('.images').appendChild(img);
+                    resolve(img);
+                });
+
+                // On error
+                img.addEventListener('error', () => {
+                    reject(new Error(`Error loading image at path: ${imgPath}`));
+                });
+            });
+        }
+
+        // 2. Function: wait
+        function wait(seconds) {
+            return new Promise(resolve => {
+                setTimeout(resolve, seconds * 1000);
+            });
+        }
+
+        // 3. Global variable to hold the current image
+        let currentImg;
+
+        // 4. Consume the promise using .then, and handle errors with .catch
+        createImage('img/image-1.jpg')  // change path to a real image for testing
+            .then(img => {
+                currentImg = img;
+                console.log('First image loaded:', currentImg);
+
+                // Pause execution for 2 seconds
+                return wait(2);
+            })
+            .then(() => {
+                // Hide current image
+                currentImg.style.display = 'none';
+
+                // Load second image
+                return createImage('img/image-2.jpg');  // change path to a real image for testing
+            })
+            .then(img => {
+                currentImg = img;
+                console.log('Second image loaded:', currentImg);
+
+                // Pause execution for 2 seconds
+                return wait(2);
+            })
+            .then(() => {
+                // Hide second image
+                currentImg.style.display = 'none';
+            })
+            .catch(error => {
+                // 5. Error handler
+                console.error('Something went wrong:', error);
+            });
+    </script>
 </body>
-<script src="./script.js"></script>
 
 </html>
