@@ -483,3 +483,7 @@ document.querySelector("button").addEventListener("click", function () {
     console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
   }
 });
+
+
+
+// Create a new App with diferent commands

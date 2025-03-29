@@ -113,13 +113,9 @@ Francisco Papa 4499407906 - 24/213/0
 🍀01/02 Colombiano Nicole 4494916777 - 24/286/100✅
 😌1A-CF-4C-87-AF-C3🤩
 
-03-DosGarcia= A0-F0-0C
 04-Frank= 23-03-FC
-07-Lupita= A0-F0-08
-08-Mariachis= 6E-25-B0
 12-Quesos= A0-F0-04
 13-Tianguis= 44-82-AC
-Tortilleria= D4-3F-F4
 
 🍀01/03 NopalesTeo Negocio 4491472611 - 25/037/0✅
 😌7C-F1-7E-64-12-65🤩
@@ -383,10 +379,6 @@ AA-F1-69-F4-89-01
 🍀01/09 Cholo Interior 4492645451 - 24/182/0✅
 😌3C-52-A1-61-1A-09🤩
 📌192.168.70.199
-
-🍀01/09 Cholo Jefe 4492645451 - 24/183/50✅
-😌08-BF-A0-29-04-38🤩
-📌192.168.70.198
 
 🍀01/09 Cholo Pollo 4495398467 - 24/183/50✅
 😌9C-FB-77-F6-07-95🤩
@@ -791,11 +783,7 @@ AA-F1-69-F4-89-01
 ---
 
 Cholo= A0-FF-18
-Jitomates= A0-F6-94
 Johnny= 23-05-64
-Maricela= A0-F7-8C
-Cueritos= 6E-26-B4
-Acceso= A0-F6-98
 
 Bloqueados
 
@@ -1489,10 +1477,7 @@ AE-BE-EC-A8-30-CB
 25/035-Angye Jesus 4493066266 - 25/016/
 42-B8-14-17-72-85
 
-Chiles= A1-02-0C
 Frank= 23-03-FC
-MariachisDos= D4-48-F4
-Quesos= A0-F0-04
 
 🍀01/02 Johnny Negocio 4492188478 - 24/183/0✅
 😌3C-52-A1-D9-59-E1🤩
@@ -1834,9 +1819,7 @@ Quesos= A0-F0-04
 ---
 
 
-Oficina= A0-F0-08
 Quesos= A0-F0-04
-Alvarado= A0-FD-F4
 Tianguis= 44-82-AC
 
 Bloqueados
@@ -2719,9 +2702,6 @@ E6-9D-44-93-57-FA
 
 24/331-iPhone_3C02
 6A-76-22-12-3C-02
-
-24/331-Cholo Jefe 4492645451 - 24/183/
-08-BF-A0-29-04-38
 
 24/333-Tortilleria Tony 4495817499 - 24/229/
 38-65-04-A4-BA-6A
