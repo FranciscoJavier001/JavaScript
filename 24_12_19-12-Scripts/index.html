@@ -7,69 +7,47 @@
 </head>
 
 <body>
-
     <div class="images"></div>
-
     <script>
-
-        function createImage(imgPath) {
-            return new Promise((resolve, reject) => {
-                const img = document.createElement('img');
-                img.src = imgPath;
-
-
-                img.addEventListener('load', () => {
-                    document.querySelector('.images').appendChild(img);
-                    resolve(img);
+        function createImage(imgPath) { /* Declaramos una funcion que recibe un parametro */
+            return new Promise((resolve, reject) => { /* Devolvemos una nueva promesa que recibe 2 parametros la respuesta y rechazo */
+                const img = document.createElement('img'); /* Variable llamada img, crea un elemento img en memoria */
+                img.src = imgPath; /* Ruta del elemento que ya definimos como parametro */
+                img.addEventListener('load', () => { /* Variable img le agregamos el evento load */
+                    document.querySelector('.images').appendChild(img); /* Seleccionamos la clase images y appendChild aparece la imagen */
+                    resolve(img); /* Resolvimos la promesa devolviendo la referencia de la imagen */
                 });
-
-
-                img.addEventListener('error', () => {
-                    reject(new Error(`Error loading image at path: ${imgPath}`));
+                img.addEventListener('error', () => { /* Le agregamos el evento error */
+                    reject(new Error(`Error loading image at path: ${imgPath}`)); /* Rechazo rcibe un nuevo error, mensaje, porque no cargo */
                 });
             });
         }
-
-
-        function wait(seconds) {
-            return new Promise(resolve => {
-                setTimeout(resolve, seconds * 1000);
+        function wait(seconds) { /* Definimos una funcion y recibe un parametro */
+            return new Promise(resolve => { /* Retornamos una promesa y esto pasa si se resuelve */
+                setTimeout(resolve, seconds * 1000); /* Tiempo en el cual resolvemos y esperamos 2 segundos */
             });
         }
-
-
-        let currentImg;
-
-
-        createImage('img/image-1.jpg')
-            .then(img => {
-                currentImg = img;
-                console.log('First image loaded:', currentImg);
-
-
-                return wait(2);
+        let currentImg; /* Definimos una variable que puede cambiar, es global */
+        createImage('img/image-1.jpg') /* Funcion que recibe un parametro, es la imagen */
+            .then(img => { /* Entonces la imagen resuleve */
+                currentImg = img; /* La imagen actual es la variable img */
+                console.log('First image loaded:', currentImg); /* Consola la ruta de la imagen actual */
+                return wait(2); /* Esperamos 2 segundos */
             })
-            .then(() => {
-
-                currentImg.style.display = 'none';
-
-
-                return createImage('img/image-2.jpg');
+            .then(() => { /* Cuando la promesa se resuelve despues de 2 segundos */
+                currentImg.style.display = 'none'; /* Ocultamos la primera imagen cambiando la propiedad */
+                return createImage('img/image-2.jpg'); /* Retornamos nueva promesa para cambiar la imagen */
             })
-            .then(img => {
-                currentImg = img;
-                console.log('Second image loaded:', currentImg);
-
-
-                return wait(2);
+            .then(img => { /* Cuando la segunda imagen se carga exitosamente */
+                currentImg = img; /* Actualiza la nueva imagen a la segunda */
+                console.log('Second image loaded:', currentImg); /* Mostramos en consola que la segunda imagen se ha cargado */
+                return wait(2); /* Esperamos 2 segundos para cargar la nueva imagen */
             })
-            .then(() => {
-
-                currentImg.style.display = 'none';
+            .then(() => { /* Entonces resolvemos esto */
+                currentImg.style.display = 'none'; /* Ocultamos la segunda imagen */
             })
-            .catch(error => {
-
-                console.error('Something went wrong:', error);
+            .catch(error => { /* Atrapamos los errores, de createImage o wait que son promesas */
+                console.error('Something went wrong:', error); /* Mostramos en consola el error y la descripcion del mismo */
             });
     </script>
 </body>
