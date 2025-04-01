@@ -44,7 +44,7 @@
                 return wait(2); /* Esperamos 2 segundos para cargar la nueva imagen */
             })
             .then(() => { /* Entonces resolvemos esto */
-                currentImg.style.display = 'none'; /* Ocultamos la segunda imagen */
+                currentImg.style.display = 'block'; /* Asi no ocultamos la imagen */
             })
             .catch(error => { /* Atrapamos los errores, de createImage o wait que son promesas */
                 console.error('Something went wrong:', error); /* Mostramos en consola el error y la descripcion del mismo */
