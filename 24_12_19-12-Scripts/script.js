@@ -47,22 +47,44 @@
 
 // // /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
-const getPosition = function () {
-    return new Promise(function (res, rej) {
-        navigator.geolocation.getCurrentPosition(res, rej)
+// const getPosition = function () {
+//     return new Promise(function (res, rej) {
+//         navigator.geolocation.getCurrentPosition(res, rej)
+//     })
+// }
+
+// const whereAmI = async function () {
+//     const pos = await getPosition()
+//     const { latitude: lat, longitude: lng } = pos.coords
+
+//     const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+//     const dataGeo = await resGeo.json()
+//     console.log(dataGeo);
+
+//     const res = await fetch(`https://restcountries.eu/rest/v2/name/${dataGeo.Mexico}`)
+//     const data = await res.json()
+//     console.log(data);
+// }
+// whereAmI()
+
+
+const getJSON = function (url, errorMsg = 'Something went wrong') {
+    return fetch(url).then(response => {
+        if (!response.ok) throw new Error(`${errorMsg} (${response.status})`)
+
+        return response.json()
     })
 }
 
-const whereAmI = async function () {
-    const pos = await getPosition()
-    const { latitude: lat, longitude: lng } = pos.coords
+const get3Countries = async function (c1, c2, c3) {
+    try {
+        const [data1] = await getJSON(`https://restcountries.com/v3.1/name/${c1}`)
+        const [data2] = await getJSON(`https://restcountries.com/v3.1/name/${c2}`)
+        const [data3] = await getJSON(`https://restcountries.com/v3.1/name/${c3}`)
 
-    const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
-    const dataGeo = await resGeo.json()
-    console.log(dataGeo);
-
-    const res = await fetch(`https://restcountries.eu/rest/v2/name/${dataGeo.Mexico}`)
-    const data = await res.json()
-    console.log(data);
+        console.log([data1.capital, data2.capital, data3.capital,])
+    } catch (err) {
+        console.log(err);
+    }
 }
-whereAmI()
+get3Countries('portugal', 'canada', 'tanzania')
