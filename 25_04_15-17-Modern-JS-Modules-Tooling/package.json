@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  },
+  "name": "25_04_15-17-modern-js-modules-tooling",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank",
+  "license": "ISC",
+  "description": ""
+}
