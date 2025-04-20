@@ -72,4 +72,5 @@ const stateDeepClone = cloneDeep(state)
 
 state.user.loggedIn = false
 console.log(stateClone);
+
 console.log(stateDeepClone);
